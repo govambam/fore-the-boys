@@ -155,7 +155,7 @@ export default function ScoringFormat() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">⛳</span>
+                  <span className="text-2xl">���</span>
                   <div>
                     <CardTitle className="text-xl">Lost Ball & OB – "Desert Rule"</CardTitle>
                     <CardDescription>1-stroke penalty, drop at point of entry</CardDescription>
@@ -283,7 +283,7 @@ export default function ScoringFormat() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Teams: Ivan & Jack vs Patrick & Jeffrey</li>
+                  <li>• Teams: Ivan & Jack vs Patrick & TBA</li>
                   <li>• Both players tee off, play from best shot</li>
                   <li>• Team's Stableford score counts toward individual totals</li>
                   <li>• 14-hole par 3 course provides exciting finale</li>
