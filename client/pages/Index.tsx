@@ -433,8 +433,8 @@ export default function Index() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-golf-green-dark">Transportation</h4>
-                    <p className="text-sm text-muted-foreground">Rental car recommended for scenic drive</p>
-                    <p className="text-sm text-muted-foreground">Resort is 3 hours from Seattle</p>
+                    <p className="text-sm text-muted-foreground">Ivan will rent an SUV so we can all drive together</p>
+                    <p className="text-sm text-muted-foreground">Departing Redmond at 9:30 AM to arrive, check in, eat lunch, and warm up before our 3:05 PM tee time</p>
                   </div>
                 </CardContent>
               </Card>
