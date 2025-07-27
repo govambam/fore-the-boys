@@ -24,6 +24,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/scoring" element={<ScoringFormat />} />
+          <Route path="/scarecrow" element={<Scarecrow />} />
+          <Route path="/gamble-sands" element={<GambleSands />} />
+          <Route path="/quicksands" element={<Quicksands />} />
+          <Route path="/inn" element={<Inn />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
