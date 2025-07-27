@@ -200,7 +200,7 @@ export default function Inn() {
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Variety of pizzas</li>
                       <li>• Hearty sandwiches</li>
-                      <li>• Daily special entrées</li>
+                      <li>• Daily special entr��es</li>
                       <li>• Quick-serve and sit-down options</li>
                     </ul>
                   </div>
@@ -241,11 +241,9 @@ export default function Inn() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="bg-gradient-to-br from-golf-green/20 via-golf-sand/30 to-golf-earth/20 rounded-lg h-64 md:h-80 flex items-center justify-center mb-6">
+              <div className="rounded-lg h-64 md:h-80 flex items-center justify-center mb-6 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc1b85ce2cb6149369a322b41bb51dd26)"}}>
                 <div className="text-center text-golf-green-dark">
                   <Bed className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                  <p className="text-lg font-semibold">River-View Accommodations</p>
-                  <p className="text-sm opacity-80">Overlook Cascades & Columbia River</p>
                 </div>
               </div>
             </div>
