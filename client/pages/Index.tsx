@@ -254,11 +254,18 @@ export default function Index() {
           </div>
           
           <div className="grid lg:grid-cols-3 gap-8">
-            <Link to="/scarecrow">
-              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300 cursor-pointer">
-                <div className="h-48 bg-gradient-to-br from-golf-green to-golf-fairway"></div>
+            <Link to="/scarecrow" className="group">
+              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl hover:border-golf-green/40 transition-all duration-300 cursor-pointer group-hover:scale-[1.02]">
+                <div className="h-48 bg-gradient-to-br from-golf-green to-golf-fairway relative">
+                  <div className="absolute top-3 right-3 bg-white/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ExternalLink className="h-4 w-4 text-golf-green" />
+                  </div>
+                </div>
                 <CardHeader>
-                  <CardTitle className="text-golf-green-dark">Scarecrow</CardTitle>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-golf-green-dark group-hover:text-golf-green transition-colors">Scarecrow</CardTitle>
+                    <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
+                  </div>
                   <CardDescription>Par 71 • 6,927 yards • Links-Style Layout</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -268,6 +275,9 @@ export default function Index() {
                   <div className="flex justify-between items-center">
                     <Badge variant="secondary">Saturday 3:05 PM</Badge>
                     <span className="text-sm font-semibold text-golf-green">Round 1</span>
+                  </div>
+                  <div className="mt-3 text-xs text-golf-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    Click for detailed course information →
                   </div>
                 </CardContent>
               </Card>
