@@ -136,7 +136,7 @@ export default function Inn() {
 
           <div className="grid lg:grid-cols-2 gap-8 mb-8">
             <Card className="border-golf-green/20 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-golf-earth to-golf-green"></div>
+              <div className="h-48 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Ffbf5ab28462c4393950178b16f71a842)"}}></div>
               <CardHeader>
                 <CardTitle className="text-2xl text-golf-green-dark">Danny Boy</CardTitle>
                 <CardDescription className="text-lg">Dinner-Only Fine Dining Experience</CardDescription>
