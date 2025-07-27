@@ -257,8 +257,12 @@ export default function Scarecrow() {
                   </ul>
                 </div>
                 <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Long Drive Contest - Hole 5</h4>
-                  <p className="text-sm text-yellow-700">$50 prize for the longest drive on this downhill par 5!</p>
+                  <h4 className="font-semibold text-yellow-800 mb-2">Contest Holes</h4>
+                  <ul className="text-sm text-yellow-700 space-y-1">
+                    <li>• Hole 9: Closest to Pin - $25 prize</li>
+                    <li>• Hole 14: Long Drive - $25 prize</li>
+                  </ul>
+                  <p className="text-xs text-yellow-600 mt-2">Most scenic and challenging holes on the course!</p>
                 </div>
               </div>
             </CardContent>
