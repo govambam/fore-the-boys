@@ -473,9 +473,6 @@ export default function Index() {
           <Trophy className="h-12 w-12 mx-auto mb-4" />
           <h3 className="text-2xl font-bold mb-2">Patrick's Birthday Golf Trip</h3>
           <p className="text-golf-green-light mb-4">September 6-8, 2024 • Gamble Sands, WA</p>
-          <p className="text-sm opacity-80">
-            Questions? Contact the tournament organizer for more details.
-          </p>
         </div>
       </footer>
     </div>
