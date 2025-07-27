@@ -151,7 +151,7 @@ export default function GambleSands() {
           {/* Signature Holes */}
           <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes</h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
                   <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 11</Badge>
@@ -160,11 +160,11 @@ export default function GambleSands() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    A beautiful par 3 over a natural ravine with the Columbia River as your backdrop. 
+                    A beautiful par 3 over a natural ravine with the Columbia River as your backdrop.
                     Precision is key on this scenic one-shotter.
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
-                    <p className="text-sm font-semibold text-yellow-800">💰 $50 Prize for Closest to Pin</p>
+                    <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Closest to Pin</p>
                   </div>
                 </CardContent>
               </Card>
@@ -172,14 +172,17 @@ export default function GambleSands() {
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
                   <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 7</Badge>
-                  <CardTitle className="text-lg">The Gamble</CardTitle>
+                  <CardTitle className="text-lg">The Gamble - Long Drive</CardTitle>
                   <CardDescription>Par 5 • 585 yards</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    The signature hole that gives the course its name. A risk-reward par 5 where you can 
-                    "gamble" by trying to drive over the sandy waste area.
+                    The signature hole that gives the course its name. A risk-reward par 5 where you can
+                    "gamble" by trying to drive over the sandy waste area. Perfect for our long drive contest!
                   </p>
+                  <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
+                    <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Longest Drive</p>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -191,8 +194,22 @@ export default function GambleSands() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    A strategic par 4 that follows the natural curve of the land. The approach shot 
+                    A strategic par 4 that follows the natural curve of the land. The approach shot
                     plays to a green perched above the Columbia River.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Designer</Badge>
+                  <CardTitle className="text-lg">McLay Kidd Masterpiece</CardTitle>
+                  <CardDescription>World-Class Design</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Every hole on this flagship course showcases David McLay Kidd's genius for creating
+                    memorable golf experiences that blend with the natural landscape.
                   </p>
                 </CardContent>
               </Card>
