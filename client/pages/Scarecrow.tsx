@@ -25,11 +25,19 @@ export default function Scarecrow() {
         </div>
       </section>
 
-      {/* Course Hero Image */}
+      {/* Course Hero Video */}
       <section className="py-8 px-4">
         <div className="container mx-auto">
-          <div className="w-full h-64 md:h-96 rounded-lg mb-8 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2F3bb98b36487e49c5b950fa5edb1b2688)"}}>
-          </div>
+          <video
+            className="w-full h-64 md:h-96 rounded-lg object-cover mb-8"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="https://cdn.builder.io/o/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2F94433c743a8141ca9b5ec93ac1b64fc8%2Fcompressed?apiKey=8c34f0d0a3de41e1a3ea5bdb8f56cf8c&token=94433c743a8141ca9b5ec93ac1b64fc8&alt=media&optimized=true" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
