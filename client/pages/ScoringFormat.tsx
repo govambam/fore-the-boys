@@ -141,6 +141,116 @@ export default function ScoringFormat() {
         </div>
       </section>
 
+      {/* Casual Rules Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Tournament Rules</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              We're here for birdies, beers, and good times. These casual rules will help us play fast, stay safe, and enjoy every round.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">⛳</span>
+                  <div>
+                    <CardTitle className="text-xl">Lost Ball & OB – "Desert Rule"</CardTitle>
+                    <CardDescription>1-stroke penalty, drop at point of entry</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Applies to lost balls, OB, or anything that disappears into the desert</li>
+                  <li>• No re-teeing, no snake hunting</li>
+                  <li>• Drop within two club lengths of point of entry</li>
+                  <li>• Keep play moving and stay safe</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🪨</span>
+                  <div>
+                    <CardTitle className="text-xl">Rocks, Roots & Rattlesnakes</CardTitle>
+                    <CardDescription>Free relief from dangerous terrain</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Free drop from unplayable or dangerous terrain</li>
+                  <li>• One club length relief (no closer to the hole)</li>
+                  <li>• Safety first – no heroic shots from bad lies</li>
+                  <li>• Use common sense and keep everyone safe</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">⏱️</span>
+                  <div>
+                    <CardTitle className="text-xl">Max Score = Double Bogey</CardTitle>
+                    <CardDescription>Pick up and move on</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Modified Stableford means double bogey = 0 points</li>
+                  <li>• You can pick up at that point and move on</li>
+                  <li>• Keeps pace of play moving</li>
+                  <li>• No need to grind out that triple bogey</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🧢</span>
+                  <div>
+                    <CardTitle className="text-xl">Gimmies – At Opponent's Discretion</CardTitle>
+                    <CardDescription>Friendly competition</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• No automatic gimmies</li>
+                  <li>• Any one opponent can offer a gimme</li>
+                  <li>• No need for unanimous agreement</li>
+                  <li>• Keep the friendly spirit alive</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-golf-green/5 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">Remember: It's Patrick's Birthday! 🎉</h3>
+            <div className="text-center">
+              <p className="text-muted-foreground mb-4">
+                These rules are designed to keep us playing fast, staying safe, and having maximum fun.
+                When in doubt, choose the option that keeps the group together and the beers cold.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Play Fast</Badge>
+                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Stay Safe</Badge>
+                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Have Fun</Badge>
+                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Celebrate Patrick</Badge>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tournament Structure */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
