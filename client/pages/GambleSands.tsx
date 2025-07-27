@@ -111,21 +111,45 @@ export default function GambleSands() {
             </p>
           </div>
 
+          <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">Award-Winning Course</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
+              <div>
+                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">Golf Digest 2014</h4>
+                <p className="text-sm text-muted-foreground">Best New Course Winner</p>
+              </div>
+              <div>
+                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">#31 Best Public</h4>
+                <p className="text-sm text-muted-foreground">Golf Digest's 100 Greatest</p>
+              </div>
+              <div>
+                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">#4 Most Fun</h4>
+                <p className="text-sm text-muted-foreground">Golf Digest Panelists</p>
+              </div>
+            </div>
+            <p className="text-center text-muted-foreground">
+              Also ranked #18 on GOLF Magazine's "Top 100 Courses You Can Play"
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Waves className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>David McLay Kidd Design</CardTitle>
+                <CardTitle>David McLay Kidd Philosophy</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Designed by renowned Scottish architect David McLay Kidd, the course seamlessly blends with the natural 
-                  sandy terrain. Every hole offers unique strategic options and stunning vistas.
+                  In using "friendly contours" that divert shots away from bunkers and toward targets, designer David Kidd wants everybody to have fun.
+                  He hopes good players will relish opportunities to score low and high handicappers will post their best rounds ever.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Natural links-style conditions</li>
-                  <li>• Strategic bunker placement</li>
-                  <li>• Multiple route options on each hole</li>
+                  <li>• Friendly contours help your shots</li>
+                  <li>• Three reachable par 4s on the course</li>
+                  <li>• Designed for all skill levels to enjoy</li>
                 </ul>
               </CardContent>
             </Card>
@@ -133,17 +157,17 @@ export default function GambleSands() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Trees className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Columbia River Views</CardTitle>
+                <CardTitle>Unique Course Features</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Spectacular views of the Columbia River and surrounding vineyards provide a breathtaking backdrop. 
-                  The course routing maximizes scenic vistas from every angle.
+                  Enormously wide and slick fescue fairways, gigantic greens, no rough and some of the most panoramic vistas in the Northwest.
+                  The layout is oversized in every respect for maximum playability.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Panoramic river valley views</li>
-                  <li>• Wine country landscape</li>
-                  <li>• Desert and mountain vistas</li>
+                  <li>• No rough anywhere on the course</li>
+                  <li>• Gigantic, receptive greens</li>
+                  <li>• Panoramic Northwest vistas</li>
                 </ul>
               </CardContent>
             </Card>
