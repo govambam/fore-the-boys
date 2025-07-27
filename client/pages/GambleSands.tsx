@@ -176,17 +176,20 @@ export default function GambleSands() {
           {/* Signature Holes */}
           <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 11</Badge>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 16</Badge>
                   <CardTitle className="text-lg">Closest to Pin</CardTitle>
-                  <CardDescription>Par 3 • 165 yards</CardDescription>
+                  <CardDescription>Par 3 • 193 yards</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    A beautiful par 3 over a natural ravine with the Columbia River as your backdrop.
-                    Precision is key on this scenic one-shotter.
+                  <p className="text-sm text-muted-foreground mb-3">
+                    The massive green is full of ridges and tiers, and being on the correct shelf is everything. If the pin is back right,
+                    you can use the backstop to feed the ball close. Miss to the right, and the hill can help kick your ball back onto the green.
+                    Miss left, and you'll have an uphill chip to almost any pin—manageable but tricky. Long and above the hole? Good luck—3-putts
+                    (or worse) are very real. It's a visually striking hole that offers options, but the safest play is smart distance control
+                    and knowing where not to miss.
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Closest to Pin</p>
@@ -196,46 +199,18 @@ export default function GambleSands() {
 
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 7</Badge>
-                  <CardTitle className="text-lg">The Gamble - Long Drive</CardTitle>
-                  <CardDescription>Par 5 • 585 yards</CardDescription>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 13</Badge>
+                  <CardTitle className="text-lg">Long Drive Contest</CardTitle>
+                  <CardDescription>Par 5 • 538 yards</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    The signature hole that gives the course its name. A risk-reward par 5 where you can
-                    "gamble" by trying to drive over the sandy waste area. Perfect for our long drive contest!
+                  <p className="text-sm text-muted-foreground mb-3">
+                    A large bunker on the right juts into the center of the fairway but only needs about 230 yards to carry.
+                    Aim just left of it for a safe play with good rollout. Perfect opportunity to let it rip and show off your distance!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Longest Drive</p>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-golf-green/20 bg-white">
-                <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 17</Badge>
-                  <CardTitle className="text-lg">River Bend</CardTitle>
-                  <CardDescription>Par 4 • 445 yards</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    A strategic par 4 that follows the natural curve of the land. The approach shot
-                    plays to a green perched above the Columbia River.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-golf-green/20 bg-white">
-                <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Designer</Badge>
-                  <CardTitle className="text-lg">McLay Kidd Masterpiece</CardTitle>
-                  <CardDescription>World-Class Design</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Every hole on this flagship course showcases David McLay Kidd's genius for creating
-                    memorable golf experiences that blend with the natural landscape.
-                  </p>
                 </CardContent>
               </Card>
             </div>
