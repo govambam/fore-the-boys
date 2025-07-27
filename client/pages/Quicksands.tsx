@@ -166,9 +166,54 @@ export default function Quicksands() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Course Highlights</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              14 unique par 3s offering variety, challenge, and incredible scenery.
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Golf Amusement Park</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Yes, this is golf — but on a smaller scale than Gamble Sands' two 18-hole courses. Instead of a driver,
+              you'll need to lean into your creativity and imagination. Quicksands is a brisk and enjoyable walk with
+              anywhere from a single playing partner to an eightsome, where ever-present music ramps up the vibe.
+            </p>
+          </div>
+
+          <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">What Awaits You</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardContent className="p-6">
+                  <Target className="h-12 w-12 text-golf-green mx-auto mb-3" />
+                  <h4 className="font-semibold text-golf-green-dark mb-2">Creative Shots</h4>
+                  <p className="text-sm text-muted-foreground">Putt from tees, play bank shots, search for that elusive hole-in-one</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardContent className="p-6">
+                  <Zap className="h-12 w-12 text-golf-green mx-auto mb-3" />
+                  <h4 className="font-semibold text-golf-green-dark mb-2">Music & Vibe</h4>
+                  <p className="text-sm text-muted-foreground">Ever-present music ramps up the atmosphere for maximum fun</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardContent className="p-6">
+                  <Users className="h-12 w-12 text-golf-green mx-auto mb-3" />
+                  <h4 className="font-semibold text-golf-green-dark mb-2">Group Fun</h4>
+                  <p className="text-sm text-muted-foreground">Perfect for singles up to an eightsome - everyone's welcome</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-8 text-center">
+              <Badge className="bg-golf-green text-white text-lg px-6 py-2">
+                🎵 Every kind of short-game shot you can imagine awaits in this walking-only amusement park!
+              </Badge>
+            </div>
+          </div>
+
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Fun Hole Names</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Hole names like Plinko, Crater and Donut give you a sense of what you're about to experience —
+              and we'll bet you'll want to head right back to the first tee and try it all over again.
             </p>
           </div>
 
