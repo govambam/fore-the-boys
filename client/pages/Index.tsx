@@ -379,7 +379,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">Gamble Sands #7</p>
+                  <p className="text-xs text-muted-foreground">Gamble Sands #13</p>
                 </CardContent>
               </Card>
 
@@ -390,7 +390,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">Gamble Sands #11</p>
+                  <p className="text-xs text-muted-foreground">Gamble Sands #16</p>
                 </CardContent>
               </Card>
             </div>
