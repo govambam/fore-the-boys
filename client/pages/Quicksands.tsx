@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import { MapPin, Clock, Users, Zap, Target, Flag } from "lucide-react";
@@ -12,15 +18,21 @@ export default function Quicksands() {
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">Round 3 • Sunday 5:00 PM</Badge>
+          <Badge className="mb-4 bg-golf-green text-white">
+            Round 3 • Sunday 5:00 PM
+          </Badge>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
             Quicksands
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Par 3 Course</span>
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+              Par 3 Course
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Grab a handful of wedges, irons and a putter. Bring your friends. Hang on for a wild ride down into the valley
-            of David McLay Kidd's creative mind. QuickSands offers a rollicking golf experience over 14 par-3 holes that range
-            from 60 to 180 yards - the perfect creative finale for our team scramble competition.
+            Grab a handful of wedges, irons and a putter. Bring your friends.
+            Hang on for a wild ride down into the valley of David McLay Kidd's
+            creative mind. QuickSands offers a rollicking golf experience over
+            14 par-3 holes that range from 60 to 180 yards - the perfect
+            creative finale for our team scramble competition.
           </p>
         </div>
       </section>
@@ -35,7 +47,10 @@ export default function Quicksands() {
             muted
             playsInline
           >
-            <source src="https://cdn.builder.io/o/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc63bc31a99474d0787a684e1d2336d2a%2Fcompressed?apiKey=8c34f0d0a3de41e1a3ea5bdb8f56cf8c&token=c63bc31a99474d0787a684e1d2336d2a&alt=media&optimized=true" type="video/mp4" />
+            <source
+              src="https://cdn.builder.io/o/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc63bc31a99474d0787a684e1d2336d2a%2Fcompressed?apiKey=8c34f0d0a3de41e1a3ea5bdb8f56cf8c&token=c63bc31a99474d0787a684e1d2336d2a&alt=media&optimized=true"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -61,7 +76,9 @@ export default function Quicksands() {
                 <CardTitle>60-180 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Creative Shot Variety</p>
+                <p className="text-sm text-muted-foreground">
+                  Creative Shot Variety
+                </p>
               </CardContent>
             </Card>
 
@@ -81,7 +98,9 @@ export default function Quicksands() {
                 <CardTitle>Walking Only</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Brisk & Enjoyable</p>
+                <p className="text-sm text-muted-foreground">
+                  Brisk & Enjoyable
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -92,9 +111,12 @@ export default function Quicksands() {
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Team Scramble Format</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+              Team Scramble Format
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our tournament finale features a 2-man scramble with team scores counting toward individual Stableford totals.
+              Our tournament finale features a 2-man scramble with team scores
+              counting toward individual Stableford totals.
             </p>
           </div>
 
@@ -102,7 +124,9 @@ export default function Quicksands() {
             <Card className="border-golf-green/20 bg-golf-green/5">
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle className="text-golf-green-dark">Team 1: Ivan & Jack</CardTitle>
+                <CardTitle className="text-golf-green-dark">
+                  Team 1: Ivan & Jack
+                </CardTitle>
                 <CardDescription>Dynamic Duo</CardDescription>
               </CardHeader>
               <CardContent>
@@ -119,7 +143,9 @@ export default function Quicksands() {
             <Card className="border-golf-green/20 bg-golf-green/5">
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle className="text-golf-green-dark">Team 2: Patrick & TBA</CardTitle>
+                <CardTitle className="text-golf-green-dark">
+                  Team 2: Patrick & TBA
+                </CardTitle>
                 <CardDescription>Birthday Team</CardDescription>
               </CardHeader>
               <CardContent>
@@ -135,11 +161,14 @@ export default function Quicksands() {
           </div>
 
           <div className="bg-golf-green/5 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">Scoring for Tournament</h3>
+            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">
+              Scoring for Tournament
+            </h3>
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
-                Each team's Stableford score will be added to both players' individual tournament totals. 
-                This ensures everyone benefits from good teamwork while maintaining individual competition.
+                Each team's Stableford score will be added to both players'
+                individual tournament totals. This ensures everyone benefits
+                from good teamwork while maintaining individual competition.
               </p>
               <Badge className="bg-golf-green text-white">
                 Team Score = Both Players' Individual Score for This Round
@@ -153,46 +182,61 @@ export default function Quicksands() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Golf Amusement Park</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+              Golf Amusement Park
+            </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Yes, this is golf — but on a smaller scale than Gamble Sands' two 18-hole courses. Instead of a driver,
-              you'll need to lean into your creativity and imagination. Quicksands is a brisk and enjoyable walk with
-              anywhere from a single playing partner to an eightsome, where ever-present music ramps up the vibe.
+              Yes, this is golf — but on a smaller scale than Gamble Sands' two
+              18-hole courses. Instead of a driver, you'll need to lean into
+              your creativity and imagination. Quicksands is a brisk and
+              enjoyable walk with anywhere from a single playing partner to an
+              eightsome, where ever-present music ramps up the vibe.
             </p>
           </div>
 
           <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">What Awaits You</h3>
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
+              What Awaits You
+            </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="border-golf-green/20 bg-white text-center">
                 <CardContent className="p-6">
                   <Target className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">Creative Shots</h4>
-                  <p className="text-sm text-muted-foreground">Putt from tees, play bank shots, search for that elusive hole-in-one</p>
+                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                    Creative Shots
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    Putt from tees, play bank shots, search for that elusive
+                    hole-in-one
+                  </p>
                 </CardContent>
               </Card>
 
               <Card className="border-golf-green/20 bg-white text-center">
                 <CardContent className="p-6">
                   <Zap className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">Music & Vibe</h4>
-                  <p className="text-sm text-muted-foreground">Ever-present music ramps up the atmosphere for maximum fun</p>
+                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                    Music & Vibe
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    Ever-present music ramps up the atmosphere for maximum fun
+                  </p>
                 </CardContent>
               </Card>
 
               <Card className="border-golf-green/20 bg-white text-center">
                 <CardContent className="p-6">
                   <Users className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">Group Fun</h4>
-                  <p className="text-sm text-muted-foreground">Perfect for singles up to an eightsome - everyone's welcome</p>
+                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                    Group Fun
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    Perfect for singles up to an eightsome - everyone's welcome
+                  </p>
                 </CardContent>
               </Card>
             </div>
-
-
           </div>
-
-
         </div>
       </section>
 
@@ -207,11 +251,15 @@ export default function Quicksands() {
             <CardContent className="text-center">
               <div className="space-y-4">
                 <div>
-                  <p className="text-3xl font-bold text-golf-green-dark">Sunday, September 8th</p>
+                  <p className="text-3xl font-bold text-golf-green-dark">
+                    Sunday, September 8th
+                  </p>
                   <p className="text-xl text-golf-green">5:00 PM Tee Time</p>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                  <h4 className="font-semibold text-golf-green-dark mb-2">Perfect Finale Timing</h4>
+                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                    Perfect Finale Timing
+                  </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Golden hour lighting for spectacular photos</li>
                     <li>• Cooler evening temperatures</li>
@@ -221,9 +269,11 @@ export default function Quicksands() {
                   </ul>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Tournament Finale</h4>
+                  <h4 className="font-semibold text-blue-800 mb-2">
+                    Tournament Finale
+                  </h4>
                   <p className="text-sm text-blue-700">
-                    Scramble scores count toward individual Stableford totals. 
+                    Scramble scores count toward individual Stableford totals.
                     The perfect way to finish Patrick's birthday celebration!
                   </p>
                 </div>

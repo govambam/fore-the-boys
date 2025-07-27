@@ -1,7 +1,21 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import { MapPin, Clock, Target, Waves, Trees, Flag, Trophy } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  Target,
+  Waves,
+  Trees,
+  Flag,
+  Trophy,
+} from "lucide-react";
 
 export default function GambleSands() {
   return (
@@ -12,15 +26,22 @@ export default function GambleSands() {
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">Round 2 • Sunday 10:20 AM</Badge>
+          <Badge className="mb-4 bg-golf-green text-white">
+            Round 2 • Sunday 10:20 AM
+          </Badge>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
             Gamble Sands
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Signature Course</span>
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+              Signature Course
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Winner of Golf Digest's Best New Course of 2014 award, Gamble Sands sits atop a sprawling, treeless plateau
-            of sandy desert overlooking Washington's Columbia River Valley. The extremely playable layout is oversized in every respect,
-            with enormously wide and slick fescue fairways, gigantic greens, no rough and some of the most panoramic vistas in the Northwest.
+            Winner of Golf Digest's Best New Course of 2014 award, Gamble Sands
+            sits atop a sprawling, treeless plateau of sandy desert overlooking
+            Washington's Columbia River Valley. The extremely playable layout is
+            oversized in every respect, with enormously wide and slick fescue
+            fairways, gigantic greens, no rough and some of the most panoramic
+            vistas in the Northwest.
           </p>
         </div>
       </section>
@@ -35,7 +56,10 @@ export default function GambleSands() {
             muted
             playsInline
           >
-            <source src="https://cdn.builder.io/o/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fa26d7c6a6de4459886a173f7076934d3%2Fcompressed?apiKey=8c34f0d0a3de41e1a3ea5bdb8f56cf8c&token=a26d7c6a6de4459886a173f7076934d3&alt=media&optimized=true" type="video/mp4" />
+            <source
+              src="https://cdn.builder.io/o/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fa26d7c6a6de4459886a173f7076934d3%2Fcompressed?apiKey=8c34f0d0a3de41e1a3ea5bdb8f56cf8c&token=a26d7c6a6de4459886a173f7076934d3&alt=media&optimized=true"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -51,7 +75,9 @@ export default function GambleSands() {
                 <CardTitle>Par 72</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Signature Championship</p>
+                <p className="text-sm text-muted-foreground">
+                  Signature Championship
+                </p>
               </CardContent>
             </Card>
 
@@ -71,7 +97,9 @@ export default function GambleSands() {
                 <CardTitle>Links Design</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">David McLay Kidd</p>
+                <p className="text-sm text-muted-foreground">
+                  David McLay Kidd
+                </p>
               </CardContent>
             </Card>
 
@@ -81,7 +109,9 @@ export default function GambleSands() {
                 <CardTitle>Natural Terrain</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Sandy Conditions</p>
+                <p className="text-sm text-muted-foreground">
+                  Sandy Conditions
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -92,29 +122,46 @@ export default function GambleSands() {
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Course Features</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+              Course Features
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Gamble Sands showcases the natural beauty of the Columbia River Valley with world-class golf design.
+              Gamble Sands showcases the natural beauty of the Columbia River
+              Valley with world-class golf design.
             </p>
           </div>
 
           <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">Award-Winning Course</h3>
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">
+              Award-Winning Course
+            </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               <div>
                 <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">Golf Digest 2014</h4>
-                <p className="text-sm text-muted-foreground">Best New Course Winner</p>
+                <h4 className="font-semibold text-golf-green-dark">
+                  Golf Digest 2014
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Best New Course Winner
+                </p>
               </div>
               <div>
                 <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">#31 Best Public</h4>
-                <p className="text-sm text-muted-foreground">Golf Digest's 100 Greatest</p>
+                <h4 className="font-semibold text-golf-green-dark">
+                  #31 Best Public
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Golf Digest's 100 Greatest
+                </p>
               </div>
               <div>
                 <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">#4 Most Fun</h4>
-                <p className="text-sm text-muted-foreground">Golf Digest Panelists</p>
+                <h4 className="font-semibold text-golf-green-dark">
+                  #4 Most Fun
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Golf Digest Panelists
+                </p>
               </div>
             </div>
             <p className="text-center text-muted-foreground">
@@ -130,8 +177,11 @@ export default function GambleSands() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  In using "friendly contours" that divert shots away from bunkers and toward targets, designer David Kidd wants everybody to have fun.
-                  He hopes good players will relish opportunities to score low and high handicappers will post their best rounds ever.
+                  In using "friendly contours" that divert shots away from
+                  bunkers and toward targets, designer David Kidd wants
+                  everybody to have fun. He hopes good players will relish
+                  opportunities to score low and high handicappers will post
+                  their best rounds ever.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Friendly contours help your shots</li>
@@ -148,8 +198,10 @@ export default function GambleSands() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Enormously wide and slick fescue fairways, gigantic greens, no rough and some of the most panoramic vistas in the Northwest.
-                  The layout is oversized in every respect for maximum playability.
+                  Enormously wide and slick fescue fairways, gigantic greens, no
+                  rough and some of the most panoramic vistas in the Northwest.
+                  The layout is oversized in every respect for maximum
+                  playability.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• No rough anywhere on the course</li>
@@ -162,41 +214,57 @@ export default function GambleSands() {
 
           {/* Signature Holes */}
           <div className="bg-golf-green/5 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes</h3>
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
+              Signature Holes
+            </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 16</Badge>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">
+                    Hole 16
+                  </Badge>
                   <CardTitle className="text-lg">Closest to Pin</CardTitle>
                   <CardDescription>Par 3 • 193 yards</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    The massive green is full of ridges and tiers, and being on the correct shelf is everything. If the pin is back right,
-                    you can use the backstop to feed the ball close. Miss to the right, and the hill can help kick your ball back onto the green.
-                    Miss left, and you'll have an uphill chip to almost any pin—manageable but tricky. Long and above the hole? Good luck—3-putts
-                    (or worse) are very real. It's a visually striking hole that offers options, but the safest play is smart distance control
-                    and knowing where not to miss.
+                    The massive green is full of ridges and tiers, and being on
+                    the correct shelf is everything. If the pin is back right,
+                    you can use the backstop to feed the ball close. Miss to the
+                    right, and the hill can help kick your ball back onto the
+                    green. Miss left, and you'll have an uphill chip to almost
+                    any pin—manageable but tricky. Long and above the hole? Good
+                    luck—3-putts (or worse) are very real. It's a visually
+                    striking hole that offers options, but the safest play is
+                    smart distance control and knowing where not to miss.
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
-                    <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Closest to Pin</p>
+                    <p className="text-sm font-semibold text-yellow-800">
+                      💰 $25 Prize for Closest to Pin
+                    </p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 13</Badge>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">
+                    Hole 13
+                  </Badge>
                   <CardTitle className="text-lg">Long Drive Contest</CardTitle>
                   <CardDescription>Par 5 • 538 yards</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    A large bunker on the right juts into the center of the fairway but only needs about 230 yards to carry.
-                    Aim just left of it for a safe play with good rollout. Perfect opportunity to let it rip and show off your distance!
+                    A large bunker on the right juts into the center of the
+                    fairway but only needs about 230 yards to carry. Aim just
+                    left of it for a safe play with good rollout. Perfect
+                    opportunity to let it rip and show off your distance!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
-                    <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Longest Drive</p>
+                    <p className="text-sm font-semibold text-yellow-800">
+                      💰 $25 Prize for Longest Drive
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -216,10 +284,22 @@ export default function GambleSands() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li>• <strong>Fairways:</strong> Natural sandy soil provides firm, fast conditions</li>
-                  <li>• <strong>Greens:</strong> Bentgrass putting surfaces in excellent condition</li>
-                  <li>• <strong>Rough:</strong> Native grasses that reward accuracy</li>
-                  <li>• <strong>Wind:</strong> Afternoon breezes add strategic challenge</li>
+                  <li>
+                    • <strong>Fairways:</strong> Natural sandy soil provides
+                    firm, fast conditions
+                  </li>
+                  <li>
+                    • <strong>Greens:</strong> Bentgrass putting surfaces in
+                    excellent condition
+                  </li>
+                  <li>
+                    • <strong>Rough:</strong> Native grasses that reward
+                    accuracy
+                  </li>
+                  <li>
+                    • <strong>Wind:</strong> Afternoon breezes add strategic
+                    challenge
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -231,10 +311,21 @@ export default function GambleSands() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li>• <strong>Club Selection:</strong> Firm conditions play longer than expected</li>
-                  <li>• <strong>Wind Play:</strong> Morning round may have calmer conditions</li>
-                  <li>• <strong>Course Management:</strong> Multiple routes on most holes</li>
-                  <li>• <strong>Putting:</strong> Greens are true but can be quick</li>
+                  <li>
+                    • <strong>Club Selection:</strong> Firm conditions play
+                    longer than expected
+                  </li>
+                  <li>
+                    • <strong>Wind Play:</strong> Morning round may have calmer
+                    conditions
+                  </li>
+                  <li>
+                    • <strong>Course Management:</strong> Multiple routes on
+                    most holes
+                  </li>
+                  <li>
+                    • <strong>Putting:</strong> Greens are true but can be quick
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -253,11 +344,15 @@ export default function GambleSands() {
             <CardContent className="text-center">
               <div className="space-y-4">
                 <div>
-                  <p className="text-3xl font-bold text-golf-green-dark">Sunday, September 8th</p>
+                  <p className="text-3xl font-bold text-golf-green-dark">
+                    Sunday, September 8th
+                  </p>
                   <p className="text-xl text-golf-green">10:20 AM Tee Time</p>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                  <h4 className="font-semibold text-golf-green-dark mb-2">Morning Round Benefits</h4>
+                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                    Morning Round Benefits
+                  </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Cooler temperatures and calmer conditions</li>
                     <li>• Beautiful morning light on the Columbia River</li>
@@ -266,12 +361,16 @@ export default function GambleSands() {
                   </ul>
                 </div>
                 <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Contest Holes</h4>
+                  <h4 className="font-semibold text-yellow-800 mb-2">
+                    Contest Holes
+                  </h4>
                   <ul className="text-sm text-yellow-700 space-y-1">
                     <li>• Hole 13: Long Drive - $25 prize</li>
                     <li>• Hole 16: Closest to Pin - $25 prize</li>
                   </ul>
-                  <p className="text-xs text-yellow-600 mt-2">Strategic holes that test distance and precision!</p>
+                  <p className="text-xs text-yellow-600 mt-2">
+                    Strategic holes that test distance and precision!
+                  </p>
                 </div>
               </div>
             </CardContent>

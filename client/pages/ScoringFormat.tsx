@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import { Trophy, Users, Calculator, Target } from "lucide-react";
@@ -12,14 +18,19 @@ export default function ScoringFormat() {
       {/* Header */}
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">Tournament Format</Badge>
+          <Badge className="mb-4 bg-golf-green text-white">
+            Tournament Format
+          </Badge>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
             Modified Stableford
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Scoring System</span>
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+              Scoring System
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Our tournament uses a Modified Stableford scoring system that rewards aggressive play and birdies. 
-            The higher your score, the better you're doing!
+            Our tournament uses a Modified Stableford scoring system that
+            rewards aggressive play and birdies. The higher your score, the
+            better you're doing!
           </p>
         </div>
       </section>
@@ -28,9 +39,12 @@ export default function ScoringFormat() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Point Values</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+              Point Values
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Each hole is worth points based on your score relative to par. Collect as many points as possible!
+              Each hole is worth points based on your score relative to par.
+              Collect as many points as possible!
             </p>
           </div>
 
@@ -44,7 +58,10 @@ export default function ScoringFormat() {
                 <CardDescription>2 under par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Exceptional performance! Maximum points for being 2 strokes under par.</p>
+                <p className="text-sm text-muted-foreground">
+                  Exceptional performance! Maximum points for being 2 strokes
+                  under par.
+                </p>
               </CardContent>
             </Card>
 
@@ -57,7 +74,9 @@ export default function ScoringFormat() {
                 <CardDescription>1 under par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Great shot! Double points for being 1 stroke under par.</p>
+                <p className="text-sm text-muted-foreground">
+                  Great shot! Double points for being 1 stroke under par.
+                </p>
               </CardContent>
             </Card>
 
@@ -70,7 +89,9 @@ export default function ScoringFormat() {
                 <CardDescription>Even with par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Solid golf! Standard points for meeting par.</p>
+                <p className="text-sm text-muted-foreground">
+                  Solid golf! Standard points for meeting par.
+                </p>
               </CardContent>
             </Card>
 
@@ -83,7 +104,9 @@ export default function ScoringFormat() {
                 <CardDescription>1 over par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Still in the game! One point for being 1 stroke over par.</p>
+                <p className="text-sm text-muted-foreground">
+                  Still in the game! One point for being 1 stroke over par.
+                </p>
               </CardContent>
             </Card>
 
@@ -96,29 +119,48 @@ export default function ScoringFormat() {
                 <CardDescription>2+ over par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">No points awarded for scores of double bogey or worse.</p>
+                <p className="text-sm text-muted-foreground">
+                  No points awarded for scores of double bogey or worse.
+                </p>
               </CardContent>
             </Card>
           </div>
 
           {/* Strategy Tips */}
           <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Strategy Tips</h3>
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
+              Strategy Tips
+            </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <Target className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">Go for Birdies</h4>
-                <p className="text-sm text-muted-foreground">The 4-point birdie bonus makes aggressive play worthwhile. Take calculated risks!</p>
+                <h4 className="font-semibold text-golf-green-dark mb-2">
+                  Go for Birdies
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  The 4-point birdie bonus makes aggressive play worthwhile.
+                  Take calculated risks!
+                </p>
               </div>
               <div className="text-center">
                 <Calculator className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">Avoid Big Numbers</h4>
-                <p className="text-sm text-muted-foreground">Double bogey or worse gives you 0 points. Play smart to avoid blow-up holes.</p>
+                <h4 className="font-semibold text-golf-green-dark mb-2">
+                  Avoid Big Numbers
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Double bogey or worse gives you 0 points. Play smart to avoid
+                  blow-up holes.
+                </p>
               </div>
               <div className="text-center">
                 <Trophy className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">Consistency Wins</h4>
-                <p className="text-sm text-muted-foreground">Par is worth 2 points. Steady play with occasional birdies is a winning formula.</p>
+                <h4 className="font-semibold text-golf-green-dark mb-2">
+                  Consistency Wins
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Par is worth 2 points. Steady play with occasional birdies is
+                  a winning formula.
+                </p>
               </div>
             </div>
           </div>
@@ -129,9 +171,12 @@ export default function ScoringFormat() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Tournament Rules</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+              Tournament Rules
+            </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We're here for birdies, beers, and good times. These casual rules will help us play fast, stay safe, and enjoy every round.
+              We're here for birdies, beers, and good times. These casual rules
+              will help us play fast, stay safe, and enjoy every round.
             </p>
           </div>
 
@@ -141,14 +186,21 @@ export default function ScoringFormat() {
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">���</span>
                   <div>
-                    <CardTitle className="text-xl">Lost Ball & OB – "Desert Rule"</CardTitle>
-                    <CardDescription>1-stroke penalty, drop at point of entry</CardDescription>
+                    <CardTitle className="text-xl">
+                      Lost Ball & OB – "Desert Rule"
+                    </CardTitle>
+                    <CardDescription>
+                      1-stroke penalty, drop at point of entry
+                    </CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Applies to lost balls, OB, or anything that disappears into the desert</li>
+                  <li>
+                    • Applies to lost balls, OB, or anything that disappears
+                    into the desert
+                  </li>
                   <li>• No re-teeing, no snake hunting</li>
                   <li>• Drop within two club lengths of point of entry</li>
                   <li>• Keep play moving and stay safe</li>
@@ -161,8 +213,12 @@ export default function ScoringFormat() {
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🪨</span>
                   <div>
-                    <CardTitle className="text-xl">Rattlesnakes & Rangefinders</CardTitle>
-                    <CardDescription>Free relief from dangerous terrain</CardDescription>
+                    <CardTitle className="text-xl">
+                      Rattlesnakes & Rangefinders
+                    </CardTitle>
+                    <CardDescription>
+                      Free relief from dangerous terrain
+                    </CardDescription>
                   </div>
                 </div>
               </CardHeader>
@@ -181,7 +237,9 @@ export default function ScoringFormat() {
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">⏱️</span>
                   <div>
-                    <CardTitle className="text-xl">Max Score = Double Bogey</CardTitle>
+                    <CardTitle className="text-xl">
+                      Max Score = Double Bogey
+                    </CardTitle>
                     <CardDescription>Pick up and move on</CardDescription>
                   </div>
                 </div>
@@ -201,8 +259,12 @@ export default function ScoringFormat() {
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🧢</span>
                   <div>
-                    <CardTitle className="text-xl">Gimmies – At Opponent's Discretion</CardTitle>
-                    <CardDescription>The Fellowship of the Swing</CardDescription>
+                    <CardTitle className="text-xl">
+                      Gimmies – At Opponent's Discretion
+                    </CardTitle>
+                    <CardDescription>
+                      The Fellowship of the Swing
+                    </CardDescription>
                   </div>
                 </div>
               </CardHeader>
@@ -211,7 +273,9 @@ export default function ScoringFormat() {
                   <li>• No automatic gimmies</li>
                   <li>• Any one opponent can offer a gimme</li>
                   <li>• No need for unanimous agreement</li>
-                  <li>• Longer gimmes will be considered for the birthday legend</li>
+                  <li>
+                    • Longer gimmes will be considered for the birthday legend
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -220,14 +284,35 @@ export default function ScoringFormat() {
           <div className="bg-golf-green/5 rounded-lg p-6">
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
-                These rules are designed to keep us playing fast, staying safe, and having maximum fun.
-                When in doubt, choose the option that keeps the group together and the beers cold.
+                These rules are designed to keep us playing fast, staying safe,
+                and having maximum fun. When in doubt, choose the option that
+                keeps the group together and the beers cold.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Play Fast</Badge>
-                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Stay Safe</Badge>
-                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Have Fun</Badge>
-                <Badge variant="secondary" className="bg-golf-green/10 text-golf-green-dark">Celebrate Patrick</Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-golf-green/10 text-golf-green-dark"
+                >
+                  Play Fast
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-golf-green/10 text-golf-green-dark"
+                >
+                  Stay Safe
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-golf-green/10 text-golf-green-dark"
+                >
+                  Have Fun
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-golf-green/10 text-golf-green-dark"
+                >
+                  Celebrate Patrick
+                </Badge>
               </div>
             </div>
           </div>
@@ -238,7 +323,9 @@ export default function ScoringFormat() {
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Tournament Structure</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+              Tournament Structure
+            </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -246,12 +333,16 @@ export default function ScoringFormat() {
               <CardHeader>
                 <Calculator className="h-8 w-8 text-golf-green mb-2" />
                 <CardTitle>Individual Competition</CardTitle>
-                <CardDescription>Rounds 1 & 2: Scarecrow and Gamble Sands</CardDescription>
+                <CardDescription>
+                  Rounds 1 & 2: Scarecrow and Gamble Sands
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Each player tracks their own Stableford points</li>
-                  <li>• Points from both rounds are combined for total score</li>
+                  <li>
+                    • Points from both rounds are combined for total score
+                  </li>
                   <li>• Highest point total wins the individual competition</li>
                   <li>• Play your own ball throughout both rounds</li>
                 </ul>
@@ -262,20 +353,22 @@ export default function ScoringFormat() {
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
                 <CardTitle>Team Scramble</CardTitle>
-                <CardDescription>Round 3: Quicksands Par 3 Course</CardDescription>
+                <CardDescription>
+                  Round 3: Quicksands Par 3 Course
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Teams: Ivan & Jack vs Patrick & TBA</li>
                   <li>• Both players tee off, play from best shot</li>
-                  <li>• Team's Stableford score counts toward individual totals</li>
+                  <li>
+                    • Team's Stableford score counts toward individual totals
+                  </li>
                   <li>• 14-hole par 3 course provides exciting finale</li>
                 </ul>
               </CardContent>
             </Card>
           </div>
-
-
         </div>
       </section>
     </div>

@@ -16,8 +16,8 @@ export default function Navigation() {
     };
 
     if (coursesDropdownOpen) {
-      document.addEventListener('click', handleClickOutside);
-      return () => document.removeEventListener('click', handleClickOutside);
+      document.addEventListener("click", handleClickOutside);
+      return () => document.removeEventListener("click", handleClickOutside);
     }
   }, [coursesDropdownOpen]);
 
@@ -36,13 +36,15 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-foreground hover:text-golf-green transition-colors">Home</Link>
+            <Link
+              to="/"
+              className="text-foreground hover:text-golf-green transition-colors"
+            >
+              Home
+            </Link>
 
             {/* Courses Dropdown */}
-            <div
-              className="relative"
-              data-dropdown="courses"
-            >
+            <div className="relative" data-dropdown="courses">
               <button
                 className="flex items-center space-x-1 text-foreground hover:text-golf-green transition-colors"
                 onClick={(e) => {
@@ -52,7 +54,9 @@ export default function Navigation() {
                 type="button"
               >
                 <span>Courses</span>
-                <ChevronDown className={`h-4 w-4 transition-transform ${coursesDropdownOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${coursesDropdownOpen ? "rotate-180" : ""}`}
+                />
               </button>
 
               {coursesDropdownOpen && (
@@ -66,7 +70,9 @@ export default function Navigation() {
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
                     <span>Scarecrow</span>
-                    <span className="text-xs text-muted-foreground">Round 1</span>
+                    <span className="text-xs text-muted-foreground">
+                      Round 1
+                    </span>
                   </Link>
                   <Link
                     to="/gamble-sands"
@@ -74,7 +80,9 @@ export default function Navigation() {
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
                     <span>Gamble Sands</span>
-                    <span className="text-xs text-muted-foreground">Round 2</span>
+                    <span className="text-xs text-muted-foreground">
+                      Round 2
+                    </span>
                   </Link>
                   <Link
                     to="/quicksands"
@@ -82,7 +90,9 @@ export default function Navigation() {
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
                     <span>Quicksands</span>
-                    <span className="text-xs text-muted-foreground">Round 3</span>
+                    <span className="text-xs text-muted-foreground">
+                      Round 3
+                    </span>
                   </Link>
                   <hr className="my-2 border-golf-green/10" />
                   <Link
@@ -91,28 +101,46 @@ export default function Navigation() {
                     onClick={() => {
                       setCoursesDropdownOpen(false);
                       setTimeout(() => {
-                        document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
+                        document
+                          .getElementById("courses")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }, 100);
                     }}
                   >
                     <span>View All Courses</span>
-                    <span className="text-xs text-muted-foreground">Overview</span>
+                    <span className="text-xs text-muted-foreground">
+                      Overview
+                    </span>
                   </Link>
                 </div>
               )}
             </div>
 
-            <Link to="/scoring" className="text-foreground hover:text-golf-green transition-colors">Scoring & Rules</Link>
-            <Link to="/inn" className="text-foreground hover:text-golf-green transition-colors">Inn</Link>
+            <Link
+              to="/scoring"
+              className="text-foreground hover:text-golf-green transition-colors"
+            >
+              Scoring & Rules
+            </Link>
+            <Link
+              to="/inn"
+              className="text-foreground hover:text-golf-green transition-colors"
+            >
+              Inn
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden p-2 text-golf-green-dark"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
 
@@ -128,7 +156,9 @@ export default function Navigation() {
                 Home
               </Link>
               <div className="space-y-2">
-                <div className="text-golf-green-dark font-semibold py-2">Courses</div>
+                <div className="text-golf-green-dark font-semibold py-2">
+                  Courses
+                </div>
                 <Link
                   to="/scarecrow"
                   className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
@@ -159,12 +189,16 @@ export default function Navigation() {
                   onClick={() => {
                     setMobileMenuOpen(false);
                     setTimeout(() => {
-                      document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
+                      document
+                        .getElementById("courses")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }, 100);
                   }}
                 >
                   <span>View All Courses</span>
-                  <span className="text-xs text-muted-foreground">Overview</span>
+                  <span className="text-xs text-muted-foreground">
+                    Overview
+                  </span>
                 </Link>
               </div>
               <Link
