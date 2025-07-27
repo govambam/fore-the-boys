@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import { MapPin, Clock, Target, Waves, Trees, Flag } from "lucide-react";
+import { MapPin, Clock, Target, Waves, Trees, Flag, Trophy } from "lucide-react";
 
 export default function GambleSands() {
   return (
