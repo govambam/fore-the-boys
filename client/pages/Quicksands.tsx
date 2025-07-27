@@ -220,28 +220,42 @@ export default function Quicksands() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="border-golf-green/20">
               <CardHeader>
-                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 3</Badge>
-                <CardTitle className="text-lg">Desert Mirage</CardTitle>
-                <CardDescription>125 yards • Elevated Tee</CardDescription>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 5</Badge>
+                <CardTitle className="text-lg">"Plinko"</CardTitle>
+                <CardDescription>95 yards • Bank Shots Galore</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Play from an elevated tee to a green surrounded by natural desert landscape. 
-                  The view is spectacular, but club selection is crucial.
+                  Just like the game show! Use the slopes and contours to bounce your ball
+                  toward the pin. Creativity and imagination are your best clubs here.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-golf-green/20">
               <CardHeader>
-                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 7</Badge>
-                <CardTitle className="text-lg">River Overlook</CardTitle>
-                <CardDescription>165 yards • Water Carry</CardDescription>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 8</Badge>
+                <CardTitle className="text-lg">"Crater"</CardTitle>
+                <CardDescription>130 yards • Bowl Green</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  The longest hole on the course requires a carry over a natural ravine 
-                  with the Columbia River providing a stunning backdrop.
+                  Aim for the crater-like depression that surrounds this green.
+                  Miss the target and watch your ball roll back for another try!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 11</Badge>
+                <CardTitle className="text-lg">"Donut"</CardTitle>
+                <CardDescription>75 yards • Ring of Fun</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  The green is shaped like a donut with challenges all around the hole.
+                  Short, sweet, and guaranteed to bring out your creative side.
                 </p>
               </CardContent>
             </Card>
@@ -250,54 +264,40 @@ export default function Quicksands() {
               <CardHeader>
                 <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 14</Badge>
                 <CardTitle className="text-lg">Grand Finale</CardTitle>
-                <CardDescription>140 yards • Island Green</CardDescription>
+                <CardDescription>140 yards • Tournament Ender</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  The perfect finishing hole featuring a green surrounded by sand and native grasses. 
-                  A dramatic end to our tournament!
+                  The perfect finishing hole for our team scramble competition.
+                  End on a high note with this fun and memorable shot!
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-golf-green/20">
               <CardHeader>
-                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 9</Badge>
-                <CardTitle className="text-lg">Sunset View</CardTitle>
-                <CardDescription>110 yards • Short & Sweet</CardDescription>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">60-180 Yards</Badge>
+                <CardTitle className="text-lg">Every Shot Different</CardTitle>
+                <CardDescription>Wedges to Mid-Irons</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  A shorter hole that plays toward the setting sun. Perfect timing for 
-                  our evening round with golden hour lighting.
+                  Grab a handful of wedges, irons and a putter. From short pitches
+                  to longer approach shots, every hole demands a different strategy.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-golf-green/20">
               <CardHeader>
-                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 12</Badge>
-                <CardTitle className="text-lg">Canyon Shot</CardTitle>
-                <CardDescription>155 yards • Downhill</CardDescription>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Creativity</Badge>
+                <CardTitle className="text-lg">McLay Kidd's Mind</CardTitle>
+                <CardDescription>Imaginative Design</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  A dramatic downhill shot into a natural canyon setting. 
-                  The elevation change makes club selection tricky.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-golf-green/20">
-              <CardHeader>
-                <Badge className="mb-2 bg-golf-green text-white w-fit">Variety</Badge>
-                <CardTitle className="text-lg">Every Hole Unique</CardTitle>
-                <CardDescription>14 Different Challenges</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  No two holes are alike. From short wedge shots to longer irons, 
-                  every club in your bag will get used.
+                  A wild ride down into the valley of David McLay Kidd's creative mind.
+                  Expect the unexpected on every shot!
                 </p>
               </CardContent>
             </Card>
