@@ -58,10 +58,10 @@ export default function Scarecrow() {
             <Card className="text-center border-golf-green/20">
               <CardHeader>
                 <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>6,927 Yards</CardTitle>
+                <CardTitle>6,261 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">From Championship Tees</p>
+                <p className="text-sm text-muted-foreground">Sands Tees</p>
               </CardContent>
             </Card>
 
