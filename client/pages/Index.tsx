@@ -42,7 +42,7 @@ export default function Index() {
               {/* Courses Dropdown */}
               <div
                 className="relative"
-                onMouseLeave={() => setCoursesDropdownOpen(false)}
+                data-dropdown="courses"
               >
                 <button
                   className="flex items-center space-x-1 text-foreground hover:text-golf-green transition-colors"
