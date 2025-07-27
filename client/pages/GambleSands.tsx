@@ -281,10 +281,10 @@ export default function GambleSands() {
                 <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
                   <h4 className="font-semibold text-yellow-800 mb-2">Contest Holes</h4>
                   <ul className="text-sm text-yellow-700 space-y-1">
-                    <li>• Hole 7: Long Drive - $25 prize</li>
-                    <li>• Hole 11: Closest to Pin - $25 prize</li>
+                    <li>• Hole 13: Long Drive - $25 prize</li>
+                    <li>• Hole 16: Closest to Pin - $25 prize</li>
                   </ul>
-                  <p className="text-xs text-yellow-600 mt-2">Signature holes with river views!</p>
+                  <p className="text-xs text-yellow-600 mt-2">Strategic holes that test distance and precision!</p>
                 </div>
               </div>
             </CardContent>
