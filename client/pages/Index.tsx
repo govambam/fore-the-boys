@@ -75,22 +75,30 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">March 15-18, 2024</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold text-golf-green-dark mb-6">
+          <Badge className="mb-4 bg-golf-green text-white text-sm md:text-base">March 15-18, 2024</Badge>
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-golf-green-dark mb-6 leading-tight">
             Pine Valley Golf
             <span className="block text-golf-green">Adventure</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join us for an unforgettable weekend of championship golf, friendly competition, 
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
+            Join us for an unforgettable weekend of championship golf, friendly competition,
             and lasting memories at some of the finest courses in the region.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-golf-green hover:bg-golf-green-dark">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+            <Button
+              size="lg"
+              className="bg-golf-green hover:bg-golf-green-dark w-full sm:w-auto"
+              onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View Course Details
             </Button>
-            <Button size="lg" variant="outline" className="border-golf-green text-golf-green hover:bg-golf-green/5">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-golf-green text-golf-green hover:bg-golf-green/5 w-full sm:w-auto"
+            >
               Download Itinerary
             </Button>
           </div>
