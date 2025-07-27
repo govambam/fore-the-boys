@@ -34,8 +34,9 @@ export default function Scarecrow() {
             <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Golf Course</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            A stunning links-style course featuring dramatic elevation changes, panoramic views of the Columbia River, 
-            and wide fairways that reward strategic thinking and bold shot-making.
+            Scarecrow will be many things to many golfers, but there's no denying it is one of the most visually compelling courses
+            anywhere in North America with sweeping views of the Columbia River. Opening in August this year, we'll be some of
+            the first golfers to experience this masterpiece.
           </p>
         </div>
       </section>
