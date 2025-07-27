@@ -7,6 +7,7 @@ import { CalendarDays, MapPin, Users, Trophy, Plane, Hotel, Calendar, Clock, Men
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [coursesDropdownOpen, setCoursesDropdownOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
