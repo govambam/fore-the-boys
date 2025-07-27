@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, MapPin, Clock, Users, ArrowLeft, Zap, Target, Flag } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import { MapPin, Clock, Users, Zap, Target, Flag } from "lucide-react";
 
 export default function Quicksands() {
   return (
