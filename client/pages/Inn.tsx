@@ -126,7 +126,7 @@ export default function Inn() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Dining Options</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Bunkers and Brews</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               After a full day on the course, there's no question you'll want a delicious meal and refreshing drinks. 
               Gamble Sands offers two distinct approaches to dining, from a traditional seated option in the unique setting 
@@ -200,7 +200,7 @@ export default function Inn() {
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Variety of pizzas</li>
                       <li>• Hearty sandwiches</li>
-                      <li>• Daily special entr��es</li>
+                      <li>• Daily special entrees</li>
                       <li>• Quick-serve and sit-down options</li>
                     </ul>
                   </div>
