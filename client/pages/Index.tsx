@@ -25,23 +25,27 @@ export default function Index() {
               <Link to="/scoring" className="text-foreground hover:text-golf-green transition-colors">Scoring</Link>
 
               {/* Courses Dropdown */}
-              <div className="relative">
+              <div
+                className="relative"
+                onMouseLeave={() => setCoursesDropdownOpen(false)}
+              >
                 <button
                   className="flex items-center space-x-1 text-foreground hover:text-golf-green transition-colors"
-                  onClick={() => setCoursesDropdownOpen(!coursesDropdownOpen)}
-                  onBlur={(e) => {
-                    // Close dropdown when clicking outside
-                    if (!e.currentTarget.contains(e.relatedTarget)) {
-                      setCoursesDropdownOpen(false);
-                    }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setCoursesDropdownOpen(!coursesDropdownOpen);
                   }}
+                  type="button"
                 >
                   <span>Courses</span>
                   <ChevronDown className={`h-4 w-4 transition-transform ${coursesDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
 
                 {coursesDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-golf-green/10 py-2 z-50">
+                  <div
+                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-golf-green/10 py-2 z-50"
+                    onMouseDown={(e) => e.preventDefault()}
+                  >
                     <Link
                       to="/scarecrow"
                       className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
