@@ -37,7 +37,8 @@ export default function Index() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <Link to="/scoring" className="text-foreground hover:text-golf-green transition-colors">Scoring</Link>
+              <Link to="/" className="text-foreground hover:text-golf-green transition-colors">Home</Link>
+              <Link to="/scoring" className="text-foreground hover:text-golf-green transition-colors">Scoring & Rules</Link>
 
               {/* Courses Dropdown */}
               <div
@@ -99,7 +100,6 @@ export default function Index() {
               </div>
 
               <Link to="/inn" className="text-foreground hover:text-golf-green transition-colors">Inn</Link>
-              <a href="#travel" className="text-foreground hover:text-golf-green transition-colors">Travel</a>
             </div>
 
             {/* Mobile Menu Button */}
