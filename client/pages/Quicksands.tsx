@@ -25,16 +25,19 @@ export default function Quicksands() {
         </div>
       </section>
 
-      {/* Course Hero Image Placeholder */}
+      {/* Course Hero Video */}
       <section className="py-8 px-4">
         <div className="container mx-auto">
-          <div className="h-64 md:h-96 bg-gradient-to-br from-golf-sand via-golf-green to-golf-earth rounded-lg flex items-center justify-center mb-8">
-            <div className="text-center text-white">
-              <Zap className="h-16 w-16 mx-auto mb-4 opacity-80" />
-              <p className="text-lg font-semibold">Quicksands Course Photo</p>
-              <p className="text-sm opacity-80">14-hole par 3 adventure</p>
-            </div>
-          </div>
+          <video
+            className="w-full h-64 md:h-96 rounded-lg object-cover mb-8"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="https://cdn.builder.io/o/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc63bc31a99474d0787a684e1d2336d2a%2Fcompressed?apiKey=8c34f0d0a3de41e1a3ea5bdb8f56cf8c&token=c63bc31a99474d0787a684e1d2336d2a&alt=media&optimized=true" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
