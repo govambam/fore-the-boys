@@ -23,7 +23,62 @@ export default function Index() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
               <Link to="/scoring" className="text-foreground hover:text-golf-green transition-colors">Scoring</Link>
-              <a href="#courses" className="text-foreground hover:text-golf-green transition-colors">Courses</a>
+
+              {/* Courses Dropdown */}
+              <div className="relative">
+                <button
+                  className="flex items-center space-x-1 text-foreground hover:text-golf-green transition-colors"
+                  onClick={() => setCoursesDropdownOpen(!coursesDropdownOpen)}
+                  onBlur={(e) => {
+                    // Close dropdown when clicking outside
+                    if (!e.currentTarget.contains(e.relatedTarget)) {
+                      setCoursesDropdownOpen(false);
+                    }
+                  }}
+                >
+                  <span>Courses</span>
+                  <ChevronDown className={`h-4 w-4 transition-transform ${coursesDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {coursesDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-golf-green/10 py-2 z-50">
+                    <Link
+                      to="/scarecrow"
+                      className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                      onClick={() => setCoursesDropdownOpen(false)}
+                    >
+                      <span>Scarecrow</span>
+                      <span className="text-xs text-muted-foreground">Round 1</span>
+                    </Link>
+                    <Link
+                      to="/gamble-sands"
+                      className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                      onClick={() => setCoursesDropdownOpen(false)}
+                    >
+                      <span>Gamble Sands</span>
+                      <span className="text-xs text-muted-foreground">Round 2</span>
+                    </Link>
+                    <Link
+                      to="/quicksands"
+                      className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                      onClick={() => setCoursesDropdownOpen(false)}
+                    >
+                      <span>Quicksands</span>
+                      <span className="text-xs text-muted-foreground">Round 3</span>
+                    </Link>
+                    <hr className="my-2 border-golf-green/10" />
+                    <a
+                      href="#courses"
+                      className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                      onClick={() => setCoursesDropdownOpen(false)}
+                    >
+                      <span>View All Courses</span>
+                      <span className="text-xs text-muted-foreground">Overview</span>
+                    </a>
+                  </div>
+                )}
+              </div>
+
               <Link to="/inn" className="text-foreground hover:text-golf-green transition-colors">Inn</Link>
               <a href="#travel" className="text-foreground hover:text-golf-green transition-colors">Travel</a>
             </div>
