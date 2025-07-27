@@ -295,7 +295,7 @@ export default function Index() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-3">
-                    Both players tee off, then play from the best shot. Team score counts toward overall competition.
+                    Both players tee off, then play from the best shot. Team's Stableford score will be added to each player's individual tournament total.
                   </p>
                 </div>
               </CardContent>
