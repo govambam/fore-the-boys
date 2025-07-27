@@ -312,11 +312,18 @@ export default function Index() {
               </Card>
             </Link>
 
-            <Link to="/quicksands">
-              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300 cursor-pointer">
-                <div className="h-48 bg-gradient-to-br from-golf-sand to-golf-green"></div>
+            <Link to="/quicksands" className="group">
+              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl hover:border-golf-green/40 transition-all duration-300 cursor-pointer group-hover:scale-[1.02]">
+                <div className="h-48 bg-gradient-to-br from-golf-sand to-golf-green relative">
+                  <div className="absolute top-3 right-3 bg-white/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ExternalLink className="h-4 w-4 text-golf-green" />
+                  </div>
+                </div>
                 <CardHeader>
-                  <CardTitle className="text-golf-green-dark">Quicksands</CardTitle>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-golf-green-dark group-hover:text-golf-green transition-colors">Quicksands</CardTitle>
+                    <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
+                  </div>
                   <CardDescription>Par 3 Course • 14 Holes • Short Course Challenge</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -326,6 +333,9 @@ export default function Index() {
                   <div className="flex justify-between items-center">
                     <Badge variant="secondary">Sunday 5:00 PM</Badge>
                     <span className="text-sm font-semibold text-golf-green">Round 3</span>
+                  </div>
+                  <div className="mt-3 text-xs text-golf-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    Click for detailed course information →
                   </div>
                 </CardContent>
               </Card>
