@@ -456,7 +456,7 @@ export default function Index() {
                     <h4 className="font-semibold text-golf-green-dark mb-2">Sunday, September 8</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>Morning - Check-out</li>
-                      <li>Cascades Putting Green</li>
+                      <li>Optional round at Quicksands</li>
                       <li>Departure</li>
                     </ul>
                   </div>
