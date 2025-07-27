@@ -29,7 +29,7 @@ export default function Navigation() {
             <Trophy className="h-8 w-8 text-golf-green" />
             <Link to="/">
               <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark hover:text-golf-green transition-colors">
-                Fore the Boys
+                Fore the Boy
               </h1>
             </Link>
           </div>
