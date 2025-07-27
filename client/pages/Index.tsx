@@ -290,7 +290,7 @@ export default function Index() {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-sm text-muted-foreground">Team 2</span>
-                        <span className="font-semibold">Patrick & Jeffrey</span>
+                        <span className="font-semibold">Patrick & TBA</span>
                       </div>
                     </div>
                   </div>
