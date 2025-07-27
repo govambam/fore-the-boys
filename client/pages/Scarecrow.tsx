@@ -163,21 +163,40 @@ export default function Scarecrow() {
 
           {/* Signature Holes */}
           <div className="bg-golf-green/5 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes</h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes & Contests</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 5</Badge>
-                  <CardTitle className="text-lg">Long Drive Contest</CardTitle>
-                  <CardDescription>Par 5 • 520 yards</CardDescription>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 9</Badge>
+                  <CardTitle className="text-lg">Closest to Pin</CardTitle>
+                  <CardDescription>Par 3 • Scenic River Views</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Our designated long drive hole! This downhill par 5 gives you the chance to let it rip. 
-                    Wide fairway encourages aggressive driving.
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Perhaps the most scenic spot on the entire property. With the Columbia River looming in the background,
+                    it takes a concerted effort to focus on the task at hand. It's a short and fun shot over the bunker to find the green.
+                    Slopes on the right edge will funnel balls towards the green. Your potential ace awaits.
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
-                    <p className="text-sm font-semibold text-yellow-800">💰 $50 Prize for Longest Drive</p>
+                    <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Closest to Pin</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 14</Badge>
+                  <CardTitle className="text-lg">Long Drive Contest</CardTitle>
+                  <CardDescription>Par 4 • 500 yards</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    This beastly 500 yard par 4 does not play anywhere as long as the scorecard indicates. If you manage to hit a decent drive,
+                    your golf ball will tumble an extra 50 yards or so down the hill setting up a fun approach shot. A pot bunker bisects the front
+                    of a truly massive and undulating green. With a plethora of pin locations, the 14th is a truly unique long par 4.
+                  </p>
+                  <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
+                    <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Longest Drive</p>
                   </div>
                 </CardContent>
               </Card>
@@ -190,7 +209,7 @@ export default function Scarecrow() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    A dramatic downhill par 4 that plays through a natural valley. The approach shot requires 
+                    A dramatic downhill par 4 that plays through a natural valley. The approach shot requires
                     precise distance control to an elevated green.
                   </p>
                 </CardContent>
@@ -204,7 +223,7 @@ export default function Scarecrow() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    A strong finishing hole that climbs back toward the clubhouse. Risk-reward second shot 
+                    A strong finishing hole that climbs back toward the clubhouse. Risk-reward second shot
                     over a ravine can set up eagle opportunities.
                   </p>
                 </CardContent>
