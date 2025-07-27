@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Users, Calculator, ArrowLeft, Target } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import { Trophy, Users, Calculator, Target } from "lucide-react";
 
 export default function ScoringFormat() {
   return (
