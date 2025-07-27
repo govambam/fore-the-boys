@@ -1,0 +1,238 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Trophy, MapPin, Clock, Target, ArrowLeft, Wind, Mountain, Flag } from "lucide-react";
+
+export default function Scarecrow() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+      {/* Navigation */}
+      <nav className="bg-white/80 backdrop-blur-md border-b border-golf-green/10 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Trophy className="h-8 w-8 text-golf-green" />
+              <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark">Patrick's Birthday Golf Trip</h1>
+            </div>
+            <Link to="/">
+              <Button variant="outline" className="border-golf-green text-golf-green hover:bg-golf-green/5">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to Home
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="py-12 md:py-20 px-4">
+        <div className="container mx-auto text-center">
+          <Badge className="mb-4 bg-golf-green text-white">Round 1 • Saturday 3:05 PM</Badge>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+            Scarecrow
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Golf Course</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            A stunning links-style course featuring dramatic elevation changes, panoramic views of the Columbia River, 
+            and wide fairways that reward strategic thinking and bold shot-making.
+          </p>
+        </div>
+      </section>
+
+      {/* Course Hero Image Placeholder */}
+      <section className="py-8 px-4">
+        <div className="container mx-auto">
+          <div className="h-64 md:h-96 bg-gradient-to-br from-golf-green via-golf-fairway to-golf-sand rounded-lg flex items-center justify-center mb-8">
+            <div className="text-center text-white">
+              <Mountain className="h-16 w-16 mx-auto mb-4 opacity-80" />
+              <p className="text-lg font-semibold">Scarecrow Course Photo</p>
+              <p className="text-sm opacity-80">Stunning links-style layout</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Stats */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Flag className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>Par 71</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Championship Layout</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>6,927 Yards</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">From Championship Tees</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Mountain className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>Links Style</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Natural Terrain</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Wind className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>Windy Conditions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Strategic Challenge</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Features */}
+      <section className="py-16 px-4 bg-white/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Course Features</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Scarecrow offers a unique links experience with natural beauty and strategic challenges.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Mountain className="h-8 w-8 text-golf-green mb-2" />
+                <CardTitle>Dramatic Elevation</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  The course features significant elevation changes that provide breathtaking views of the Columbia River Valley 
+                  and surrounding desert landscape. Many holes play uphill or downhill, requiring careful club selection.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Panoramic views from elevated tees</li>
+                  <li>• Strategic use of natural terrain</li>
+                  <li>• Elevation changes affect distance</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Wind className="h-8 w-8 text-golf-green mb-2" />
+                <CardTitle>Links-Style Design</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Wide fairways and strategic bunkering characterize this true links experience. The course rewards 
+                  creative shot-making and course management over pure distance.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Wide fairways encourage aggressive play</li>
+                  <li>• Strategic bunker placement</li>
+                  <li>• Natural grass conditions</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Signature Holes */}
+          <div className="bg-golf-green/5 rounded-lg p-8">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 5</Badge>
+                  <CardTitle className="text-lg">Long Drive Contest</CardTitle>
+                  <CardDescription>Par 5 • 520 yards</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Our designated long drive hole! This downhill par 5 gives you the chance to let it rip. 
+                    Wide fairway encourages aggressive driving.
+                  </p>
+                  <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
+                    <p className="text-sm font-semibold text-yellow-800">💰 $50 Prize for Longest Drive</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 12</Badge>
+                  <CardTitle className="text-lg">The Valley</CardTitle>
+                  <CardDescription>Par 4 • 415 yards</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    A dramatic downhill par 4 that plays through a natural valley. The approach shot requires 
+                    precise distance control to an elevated green.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 18</Badge>
+                  <CardTitle className="text-lg">The Closer</CardTitle>
+                  <CardDescription>Par 5 • 545 yards</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    A strong finishing hole that climbs back toward the clubhouse. Risk-reward second shot 
+                    over a ravine can set up eagle opportunities.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tee Time Info */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <Card className="border-golf-green/20 bg-golf-green/5 max-w-2xl mx-auto">
+            <CardHeader className="text-center">
+              <Clock className="h-12 w-12 text-golf-green mx-auto mb-2" />
+              <CardTitle className="text-2xl">Tee Time Details</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <div className="space-y-4">
+                <div>
+                  <p className="text-3xl font-bold text-golf-green-dark">Saturday, September 7th</p>
+                  <p className="text-xl text-golf-green">3:05 PM Tee Time</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                  <h4 className="font-semibold text-golf-green-dark mb-2">What to Expect</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Afternoon start allows for morning arrival and check-in</li>
+                    <li>• Perfect lighting for photos and scenic views</li>
+                    <li>• Cooler afternoon temperatures in September</li>
+                    <li>• Post-round celebration at the clubhouse</li>
+                  </ul>
+                </div>
+                <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                  <h4 className="font-semibold text-yellow-800 mb-2">Long Drive Contest - Hole 5</h4>
+                  <p className="text-sm text-yellow-700">$50 prize for the longest drive on this downhill par 5!</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </div>
+  );
+}
