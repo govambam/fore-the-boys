@@ -61,7 +61,7 @@ export default function GambleSands() {
                 <CardTitle>6,389 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Sands Tees (Our Tees)</p>
+                <p className="text-sm text-muted-foreground">Sands Tees</p>
               </CardContent>
             </Card>
 
