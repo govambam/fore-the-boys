@@ -306,13 +306,13 @@ export default function Index() {
             <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">Players</h3>
             <div className="grid md:grid-cols-4 gap-4 text-center">
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">Ivan Gomez</h4>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
                 <h4 className="font-semibold text-golf-green-dark">Patrick Triggs</h4>
                 <p className="text-xs text-muted-foreground">Birthday Boy!</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">Ivan Gomez</h4>
               </div>
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
@@ -320,7 +320,8 @@ export default function Index() {
               </div>
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">Jeffrey Eagleson</h4>
+                <h4 className="font-semibold text-golf-green-dark">TBA</h4>
+                <p className="text-xs text-muted-foreground">4th Player</p>
               </div>
             </div>
           </div>
