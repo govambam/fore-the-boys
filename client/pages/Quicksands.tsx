@@ -71,10 +71,10 @@ export default function Quicksands() {
             <Card className="text-center border-golf-green/20">
               <CardHeader>
                 <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>75-175 Yards</CardTitle>
+                <CardTitle>60-180 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Varied Distances</p>
+                <p className="text-sm text-muted-foreground">Creative Shot Variety</p>
               </CardContent>
             </Card>
 
