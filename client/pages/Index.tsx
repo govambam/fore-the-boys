@@ -117,11 +117,18 @@ export default function Index() {
             <div className="md:hidden mt-4 pb-4 border-t border-golf-green/10">
               <div className="flex flex-col space-y-3 pt-4">
                 <Link
+                  to="/"
+                  className="text-foreground hover:text-golf-green transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Home
+                </Link>
+                <Link
                   to="/scoring"
                   className="text-foreground hover:text-golf-green transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Scoring Format
+                  Scoring & Rules
                 </Link>
                 <div className="space-y-2">
                   <div className="text-golf-green-dark font-semibold py-2">Courses</div>
@@ -163,15 +170,8 @@ export default function Index() {
                   className="text-foreground hover:text-golf-green transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Inn Details
+                  Inn
                 </Link>
-                <a
-                  href="#travel"
-                  className="text-foreground hover:text-golf-green transition-colors py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Travel Info
-                </a>
               </div>
             </div>
           )}
