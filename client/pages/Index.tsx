@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays, MapPin, Users, Trophy, Plane, Hotel, Calendar, Clock, Menu, X } from "lucide-react";
 
 export default function Index() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
       {/* Navigation */}
@@ -13,15 +15,62 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Trophy className="h-8 w-8 text-golf-green" />
-              <h1 className="text-2xl font-bold text-golf-green-dark">Pine Valley Getaway</h1>
+              <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark">Pine Valley Getaway</h1>
             </div>
+
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
               <a href="#courses" className="text-foreground hover:text-golf-green transition-colors">Courses</a>
               <a href="#formats" className="text-foreground hover:text-golf-green transition-colors">Game Formats</a>
               <a href="#travel" className="text-foreground hover:text-golf-green transition-colors">Travel Details</a>
               <a href="#schedule" className="text-foreground hover:text-golf-green transition-colors">Schedule</a>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 text-golf-green-dark"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-golf-green/10">
+              <div className="flex flex-col space-y-3 pt-4">
+                <a
+                  href="#courses"
+                  className="text-foreground hover:text-golf-green transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Courses
+                </a>
+                <a
+                  href="#formats"
+                  className="text-foreground hover:text-golf-green transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Game Formats
+                </a>
+                <a
+                  href="#travel"
+                  className="text-foreground hover:text-golf-green transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Travel Details
+                </a>
+                <a
+                  href="#schedule"
+                  className="text-foreground hover:text-golf-green transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Schedule
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
