@@ -104,13 +104,41 @@ export default function Index() {
                 >
                   Scoring Format
                 </Link>
-                <a
-                  href="#courses"
-                  className="text-foreground hover:text-golf-green transition-colors py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Courses
-                </a>
+                <div className="space-y-2">
+                  <div className="text-golf-green-dark font-semibold py-2">Courses</div>
+                  <Link
+                    to="/scarecrow"
+                    className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span>Scarecrow</span>
+                    <span className="text-xs text-muted-foreground">Round 1</span>
+                  </Link>
+                  <Link
+                    to="/gamble-sands"
+                    className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span>Gamble Sands</span>
+                    <span className="text-xs text-muted-foreground">Round 2</span>
+                  </Link>
+                  <Link
+                    to="/quicksands"
+                    className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span>Quicksands</span>
+                    <span className="text-xs text-muted-foreground">Round 3</span>
+                  </Link>
+                  <a
+                    href="#courses"
+                    className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span>View All Courses</span>
+                    <span className="text-xs text-muted-foreground">Overview</span>
+                  </a>
+                </div>
                 <Link
                   to="/inn"
                   className="text-foreground hover:text-golf-green transition-colors py-2"
