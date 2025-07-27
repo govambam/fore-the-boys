@@ -106,9 +106,9 @@ export default function Index() {
       </section>
 
       {/* Quick Info Cards */}
-      <section className="py-16 px-4">
+      <section className="py-12 md:py-16 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <Card className="text-center border-golf-green/20 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
