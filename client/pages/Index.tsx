@@ -327,48 +327,70 @@ export default function Index() {
 
           <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Prize Structure</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Champion</CardTitle>
+                  <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Champion</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-2xl font-bold text-golf-green mb-1">$150</p>
-                  <p className="text-sm text-muted-foreground">Highest Stableford Score</p>
+                <CardContent className="pt-0">
+                  <p className="text-xl font-bold text-golf-green mb-1">$150</p>
+                  <p className="text-xs text-muted-foreground">Highest Stableford</p>
                 </CardContent>
               </Card>
 
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Runner-up</CardTitle>
+                  <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Runner-up</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-2xl font-bold text-golf-green mb-1">$50</p>
-                  <p className="text-sm text-muted-foreground">Second Place</p>
+                <CardContent className="pt-0">
+                  <p className="text-xl font-bold text-golf-green mb-1">$50</p>
+                  <p className="text-xs text-muted-foreground">Second Place</p>
                 </CardContent>
               </Card>
 
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
-                  <MapPin className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Long Drive</CardTitle>
+                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Long Drive</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-2xl font-bold text-golf-green mb-1">$50</p>
-                  <p className="text-sm text-muted-foreground">Hole 5 at Scarecrow</p>
+                <CardContent className="pt-0">
+                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
+                  <p className="text-xs text-muted-foreground">Scarecrow #14</p>
                 </CardContent>
               </Card>
 
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
-                  <MapPin className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Closest to Pin</CardTitle>
+                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Closest to Pin</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-2xl font-bold text-golf-green mb-1">$50</p>
-                  <p className="text-sm text-muted-foreground">Hole 11 at Gamble Sands</p>
+                <CardContent className="pt-0">
+                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
+                  <p className="text-xs text-muted-foreground">Scarecrow #9</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-golf-green/20 bg-white">
+                <CardHeader className="pb-2">
+                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Long Drive</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
+                  <p className="text-xs text-muted-foreground">Gamble Sands #7</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-golf-green/20 bg-white">
+                <CardHeader className="pb-2">
+                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Closest to Pin</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
+                  <p className="text-xs text-muted-foreground">Gamble Sands #11</p>
                 </CardContent>
               </Card>
             </div>
@@ -377,6 +399,9 @@ export default function Index() {
               <Badge className="bg-golf-green/10 text-golf-green-dark border-golf-green/20">
                 $75 Buy-in per Player • Total Prize Pool: $300
               </Badge>
+              <p className="text-sm text-muted-foreground mt-2">
+                4 skill contests + 2 championship prizes = 6 chances to win!
+              </p>
             </div>
           </div>
         </div>
