@@ -111,6 +111,18 @@ export default function Scarecrow() {
             </p>
           </div>
 
+          <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">Design Legacy</h3>
+            <p className="text-muted-foreground text-center mb-6">
+              The second 18-hole course to open at Gamble Sands Resort, slightly more than a decade after the first,
+              David McLay Kidd collaborated on Scarecrow with his design partner Nick Schaan in a creative competition of sorts between the two.
+            </p>
+            <p className="text-muted-foreground text-center">
+              The goal was to utilize Scarecrow's steeper landscape while creating an adventure that has its own identity
+              despite echoes of the original Gamble Sands.
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <Card className="border-golf-green/20">
               <CardHeader>
@@ -119,8 +131,8 @@ export default function Scarecrow() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  The course features significant elevation changes that provide breathtaking views of the Columbia River Valley 
-                  and surrounding desert landscape. Many holes play uphill or downhill, requiring careful club selection.
+                  Utilizing Scarecrow's steeper landscape, the course features significant elevation changes that provide breathtaking views
+                  of the Columbia River Valley and surrounding desert landscape. Many holes play uphill or downhill, requiring careful club selection.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Panoramic views from elevated tees</li>
@@ -133,17 +145,17 @@ export default function Scarecrow() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Wind className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Links-Style Design</CardTitle>
+                <CardTitle>McLay Kidd & Schaan Design</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Wide fairways and strategic bunkering characterize this true links experience. The course rewards 
-                  creative shot-making and course management over pure distance.
+                  A creative collaboration between David McLay Kidd and Nick Schaan, Scarecrow has its own identity
+                  while maintaining echoes of the original Gamble Sands course design philosophy.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Wide fairways encourage aggressive play</li>
-                  <li>• Strategic bunker placement</li>
-                  <li>• Natural grass conditions</li>
+                  <li>• Collaborative design competition</li>
+                  <li>• Unique identity with familiar echoes</li>
+                  <li>• Creative use of steeper terrain</li>
                 </ul>
               </CardContent>
             </Card>
