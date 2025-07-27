@@ -20,7 +20,7 @@ export default function Index() {
             <span className="block text-golf-green">Golf Getaway</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
-            Celebrating Patrick Triggs with an epic weekend of golf at Gamble Sands,
+            Celebrating another year with Patrick Triggs with an epic weekend of golf at Gamble Sands,
             featuring three incredible courses in the beautiful Columbia River Valley.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
