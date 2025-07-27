@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, MapPin, Users, Trophy, Plane, Hotel, Calendar, Clock, Menu, X } from "lucide-react";
+import { CalendarDays, MapPin, Users, Trophy, Plane, Hotel, Calendar, Clock, Menu, X, ChevronDown, ExternalLink } from "lucide-react";
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
