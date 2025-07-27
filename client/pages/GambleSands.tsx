@@ -71,10 +71,10 @@ export default function GambleSands() {
             <Card className="text-center border-golf-green/20">
               <CardHeader>
                 <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>7,009 Yards</CardTitle>
+                <CardTitle>6,389 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Championship Tees</p>
+                <p className="text-sm text-muted-foreground">Sands Tees (Our Tees)</p>
               </CardContent>
             </Card>
 
