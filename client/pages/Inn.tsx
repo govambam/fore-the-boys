@@ -40,11 +40,8 @@ export default function Inn() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
-              <div className="bg-gradient-to-br from-golf-green via-golf-fairway to-golf-sand rounded-lg h-64 md:h-80 flex items-center justify-center mb-6">
+              <div className="rounded-lg h-64 md:h-80 flex items-center justify-center mb-6 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc58611a0e54147279cf741618596d046)"}}>
                 <div className="text-center text-white">
-                  <Trophy className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                  <p className="text-lg font-semibold">Cascades Putting Course</p>
-                  <p className="text-sm opacity-80">175 yards of putting perfection</p>
                 </div>
               </div>
             </div>
