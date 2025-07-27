@@ -16,7 +16,7 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <Badge className="mb-4 bg-golf-green text-white text-sm md:text-base">September 6-8, 2024</Badge>
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-golf-green-dark mb-6 leading-tight">
-            Patrick's Birthday
+            Fore the Boys
             <span className="block text-golf-green">Golf Getaway</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
@@ -293,7 +293,7 @@ export default function Index() {
           </div>
 
           <div className="bg-golf-green/5 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Prize Structure</h3>
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">High Stakes, Higher Handicaps</h3>
             <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
@@ -471,7 +471,7 @@ export default function Index() {
       <footer className="bg-golf-green-dark text-white py-12 px-4">
         <div className="container mx-auto text-center">
           <Trophy className="h-12 w-12 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold mb-2">Patrick's Birthday Golf Trip</h3>
+          <h3 className="text-2xl font-bold mb-2">Fore the Boys</h3>
           <p className="text-golf-green-light mb-4">September 6-8, 2024 • Gamble Sands, WA</p>
         </div>
       </footer>
