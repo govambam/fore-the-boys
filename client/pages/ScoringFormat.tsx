@@ -218,7 +218,6 @@ export default function ScoringFormat() {
           </div>
 
           <div className="bg-golf-green/5 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">Remember: It's Patrick's Birthday! 🎉</h3>
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
                 These rules are designed to keep us playing fast, staying safe, and having maximum fun.
@@ -276,23 +275,7 @@ export default function ScoringFormat() {
             </Card>
           </div>
 
-          <div className="mt-12 text-center">
-            <Card className="border-golf-green/20 bg-golf-green/5 max-w-2xl mx-auto">
-              <CardHeader>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <CardTitle className="text-2xl">Maximum Possible Score</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  <p className="text-sm text-muted-foreground">Scarecrow (71 par): <span className="font-semibold">568 points</span> (all eagles)</p>
-                  <p className="text-sm text-muted-foreground">Gamble Sands (72 par): <span className="font-semibold">576 points</span> (all eagles)</p>
-                  <p className="text-sm text-muted-foreground">Quicksands (14 holes): <span className="font-semibold">112 points</span> (all eagles)</p>
-                  <p className="text-xl font-bold text-golf-green-dark mt-4">Theoretical Maximum: 1,256 points</p>
-                  <p className="text-xs text-muted-foreground">(Don't worry, we'll be happy with much less!)</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+
         </div>
       </section>
     </div>
