@@ -4,18 +4,14 @@ import path from "path";
 import { createServer } from "./server";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    fs: {
-      allow: ["./client", "./shared"],
-      deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
-    },
-  },
+export default defineConfig({
+  base: './',
+  plugins: [react()],
   build: {
-    outDir: "dist/spa",
+    outDir: 'dist',
   },
+})
+
   plugins: [react(), expressPlugin()],
   resolve: {
     alias: {
