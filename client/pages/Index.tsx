@@ -366,9 +366,6 @@ export default function Index() {
               <Badge className="bg-golf-green/10 text-golf-green-dark border-golf-green/20">
                 $75 Buy-in per Player • Total Prize Pool: $300
               </Badge>
-              <p className="text-sm text-muted-foreground mt-2">
-                4 skill contests + 2 championship prizes = 6 chances to win!
-              </p>
             </div>
           </div>
         </div>
