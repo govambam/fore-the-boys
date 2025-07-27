@@ -1,0 +1,300 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Trophy, MapPin, Clock, Users, ArrowLeft, Zap, Target, Flag } from "lucide-react";
+
+export default function Quicksands() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+      {/* Navigation */}
+      <nav className="bg-white/80 backdrop-blur-md border-b border-golf-green/10 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Trophy className="h-8 w-8 text-golf-green" />
+              <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark">Patrick's Birthday Golf Trip</h1>
+            </div>
+            <Link to="/">
+              <Button variant="outline" className="border-golf-green text-golf-green hover:bg-golf-green/5">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to Home
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="py-12 md:py-20 px-4">
+        <div className="container mx-auto text-center">
+          <Badge className="mb-4 bg-golf-green text-white">Round 3 • Sunday 5:00 PM</Badge>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+            Quicksands
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Par 3 Course</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            An innovative 14-hole par 3 course perfect for our tournament finale. Each hole offers unique challenges 
+            with stunning desert and river valley views - the perfect setting for our team scramble competition.
+          </p>
+        </div>
+      </section>
+
+      {/* Course Hero Image Placeholder */}
+      <section className="py-8 px-4">
+        <div className="container mx-auto">
+          <div className="h-64 md:h-96 bg-gradient-to-br from-golf-sand via-golf-green to-golf-earth rounded-lg flex items-center justify-center mb-8">
+            <div className="text-center text-white">
+              <Zap className="h-16 w-16 mx-auto mb-4 opacity-80" />
+              <p className="text-lg font-semibold">Quicksands Course Photo</p>
+              <p className="text-sm opacity-80">14-hole par 3 adventure</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Stats */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Flag className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>14 Holes</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">All Par 3s</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>75-175 Yards</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">Varied Distances</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>Team Scramble</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">2-Man Format</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-golf-green/20">
+              <CardHeader>
+                <Zap className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <CardTitle>Quick Play</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">2.5 Hour Round</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Scramble Format */}
+      <section className="py-16 px-4 bg-white/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Team Scramble Format</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Our tournament finale features a 2-man scramble with team scores counting toward individual Stableford totals.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <Card className="border-golf-green/20 bg-golf-green/5">
+              <CardHeader>
+                <Users className="h-8 w-8 text-golf-green mb-2" />
+                <CardTitle className="text-golf-green-dark">Team 1: Ivan & Jack</CardTitle>
+                <CardDescription>Dynamic Duo</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Both players tee off on each hole</li>
+                  <li>• Choose the best tee shot</li>
+                  <li>• Both players play from that spot</li>
+                  <li>• Continue until hole is completed</li>
+                  <li>• Record team's Stableford score</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20 bg-golf-green/5">
+              <CardHeader>
+                <Users className="h-8 w-8 text-golf-green mb-2" />
+                <CardTitle className="text-golf-green-dark">Team 2: Patrick & Jeffrey</CardTitle>
+                <CardDescription>Birthday Team</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Both players tee off on each hole</li>
+                  <li>• Choose the best tee shot</li>
+                  <li>• Both players play from that spot</li>
+                  <li>• Continue until hole is completed</li>
+                  <li>• Record team's Stableford score</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-golf-green/5 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">Scoring for Tournament</h3>
+            <div className="text-center">
+              <p className="text-muted-foreground mb-4">
+                Each team's Stableford score will be added to both players' individual tournament totals. 
+                This ensures everyone benefits from good teamwork while maintaining individual competition.
+              </p>
+              <Badge className="bg-golf-green text-white">
+                Team Score = Both Players' Individual Score for This Round
+              </Badge>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hole Highlights */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Course Highlights</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              14 unique par 3s offering variety, challenge, and incredible scenery.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 3</Badge>
+                <CardTitle className="text-lg">Desert Mirage</CardTitle>
+                <CardDescription>125 yards • Elevated Tee</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Play from an elevated tee to a green surrounded by natural desert landscape. 
+                  The view is spectacular, but club selection is crucial.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 7</Badge>
+                <CardTitle className="text-lg">River Overlook</CardTitle>
+                <CardDescription>165 yards • Water Carry</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  The longest hole on the course requires a carry over a natural ravine 
+                  with the Columbia River providing a stunning backdrop.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 14</Badge>
+                <CardTitle className="text-lg">Grand Finale</CardTitle>
+                <CardDescription>140 yards • Island Green</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  The perfect finishing hole featuring a green surrounded by sand and native grasses. 
+                  A dramatic end to our tournament!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 9</Badge>
+                <CardTitle className="text-lg">Sunset View</CardTitle>
+                <CardDescription>110 yards • Short & Sweet</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  A shorter hole that plays toward the setting sun. Perfect timing for 
+                  our evening round with golden hour lighting.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 12</Badge>
+                <CardTitle className="text-lg">Canyon Shot</CardTitle>
+                <CardDescription>155 yards • Downhill</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  A dramatic downhill shot into a natural canyon setting. 
+                  The elevation change makes club selection tricky.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-golf-green/20">
+              <CardHeader>
+                <Badge className="mb-2 bg-golf-green text-white w-fit">Variety</Badge>
+                <CardTitle className="text-lg">Every Hole Unique</CardTitle>
+                <CardDescription>14 Different Challenges</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  No two holes are alike. From short wedge shots to longer irons, 
+                  every club in your bag will get used.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Tee Time Info */}
+      <section className="py-16 px-4 bg-white/50">
+        <div className="container mx-auto">
+          <Card className="border-golf-green/20 bg-golf-green/5 max-w-2xl mx-auto">
+            <CardHeader className="text-center">
+              <Clock className="h-12 w-12 text-golf-green mx-auto mb-2" />
+              <CardTitle className="text-2xl">Tee Time Details</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <div className="space-y-4">
+                <div>
+                  <p className="text-3xl font-bold text-golf-green-dark">Sunday, September 8th</p>
+                  <p className="text-xl text-golf-green">5:00 PM Tee Time</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                  <h4 className="font-semibold text-golf-green-dark mb-2">Perfect Finale Timing</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Golden hour lighting for spectacular photos</li>
+                    <li>• Cooler evening temperatures</li>
+                    <li>• Team scramble creates exciting finish</li>
+                    <li>• Quick 2.5-hour round</li>
+                    <li>• Post-round celebration on the patio</li>
+                  </ul>
+                </div>
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="font-semibold text-blue-800 mb-2">Tournament Finale</h4>
+                  <p className="text-sm text-blue-700">
+                    Scramble scores count toward individual Stableford totals. 
+                    The perfect way to finish Patrick's birthday celebration!
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </div>
+  );
+}
