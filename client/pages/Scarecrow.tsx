@@ -164,7 +164,7 @@ export default function Scarecrow() {
           {/* Signature Holes */}
           <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Signature Holes & Contests</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
                   <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 9</Badge>
@@ -198,34 +198,6 @@ export default function Scarecrow() {
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">💰 $25 Prize for Longest Drive</p>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-golf-green/20 bg-white">
-                <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 12</Badge>
-                  <CardTitle className="text-lg">The Valley</CardTitle>
-                  <CardDescription>Par 4 • 415 yards</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    A dramatic downhill par 4 that plays through a natural valley. The approach shot requires
-                    precise distance control to an elevated green.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-golf-green/20 bg-white">
-                <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">Hole 18</Badge>
-                  <CardTitle className="text-lg">The Closer</CardTitle>
-                  <CardDescription>Par 5 • 545 yards</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    A strong finishing hole that climbs back toward the clubhouse. Risk-reward second shot
-                    over a ravine can set up eagle opportunities.
-                  </p>
                 </CardContent>
               </Card>
             </div>
