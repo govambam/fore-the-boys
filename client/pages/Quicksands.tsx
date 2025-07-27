@@ -202,11 +202,7 @@ export default function Quicksands() {
               </Card>
             </div>
 
-            <div className="mt-8 text-center">
-              <Badge className="bg-golf-green text-white text-lg px-6 py-2">
-                🎵 Every kind of short-game shot you can imagine awaits in this walking-only amusement park!
-              </Badge>
-            </div>
+
           </div>
 
           <div className="text-center mb-12">
