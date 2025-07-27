@@ -15,7 +15,7 @@ export default function Scarecrow() {
           <Badge className="mb-4 bg-golf-green text-white">Round 1 • Saturday 3:05 PM</Badge>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
             Scarecrow
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Golf Course</span>
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Newest Golf Course</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Scarecrow will be many things to many golfers, but there's no denying it is one of the most visually compelling courses
