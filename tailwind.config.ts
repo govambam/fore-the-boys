@@ -19,6 +19,14 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        golf: {
+          green: "hsl(142, 76%, 36%)",
+          "green-dark": "hsl(142, 56%, 25%)",
+          "green-light": "hsl(142, 76%, 45%)",
+          fairway: "hsl(120, 25%, 45%)",
+          sand: "hsl(35, 45%, 75%)",
+          earth: "hsl(25, 35%, 65%)",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
