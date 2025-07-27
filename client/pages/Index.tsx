@@ -208,22 +208,24 @@ export default function Index() {
               </Card>
             </Link>
 
-            <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300">
-              <div className="h-48 bg-gradient-to-br from-golf-sand to-golf-green"></div>
-              <CardHeader>
-                <CardTitle className="text-golf-green-dark">Quicksands</CardTitle>
-                <CardDescription>Par 3 Course • 18 Holes • Short Course Challenge</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  An innovative par-3 course perfect for a fun finale. Each hole offers unique challenges with stunning desert and river valley views.
-                </p>
-                <div className="flex justify-between items-center">
-                  <Badge variant="secondary">Sunday 5:00 PM</Badge>
-                  <span className="text-sm font-semibold text-golf-green">Round 3</span>
-                </div>
-              </CardContent>
-            </Card>
+            <Link to="/quicksands">
+              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                <div className="h-48 bg-gradient-to-br from-golf-sand to-golf-green"></div>
+                <CardHeader>
+                  <CardTitle className="text-golf-green-dark">Quicksands</CardTitle>
+                  <CardDescription>Par 3 Course • 14 Holes • Short Course Challenge</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    An innovative par-3 course perfect for a fun finale. Each hole offers unique challenges with stunning desert and river valley views.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <Badge variant="secondary">Sunday 5:00 PM</Badge>
+                    <span className="text-sm font-semibold text-golf-green">Round 3</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
