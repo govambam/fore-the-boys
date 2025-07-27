@@ -126,8 +126,8 @@ export default function Index() {
                 <CardTitle className="text-lg">Players</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Birthday Celebration</p>
-                <p className="text-sm text-muted-foreground">Friends & Golf</p>
+                <p className="text-sm text-muted-foreground">4 Players</p>
+                <p className="text-sm text-muted-foreground">Modified Stableford</p>
               </CardContent>
             </Card>
 
@@ -137,8 +137,8 @@ export default function Index() {
                 <CardTitle className="text-lg">Format</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Best Ball & Scramble</p>
-                <p className="text-sm text-muted-foreground">Individual Stroke Play</p>
+                <p className="text-sm text-muted-foreground">Modified Stableford</p>
+                <p className="text-sm text-muted-foreground">2-Man Scramble Finale</p>
               </CardContent>
             </Card>
 
@@ -225,71 +225,149 @@ export default function Index() {
       <section id="formats" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Tournament Formats</h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Tournament Format</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Multiple game formats keep the competition exciting and give everyone a chance to contribute to team success.
+              Modified Stableford scoring system with individual competition and a team scramble finale at Quicksands.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Trophy className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Team Best Ball</CardTitle>
-                <CardDescription>Days 1 & 2</CardDescription>
+                <CardTitle>Modified Stableford Scoring</CardTitle>
+                <CardDescription>Scarecrow & Gamble Sands Rounds</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Each team member plays their own ball. The lowest score on each hole counts for the team.
-                </p>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">Eagle</span>
+                    <span className="font-semibold text-golf-green">8 points</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">Birdie</span>
+                    <span className="font-semibold text-golf-green">4 points</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">Par</span>
+                    <span className="font-semibold text-golf-green">2 points</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">Bogey</span>
+                    <span className="font-semibold text-golf-green">1 point</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">Double Bogey+</span>
+                    <span className="font-semibold text-golf-green">0 points</span>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Team Scramble</CardTitle>
-                <CardDescription>Day 3 Morning</CardDescription>
+                <CardTitle>2-Man Scramble</CardTitle>
+                <CardDescription>Quicksands Par 3 Course (14 holes)</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  All team members tee off, then play from the best shot until the ball is holed.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-golf-green/20">
-              <CardHeader>
-                <Calendar className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Individual Stroke Play</CardTitle>
-                <CardDescription>Day 3 Afternoon & Day 4</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Individual competition with full handicap allowances. Lowest net score wins.
-                </p>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-golf-green-dark mb-2">Team Matchups</h4>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-muted-foreground">Team 1</span>
+                        <span className="font-semibold">Ivan & Jack</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-muted-foreground">Team 2</span>
+                        <span className="font-semibold">Patrick & Jeffrey</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-3">
+                    Both players tee off, then play from the best shot. Team score counts toward overall competition.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
 
-          <div className="mt-12 bg-golf-green/5 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">Prize Structure</h3>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">Team Champion</h4>
-                <p className="text-sm text-muted-foreground">Lowest combined team score</p>
+          <div className="bg-golf-green/5 rounded-lg p-6 mb-8">
+            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">Players</h3>
+            <div className="grid md:grid-cols-4 gap-4 text-center">
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">Ivan Gomez</h4>
               </div>
-              <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">Individual Champion</h4>
-                <p className="text-sm text-muted-foreground">Lowest individual net score</p>
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">Patrick Triggs</h4>
+                <p className="text-xs text-muted-foreground">Birthday Boy!</p>
               </div>
-              <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">Closest to Pin</h4>
-                <p className="text-sm text-muted-foreground">Daily closest to pin contests</p>
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">Jack Cavanaugh</h4>
               </div>
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                <h4 className="font-semibold text-golf-green-dark">Jeffrey Eagleson</h4>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-golf-green/5 rounded-lg p-8">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Prize Structure</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="text-center border-golf-green/20 bg-white">
+                <CardHeader className="pb-2">
+                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Champion</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-2xl font-bold text-golf-green mb-1">$150</p>
+                  <p className="text-sm text-muted-foreground">Highest Stableford Score</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-golf-green/20 bg-white">
+                <CardHeader className="pb-2">
+                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Runner-up</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-2xl font-bold text-golf-green mb-1">$50</p>
+                  <p className="text-sm text-muted-foreground">Second Place</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-golf-green/20 bg-white">
+                <CardHeader className="pb-2">
+                  <MapPin className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Long Drive</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-2xl font-bold text-golf-green mb-1">$50</p>
+                  <p className="text-sm text-muted-foreground">Hole 5 at Scarecrow</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-golf-green/20 bg-white">
+                <CardHeader className="pb-2">
+                  <MapPin className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Closest to Pin</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-2xl font-bold text-golf-green mb-1">$50</p>
+                  <p className="text-sm text-muted-foreground">Hole 11 at Gamble Sands</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-6 text-center">
+              <Badge className="bg-golf-green/10 text-golf-green-dark border-golf-green/20">
+                $75 Buy-in per Player • Total Prize Pool: $300
+              </Badge>
             </div>
           </div>
         </div>
