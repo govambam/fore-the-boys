@@ -440,7 +440,7 @@ export default function Index() {
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>9:30 AM - Depart<br />12:30 PM - Arrival & Check-in<br />1:00 PM - Lunch and Range<br /></li>
                       <li>3:05 PM - Scarecrow Golf</li>
-                      <li>Evening - Patrick's Birthday Dinner</li>
+                      <li>Evening - Dinner, drinks, and putt your butt off</li>
                     </ul>
                   </div>
                   <div>
