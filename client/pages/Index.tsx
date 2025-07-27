@@ -9,6 +9,21 @@ export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [coursesDropdownOpen, setCoursesDropdownOpen] = useState(false);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (!target.closest('[data-dropdown="courses"]')) {
+        setCoursesDropdownOpen(false);
+      }
+    };
+
+    if (coursesDropdownOpen) {
+      document.addEventListener('click', handleClickOutside);
+      return () => document.removeEventListener('click', handleClickOutside);
+    }
+  }, [coursesDropdownOpen]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
       {/* Navigation */}
