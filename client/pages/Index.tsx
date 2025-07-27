@@ -421,11 +421,13 @@ export default function Index() {
                   <CardTitle>Accommodation</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-golf-green-dark">Inn at Gamble Sands</h4>
-                    <p className="text-sm text-muted-foreground">90 Gamble Sands Drive, Brewster, WA</p>
-                    <p className="text-sm text-muted-foreground">River view rooms with Cascades putting green access</p>
-                  </div>
+                  <Link to="/inn">
+                    <div className="cursor-pointer">
+                      <h4 className="font-semibold text-golf-green-dark hover:text-golf-green transition-colors">Inn at Gamble Sands</h4>
+                      <p className="text-sm text-muted-foreground">90 Gamble Sands Drive, Brewster, WA</p>
+                      <p className="text-sm text-muted-foreground">River view rooms with Cascades putting green access</p>
+                    </div>
+                  </Link>
                   <div>
                     <h4 className="font-semibold text-golf-green-dark">Room Details</h4>
                     <p className="text-sm text-muted-foreground">River view accommodations</p>
