@@ -170,22 +170,24 @@ export default function Index() {
           </div>
           
           <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300">
-              <div className="h-48 bg-gradient-to-br from-golf-green to-golf-fairway"></div>
-              <CardHeader>
-                <CardTitle className="text-golf-green-dark">Scarecrow</CardTitle>
-                <CardDescription>Par 71 • 6,927 yards • Links-Style Layout</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  A stunning links-style course with dramatic elevation changes and panoramic views of the Columbia River. Features wide fairways and strategic bunkering.
-                </p>
-                <div className="flex justify-between items-center">
-                  <Badge variant="secondary">Saturday 3:05 PM</Badge>
-                  <span className="text-sm font-semibold text-golf-green">Round 1</span>
-                </div>
-              </CardContent>
-            </Card>
+            <Link to="/scarecrow">
+              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                <div className="h-48 bg-gradient-to-br from-golf-green to-golf-fairway"></div>
+                <CardHeader>
+                  <CardTitle className="text-golf-green-dark">Scarecrow</CardTitle>
+                  <CardDescription>Par 71 • 6,927 yards • Links-Style Layout</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    A stunning links-style course with dramatic elevation changes and panoramic views of the Columbia River. Features wide fairways and strategic bunkering.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <Badge variant="secondary">Saturday 3:05 PM</Badge>
+                    <span className="text-sm font-semibold text-golf-green">Round 1</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
             <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300">
               <div className="h-48 bg-gradient-to-br from-golf-fairway to-golf-earth"></div>
