@@ -34,8 +34,9 @@ export default function GambleSands() {
             <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Signature Course</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            The flagship course designed by David McLay Kidd, featuring natural sandy terrain, spectacular Columbia River views, 
-            and a true links experience in the heart of Washington's wine country.
+            Winner of Golf Digest's Best New Course of 2014 award, Gamble Sands sits atop a sprawling, treeless plateau
+            of sandy desert overlooking Washington's Columbia River Valley. The extremely playable layout is oversized in every respect,
+            with enormously wide and slick fescue fairways, gigantic greens, no rough and some of the most panoramic vistas in the Northwest.
           </p>
         </div>
       </section>
