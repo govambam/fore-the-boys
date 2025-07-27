@@ -8,6 +8,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import ScoringFormat from "./pages/ScoringFormat";
+import Scarecrow from "./pages/Scarecrow";
+import GambleSands from "./pages/GambleSands";
+import Quicksands from "./pages/Quicksands";
+import Inn from "./pages/Inn";
 
 const queryClient = new QueryClient();
 
