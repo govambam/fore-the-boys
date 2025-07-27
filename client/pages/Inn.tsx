@@ -139,12 +139,12 @@ export default function Inn() {
               <div className="h-48 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Ffbf5ab28462c4393950178b16f71a842)"}}></div>
               <CardHeader>
                 <CardTitle className="text-2xl text-golf-green-dark">Danny Boy</CardTitle>
-                <CardDescription className="text-lg">Dinner-Only Fine Dining Experience</CardDescription>
+                <CardDescription className="text-lg">Dinner-Only Fine-ish Dining Experience</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Danny Boy offers a dinner-only menu centered on classic, high-quality grill fare in a unique, 
-                  sophisticated setting perfect for celebrating Patrick's birthday.
+                  Danny Boy offers a dinner-only menu centered on classic, high-quality grill fare in a unique,
+                  sophisticated setting.
                 </p>
                 
                 <div className="space-y-4">
@@ -242,9 +242,7 @@ export default function Inn() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="rounded-lg h-64 md:h-80 flex items-center justify-center mb-6 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc1b85ce2cb6149369a322b41bb51dd26)"}}>
-                <div className="text-center text-golf-green-dark">
-                  <Bed className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                </div>
+                <div className="text-center text-golf-green-dark" />
               </div>
             </div>
             
