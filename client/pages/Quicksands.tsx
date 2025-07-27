@@ -91,10 +91,10 @@ export default function Quicksands() {
             <Card className="text-center border-golf-green/20">
               <CardHeader>
                 <Zap className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Quick Play</CardTitle>
+                <CardTitle>Walking Only</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">2.5 Hour Round</p>
+                <p className="text-sm text-muted-foreground">Brisk & Enjoyable</p>
               </CardContent>
             </Card>
           </div>
