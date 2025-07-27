@@ -108,7 +108,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-3 gap-8">
             <Link to="/scarecrow" className="group">
               <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl hover:border-golf-green/40 transition-all duration-300 cursor-pointer group-hover:scale-[1.02]">
-                <div className="h-48 bg-gradient-to-br from-golf-green to-golf-fairway relative">
+                <div className="h-48 relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2F3bb98b36487e49c5b950fa5edb1b2688)"}}>
                   <div className="absolute top-3 right-3 bg-white/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <ExternalLink className="h-4 w-4 text-golf-green" />
                   </div>
