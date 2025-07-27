@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import { MapPin, Bed, Coffee, Utensils, Moon, Flame } from "lucide-react";
+import { MapPin, Bed, Coffee, Utensils, Moon, Flame, Trophy } from "lucide-react";
 
 export default function Inn() {
   return (
