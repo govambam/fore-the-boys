@@ -21,10 +21,10 @@ export default function Index() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
+              <Link to="/scoring" className="text-foreground hover:text-golf-green transition-colors">Scoring</Link>
               <a href="#courses" className="text-foreground hover:text-golf-green transition-colors">Courses</a>
-              <a href="#formats" className="text-foreground hover:text-golf-green transition-colors">Game Formats</a>
-              <a href="#travel" className="text-foreground hover:text-golf-green transition-colors">Travel Details</a>
-              <a href="#schedule" className="text-foreground hover:text-golf-green transition-colors">Schedule</a>
+              <Link to="/inn" className="text-foreground hover:text-golf-green transition-colors">Inn</Link>
+              <a href="#travel" className="text-foreground hover:text-golf-green transition-colors">Travel</a>
             </div>
 
             {/* Mobile Menu Button */}
