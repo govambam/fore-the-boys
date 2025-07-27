@@ -88,19 +88,21 @@ export default function Index() {
             featuring three incredible courses in the beautiful Columbia River Valley.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-            <Button
-              size="lg"
-              className="bg-golf-green hover:bg-golf-green-dark w-full sm:w-auto"
-              onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              View Course Details
-            </Button>
+            <Link to="/scoring">
+              <Button
+                size="lg"
+                className="bg-golf-green hover:bg-golf-green-dark w-full sm:w-auto"
+              >
+                View Scoring Format
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"
               className="border-golf-green text-golf-green hover:bg-golf-green/5 w-full sm:w-auto"
+              onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Download Itinerary
+              View Courses
             </Button>
           </div>
         </div>
