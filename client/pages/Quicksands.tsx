@@ -34,8 +34,9 @@ export default function Quicksands() {
             <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">Par 3 Course</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            An innovative 14-hole par 3 course perfect for our tournament finale. Each hole offers unique challenges 
-            with stunning desert and river valley views - the perfect setting for our team scramble competition.
+            Grab a handful of wedges, irons and a putter. Bring your friends. Hang on for a wild ride down into the valley
+            of David McLay Kidd's creative mind. QuickSands offers a rollicking golf experience over 14 par-3 holes that range
+            from 60 to 180 yards - the perfect creative finale for our team scramble competition.
           </p>
         </div>
       </section>
