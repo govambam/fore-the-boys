@@ -449,7 +449,7 @@ export default function Index() {
                       <li>10:20 AM - Gamble Sands Golf</li>
                       <li>Lunch Break</li>
                       <li>5:00 PM - Quicksands Par 3</li>
-                      <li>Evening - Group Celebration</li>
+                      <li>Evening - Dinner, payouts, shenanigans</li>
                     </ul>
                   </div>
                   <div>
