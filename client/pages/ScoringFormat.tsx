@@ -161,7 +161,7 @@ export default function ScoringFormat() {
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🪨</span>
                   <div>
-                    <CardTitle className="text-xl">Rocks, Roots & Rattlesnakes</CardTitle>
+                    <CardTitle className="text-xl">Rattlesnakes & Rangefinders</CardTitle>
                     <CardDescription>Free relief from dangerous terrain</CardDescription>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function ScoringFormat() {
                   <span className="text-2xl">🧢</span>
                   <div>
                     <CardTitle className="text-xl">Gimmies – At Opponent's Discretion</CardTitle>
-                    <CardDescription>Friendly competition</CardDescription>
+                    <CardDescription>The Fellowship of the Swing</CardDescription>
                   </div>
                 </div>
               </CardHeader>
@@ -211,7 +211,7 @@ export default function ScoringFormat() {
                   <li>• No automatic gimmies</li>
                   <li>• Any one opponent can offer a gimme</li>
                   <li>• No need for unanimous agreement</li>
-                  <li>• Keep the friendly spirit alive</li>
+                  <li>• Longer gimmes will be considered for the birthday legend</li>
                 </ul>
               </CardContent>
             </Card>
