@@ -7,22 +7,7 @@ export default function ScoringFormat() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md border-b border-golf-green/10 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Trophy className="h-8 w-8 text-golf-green" />
-              <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark">Patrick's Birthday Golf Trip</h1>
-            </div>
-            <Link to="/">
-              <Button variant="outline" className="border-golf-green text-golf-green hover:bg-golf-green/5">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Home
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Header */}
       <section className="py-12 md:py-20 px-4">
