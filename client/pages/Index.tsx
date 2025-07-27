@@ -274,7 +274,7 @@ export default function Index() {
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
                 <h4 className="font-semibold text-golf-green-dark">Patrick Triggs</h4>
-                <p className="text-xs text-muted-foreground">Birthday Boy!</p>
+                <p className="text-xs text-muted-foreground">Birthday Legend</p>
               </div>
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
