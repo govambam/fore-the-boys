@@ -189,22 +189,24 @@ export default function Index() {
               </Card>
             </Link>
 
-            <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300">
-              <div className="h-48 bg-gradient-to-br from-golf-fairway to-golf-earth"></div>
-              <CardHeader>
-                <CardTitle className="text-golf-green-dark">Gamble Sands</CardTitle>
-                <CardDescription>Par 72 • 7,009 yards • Signature Course</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  The flagship course designed by David McLay Kidd, featuring natural sandy terrain and spectacular views. A true links experience in the heart of Washington.
-                </p>
-                <div className="flex justify-between items-center">
-                  <Badge variant="secondary">Sunday 10:20 AM</Badge>
-                  <span className="text-sm font-semibold text-golf-green">Round 2</span>
-                </div>
-              </CardContent>
-            </Card>
+            <Link to="/gamble-sands">
+              <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                <div className="h-48 bg-gradient-to-br from-golf-fairway to-golf-earth"></div>
+                <CardHeader>
+                  <CardTitle className="text-golf-green-dark">Gamble Sands</CardTitle>
+                  <CardDescription>Par 72 • 7,009 yards • Signature Course</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    The flagship course designed by David McLay Kidd, featuring natural sandy terrain and spectacular views. A true links experience in the heart of Washington.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <Badge variant="secondary">Sunday 10:20 AM</Badge>
+                    <span className="text-sm font-semibold text-golf-green">Round 2</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
             <Card className="overflow-hidden border-golf-green/20 hover:shadow-xl transition-all duration-300">
               <div className="h-48 bg-gradient-to-br from-golf-sand to-golf-green"></div>
