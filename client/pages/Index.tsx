@@ -415,16 +415,23 @@ export default function Index() {
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
               High Stakes, Higher Handicaps
             </h3>
-            <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+            <div className="bg-white rounded-lg p-4 mb-6 border border-golf-green/20 text-center">
+              <h4 className="font-bold text-golf-green-dark mb-2">Tournament Buy-In</h4>
+              <p className="text-3xl font-bold text-golf-green">$100</p>
+              <p className="text-sm text-muted-foreground">per player</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
                   <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Champion</CardTitle>
+                  <CardTitle className="text-sm">Individual Champion</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$150</p>
+                  <p className="text-xl font-bold text-golf-green mb-1">$120</p>
                   <p className="text-xs text-muted-foreground">
-                    Highest Stableford
+                    Highest Stableford (Scarecrow + Gamble Sands)
                   </p>
                 </CardContent>
               </Card>
@@ -432,11 +439,11 @@ export default function Index() {
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
                   <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Runner-up</CardTitle>
+                  <CardTitle className="text-sm">Individual Runner-up</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$50</p>
-                  <p className="text-xs text-muted-foreground">Second Place</p>
+                  <p className="text-xl font-bold text-golf-green mb-1">$60</p>
+                  <p className="text-xs text-muted-foreground">Second Place Stableford</p>
                 </CardContent>
               </Card>
 
