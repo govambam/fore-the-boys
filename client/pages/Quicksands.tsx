@@ -142,15 +142,6 @@ export default function Quicksands() {
                 </CardTitle>
                 <CardDescription>Birthday Team</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Both players tee off on each hole</li>
-                  <li>• Choose the best tee shot</li>
-                  <li>• Both players play from that spot</li>
-                  <li>• Continue until hole is completed</li>
-                  <li>• Record team's Stableford score</li>
-                </ul>
-              </CardContent>
             </Card>
           </div>
 
