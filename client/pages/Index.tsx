@@ -432,7 +432,8 @@ export default function Index() {
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$120</p>
                   <p className="text-xs text-muted-foreground">
-                    Highest Stableford (Scarecrow + Gamble Sands)
+                    Highest Stableford (Scarecrow + Gamble Sands + Team
+                    Score)
                   </p>
                 </CardContent>
               </Card>
