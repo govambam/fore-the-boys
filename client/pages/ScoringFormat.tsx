@@ -502,7 +502,7 @@ export default function ScoringFormat() {
             {/* Gamble Sands */}
             <div className="bg-white rounded-lg p-8 border border-golf-green/20">
               <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
-                <span>🏌��‍♂️</span> Gamble Sands – Long Drive (Par 5s)
+                <span>🏌</span> Gamble Sands – Long Drive (Par 5s)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -571,7 +571,7 @@ export default function ScoringFormat() {
                   </div>
 
                   <div className="border-l-4 border-golf-green pl-4">
-                    <h5 className="font-bold text-golf-green-dark">Hole 16 �� 166 yards</h5>
+                    <h5 className="font-bold text-golf-green-dark">Hole 16 – 166 yards</h5>
                     <p className="text-sm text-muted-foreground mt-1">
                       Club up and favor the right side. The green tilts hard left and front — anything short or soft won't hold. Use the back slope when it's there.
                     </p>
