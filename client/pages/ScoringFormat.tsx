@@ -403,18 +403,17 @@ export default function ScoringFormat() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Team Scramble</CardTitle>
+                <CardTitle>Team Stableford Competition</CardTitle>
                 <CardDescription>
-                  Round 3: Quicksands Par 3 Course
+                  Round 3: Quicksands Par 3 Course (Separate Competition)
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Teams: Ivan & Jack vs Patrick & TBA</li>
                   <li>• Both players tee off, play from best shot</li>
-                  <li>
-                    • Team's Stableford score counts toward individual totals
-                  </li>
+                  <li>• Team with highest Stableford score wins</li>
+                  <li>• Winning team: $25 per player</li>
                   <li>• 14-hole par 3 course provides exciting finale</li>
                 </ul>
               </CardContent>
