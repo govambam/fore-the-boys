@@ -515,6 +515,179 @@ export default function ScoringFormat() {
               </div>
             </div>
           </div>
+
+          {/* Detailed Hole Information */}
+          <div className="mt-12 space-y-8">
+            <h3 className="text-3xl font-bold text-golf-green-dark mb-8 text-center">Contest Hole Details</h3>
+
+            {/* Gamble Sands */}
+            <div className="bg-white rounded-lg p-8 border border-golf-green/20">
+              <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
+                <span>🏌��‍♂️</span> Gamble Sands – Long Drive (Par 5s)
+              </h4>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 3 – 591 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Don't force it — stay left off the tee and again on your second. The green opens up from that angle, and there's plenty of room to run it in from the front left.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 7 – 439 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Cut the corner left of the bunker and this one's gettable. For front pins, chase it in from the left. Back pins? Fly it deep and use the backboard.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 13 – 507 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Hit it at the pot bunker, but bail left if you're unsure. Cover the fronting bunker on your second and catch the slope — it'll do the rest.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 18 – 469 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Find the speed slot on the right and your drive can add 50+. Big hitters can take on the second — favor the fairway bunker well right and watch it feed in.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 border border-golf-green/20">
+              <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
+                <span>🎯</span> Gamble Sands – Closest to the Pin (Par 3s)
+              </h4>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 4 – 142 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      This one rewards creativity. A low, running ball often beats a lofted shot. Stay short-left and use the slope — nothing good happens long or right.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 6 – 216 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Forget the number — it plays shorter with the slope. Everything feeds hard left. Aim well right and let the hill do the work.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 10 – 119 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Short and dangerous. Use sideboards and backboards with a touch of spin to work it close. Pick your landing spot wisely — it matters.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 16 – 166 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Club up and favor the right side. The green tilts hard left and front — anything short or soft won't hold. Use the back slope when it's there.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 border border-golf-green/20">
+              <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
+                <span>🏌️‍♂️</span> Scarecrow – Long Drive (Par 5s)
+              </h4>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 3 – 506 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Uphill but inviting. The fairway is wide — let it rip. Two solid strikes and you'll be putting for birdie (or better) early.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 6 – 566 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      All downhill and tempting. Carry the left fairway bunkers and you'll have a clean look at the green. Safer route is right, wedge on, tap in birdie.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 12 – 461 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Bite off as much as you can on the tee — the further right you go, the shorter your second. Clear the bunker and it feeds into a punchbowl.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 15 – 502 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Blind tee shot over the ridge. Trust it. Down the left gives you an angle to sneak one on. Miss short-right and the bunker's got you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 border border-golf-green/20">
+              <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
+                <span>🎯</span> Scarecrow – Closest to the Pin (Par 3s)
+              </h4>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 2 – 153 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Classic Redan. Left is dead, but the smart shot rides the right slope onto the green. A bold miss right can still save par.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 4 – 184 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      The longest one out here — and a trap for anyone swinging too hard. Play a low runner and bounce it on. Long is jail.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 9 – 148 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Scenic and short, but don't lose focus. Aim right and let the slope feed it in. A great look at ace — just don't get caught admiring the view.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 11 – 126 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Plays from high above Chicken River. A full swing wedge and a bit of nerve. Let the altitude and adrenaline do the rest.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-golf-green pl-4">
+                    <h5 className="font-bold text-golf-green-dark">Hole 16 – 156 yards</h5>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Downhill finish for the par 3s. The green is receptive — just trust the number and don't overswing. This one wants to be stiffed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
