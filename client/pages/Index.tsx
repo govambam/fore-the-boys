@@ -20,6 +20,7 @@ import {
   Clock,
   ChevronDown,
   ExternalLink,
+  Target,
 } from "lucide-react";
 
 export default function Index() {
