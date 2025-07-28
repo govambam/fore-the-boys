@@ -340,7 +340,8 @@ export default function ScoringFormat() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$120</p>
-                  <p className="text-sm text-muted-foreground">Highest Stableford</p>
+                  <p className="text-sm text-muted-foreground">Highest Stableford (Scarecrow + Gamble Sands + Team
+                  score)</p>
                 </CardContent>
               </Card>
 
