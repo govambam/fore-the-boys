@@ -226,6 +226,16 @@ export default function Scarecrow() {
                 </CardContent>
               </Card>
             </div>
+
+            <div className="bg-white rounded-lg p-6 border border-golf-green/20 mt-6">
+              <h4 className="font-bold text-golf-green-dark mb-3 text-center">Featured Hole: #9 Par 3</h4>
+              <p className="text-sm text-muted-foreground text-center">
+                Perhaps the most scenic spot on the entire property. With the Columbia River looming
+                in the background, it takes a concerted effort to focus on the task at hand. It's a short
+                and fun shot over the bunker to find the green. Slopes on the right edge will funnel
+                balls towards the green. Your potential ace awaits.
+              </p>
+            </div>
           </div>
         </div>
       </section>
