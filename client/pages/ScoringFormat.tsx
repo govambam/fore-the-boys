@@ -419,6 +419,102 @@ export default function ScoringFormat() {
               </CardContent>
             </Card>
           </div>
+
+          {/* Skills Challenge Rules */}
+          <div className="bg-golf-green/5 rounded-lg p-8">
+            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">Skills Challenge Rules</h3>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <Target className="h-10 w-10 text-golf-green" />
+                    <div>
+                      <CardTitle className="text-xl">Closest to the Pin</CardTitle>
+                      <CardDescription>Every Par 3 on both courses • $10 per hole</CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-golf-green-dark mb-2">Rules</h4>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>• Must be ON THE GREEN to win</li>
+                        <li>• Measured to the inch for ties</li>
+                        <li>• If no one on green, $10 carries to next Par 3</li>
+                        <li>• Carry-over continues until someone wins</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-golf-green-dark mb-2">Potential Payouts</h4>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>• First Par 3: $10</li>
+                        <li>• If carry-over: $20, $30, $40...</li>
+                        <li>• Multiple chances to win big!</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-10 w-10 text-golf-green" />
+                    <div>
+                      <CardTitle className="text-xl">Long Drive</CardTitle>
+                      <CardDescription>Every Par 5 on both courses • $10 per hole</CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-golf-green-dark mb-2">Rules</h4>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>• Must be IN THE FAIRWAY to win</li>
+                        <li>• Winner = shortest distance to flag from approach</li>
+                        <li>• Placement beats pure distance</li>
+                        <li>• Measured to the yard for ties</li>
+                        <li>• If no one in fairway, $10 carries to next Par 5</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-golf-green-dark mb-2">Strategy</h4>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>• Smart positioning beats pure distance</li>
+                        <li>• Know the pin location</li>
+                        <li>• Risk vs. reward on tricky Par 5s</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-8 bg-white rounded-lg p-6 border border-golf-green/20">
+              <h4 className="font-bold text-golf-green-dark mb-3 text-center">Skills Challenge Summary</h4>
+              <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
+                <div>
+                  <h5 className="font-semibold text-golf-green-dark mb-2">Scarecrow Course</h5>
+                  <ul className="space-y-1">
+                    <li>• Multiple Par 3s for closest to pin</li>
+                    <li>• Multiple Par 5s for long drive</li>
+                    <li>• Carry-over potential for bigger payouts</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-golf-green-dark mb-2">Gamble Sands Course</h5>
+                  <ul className="space-y-1">
+                    <li>• Multiple Par 3s for closest to pin</li>
+                    <li>• Multiple Par 5s for long drive</li>
+                    <li>• Fresh chances if you missed Scarecrow</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
