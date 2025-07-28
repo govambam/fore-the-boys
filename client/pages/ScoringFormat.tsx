@@ -411,10 +411,8 @@ export default function ScoringFormat() {
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Teams: Ivan & Jack vs Patrick & TBA</li>
-                  <li>• Both players tee off, play from best shot</li>
                   <li>• Team with highest Stableford score wins</li>
                   <li>• Winning team: $25 per player</li>
-                  <li>• 14-hole par 3 course provides exciting finale</li>
                 </ul>
               </CardContent>
             </Card>
