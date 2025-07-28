@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import { Trophy, Users, Calculator, Target } from "lucide-react";
+import { Trophy, Users, Calculator, Target, MapPin } from "lucide-react";
 
 export default function ScoringFormat() {
   return (
