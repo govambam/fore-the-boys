@@ -393,10 +393,9 @@ export default function ScoringFormat() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Each player tracks their own Stableford points</li>
                   <li>
-                    • Points from both rounds are combined for total score
+                    • Points from all rounds are combined for total score
                   </li>
-                  <li>• Highest point total wins the individual competition</li>
-                  <li>• Play your own ball throughout both rounds</li>
+                  <li>• Highest point total wins the overall competition</li>
                 </ul>
               </CardContent>
             </Card>
