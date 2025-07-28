@@ -492,27 +492,7 @@ export default function ScoringFormat() {
               </Card>
             </div>
 
-            <div className="mt-8 bg-white rounded-lg p-6 border border-golf-green/20">
-              <h4 className="font-bold text-golf-green-dark mb-3 text-center">Skills Challenge Summary</h4>
-              <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
-                <div>
-                  <h5 className="font-semibold text-golf-green-dark mb-2">Scarecrow Course</h5>
-                  <ul className="space-y-1">
-                    <li>• Multiple Par 3s for closest to pin</li>
-                    <li>• Multiple Par 5s for long drive</li>
-                    <li>• Carry-over potential for bigger payouts</li>
-                  </ul>
-                </div>
-                <div>
-                  <h5 className="font-semibold text-golf-green-dark mb-2">Gamble Sands Course</h5>
-                  <ul className="space-y-1">
-                    <li>• Multiple Par 3s for closest to pin</li>
-                    <li>• Multiple Par 5s for long drive</li>
-                    <li>• Fresh chances if you missed Scarecrow</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           {/* Detailed Hole Information */}
@@ -591,7 +571,7 @@ export default function ScoringFormat() {
                   </div>
 
                   <div className="border-l-4 border-golf-green pl-4">
-                    <h5 className="font-bold text-golf-green-dark">Hole 16 – 166 yards</h5>
+                    <h5 className="font-bold text-golf-green-dark">Hole 16 �� 166 yards</h5>
                     <p className="text-sm text-muted-foreground mt-1">
                       Club up and favor the right side. The green tilts hard left and front — anything short or soft won't hold. Use the back slope when it's there.
                     </p>
