@@ -162,16 +162,16 @@ export default function Quicksands() {
 
           <div className="bg-golf-green/5 rounded-lg p-6">
             <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">
-              Scoring for Tournament
+              Separate Team Competition
             </h3>
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
-                Each team's Stableford score will be added to both players'
-                individual tournament totals. This ensures everyone benefits
-                from good teamwork while maintaining individual competition.
+                Quicksands is now a separate team Stableford competition! The team with the highest
+                Stableford score wins, and each player on the winning team receives $25. This is
+                separate from the individual competition on Scarecrow and Gamble Sands.
               </p>
               <Badge className="bg-golf-green text-white">
-                Team Score = Both Players' Individual Score for This Round
+                Winning Team: $25 per player
               </Badge>
             </div>
           </div>
