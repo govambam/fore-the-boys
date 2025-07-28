@@ -336,7 +336,7 @@ export default function ScoringFormat() {
               <Card className="border-golf-green/20 bg-white text-center">
                 <CardHeader className="pb-2">
                   <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Individual Champion</CardTitle>
+                  <CardTitle className="text-lg">Overall Champion</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$120</p>
@@ -442,7 +442,7 @@ export default function ScoringFormat() {
                       <ul className="space-y-1 text-sm text-muted-foreground">
                         <li>• Must be ON THE GREEN to win</li>
                         <li>• Measured to the inch for ties</li>
-                        <li>�� If no one on green, $10 carries to next Par 3</li>
+                        <li>• If no one on green, $10 carries to next Par 3</li>
                         <li>• Carry-over continues until someone wins</li>
                       </ul>
                     </div>
