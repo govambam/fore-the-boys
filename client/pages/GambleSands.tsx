@@ -227,9 +227,10 @@ export default function GambleSands() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Multiple Par 3s on Gamble Sands offer fresh chances to win closest to the pin contests.
-                    You must be on the green to win, and if no one makes it or there's a tie,
-                    the money carries over to create bigger prizes!
+                    Multiple Par 3s on Gamble Sands offer fresh chances to win
+                    closest to the pin contests. You must be on the green to
+                    win, and if no one makes it or there's a tie, the money
+                    carries over to create bigger prizes!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
@@ -247,9 +248,10 @@ export default function GambleSands() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Multiple Par 5s on Gamble Sands feature long drive competitions.
-                    You must be in the fairway, and the winner is determined by
-                    who has the shortest approach shot to the flag - smart placement wins!
+                    Multiple Par 5s on Gamble Sands feature long drive
+                    competitions. You must be in the fairway, and the winner is
+                    determined by who has the shortest approach shot to the flag
+                    - smart placement wins!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
@@ -261,11 +263,14 @@ export default function GambleSands() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border border-golf-green/20 mt-6">
-              <h4 className="font-bold text-golf-green-dark mb-3 text-center">Featured Hole: #16 Par 3</h4>
+              <h4 className="font-bold text-golf-green-dark mb-3 text-center">
+                Featured Hole: #16 Par 3
+              </h4>
               <p className="text-sm text-muted-foreground text-center">
-                The massive green is full of ridges and tiers, and being on the correct shelf is everything.
-                It's a visually striking hole that offers options, but the safest play is smart distance
-                control and knowing where not to miss.
+                The massive green is full of ridges and tiers, and being on the
+                correct shelf is everything. It's a visually striking hole that
+                offers options, but the safest play is smart distance control
+                and knowing where not to miss.
               </p>
             </div>
           </div>

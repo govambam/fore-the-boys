@@ -194,9 +194,10 @@ export default function Scarecrow() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Multiple Par 3s on Scarecrow offer chances to win closest to the pin contests.
-                    You must be on the green to win, and if no one makes it or there's a tie,
-                    the money carries over to the next Par 3!
+                    Multiple Par 3s on Scarecrow offer chances to win closest to
+                    the pin contests. You must be on the green to win, and if no
+                    one makes it or there's a tie, the money carries over to the
+                    next Par 3!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
@@ -214,9 +215,10 @@ export default function Scarecrow() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Multiple Par 5s on Scarecrow feature long drive competitions.
-                    You must be in the fairway, and the winner is determined by
-                    who has the shortest approach shot to the flag - placement matters!
+                    Multiple Par 5s on Scarecrow feature long drive
+                    competitions. You must be in the fairway, and the winner is
+                    determined by who has the shortest approach shot to the flag
+                    - placement matters!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
@@ -228,12 +230,15 @@ export default function Scarecrow() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border border-golf-green/20 mt-6">
-              <h4 className="font-bold text-golf-green-dark mb-3 text-center">Featured Hole: #9 Par 3</h4>
+              <h4 className="font-bold text-golf-green-dark mb-3 text-center">
+                Featured Hole: #9 Par 3
+              </h4>
               <p className="text-sm text-muted-foreground text-center">
-                Perhaps the most scenic spot on the entire property. With the Columbia River looming
-                in the background, it takes a concerted effort to focus on the task at hand. It's a short
-                and fun shot over the bunker to find the green. Slopes on the right edge will funnel
-                balls towards the green. Your potential ace awaits.
+                Perhaps the most scenic spot on the entire property. With the
+                Columbia River looming in the background, it takes a concerted
+                effort to focus on the task at hand. It's a short and fun shot
+                over the bunker to find the green. Slopes on the right edge will
+                funnel balls towards the green. Your potential ace awaits.
               </p>
             </div>
           </div>

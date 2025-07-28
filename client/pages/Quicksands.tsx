@@ -116,8 +116,8 @@ export default function Quicksands() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our tournament finale features a 2-man scramble with team scores
-              counting toward individual Stableford totals as well as
-              a separate team Stableford prize.
+              counting toward individual Stableford totals as well as a separate
+              team Stableford prize.
             </p>
           </div>
 
@@ -130,8 +130,7 @@ export default function Quicksands() {
                 </CardTitle>
                 <CardDescription>Dynamic Duo</CardDescription>
               </CardHeader>
-              <CardContent>
-              </CardContent>
+              <CardContent></CardContent>
             </Card>
 
             <Card className="border-golf-green/20 bg-golf-green/5">
@@ -151,9 +150,12 @@ export default function Quicksands() {
             </h3>
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
-                In addition to counting towards your overall Stableford score, we will have a separate team Stableford competition! The team with the highest
-                Stableford score wins, and each player on the winning team receives $25. This is
-                separate from the overall competition which is a cumulative Stableford score from Scarecrow, Gamble Sands, and Quicksand.
+                In addition to counting towards your overall Stableford score,
+                we will have a separate team Stableford competition! The team
+                with the highest Stableford score wins, and each player on the
+                winning team receives $25. This is separate from the overall
+                competition which is a cumulative Stableford score from
+                Scarecrow, Gamble Sands, and Quicksand.
               </p>
               <Badge className="bg-golf-green text-white">
                 Winning Team: $25 per player

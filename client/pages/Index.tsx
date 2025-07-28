@@ -287,8 +287,8 @@ export default function Index() {
               Tournament Format
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Modified Stableford scoring system with overall competition
-              and a team scramble finale at Quicksands.
+              Modified Stableford scoring system with overall competition and a
+              team scramble finale at Quicksands.
             </p>
           </div>
 
@@ -371,9 +371,9 @@ export default function Index() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-3">
-                    In addition to determining the winner of the separate
-                    team competition, your team Stableford score will be
-                    count towards overall Stableford scoring.
+                    In addition to determining the winner of the separate team
+                    competition, your team Stableford score will be count
+                    towards overall Stableford scoring.
                   </p>
                 </div>
               </CardContent>
@@ -418,7 +418,9 @@ export default function Index() {
             </h3>
 
             <div className="bg-white rounded-lg p-4 mb-6 border border-golf-green/20 text-center">
-              <h4 className="font-bold text-golf-green-dark mb-2">Tournament Buy-In</h4>
+              <h4 className="font-bold text-golf-green-dark mb-2">
+                Tournament Buy-In
+              </h4>
               <p className="text-3xl font-bold text-golf-green">$100</p>
               <p className="text-sm text-muted-foreground">per player</p>
             </div>
@@ -432,8 +434,7 @@ export default function Index() {
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$120</p>
                   <p className="text-xs text-muted-foreground">
-                    Highest Stableford (Scarecrow + Gamble Sands + Team
-                    Score)
+                    Highest Stableford (Scarecrow + Gamble Sands + Team Score)
                   </p>
                 </CardContent>
               </Card>
@@ -445,7 +446,9 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$60</p>
-                  <p className="text-xs text-muted-foreground">Second Place Overall Stableford</p>
+                  <p className="text-xs text-muted-foreground">
+                    Second Place Overall Stableford
+                  </p>
                 </CardContent>
               </Card>
 
@@ -456,7 +459,9 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">per player (Quicksands Scramble)</p>
+                  <p className="text-xs text-muted-foreground">
+                    per player (Quicksands Scramble)
+                  </p>
                 </CardContent>
               </Card>
 
@@ -467,15 +472,21 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$10</p>
-                  <p className="text-xs text-muted-foreground">per contest hole</p>
+                  <p className="text-xs text-muted-foreground">
+                    per contest hole
+                  </p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 mt-6">
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">Closest to Pin</h4>
-                <p className="text-sm text-muted-foreground text-center mb-2">$10 per Par 3 on both courses</p>
+                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">
+                  Closest to Pin
+                </h4>
+                <p className="text-sm text-muted-foreground text-center mb-2">
+                  $10 per Par 3 on both courses
+                </p>
                 <ul className="text-xs text-muted-foreground space-y-1">
                   <li>• Must be on the green to win</li>
                   <li>• Ties carry over to next Par 3 ($20, $30, etc.)</li>
@@ -484,8 +495,12 @@ export default function Index() {
               </div>
 
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">Long Drive</h4>
-                <p className="text-sm text-muted-foreground text-center mb-2">$10 per Par 5 on both courses</p>
+                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">
+                  Long Drive
+                </h4>
+                <p className="text-sm text-muted-foreground text-center mb-2">
+                  $10 per Par 5 on both courses
+                </p>
                 <ul className="text-xs text-muted-foreground space-y-1">
                   <li>• Must be in fairway to win</li>
                   <li>• Winner has shortest approach to flag</li>
