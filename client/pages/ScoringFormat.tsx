@@ -319,20 +319,71 @@ export default function ScoringFormat() {
         </div>
       </section>
 
-      {/* Tournament Structure */}
+      {/* Prize Pool & Buy-In */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
-              Tournament Structure
-            </h2>
+            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">Prize Pool & Tournament Structure</h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-golf-green-dark mb-2">$100 Buy-In</h3>
+              <p className="text-lg text-muted-foreground">per player • Total Prize Pool: $400</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardHeader className="pb-2">
+                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Individual Champion</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-2xl font-bold text-golf-green mb-1">$120</p>
+                  <p className="text-sm text-muted-foreground">Highest Stableford</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardHeader className="pb-2">
+                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Runner-Up</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-2xl font-bold text-golf-green mb-1">$60</p>
+                  <p className="text-sm text-muted-foreground">Second Place</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardHeader className="pb-2">
+                  <Users className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Team Champions</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-2xl font-bold text-golf-green mb-1">$25</p>
+                  <p className="text-sm text-muted-foreground">per player</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-golf-green/20 bg-white text-center">
+                <CardHeader className="pb-2">
+                  <Target className="h-10 w-10 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-lg">Skills Contests</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-2xl font-bold text-golf-green mb-1">$10</p>
+                  <p className="text-sm text-muted-foreground">per contest</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Calculator className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Individual Competition</CardTitle>
+                <CardTitle>Individual Stableford Competition</CardTitle>
                 <CardDescription>
                   Rounds 1 & 2: Scarecrow and Gamble Sands
                 </CardDescription>
