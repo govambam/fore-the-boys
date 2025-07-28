@@ -179,32 +179,28 @@ export default function Scarecrow() {
             </Card>
           </div>
 
-          {/* Signature Holes */}
+          {/* Skills Challenges */}
           <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
-              Signature Holes & Contests
+              Skills Challenges on Scarecrow
             </h3>
-            <div className="grid md:grid-cols-2 gap-8">
+
+            <div className="grid md:grid-cols-2 gap-8 mb-6">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">
-                    Hole 9
-                  </Badge>
-                  <CardTitle className="text-lg">Closest to Pin</CardTitle>
-                  <CardDescription>Par 3 • Scenic River Views</CardDescription>
+                  <Target className="h-8 w-8 text-golf-green mb-2" />
+                  <CardTitle className="text-lg">Closest to the Pin</CardTitle>
+                  <CardDescription>Every Par 3 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Perhaps the most scenic spot on the entire property. With
-                    the Columbia River looming in the background, it takes a
-                    concerted effort to focus on the task at hand. It's a short
-                    and fun shot over the bunker to find the green. Slopes on
-                    the right edge will funnel balls towards the green. Your
-                    potential ace awaits.
+                    Multiple Par 3s on Scarecrow offer chances to win closest to the pin contests.
+                    You must be on the green to win, and if no one makes it or there's a tie,
+                    the money carries over to the next Par 3!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
-                      💰 $25 Prize for Closest to Pin
+                      💰 $10 per Par 3 (with carry-over potential)
                     </p>
                   </div>
                 </CardContent>
@@ -212,25 +208,19 @@ export default function Scarecrow() {
 
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">
-                    Hole 14
-                  </Badge>
-                  <CardTitle className="text-lg">Long Drive Contest</CardTitle>
-                  <CardDescription>Par 4 • 500 yards</CardDescription>
+                  <MapPin className="h-8 w-8 text-golf-green mb-2" />
+                  <CardTitle className="text-lg">Long Drive</CardTitle>
+                  <CardDescription>Every Par 5 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    This beastly 500 yard par 4 does not play anywhere as long
-                    as the scorecard indicates. If you manage to hit a decent
-                    drive, your golf ball will tumble an extra 50 yards or so
-                    down the hill setting up a fun approach shot. A pot bunker
-                    bisects the front of a truly massive and undulating green.
-                    With a plethora of pin locations, the 14th is a truly unique
-                    long par 4.
+                    Multiple Par 5s on Scarecrow feature long drive competitions.
+                    You must be in the fairway, and the winner is determined by
+                    who has the shortest approach shot to the flag - placement matters!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
-                      💰 $25 Prize for Longest Drive
+                      💰 $10 per Par 5 (with carry-over potential)
                     </p>
                   </div>
                 </CardContent>
