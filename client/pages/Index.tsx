@@ -168,7 +168,7 @@ export default function Index() {
                     <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
                   </div>
                   <CardDescription>
-                    Par 71 • 6,927 yards • Links-Style Layout
+                    Par 71 • 6,261 yards • Links-Style Layout
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -372,8 +372,8 @@ export default function Index() {
                   </div>
                   <p className="text-sm text-muted-foreground mt-3">
                     Both players tee off, then play from the best shot. Team's
-                    Stableford score will be added to each player's individual
-                    tournament total.
+                    Stableford score will be separate from individual
+                    Stableford scoring.
                   </p>
                 </div>
               </CardContent>
@@ -477,7 +477,7 @@ export default function Index() {
                 <p className="text-sm text-muted-foreground text-center mb-2">$10 per Par 3 on both courses</p>
                 <ul className="text-xs text-muted-foreground space-y-1">
                   <li>• Must be on the green to win</li>
-                  <li>��� Ties carry over to next Par 3 ($20, $30, etc.)</li>
+                  <li>• Ties carry over to next Par 3 ($20, $30, etc.)</li>
                   <li>• Multiple opportunities to win</li>
                 </ul>
               </div>
