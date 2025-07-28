@@ -241,26 +241,32 @@ export default function GambleSands() {
 
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">
-                    Hole 13
-                  </Badge>
-                  <CardTitle className="text-lg">Long Drive Contest</CardTitle>
-                  <CardDescription>Par 5 • 538 yards</CardDescription>
+                  <MapPin className="h-8 w-8 text-golf-green mb-2" />
+                  <CardTitle className="text-lg">Long Drive</CardTitle>
+                  <CardDescription>Every Par 5 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    A large bunker on the right juts into the center of the
-                    fairway but only needs about 230 yards to carry. Aim just
-                    left of it for a safe play with good rollout. Perfect
-                    opportunity to let it rip and show off your distance!
+                    Multiple Par 5s on Gamble Sands feature long drive competitions.
+                    You must be in the fairway, and the winner is determined by
+                    who has the shortest approach shot to the flag - smart placement wins!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
-                      💰 $25 Prize for Longest Drive
+                      💰 $10 per Par 5 (with carry-over potential)
                     </p>
                   </div>
                 </CardContent>
               </Card>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 border border-golf-green/20 mt-6">
+              <h4 className="font-bold text-golf-green-dark mb-3 text-center">Featured Hole: #16 Par 3</h4>
+              <p className="text-sm text-muted-foreground text-center">
+                The massive green is full of ridges and tiers, and being on the correct shelf is everything.
+                It's a visually striking hole that offers options, but the safest play is smart distance
+                control and knowing where not to miss.
+              </p>
             </div>
           </div>
         </div>
