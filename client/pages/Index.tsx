@@ -427,7 +427,7 @@ export default function Index() {
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
                   <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Individual Champion</CardTitle>
+                  <CardTitle className="text-sm">Overall Champion</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$120</p>
