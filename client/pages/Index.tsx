@@ -287,8 +287,8 @@ export default function Index() {
               Tournament Format
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Modified Stableford scoring system with individual competition and
-              a team scramble finale at Quicksands.
+              Modified Stableford scoring system with overall competition
+              and a team scramble finale at Quicksands.
             </p>
           </div>
 
