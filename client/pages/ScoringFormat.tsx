@@ -384,9 +384,9 @@ export default function ScoringFormat() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Calculator className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Individual Stableford Competition</CardTitle>
+                <CardTitle>Overall Stableford Competition</CardTitle>
                 <CardDescription>
-                  Rounds 1 & 2: Scarecrow and Gamble Sands
+                  Individual Scarecrow and Gamble Sands score + Team score
                 </CardDescription>
               </CardHeader>
               <CardContent>
