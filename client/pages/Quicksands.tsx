@@ -254,13 +254,7 @@ export default function Quicksands() {
                   </ul>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">
-                    Tournament Finale
-                  </h4>
-                  <p className="text-sm text-blue-700">
-                    Scramble scores count toward individual Stableford totals.
-                    The perfect way to finish Patrick's birthday celebration!
-                  </p>
+                  Tournament Finale
                 </div>
               </div>
             </CardContent>
