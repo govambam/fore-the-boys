@@ -449,56 +449,52 @@ export default function Index() {
 
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
-                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Long Drive</CardTitle>
+                  <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Team Champions</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">Scarecrow #14</p>
+                  <p className="text-xs text-muted-foreground">per player (Quicksands Scramble)</p>
                 </CardContent>
               </Card>
 
               <Card className="text-center border-golf-green/20 bg-white">
                 <CardHeader className="pb-2">
-                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Closest to Pin</CardTitle>
+                  <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
+                  <CardTitle className="text-sm">Skills Challenges</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">Scarecrow #9</p>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center border-golf-green/20 bg-white">
-                <CardHeader className="pb-2">
-                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Long Drive</CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">
-                    Gamble Sands #13
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center border-golf-green/20 bg-white">
-                <CardHeader className="pb-2">
-                  <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Closest to Pin</CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">
-                    Gamble Sands #16
-                  </p>
+                  <p className="text-xl font-bold text-golf-green mb-1">$10</p>
+                  <p className="text-xs text-muted-foreground">per contest hole</p>
                 </CardContent>
               </Card>
             </div>
 
+            <div className="grid md:grid-cols-2 gap-4 mt-6">
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">Closest to Pin</h4>
+                <p className="text-sm text-muted-foreground text-center mb-2">$10 per Par 3 on both courses</p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• Must be on the green to win</li>
+                  <li>��� Ties carry over to next Par 3 ($20, $30, etc.)</li>
+                  <li>• Multiple opportunities to win</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">Long Drive</h4>
+                <p className="text-sm text-muted-foreground text-center mb-2">$10 per Par 5 on both courses</p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• Must be in fairway to win</li>
+                  <li>• Winner has shortest approach to flag</li>
+                  <li>• Ties carry over to next Par 5 ($20, $30, etc.)</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="mt-6 text-center">
               <Badge className="bg-golf-green/10 text-golf-green-dark border-golf-green/20">
-                $75 Buy-in per Player • Total Prize Pool: $300
+                $100 Buy-in per Player • Total Prize Pool: $400
               </Badge>
             </div>
           </div>
