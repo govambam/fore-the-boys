@@ -445,7 +445,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-xl font-bold text-golf-green mb-1">$60</p>
-                  <p className="text-xs text-muted-foreground">Second Place Stableford</p>
+                  <p className="text-xs text-muted-foreground">Second Place Overall Stableford</p>
                 </CardContent>
               </Card>
 
