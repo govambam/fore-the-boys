@@ -212,35 +212,28 @@ export default function GambleSands() {
             </Card>
           </div>
 
-          {/* Signature Holes */}
+          {/* Skills Challenges */}
           <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
-              Signature Holes
+              Skills Challenges on Gamble Sands
             </h3>
-            <div className="grid md:grid-cols-2 gap-8">
+
+            <div className="grid md:grid-cols-2 gap-8 mb-6">
               <Card className="border-golf-green/20 bg-white">
                 <CardHeader>
-                  <Badge className="mb-2 bg-golf-green text-white w-fit">
-                    Hole 16
-                  </Badge>
-                  <CardTitle className="text-lg">Closest to Pin</CardTitle>
-                  <CardDescription>Par 3 • 193 yards</CardDescription>
+                  <Target className="h-8 w-8 text-golf-green mb-2" />
+                  <CardTitle className="text-lg">Closest to the Pin</CardTitle>
+                  <CardDescription>Every Par 3 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-3">
-                    The massive green is full of ridges and tiers, and being on
-                    the correct shelf is everything. If the pin is back right,
-                    you can use the backstop to feed the ball close. Miss to the
-                    right, and the hill can help kick your ball back onto the
-                    green. Miss left, and you'll have an uphill chip to almost
-                    any pin—manageable but tricky. Long and above the hole? Good
-                    luck—3-putts (or worse) are very real. It's a visually
-                    striking hole that offers options, but the safest play is
-                    smart distance control and knowing where not to miss.
+                    Multiple Par 3s on Gamble Sands offer fresh chances to win closest to the pin contests.
+                    You must be on the green to win, and if no one makes it or there's a tie,
+                    the money carries over to create bigger prizes!
                   </p>
                   <div className="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
                     <p className="text-sm font-semibold text-yellow-800">
-                      💰 $25 Prize for Closest to Pin
+                      💰 $10 per Par 3 (with carry-over potential)
                     </p>
                   </div>
                 </CardContent>
