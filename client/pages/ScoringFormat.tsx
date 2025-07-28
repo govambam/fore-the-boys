@@ -440,7 +440,8 @@ export default function ScoringFormat() {
                       <ul className="space-y-1 text-sm text-muted-foreground">
                         <li>• Must be ON THE GREEN to win</li>
                         <li>• Measured to the inch for ties</li>
-                        <li>• If no one on green, $10 carries to next Par 3</li>
+                        <li>• If no one on green or tied, $10 carries to next
+                        Par 3</li>
                         <li>• Carry-over continues until someone wins</li>
                       </ul>
                     </div>
