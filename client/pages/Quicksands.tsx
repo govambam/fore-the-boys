@@ -112,7 +112,7 @@ export default function Quicksands() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
-              Team Scramble Format
+              Team Stableford Scramble Format
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our tournament finale features a 2-man Stableford scramble with team scores
