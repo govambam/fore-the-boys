@@ -226,7 +226,7 @@ export default function ScoringFormat() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Free drop from unplayable or dangerous terrain</li>
                   <li>• One club length relief (no closer to the hole)</li>
-                  <li>��� Safety first – no heroic shots from bad lies</li>
+                  <li>•&nbsp;Safety first – no heroic shots from bad lies</li>
                   <li>• Use common sense and keep everyone safe</li>
                 </ul>
               </CardContent>
