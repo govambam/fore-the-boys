@@ -211,7 +211,7 @@ export default function ScoringFormat() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">🪨</span>
+                  <span className="text-2xl">🐍</span>
                   <div>
                     <CardTitle className="text-xl">
                       Rattlesnakes & Rangefinders
