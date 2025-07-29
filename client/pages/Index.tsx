@@ -407,7 +407,6 @@ export default function Index() {
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
                 <h4 className="font-semibold text-golf-green-dark">Marshall Raiskin</h4>
-                <p className="text-xs text-muted-foreground">4th Player</p>
               </div>
             </div>
           </div>
