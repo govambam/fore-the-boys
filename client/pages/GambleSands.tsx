@@ -159,9 +159,7 @@ export default function GambleSands() {
                 <h4 className="font-semibold text-golf-green-dark">
                   #18 Top 100 Courses You Can Play
                 </h4>
-                <p className="text-sm text-muted-foreground">
-                  Golf Magazine
-                </p>
+                <p className="text-sm text-muted-foreground">Golf Magazine</p>
               </div>
             </div>
             <p className="text-center text-muted-foreground">
