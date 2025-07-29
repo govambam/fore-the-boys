@@ -137,7 +137,7 @@ export default function Quicksands() {
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
                 <CardTitle className="text-golf-green-dark">
-                  Team 2: Patrick & TBA
+                  Team 2: Patrick & Marshall
                 </CardTitle>
                 <CardDescription>Birthday Team</CardDescription>
               </CardHeader>
