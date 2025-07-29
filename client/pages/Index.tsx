@@ -344,7 +344,7 @@ export default function Index() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>2-Man Scramble</CardTitle>
+                <CardTitle>2-Man Stableford Scramble</CardTitle>
                 <CardDescription>
                   Quicksands Par 3 Course (14 holes)
                 </CardDescription>
@@ -366,7 +366,7 @@ export default function Index() {
                         <span className="text-sm text-muted-foreground">
                           Team 2
                         </span>
-                        <span className="font-semibold">Patrick & TBA</span>
+                        <span className="font-semibold">Patrick & Marshall</span>
                       </div>
                     </div>
                   </div>
@@ -406,7 +406,7 @@ export default function Index() {
               </div>
               <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                 <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">TBA</h4>
+                <h4 className="font-semibold text-golf-green-dark">Marshall Raiskin</h4>
                 <p className="text-xs text-muted-foreground">4th Player</p>
               </div>
             </div>
