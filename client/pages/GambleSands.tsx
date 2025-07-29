@@ -369,12 +369,9 @@ export default function GambleSands() {
                     Contest Holes
                   </h4>
                   <ul className="text-sm text-yellow-700 space-y-1">
-                    <li>• Hole 13: Long Drive - $25 prize</li>
-                    <li>• Hole 16: Closest to Pin - $25 prize</li>
+                    <li>• $10 Closest to the Pin (Every Par 3)</li>
+                    <li>• $10 Long Drive (Every Par 5)</li>
                   </ul>
-                  <p className="text-xs text-yellow-600 mt-2">
-                    Strategic holes that test distance and precision!
-                  </p>
                 </div>
               </div>
             </CardContent>
