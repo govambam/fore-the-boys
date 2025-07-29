@@ -151,11 +151,11 @@ export default function Quicksands() {
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
                 In addition to counting towards your overall Stableford score,
-                we will have a separate team Stableford competition! The team
+                we will have a separate team Stableford competition. The team
                 with the highest Stableford score wins, and each player on the
                 winning team receives $25. This is separate from the overall
                 competition which is a cumulative Stableford score from
-                Scarecrow, Gamble Sands, and Quicksand.
+                Scarecrow, Gamble Sands, and Quicksands.
               </p>
               <Badge className="bg-golf-green text-white">
                 Winning Team: $25 per player
