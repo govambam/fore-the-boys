@@ -226,7 +226,7 @@ export default function ScoringFormat() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Free drop from unplayable or dangerous terrain</li>
                   <li>• One club length relief (no closer to the hole)</li>
-                  <li>• Safety first – no heroic shots from bad lies</li>
+                  <li>��� Safety first – no heroic shots from bad lies</li>
                   <li>• Use common sense and keep everyone safe</li>
                 </ul>
               </CardContent>
@@ -410,14 +410,14 @@ export default function ScoringFormat() {
             <Card className="border-golf-green/20">
               <CardHeader>
                 <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Team Stableford Competition</CardTitle>
+                <CardTitle>Team Stableford Scramble</CardTitle>
                 <CardDescription>
                   Round 3: Quicksands Par 3 Course (Separate Competition)
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Teams: Ivan & Jack vs Patrick & TBA</li>
+                  <li>• Teams: Ivan & Jack vs Patrick & Marshall</li>
                   <li>• Team with highest Stableford score wins</li>
                   <li>• Winning team: $25 per player</li>
                 </ul>
