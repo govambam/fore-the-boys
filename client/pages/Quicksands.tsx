@@ -116,7 +116,7 @@ export default function Quicksands() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our tournament finale features a 2-man Stableford scramble with team scores
-              counting toward individual Stableford totals as well as a separate
+              counting toward overall Stableford totals as well as a separate
               team Stableford prize.
             </p>
           </div>
