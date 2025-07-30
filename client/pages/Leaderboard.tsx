@@ -85,7 +85,12 @@ const defaultContestWinners = {
 };
 
 // Calculate Stableford points
-const calculateStablefordPoints = (strokes: number, par: number): number => {
+const calculateStablefordPoints = (strokes: number | null, par: number): number => {
+  // Return 0 points for null/undefined strokes
+  if (strokes === null || strokes === undefined) {
+    return 0;
+  }
+
   const diff = strokes - par;
   if (diff <= -2) return 8;
   if (diff === -1) return 4;
