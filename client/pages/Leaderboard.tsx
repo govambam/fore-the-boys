@@ -336,7 +336,7 @@ export default function Leaderboard() {
                     const winner = contestWinners[courseName]?.[holeNum];
                     
                     return (
-                      <td key={index} className="text-center py-2 px-1 bg-yellow-50">
+                      <td key={index} className="text-center py-3 px-1 bg-yellow-50 w-10 h-10">
                         {contestType && winner ? (
                           <Badge 
                             variant="secondary" 
