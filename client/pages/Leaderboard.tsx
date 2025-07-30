@@ -260,11 +260,11 @@ export default function Leaderboard() {
                   </td>
                 </tr>
                 
-                {displayPlayers.map((player) => (
-                  <tr key={player} className="border-b border-golf-green/10">
+                {displayPlayers.map((player, playerIndex) => (
+                  <tr key={player} className={`border-b border-golf-green/10 ${playerIndex % 2 === 0 ? "bg-gray-50/50" : "bg-white"}`}>
                     <td className="py-2 px-1 font-semibold">{player}</td>
                     {scores[player]?.map((score: number, index: number) => (
-                      <td key={index} className="text-center py-2 px-1">
+                      <td key={index} className={`text-center py-2 px-1 ${getScoreIndicator(score, courseInfo.pars[index])}`}>
                         {score}
                       </td>
                     )) || Array.from({ length: courseInfo.holes }, (_, i) => (
