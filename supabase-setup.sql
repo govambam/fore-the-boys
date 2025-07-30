@@ -68,7 +68,7 @@ GRANT SELECT ON public.contests TO anon;
 
 /*
 -- Sample scores for Scarecrow course
-INSERT INTO public.scores (player_name, course, hole, strokes) VALUES
+INSERT INTO public.scores (player_name, round, hole_number, strokes) VALUES
 ('Ivan', 'Scarecrow', 1, 4),
 ('Ivan', 'Scarecrow', 2, 2),
 ('Ivan', 'Scarecrow', 3, 6),
@@ -83,10 +83,10 @@ INSERT INTO public.scores (player_name, course, hole, strokes) VALUES
 ('Marshall', 'Scarecrow', 3, 7);
 
 -- Sample contests for Scarecrow course
-INSERT INTO public.contests (course, hole, contest_type, winner) VALUES
-('Scarecrow', 2, 'closest', 'Ivan'),
-('Scarecrow', 3, 'long', 'Patrick'),
-('Scarecrow', 4, 'closest', 'Jack');
+INSERT INTO public.contests (round, hole_number, type, winner_name) VALUES
+('Scarecrow', 2, 'Closest to Pin', 'Ivan'),
+('Scarecrow', 3, 'Long Drive', 'Patrick'),
+('Scarecrow', 4, 'Closest to Pin', 'Jack');
 */
 
 -- 6. Create indexes for better performance
