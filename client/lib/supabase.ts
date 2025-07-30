@@ -87,6 +87,40 @@ export async function checkTables() {
   return results;
 }
 
+// Inspect table structure for debugging
+export async function inspectTableStructure(tableName: string) {
+  try {
+    console.log(`Inspecting ${tableName} table structure...`);
+
+    // Try to get column information
+    const { data, error } = await supabase
+      .from('information_schema.columns')
+      .select('column_name, data_type, is_nullable')
+      .eq('table_name', tableName)
+      .eq('table_schema', 'public');
+
+    if (error) {
+      console.warn(`Could not inspect ${tableName} structure:`, error.message);
+
+      // Fallback: try to fetch one record to see what columns exist
+      const { data: sampleData, error: sampleError } = await supabase
+        .from(tableName)
+        .select('*')
+        .limit(1);
+
+      if (sampleError) {
+        console.error(`Error fetching sample data from ${tableName}:`, sampleError.message);
+      } else {
+        console.log(`Sample ${tableName} record:`, sampleData?.[0] || 'No data');
+      }
+    } else {
+      console.log(`${tableName} columns:`, data);
+    }
+  } catch (err) {
+    console.error(`Error inspecting ${tableName}:`, err);
+  }
+}
+
 // Types for our data
 export interface Score {
   id: number;
