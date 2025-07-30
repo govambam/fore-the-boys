@@ -306,15 +306,15 @@ export function transformContestData(contests: Contest[]) {
   };
 
   contests.forEach(contest => {
-    const course = contest.course.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '');
-    const initial = playerInitials[contest.winner] || contest.winner.charAt(0).toUpperCase();
+    const round = contest.round.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '');
+    const initial = playerInitials[contest.winner_name] || contest.winner_name.charAt(0).toUpperCase();
 
-    if (course === 'scarecrow' || course === 'thescarecrow') {
-      transformed.scarecrow[contest.hole] = initial;
-    } else if (course === 'gamblesands') {
-      transformed.gambleSands[contest.hole] = initial;
-    } else if (course === 'quicksands') {
-      transformed.quicksands[contest.hole] = initial;
+    if (round === 'scarecrow' || round === 'thescarecrow') {
+      transformed.scarecrow[contest.hole_number] = initial;
+    } else if (round === 'gamblesands') {
+      transformed.gambleSands[contest.hole_number] = initial;
+    } else if (round === 'quicksands') {
+      transformed.quicksands[contest.hole_number] = initial;
     }
   });
 
