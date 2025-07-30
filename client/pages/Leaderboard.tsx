@@ -139,8 +139,17 @@ export default function Leaderboard() {
 
         // Check if tables exist and are accessible
         const tableCheck = await checkTables();
+
+        // Inspect table structures for debugging
+        if (tableCheck.scores) {
+          await inspectTableStructure('scores');
+        }
+        if (tableCheck.contests) {
+          await inspectTableStructure('contests');
+        }
+
         if (!tableCheck.scores && !tableCheck.contests) {
-          throw new Error('Required database tables are not accessible. Please contact support.');
+          throw new Error('Required database tables (scores, contests) are not accessible. Please check if they exist and have proper permissions.');
         }
 
         // Fetch data
