@@ -94,7 +94,7 @@ const calculateStablefordPoints = (strokes: number, par: number): number => {
 };
 
 export default function Leaderboard() {
-  const [activeTab, setActiveTab] = useState("scorecards");
+  const [activeTab, setActiveTab] = useState("stableford");
 
   // Calculate total Stableford scores
   const calculateTotalStableford = () => {
