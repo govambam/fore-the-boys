@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 
 import Navigation from "@/components/Navigation";
 import { Trophy, Target, DollarSign, Users, Calculator, Medal } from "lucide-react";
-import { fetchScores, fetchContests, transformScoresData, transformContestData, type Score, type Contest } from "@/lib/supabase";
+import { fetchScores, fetchContests, transformScoresData, transformContestData, testConnection, checkTables, type Score, type Contest } from "@/lib/supabase";
 
 // Player names
 const players = ["Ivan", "Patrick", "Jack", "Marshall"];
