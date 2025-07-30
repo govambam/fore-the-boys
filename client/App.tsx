@@ -13,6 +13,7 @@ import Scarecrow from "./pages/Scarecrow";
 import GambleSands from "./pages/GambleSands";
 import Quicksands from "./pages/Quicksands";
 import Inn from "./pages/Inn";
+import Leaderboard from "./pages/Leaderboard";
 
 const queryClient = new QueryClient();
 
