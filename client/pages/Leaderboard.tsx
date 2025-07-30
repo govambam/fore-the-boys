@@ -286,13 +286,13 @@ export default function Leaderboard() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-golf-green/20">
-                  <th className="text-left py-2 px-1 font-semibold">Hole</th>
+                  <th className="text-left py-3 px-2 font-semibold min-w-[100px]">Hole</th>
                   {Array.from({ length: courseInfo.holes }, (_, i) => (
-                    <th key={i + 1} className="text-center py-2 px-1 font-semibold w-8">
+                    <th key={i + 1} className="text-center py-3 px-1 font-semibold w-10 h-10 min-w-[40px]">
                       {i + 1}
                     </th>
                   ))}
-                  <th className="text-center py-2 px-1 font-semibold bg-golf-green/5">Total</th>
+                  <th className="text-center py-3 px-2 font-semibold bg-golf-green/5 min-w-[60px]">Total</th>
                 </tr>
               </thead>
               <tbody>
@@ -342,7 +342,7 @@ export default function Leaderboard() {
                           </Badge>
                         ) : contestType ? (
                           <span className="text-xs text-muted-foreground">
-                            {contestType === "closest" ? "���" : "🏌��"}
+                            {contestType === "closest" ? "🎯" : "🏌��"}
                           </span>
                         ) : (
                           "-"
