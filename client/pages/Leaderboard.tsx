@@ -214,6 +214,54 @@ export default function Leaderboard() {
     return money;
   };
 
+  // Generate money earning descriptions
+  const getMoneyEarningDescription = (player: string) => {
+    const descriptions = [];
+    const initial = playerInitials[player];
+
+    // Contest wins by course
+    const scarecrowWins = Object.entries(contestWinners.scarecrow)
+      .filter(([_, winner]) => winner === initial)
+      .map(([hole, _]) => hole);
+
+    const gambleSandsWins = Object.entries(contestWinners.gambleSands)
+      .filter(([_, winner]) => winner === initial)
+      .map(([hole, _]) => hole);
+
+    if (scarecrowWins.length > 0) {
+      descriptions.push(`Scarecrow holes ${scarecrowWins.join(', ')}`);
+    }
+
+    if (gambleSandsWins.length > 0) {
+      descriptions.push(`Gamble Sands holes ${gambleSandsWins.join(', ')}`);
+    }
+
+    // Tournament completion prizes
+    if (isTournamentComplete()) {
+      const sortedPlayers = Object.entries(stablefordTotals).sort(([,a], [,b]) => b - a);
+
+      if (sortedPlayers[0] && sortedPlayers[0][0] === player) {
+        descriptions.push("Overall Stableford champion");
+      } else if (sortedPlayers[1] && sortedPlayers[1][0] === player) {
+        descriptions.push("Overall Stableford runner-up");
+      }
+
+      // Team prizes
+      const ivanJackScore = placeholderScores.quicksands["Ivan + Jack"]?.reduce((sum: number, score: number, index: number) =>
+        sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+      const patrickMarshallScore = placeholderScores.quicksands["Patrick + Marshall"]?.reduce((sum: number, score: number, index: number) =>
+        sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+
+      if (ivanJackScore > patrickMarshallScore && (player === "Ivan" || player === "Jack")) {
+        descriptions.push("Team Scramble champion");
+      } else if (patrickMarshallScore > ivanJackScore && (player === "Patrick" || player === "Marshall")) {
+        descriptions.push("Team Scramble champion");
+      }
+    }
+
+    return descriptions.length > 0 ? descriptions.join(' • ') : "No prizes yet";
+  };
+
   const stablefordTotals = calculateTotalStableford();
   const moneyTotals = calculateMoneyWon();
   const sortedByStableford = Object.entries(stablefordTotals).sort(([,a], [,b]) => b - a);
@@ -294,7 +342,7 @@ export default function Leaderboard() {
                           </Badge>
                         ) : contestType ? (
                           <span className="text-xs text-muted-foreground">
-                            {contestType === "closest" ? "🎯" : "🏌��"}
+                            {contestType === "closest" ? "���" : "🏌��"}
                           </span>
                         ) : (
                           "-"
