@@ -125,19 +125,17 @@ export async function inspectTableStructure(tableName: string) {
 export interface Score {
   id: number;
   player_name: string;
-  course: string;
-  hole: number;
+  round: string;
+  hole_number: number;
   strokes: number;
-  created_at: string;
 }
 
 export interface Contest {
   id: number;
-  course: string;
-  hole: number;
-  contest_type: 'closest' | 'long';
-  winner: string;
-  created_at: string;
+  round: string;
+  hole_number: number;
+  type: 'Long Drive' | 'Closest to Pin';
+  winner_name: string;
 }
 
 // Fetch all scores from Supabase
