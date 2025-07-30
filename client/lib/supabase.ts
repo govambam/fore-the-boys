@@ -117,7 +117,7 @@ export async function inspectTableStructure(tableName: string) {
         if (tableName === 'scores') {
           console.log('Expected scores columns: id, player_name, round, hole_number, strokes');
         } else if (tableName === 'contests') {
-          console.log('Expected contests columns: id, round, hole_number, type, winner_name');
+          console.log('Expected contests columns: id, round, hole_number, winner_name');
         }
       }
     } else {
@@ -141,7 +141,6 @@ export interface Contest {
   id: number;
   round: string;
   hole_number: number;
-  type: 'Long Drive' | 'Closest to Pin';
   winner_name: string;
 }
 
