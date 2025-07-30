@@ -251,15 +251,15 @@ export function transformScoresData(scores: Score[]) {
 
   // Fill in the actual scores
   scores.forEach(score => {
-    const course = score.course.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '');
+    const round = score.round.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '');
     const playerName = score.player_name;
-    const holeIndex = score.hole - 1;
+    const holeIndex = score.hole_number - 1;
 
-    if ((course === 'scarecrow' || course === 'thescarecrow') && transformed.scarecrow[playerName]) {
+    if ((round === 'scarecrow' || round === 'thescarecrow') && transformed.scarecrow[playerName]) {
       transformed.scarecrow[playerName][holeIndex] = score.strokes;
-    } else if ((course === 'gamblesands' || course === 'gamble sands'.replace(/\s+/g, '')) && transformed.gambleSands[playerName]) {
+    } else if ((round === 'gamblesands' || round === 'gamble sands'.replace(/\s+/g, '')) && transformed.gambleSands[playerName]) {
       transformed.gambleSands[playerName][holeIndex] = score.strokes;
-    } else if (course === 'quicksands') {
+    } else if (round === 'quicksands') {
       // For quicksands, we need to map individual players to teams
       let teamName = '';
       if (playerName === 'Ivan' || playerName === 'Jack') {
@@ -267,7 +267,7 @@ export function transformScoresData(scores: Score[]) {
       } else if (playerName === 'Patrick' || playerName === 'Marshall') {
         teamName = 'Patrick + Marshall';
       }
-      
+
       if (teamName && transformed.quicksands[teamName]) {
         // Use the best score between teammates (scramble format)
         const currentScore = transformed.quicksands[teamName][holeIndex];
