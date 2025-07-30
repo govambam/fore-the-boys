@@ -5,27 +5,86 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-// Test Supabase connection
+// Test Supabase connection and check table existence
 export async function testConnection() {
   try {
     console.log('Testing Supabase connection...');
     console.log('URL:', SUPABASE_URL);
     console.log('API Key (first 20 chars):', SUPABASE_KEY.substring(0, 20) + '...');
 
-    // Try to fetch from a system table that should always exist
-    const { data, error } = await supabase.rpc('version');
+    // Test basic connection by trying to list tables
+    const { data: tablesData, error: tablesError } = await supabase
+      .from('information_schema.tables')
+      .select('table_name')
+      .eq('table_schema', 'public');
 
-    if (error) {
-      console.error('Connection test failed:', error);
-      return false;
+    if (tablesError) {
+      console.warn('Could not list tables, trying simple select:', tablesError.message);
+
+      // Fallback: try a simple select on scores table
+      const { data, error } = await supabase
+        .from('scores')
+        .select('count', { count: 'exact', head: true });
+
+      if (error) {
+        console.error('Connection/table test failed:', error.message);
+        return false;
+      } else {
+        console.log('Connection successful, scores table exists');
+        return true;
+      }
     }
 
-    console.log('Connection test successful');
+    console.log('Available tables:', tablesData?.map(t => t.table_name));
     return true;
   } catch (err) {
     console.error('Connection test error:', err);
     return false;
   }
+}
+
+// Check if required tables exist
+export async function checkTables() {
+  console.log('Checking required tables...');
+
+  const results = {
+    scores: false,
+    contests: false
+  };
+
+  // Check scores table
+  try {
+    const { error: scoresError } = await supabase
+      .from('scores')
+      .select('count', { count: 'exact', head: true });
+
+    results.scores = !scoresError;
+    if (scoresError) {
+      console.error('Scores table issue:', scoresError.message);
+    } else {
+      console.log('✓ Scores table accessible');
+    }
+  } catch (err) {
+    console.error('Error checking scores table:', err);
+  }
+
+  // Check contests table
+  try {
+    const { error: contestsError } = await supabase
+      .from('contests')
+      .select('count', { count: 'exact', head: true });
+
+    results.contests = !contestsError;
+    if (contestsError) {
+      console.error('Contests table issue:', contestsError.message);
+    } else {
+      console.log('✓ Contests table accessible');
+    }
+  } catch (err) {
+    console.error('Error checking contests table:', err);
+  }
+
+  return results;
 }
 
 // Types for our data
