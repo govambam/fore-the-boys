@@ -132,6 +132,32 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Function to refresh scores data
+  const refreshScores = async () => {
+    try {
+      console.log('🔄 Real-time update: Refreshing scores data...');
+      const scoresData = await fetchScores();
+      const transformedScores = transformScoresData(scoresData);
+      setScores(transformedScores);
+      console.log('✅ Scores data refreshed successfully');
+    } catch (err) {
+      console.error('❌ Error refreshing scores:', err);
+    }
+  };
+
+  // Function to refresh contests data
+  const refreshContests = async () => {
+    try {
+      console.log('🔄 Real-time update: Refreshing contests data...');
+      const contestsData = await fetchContests();
+      const transformedContests = transformContestData(contestsData);
+      setContestWinners(transformedContests);
+      console.log('✅ Contests data refreshed successfully');
+    } catch (err) {
+      console.error('❌ Error refreshing contests:', err);
+    }
+  };
+
   // Fetch data from Supabase on component mount
   useEffect(() => {
     async function loadData() {
@@ -210,6 +236,39 @@ export default function Leaderboard() {
     }
 
     loadData();
+  }, []);
+
+  // Set up real-time subscriptions
+  useEffect(() => {
+    console.log('🚀 Setting up real-time subscriptions...');
+
+    // Subscribe to scores table changes
+    const scoresChannel = supabase
+      .channel('scores-updates')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'scores' }, (payload) => {
+        console.log('📊 Scores table change detected:', payload);
+        refreshScores();
+      })
+      .subscribe();
+
+    // Subscribe to contests table changes
+    const contestsChannel = supabase
+      .channel('contests-updates')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'contests' }, (payload) => {
+        console.log('🏆 Contests table change detected:', payload);
+        refreshContests();
+      })
+      .subscribe();
+
+    console.log('✅ Real-time subscriptions active');
+
+    // Cleanup subscriptions on unmount
+    return () => {
+      console.log('🧹 Cleaning up real-time subscriptions...');
+      supabase.removeChannel(scoresChannel);
+      supabase.removeChannel(contestsChannel);
+      console.log('✅ Real-time subscriptions cleaned up');
+    };
   }, []);
 
   // Calculate total Stableford scores
