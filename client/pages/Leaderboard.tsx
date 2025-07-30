@@ -286,10 +286,10 @@ export default function Leaderboard() {
       }
 
       // Team prizes
-      const ivanJackScore = placeholderScores.quicksands["Ivan + Jack"]?.reduce((sum: number, score: number, index: number) =>
-        sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
-      const patrickMarshallScore = placeholderScores.quicksands["Patrick + Marshall"]?.reduce((sum: number, score: number, index: number) =>
-        sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+      const ivanJackScore = scores.quicksands["Ivan + Jack"]?.reduce((sum: number, score: number, index: number) =>
+        score !== null ? sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]) : sum, 0) || 0;
+      const patrickMarshallScore = scores.quicksands["Patrick + Marshall"]?.reduce((sum: number, score: number, index: number) =>
+        score !== null ? sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]) : sum, 0) || 0;
 
       if (ivanJackScore > patrickMarshallScore && (player === "Ivan" || player === "Jack")) {
         descriptions.push("Team Scramble champion");
