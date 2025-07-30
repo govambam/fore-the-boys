@@ -197,6 +197,13 @@ export async function fetchContests(): Promise<Contest[]> {
         hint: error.hint,
         code: error.code
       });
+
+      // Check if it's a missing table/column error
+      if (error.message.includes('does not exist')) {
+        console.warn('Contests table or columns missing - using empty data');
+        return [];
+      }
+
       throw new Error(`Failed to fetch contests: ${error.message}`);
     }
 
@@ -204,6 +211,13 @@ export async function fetchContests(): Promise<Contest[]> {
     return data || [];
   } catch (err) {
     console.error('Network/connection error fetching contests:', err);
+
+    // For missing table errors, return empty data instead of crashing
+    if (err instanceof Error && err.message.includes('does not exist')) {
+      console.warn('Returning empty contests due to missing table/columns');
+      return [];
+    }
+
     throw err;
   }
 }
