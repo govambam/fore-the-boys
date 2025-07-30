@@ -117,6 +117,38 @@ const getScoreIndicator = (score: number, par: number) => {
 
 export default function Leaderboard() {
   const [activeTab, setActiveTab] = useState("stableford");
+  const [scores, setScores] = useState(defaultScores);
+  const [contestWinners, setContestWinners] = useState(defaultContestWinners);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch data from Supabase on component mount
+  useEffect(() => {
+    async function loadData() {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const [scoresData, contestsData] = await Promise.all([
+          fetchScores(),
+          fetchContests()
+        ]);
+
+        const transformedScores = transformScoresData(scoresData);
+        const transformedContests = transformContestData(contestsData);
+
+        setScores(transformedScores);
+        setContestWinners(transformedContests);
+      } catch (err) {
+        console.error('Error loading leaderboard data:', err);
+        setError('Failed to load leaderboard data. Please try again.');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadData();
+  }, []);
 
   // Calculate total Stableford scores
   const calculateTotalStableford = () => {
