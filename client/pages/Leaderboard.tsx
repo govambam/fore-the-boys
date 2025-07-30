@@ -95,7 +95,12 @@ const calculateStablefordPoints = (strokes: number, par: number): number => {
 };
 
 // Get visual indicator styling for score
-const getScoreIndicator = (score: number, par: number) => {
+const getScoreIndicator = (score: number | null, par: number) => {
+  // Return empty string for null/undefined scores
+  if (score === null || score === undefined) {
+    return "";
+  }
+
   const diff = score - par;
 
   if (diff <= -2) {
