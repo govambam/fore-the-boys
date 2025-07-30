@@ -112,6 +112,13 @@ export async function inspectTableStructure(tableName: string) {
         console.error(`Error fetching sample data from ${tableName}:`, sampleError.message);
       } else {
         console.log(`Sample ${tableName} record:`, sampleData?.[0] || 'No data');
+
+        // Log expected vs actual columns for easier debugging
+        if (tableName === 'scores') {
+          console.log('Expected scores columns: id, player_name, round, hole_number, strokes');
+        } else if (tableName === 'contests') {
+          console.log('Expected contests columns: id, round, hole_number, type, winner_name');
+        }
       }
     } else {
       console.log(`${tableName} columns:`, data);
