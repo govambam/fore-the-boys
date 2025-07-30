@@ -156,6 +156,13 @@ export async function fetchScores(): Promise<Score[]> {
         hint: error.hint,
         code: error.code
       });
+
+      // Check if it's a missing table/column error
+      if (error.message.includes('does not exist')) {
+        console.warn('Scores table or columns missing - using empty data');
+        return [];
+      }
+
       throw new Error(`Failed to fetch scores: ${error.message}`);
     }
 
@@ -163,6 +170,13 @@ export async function fetchScores(): Promise<Score[]> {
     return data || [];
   } catch (err) {
     console.error('Network/connection error fetching scores:', err);
+
+    // For missing table errors, return empty data instead of crashing
+    if (err instanceof Error && err.message.includes('does not exist')) {
+      console.warn('Returning empty scores due to missing table/columns');
+      return [];
+    }
+
     throw err;
   }
 }
