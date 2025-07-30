@@ -57,30 +57,30 @@ const courseData = {
   },
 };
 
-// Placeholder scores (replace with real data later)
-const placeholderScores = {
+// Default empty scores structure
+const defaultScores = {
   scarecrow: {
-    Ivan: [4, 2, 6, 3, 4, 5, 3, 5, 3, 4, 5, 5, 4, 4, 4, 2, 4, 5],
-    Patrick: [5, 3, 5, 4, 5, 6, 4, 4, 2, 3, 4, 6, 5, 3, 5, 3, 5, 4],
-    Jack: [3, 4, 5, 2, 3, 4, 5, 4, 4, 5, 4, 5, 3, 5, 6, 4, 3, 4],
-    Marshall: [4, 3, 7, 3, 4, 5, 4, 5, 3, 4, 3, 4, 4, 4, 5, 3, 4, 5],
+    Ivan: new Array(18).fill(null),
+    Patrick: new Array(18).fill(null),
+    Jack: new Array(18).fill(null),
+    Marshall: new Array(18).fill(null),
   },
   gambleSands: {
-    Ivan: [4, 3, 4, 2, 4, 2, 5, 4, 3, 3, 5, 4, 6, 4, 5, 4, 4, 5],
-    Patrick: [5, 4, 5, 3, 5, 3, 6, 3, 4, 4, 4, 5, 5, 3, 4, 2, 5, 6],
-    Jack: [3, 4, 6, 3, 3, 4, 4, 5, 4, 2, 4, 3, 5, 5, 4, 3, 3, 4],
-    Marshall: [4, 5, 5, 3, 4, 3, 5, 4, 5, 3, 4, 4, 4, 4, 5, 3, 4, 5],
+    Ivan: new Array(18).fill(null),
+    Patrick: new Array(18).fill(null),
+    Jack: new Array(18).fill(null),
+    Marshall: new Array(18).fill(null),
   },
   quicksands: {
-    "Ivan + Jack": [2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 3, 2, 2, 3],
-    "Patrick + Marshall": [3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2, 3, 3, 2],
+    "Ivan + Jack": new Array(14).fill(null),
+    "Patrick + Marshall": new Array(14).fill(null),
   },
 };
 
-// Placeholder contest winners
-const contestWinners = {
-  scarecrow: { 2: "I", 3: "P", 4: "J", 6: "M", 9: "I", 11: "P", 12: "J", 15: "M", 16: "I" },
-  gambleSands: { 3: "P", 4: "I", 6: "J", 7: "M", 10: "I", 13: "P", 16: "J", 18: "M" },
+// Default empty contest winners
+const defaultContestWinners = {
+  scarecrow: {},
+  gambleSands: {},
   quicksands: {},
 };
 
