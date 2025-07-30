@@ -5,45 +5,43 @@
 CREATE TABLE public.scores (
     id BIGSERIAL PRIMARY KEY,
     player_name TEXT NOT NULL,
-    course TEXT NOT NULL,
-    hole INTEGER NOT NULL,
-    strokes INTEGER NOT NULL,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL,
-    
+    round TEXT NOT NULL,
+    hole_number SMALLINT NOT NULL,
+    strokes SMALLINT NOT NULL,
+
     -- Add constraints
     CONSTRAINT valid_player_name CHECK (player_name IN ('Ivan', 'Patrick', 'Jack', 'Marshall')),
-    CONSTRAINT valid_course CHECK (course IN ('Scarecrow', 'Gamble Sands', 'Quicksands')),
+    CONSTRAINT valid_round CHECK (round IN ('Scarecrow', 'Gamble Sands', 'Quicksands')),
     CONSTRAINT valid_hole_scarecrow CHECK (
-        (course != 'Scarecrow' AND course != 'Gamble Sands') OR 
-        (hole >= 1 AND hole <= 18)
+        (round != 'Scarecrow' AND round != 'Gamble Sands') OR
+        (hole_number >= 1 AND hole_number <= 18)
     ),
     CONSTRAINT valid_hole_quicksands CHECK (
-        course != 'Quicksands' OR 
-        (hole >= 1 AND hole <= 14)
+        round != 'Quicksands' OR
+        (hole_number >= 1 AND hole_number <= 14)
     ),
     CONSTRAINT valid_strokes CHECK (strokes >= 1 AND strokes <= 15),
-    
-    -- Ensure unique scores per player/course/hole
-    UNIQUE(player_name, course, hole)
+
+    -- Ensure unique scores per player/round/hole
+    UNIQUE(player_name, round, hole_number)
 );
 
 -- 2. Create the contests table
 CREATE TABLE public.contests (
     id BIGSERIAL PRIMARY KEY,
-    course TEXT NOT NULL,
-    hole INTEGER NOT NULL,
-    contest_type TEXT NOT NULL,
-    winner TEXT NOT NULL,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL,
-    
+    round TEXT NOT NULL,
+    hole_number SMALLINT NOT NULL,
+    type TEXT NOT NULL,
+    winner_name TEXT NOT NULL,
+
     -- Add constraints
-    CONSTRAINT valid_course_contests CHECK (course IN ('Scarecrow', 'Gamble Sands')),
-    CONSTRAINT valid_contest_type CHECK (contest_type IN ('closest', 'long')),
-    CONSTRAINT valid_winner CHECK (winner IN ('Ivan', 'Patrick', 'Jack', 'Marshall')),
-    CONSTRAINT valid_hole_contests CHECK (hole >= 1 AND hole <= 18),
-    
-    -- Ensure unique contests per course/hole
-    UNIQUE(course, hole)
+    CONSTRAINT valid_round_contests CHECK (round IN ('Scarecrow', 'Gamble Sands')),
+    CONSTRAINT valid_contest_type CHECK (type IN ('Long Drive', 'Closest to Pin')),
+    CONSTRAINT valid_winner_name CHECK (winner_name IN ('Ivan', 'Patrick', 'Jack', 'Marshall')),
+    CONSTRAINT valid_hole_contests CHECK (hole_number >= 1 AND hole_number <= 18),
+
+    -- Ensure unique contests per round/hole
+    UNIQUE(round, hole_number)
 );
 
 -- 3. Enable Row Level Security (RLS) and create policies for anonymous access
