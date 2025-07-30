@@ -430,7 +430,8 @@ export default function Leaderboard() {
                       </td>
                     ))}
                     <td className="text-center py-3 px-2 bg-golf-green/5 font-semibold">
-                      {scores[player]?.reduce((sum: number, score: number) => sum + score, 0) || "-"}
+                      {scores[player]?.reduce((sum: number, score: number | null) =>
+                        score !== null ? sum + score : sum, 0) || "-"}
                     </td>
                     <td className="text-center py-3 px-2 bg-golf-green/10 font-semibold">
                       {scores[player]?.reduce((sum: number, score: number, index: number) =>
@@ -702,7 +703,7 @@ export default function Leaderboard() {
                             <span className="font-semibold">$120</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>�� Runner-up:</span>
+                            <span>🥈 Runner-up:</span>
                             <span className="font-semibold">$60</span>
                           </div>
                         </div>
