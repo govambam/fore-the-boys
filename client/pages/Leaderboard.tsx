@@ -474,7 +474,7 @@ export default function Leaderboard() {
                       Money Earned
                     </CardTitle>
                     <CardDescription>
-                      Current winnings from skills contests ($10 each)
+                      {isTournamentComplete() ? "Total prize money earned" : "Current winnings from skills contests ($10 each)"}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
