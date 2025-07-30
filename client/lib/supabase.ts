@@ -79,13 +79,13 @@ export function transformScoresData(scores: Score[]) {
 
   // Fill in the actual scores
   scores.forEach(score => {
-    const course = score.course.toLowerCase().replace(/\s+/g, '');
+    const course = score.course.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '');
     const playerName = score.player_name;
     const holeIndex = score.hole - 1;
 
-    if (course === 'scarecrow' && transformed.scarecrow[playerName]) {
+    if ((course === 'scarecrow' || course === 'thescarecrow') && transformed.scarecrow[playerName]) {
       transformed.scarecrow[playerName][holeIndex] = score.strokes;
-    } else if (course === 'gamblesands' && transformed.gambleSands[playerName]) {
+    } else if ((course === 'gamblesands' || course === 'gamble sands'.replace(/\s+/g, '')) && transformed.gambleSands[playerName]) {
       transformed.gambleSands[playerName][holeIndex] = score.strokes;
     } else if (course === 'quicksands') {
       // For quicksands, we need to map individual players to teams
