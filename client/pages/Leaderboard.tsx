@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import Navigation from "@/components/Navigation";
 import { Trophy, Target, DollarSign, Users, Calculator, Medal } from "lucide-react";
 
