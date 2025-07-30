@@ -424,7 +424,7 @@ export default function Leaderboard() {
                   <tr key={player} className={`border-b border-golf-green/10 ${playerIndex % 2 === 0 ? "bg-gray-50/50" : "bg-white"}`}>
                     <td className="py-3 px-2 font-semibold">{player}</td>
                     {scores[player]?.map((score: number | null, index: number) => (
-                      <td key={index} className={`text-center py-3 px-1 w-10 h-10 ${score !== null ? getScoreIndicator(score, courseInfo.pars[index]) : ''}`}>
+                      <td key={index} className={`text-center py-3 px-1 w-10 h-10 ${getScoreIndicator(score, courseInfo.pars[index])}`}>
                         <div className="flex items-center justify-center w-full h-full">
                           {score !== null ? score : ''}
                         </div>
@@ -565,7 +565,7 @@ export default function Leaderboard() {
             <div className="flex items-center justify-center py-12">
               <Card className="border-blue-200 bg-blue-50 max-w-lg">
                 <CardContent className="p-6 text-center">
-                  <div className="text-blue-600 mb-2">🏌️ Tournament Ready</div>
+                  <div className="text-blue-600 mb-2">🏌�� Tournament Ready</div>
                   <h3 className="font-semibold text-blue-800 mb-2">No Tournament Data Yet</h3>
                   <p className="text-blue-700 text-sm mb-4">
                     The leaderboard is connected and ready! Start entering scores and contest results
