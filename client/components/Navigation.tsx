@@ -215,6 +215,13 @@ export default function Navigation() {
                 Scoring & Rules
               </Link>
               <Link
+                to="/leaderboard"
+                className="text-foreground hover:text-golf-green transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Leaderboard
+              </Link>
+              <Link
                 to="/inn"
                 className="text-foreground hover:text-golf-green transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
