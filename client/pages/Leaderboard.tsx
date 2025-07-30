@@ -475,6 +475,37 @@ export default function Leaderboard() {
                       ))}
                     </div>
 
+                    {/* Team Scramble Scores Section */}
+                    <div className="mt-8">
+                      <h3 className="text-lg font-semibold text-golf-green-dark mb-4 flex items-center gap-2">
+                        <Users className="h-5 w-5 text-golf-green" />
+                        Team Scramble Scores
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {Object.entries(placeholderScores.quicksands).map(([teamName, scores]) => {
+                          const teamScore = scores?.reduce((sum: number, score: number, index: number) =>
+                            sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+
+                          return (
+                            <Card key={teamName} className="border-golf-green/20 bg-white">
+                              <CardContent className="p-4">
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-3">
+                                    <Users className="h-5 w-5 text-golf-green" />
+                                    <h4 className="font-semibold text-golf-green-dark">{teamName}</h4>
+                                  </div>
+                                  <div className="text-right">
+                                    <div className="text-xl font-bold text-golf-green-dark">{teamScore}</div>
+                                    <div className="text-xs text-muted-foreground">Quicksands points</div>
+                                  </div>
+                                </div>
+                              </CardContent>
+                            </Card>
+                          );
+                        })}
+                      </div>
+                    </div>
+
                     <div className="mt-8 p-6 bg-golf-green/5 rounded-lg">
                       <h3 className="text-lg font-semibold text-golf-green-dark mb-4 flex items-center gap-2">
                         <Calculator className="h-5 w-5" />
