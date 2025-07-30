@@ -131,14 +131,24 @@ export default function Leaderboard() {
     return totals;
   };
 
+  // Check if tournament is complete (all rounds have scores)
+  const isTournamentComplete = () => {
+    return players.every(player =>
+      placeholderScores.scarecrow[player] &&
+      placeholderScores.gambleSands[player]
+    ) &&
+    placeholderScores.quicksands["Ivan + Jack"] &&
+    placeholderScores.quicksands["Patrick + Marshall"];
+  };
+
   // Calculate money won
   const calculateMoneyWon = () => {
     const money: { [key: string]: number } = {};
-    
+
     players.forEach(player => {
       let total = 0;
       const initial = playerInitials[player];
-      
+
       // Count contest wins ($10 each)
       Object.values(contestWinners.scarecrow).forEach(winner => {
         if (winner === initial) total += 10;
@@ -146,10 +156,40 @@ export default function Leaderboard() {
       Object.values(contestWinners.gambleSands).forEach(winner => {
         if (winner === initial) total += 10;
       });
-      
+
       money[player] = total;
     });
-    
+
+    // Add final prizes if tournament is complete
+    if (isTournamentComplete()) {
+      const sortedPlayers = Object.entries(stablefordTotals).sort(([,a], [,b]) => b - a);
+
+      // Overall champion ($120)
+      if (sortedPlayers[0]) {
+        money[sortedPlayers[0][0]] += 120;
+      }
+
+      // Runner-up ($60)
+      if (sortedPlayers[1]) {
+        money[sortedPlayers[1][0]] += 60;
+      }
+
+      // Team champions ($25 each)
+      // Determine winning team based on Quicksands scores
+      const ivanJackScore = placeholderScores.quicksands["Ivan + Jack"]?.reduce((sum: number, score: number, index: number) =>
+        sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+      const patrickMarshallScore = placeholderScores.quicksands["Patrick + Marshall"]?.reduce((sum: number, score: number, index: number) =>
+        sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+
+      if (ivanJackScore > patrickMarshallScore) {
+        money["Ivan"] += 25;
+        money["Jack"] += 25;
+      } else if (patrickMarshallScore > ivanJackScore) {
+        money["Patrick"] += 25;
+        money["Marshall"] += 25;
+      }
+    }
+
     return money;
   };
 
