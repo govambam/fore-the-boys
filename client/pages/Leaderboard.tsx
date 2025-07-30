@@ -437,6 +437,29 @@ export default function Leaderboard() {
       {/* Main Content */}
       <section className="py-8 px-4">
         <div className="container mx-auto">
+          {loading ? (
+            <div className="flex items-center justify-center py-12">
+              <div className="text-center">
+                <div className="animate-spin h-8 w-8 border-b-2 border-golf-green mx-auto mb-4"></div>
+                <p className="text-muted-foreground">Loading tournament data...</p>
+              </div>
+            </div>
+          ) : error ? (
+            <div className="flex items-center justify-center py-12">
+              <Card className="border-red-200 bg-red-50">
+                <CardContent className="p-6 text-center">
+                  <div className="text-red-600 mb-2">⚠️ Error</div>
+                  <p className="text-red-800">{error}</p>
+                  <button
+                    onClick={() => window.location.reload()}
+                    className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+                  >
+                    Reload Page
+                  </button>
+                </CardContent>
+              </Card>
+            </div>
+          ) : (
           <div className="w-full">
             {/* Custom Tab Navigation */}
             <div className="inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground grid w-full grid-cols-3 mb-8">
@@ -695,6 +718,7 @@ export default function Leaderboard() {
               </div>
             )}
           </div>
+          )}
         </div>
       </section>
     </div>
