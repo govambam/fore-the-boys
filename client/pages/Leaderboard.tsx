@@ -498,14 +498,33 @@ export default function Leaderboard() {
             </div>
           ) : error ? (
             <div className="flex items-center justify-center py-12">
-              <Card className="border-red-200 bg-red-50">
-                <CardContent className="p-6 text-center">
-                  <div className="text-red-600 mb-2">⚠️ Error</div>
-                  <p className="text-red-800">{error}</p>
-                  <div className="mt-4 space-x-2">
+              <Card className={`max-w-2xl ${error.includes('Database setup required') ? 'border-yellow-200 bg-yellow-50' : 'border-red-200 bg-red-50'}`}>
+                <CardContent className="p-6">
+                  <div className={`${error.includes('Database setup required') ? 'text-yellow-600' : 'text-red-600'} mb-2 text-center font-semibold`}>
+                    {error.includes('Database setup required') ? '⚙️ Setup Required' : '⚠️ Error'}
+                  </div>
+                  <p className={`${error.includes('Database setup required') ? 'text-yellow-800' : 'text-red-800'} mb-4`}>{error}</p>
+
+                  {error.includes('Database setup required') && (
+                    <div className="mt-4 p-4 bg-white rounded border">
+                      <h4 className="font-semibold mb-2">Quick Setup Instructions:</h4>
+                      <ol className="text-sm text-gray-700 space-y-1 list-decimal list-inside">
+                        <li>Go to your <a href="https://eunomxuabzzfualvhrxm.supabase.co/project/default/sql" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Supabase SQL Editor</a></li>
+                        <li>Copy and run the SQL from <code className="bg-gray-100 px-1 rounded">supabase-setup.sql</code> file</li>
+                        <li>This will create the required <code className="bg-gray-100 px-1 rounded">scores</code> and <code className="bg-gray-100 px-1 rounded">contests</code> tables</li>
+                        <li>Refresh this page to see live tournament data</li>
+                      </ol>
+                    </div>
+                  )}
+
+                  <div className="mt-4 space-x-2 text-center">
                     <button
                       onClick={() => window.location.reload()}
-                      className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+                      className={`px-4 py-2 text-white rounded transition-colors ${
+                        error.includes('Database setup required')
+                          ? 'bg-yellow-600 hover:bg-yellow-700'
+                          : 'bg-red-600 hover:bg-red-700'
+                      }`}
                     >
                       Reload Page
                     </button>
@@ -513,7 +532,6 @@ export default function Leaderboard() {
                       onClick={() => {
                         setError(null);
                         setLoading(true);
-                        // Re-trigger the useEffect
                         window.location.hash = '#retry-' + Date.now();
                         setTimeout(() => window.location.reload(), 100);
                       }}
