@@ -329,6 +329,10 @@ export default function Leaderboard() {
                     <td className="text-center py-3 px-2 bg-golf-green/5 font-semibold">
                       {scores[player]?.reduce((sum: number, score: number) => sum + score, 0) || "-"}
                     </td>
+                    <td className="text-center py-3 px-2 bg-golf-green/10 font-semibold">
+                      {scores[player]?.reduce((sum: number, score: number, index: number) =>
+                        sum + calculateStablefordPoints(score, courseInfo.pars[index]), 0) || "-"}
+                    </td>
                   </tr>
                 ))}
                 
