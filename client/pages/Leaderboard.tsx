@@ -434,8 +434,8 @@ export default function Leaderboard() {
                         score !== null ? sum + score : sum, 0) || "-"}
                     </td>
                     <td className="text-center py-3 px-2 bg-golf-green/10 font-semibold">
-                      {scores[player]?.reduce((sum: number, score: number, index: number) =>
-                        sum + calculateStablefordPoints(score, courseInfo.pars[index]), 0) || "-"}
+                      {scores[player]?.reduce((sum: number, score: number | null, index: number) =>
+                        score !== null ? sum + calculateStablefordPoints(score, courseInfo.pars[index]) : sum, 0) || "-"}
                     </td>
                   </tr>
                 ))}
