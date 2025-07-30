@@ -144,8 +144,8 @@ export async function fetchScores(): Promise<Score[]> {
     const { data, error } = await supabase
       .from('scores')
       .select('*')
-      .order('course', { ascending: true })
-      .order('hole', { ascending: true });
+      .order('round', { ascending: true })
+      .order('hole_number', { ascending: true });
 
     if (error) {
       console.error('Supabase error fetching scores:', {
