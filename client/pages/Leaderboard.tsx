@@ -307,6 +307,9 @@ export default function Leaderboard() {
                   <td className="text-center py-3 px-2 bg-golf-green/10 font-semibold">
                     {courseInfo.pars.reduce((sum: number, par: number) => sum + par, 0)}
                   </td>
+                  <td className="text-center py-3 px-2 bg-golf-green/20 font-semibold">
+                    {courseInfo.pars.length * 2}
+                  </td>
                 </tr>
 
                 {displayPlayers.map((player, playerIndex) => (
