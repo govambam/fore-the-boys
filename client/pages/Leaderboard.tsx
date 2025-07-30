@@ -329,7 +329,7 @@ export default function Leaderboard() {
                 ))}
                 
                 <tr className="border-b border-golf-green/10">
-                  <td className="py-2 px-1 font-semibold text-golf-green-dark">Contest</td>
+                  <td className="py-3 px-2 font-semibold text-golf-green-dark">Contest</td>
                   {Array.from({ length: courseInfo.holes }, (_, index) => {
                     const holeNum = index + 1;
                     const contestType = courseInfo.contestHoles[holeNum];
