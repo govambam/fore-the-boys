@@ -162,6 +162,8 @@ export async function fetchContests(): Promise<Contest[]> {
 
 // Transform scores data into the format expected by the leaderboard
 export function transformScoresData(scores: Score[]) {
+  console.log('Transforming scores data:', scores.length, 'records');
+
   const transformed = {
     scarecrow: {} as { [player: string]: number[] },
     gambleSands: {} as { [player: string]: number[] },
@@ -180,6 +182,12 @@ export function transformScoresData(scores: Score[]) {
   teams.forEach(team => {
     transformed.quicksands[team] = new Array(14).fill(null);
   });
+
+  // Early return if no scores
+  if (!scores || scores.length === 0) {
+    console.log('No scores to transform, returning empty arrays');
+    return transformed;
+  }
 
   // Fill in the actual scores
   scores.forEach(score => {
