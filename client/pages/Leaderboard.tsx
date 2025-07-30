@@ -531,7 +531,12 @@ export default function Leaderboard() {
                           >
                             <div className="flex items-center gap-3">
                               <Target className="h-6 w-6 text-golf-green" />
-                              <h3 className="font-semibold text-golf-green-dark">{player}</h3>
+                              <div>
+                                <h3 className="font-semibold text-golf-green-dark">{player}</h3>
+                                <p className="text-xs text-muted-foreground mt-1">
+                                  {getMoneyEarningDescription(player)}
+                                </p>
+                              </div>
                             </div>
                             <div className="text-right">
                               <div className="text-2xl font-bold text-golf-green-dark">${money}</div>
