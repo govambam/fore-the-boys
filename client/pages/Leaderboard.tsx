@@ -485,12 +485,26 @@ export default function Leaderboard() {
                 <CardContent className="p-6 text-center">
                   <div className="text-red-600 mb-2">⚠️ Error</div>
                   <p className="text-red-800">{error}</p>
-                  <button
-                    onClick={() => window.location.reload()}
-                    className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
-                  >
-                    Reload Page
-                  </button>
+                  <div className="mt-4 space-x-2">
+                    <button
+                      onClick={() => window.location.reload()}
+                      className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+                    >
+                      Reload Page
+                    </button>
+                    <button
+                      onClick={() => {
+                        setError(null);
+                        setLoading(true);
+                        // Re-trigger the useEffect
+                        window.location.hash = '#retry-' + Date.now();
+                        setTimeout(() => window.location.reload(), 100);
+                      }}
+                      className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                    >
+                      Try Again
+                    </button>
+                  </div>
                 </CardContent>
               </Card>
             </div>
