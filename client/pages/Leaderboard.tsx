@@ -293,6 +293,7 @@ export default function Leaderboard() {
                     </th>
                   ))}
                   <th className="text-center py-3 px-2 font-semibold bg-golf-green/5 min-w-[60px]">Total</th>
+                  <th className="text-center py-3 px-2 font-semibold bg-golf-green/10 min-w-[80px]">Stableford</th>
                 </tr>
               </thead>
               <tbody>
