@@ -418,10 +418,10 @@ export default function Leaderboard() {
                 {displayPlayers.map((player, playerIndex) => (
                   <tr key={player} className={`border-b border-golf-green/10 ${playerIndex % 2 === 0 ? "bg-gray-50/50" : "bg-white"}`}>
                     <td className="py-3 px-2 font-semibold">{player}</td>
-                    {scores[player]?.map((score: number, index: number) => (
-                      <td key={index} className={`text-center py-3 px-1 w-10 h-10 ${getScoreIndicator(score, courseInfo.pars[index])}`}>
+                    {scores[player]?.map((score: number | null, index: number) => (
+                      <td key={index} className={`text-center py-3 px-1 w-10 h-10 ${score !== null ? getScoreIndicator(score, courseInfo.pars[index]) : ''}`}>
                         <div className="flex items-center justify-center w-full h-full">
-                          {score}
+                          {score !== null ? score : ''}
                         </div>
                       </td>
                     )) || Array.from({ length: courseInfo.holes }, (_, i) => (
@@ -702,7 +702,7 @@ export default function Leaderboard() {
                             <span className="font-semibold">$120</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>🥈 Runner-up:</span>
+                            <span>�� Runner-up:</span>
                             <span className="font-semibold">$60</span>
                           </div>
                         </div>
