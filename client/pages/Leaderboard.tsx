@@ -188,11 +188,11 @@ export default function Leaderboard() {
   // Check if tournament is complete (all rounds have scores)
   const isTournamentComplete = () => {
     return players.every(player =>
-      placeholderScores.scarecrow[player] &&
-      placeholderScores.gambleSands[player]
+      scores.scarecrow[player] && scores.scarecrow[player].every(score => score !== null) &&
+      scores.gambleSands[player] && scores.gambleSands[player].every(score => score !== null)
     ) &&
-    placeholderScores.quicksands["Ivan + Jack"] &&
-    placeholderScores.quicksands["Patrick + Marshall"];
+    scores.quicksands["Ivan + Jack"] && scores.quicksands["Ivan + Jack"].every(score => score !== null) &&
+    scores.quicksands["Patrick + Marshall"] && scores.quicksands["Patrick + Marshall"].every(score => score !== null);
   };
 
   // Calculate money won
