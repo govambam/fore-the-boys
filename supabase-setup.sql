@@ -31,12 +31,10 @@ CREATE TABLE public.contests (
     id BIGSERIAL PRIMARY KEY,
     round TEXT NOT NULL,
     hole_number SMALLINT NOT NULL,
-    type TEXT NOT NULL,
     winner_name TEXT NOT NULL,
 
     -- Add constraints
     CONSTRAINT valid_round_contests CHECK (round IN ('Scarecrow', 'Gamble Sands')),
-    CONSTRAINT valid_contest_type CHECK (type IN ('Long Drive', 'Closest to Pin')),
     CONSTRAINT valid_winner_name CHECK (winner_name IN ('Ivan', 'Patrick', 'Jack', 'Marshall')),
     CONSTRAINT valid_hole_contests CHECK (hole_number >= 1 AND hole_number <= 18),
 
@@ -83,10 +81,10 @@ INSERT INTO public.scores (player_name, round, hole_number, strokes) VALUES
 ('Marshall', 'Scarecrow', 3, 7);
 
 -- Sample contests for Scarecrow course
-INSERT INTO public.contests (round, hole_number, type, winner_name) VALUES
-('Scarecrow', 2, 'Closest to Pin', 'Ivan'),
-('Scarecrow', 3, 'Long Drive', 'Patrick'),
-('Scarecrow', 4, 'Closest to Pin', 'Jack');
+INSERT INTO public.contests (round, hole_number, winner_name) VALUES
+('Scarecrow', 2, 'Ivan'),
+('Scarecrow', 3, 'Patrick'),
+('Scarecrow', 4, 'Jack');
 */
 
 -- 6. Create indexes for better performance
