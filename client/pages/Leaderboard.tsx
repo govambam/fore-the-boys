@@ -363,6 +363,7 @@ export default function Leaderboard() {
                     );
                   })}
                   <td className="text-center py-3 px-2 bg-golf-green/5"></td>
+                  <td className="text-center py-3 px-2 bg-golf-green/10"></td>
                 </tr>
               </tbody>
             </table>
