@@ -222,18 +222,14 @@ export default function Leaderboard() {
       // Scarecrow round
       if (scores.scarecrow[player]) {
         scores.scarecrow[player].forEach((strokes, index) => {
-          if (strokes !== null) {
-            total += calculateStablefordPoints(strokes, courseData.scarecrow.pars[index]);
-          }
+          total += calculateStablefordPoints(strokes, courseData.scarecrow.pars[index]);
         });
       }
 
       // Gamble Sands round
       if (scores.gambleSands[player]) {
         scores.gambleSands[player].forEach((strokes, index) => {
-          if (strokes !== null) {
-            total += calculateStablefordPoints(strokes, courseData.gambleSands.pars[index]);
-          }
+          total += calculateStablefordPoints(strokes, courseData.gambleSands.pars[index]);
         });
       }
 
@@ -241,9 +237,7 @@ export default function Leaderboard() {
       const teamKey = player === "Ivan" || player === "Jack" ? "Ivan + Jack" : "Patrick + Marshall";
       if (scores.quicksands[teamKey]) {
         scores.quicksands[teamKey].forEach((strokes, index) => {
-          if (strokes !== null) {
-            total += calculateStablefordPoints(strokes, courseData.quicksands.pars[index]);
-          }
+          total += calculateStablefordPoints(strokes, courseData.quicksands.pars[index]);
         });
       }
       
