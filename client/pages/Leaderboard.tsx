@@ -530,9 +530,9 @@ export default function Leaderboard() {
                         Team Scramble Scores
                       </h3>
                       <div className="grid md:grid-cols-2 gap-4">
-                        {Object.entries(placeholderScores.quicksands).map(([teamName, scores]) => {
-                          const teamScore = scores?.reduce((sum: number, score: number, index: number) =>
-                            sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
+                        {Object.entries(scores.quicksands).map(([teamName, teamScores]) => {
+                          const teamScore = teamScores?.reduce((sum: number, score: number, index: number) =>
+                            score !== null ? sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]) : sum, 0) || 0;
 
                           return (
                             <Card key={teamName} className="border-golf-green/20 bg-white">
