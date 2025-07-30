@@ -26,34 +26,56 @@ export interface Contest {
 
 // Fetch all scores from Supabase
 export async function fetchScores(): Promise<Score[]> {
-  const { data, error } = await supabase
-    .from('scores')
-    .select('*')
-    .order('course', { ascending: true })
-    .order('hole', { ascending: true });
+  try {
+    const { data, error } = await supabase
+      .from('scores')
+      .select('*')
+      .order('course', { ascending: true })
+      .order('hole', { ascending: true });
 
-  if (error) {
-    console.error('Error fetching scores:', error);
-    return [];
+    if (error) {
+      console.error('Supabase error fetching scores:', {
+        message: error.message,
+        details: error.details,
+        hint: error.hint,
+        code: error.code
+      });
+      throw new Error(`Failed to fetch scores: ${error.message}`);
+    }
+
+    console.log('Successfully fetched scores:', data?.length || 0, 'records');
+    return data || [];
+  } catch (err) {
+    console.error('Network/connection error fetching scores:', err);
+    throw err;
   }
-
-  return data || [];
 }
 
 // Fetch all contest winners from Supabase
 export async function fetchContests(): Promise<Contest[]> {
-  const { data, error } = await supabase
-    .from('contests')
-    .select('*')
-    .order('course', { ascending: true })
-    .order('hole', { ascending: true });
+  try {
+    const { data, error } = await supabase
+      .from('contests')
+      .select('*')
+      .order('course', { ascending: true })
+      .order('hole', { ascending: true });
 
-  if (error) {
-    console.error('Error fetching contests:', error);
-    return [];
+    if (error) {
+      console.error('Supabase error fetching contests:', {
+        message: error.message,
+        details: error.details,
+        hint: error.hint,
+        code: error.code
+      });
+      throw new Error(`Failed to fetch contests: ${error.message}`);
+    }
+
+    console.log('Successfully fetched contests:', data?.length || 0, 'records');
+    return data || [];
+  } catch (err) {
+    console.error('Network/connection error fetching contests:', err);
+    throw err;
   }
-
-  return data || [];
 }
 
 // Transform scores data into the format expected by the leaderboard
