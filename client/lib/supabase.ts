@@ -223,16 +223,24 @@ export function transformScoresData(scores: Score[]) {
 
 // Transform contest data into the format expected by the leaderboard
 export function transformContestData(contests: Contest[]) {
+  console.log('Transforming contest data:', contests.length, 'records');
+
   const transformed = {
     scarecrow: {} as { [hole: number]: string },
     gambleSands: {} as { [hole: number]: string },
     quicksands: {} as { [hole: number]: string }
   };
 
+  // Early return if no contests
+  if (!contests || contests.length === 0) {
+    console.log('No contests to transform, returning empty objects');
+    return transformed;
+  }
+
   // Map player names to initials
   const playerInitials: { [key: string]: string } = {
     'Ivan': 'I',
-    'Patrick': 'P', 
+    'Patrick': 'P',
     'Jack': 'J',
     'Marshall': 'M'
   };
