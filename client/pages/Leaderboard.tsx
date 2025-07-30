@@ -1,0 +1,472 @@
+import { useState } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Navigation from "@/components/Navigation";
+import { Trophy, Target, DollarSign, Users, Calculator, Medal } from "lucide-react";
+
+// Player names
+const players = ["Ivan", "Patrick", "Jack", "Marshall"];
+const playerInitials = { Ivan: "I", Patrick: "P", Jack: "J", Marshall: "M" };
+
+// Course data
+const courseData = {
+  scarecrow: {
+    name: "Scarecrow",
+    holes: 18,
+    pars: [4, 3, 5, 3, 4, 5, 4, 4, 3, 4, 4, 5, 4, 4, 5, 3, 4, 4],
+    contestHoles: {
+      2: "closest", // Par 3
+      3: "long", // Par 5
+      4: "closest", // Par 3
+      6: "long", // Par 5
+      9: "closest", // Par 3
+      11: "closest", // Par 3
+      12: "long", // Par 5
+      15: "long", // Par 5
+      16: "closest", // Par 3
+    },
+  },
+  gambleSands: {
+    name: "Gamble Sands",
+    holes: 18,
+    pars: [4, 4, 5, 3, 4, 3, 5, 4, 4, 3, 4, 4, 5, 4, 4, 3, 4, 5],
+    contestHoles: {
+      3: "long", // Par 5
+      4: "closest", // Par 3
+      6: "closest", // Par 3
+      7: "long", // Par 5
+      10: "closest", // Par 3
+      13: "long", // Par 5
+      16: "closest", // Par 3
+      18: "long", // Par 5
+    },
+  },
+  quicksands: {
+    name: "Quicksands",
+    holes: 14,
+    pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+    contestHoles: {}, // Team scramble, no individual contests
+  },
+};
+
+// Placeholder scores (replace with real data later)
+const placeholderScores = {
+  scarecrow: {
+    Ivan: [4, 2, 6, 3, 4, 5, 3, 5, 3, 4, 5, 5, 4, 4, 4, 2, 4, 5],
+    Patrick: [5, 3, 5, 4, 5, 6, 4, 4, 2, 3, 4, 6, 5, 3, 5, 3, 5, 4],
+    Jack: [3, 4, 5, 2, 3, 4, 5, 4, 4, 5, 4, 5, 3, 5, 6, 4, 3, 4],
+    Marshall: [4, 3, 7, 3, 4, 5, 4, 5, 3, 4, 3, 4, 4, 4, 5, 3, 4, 5],
+  },
+  gambleSands: {
+    Ivan: [4, 3, 4, 2, 4, 2, 5, 4, 3, 3, 5, 4, 6, 4, 5, 4, 4, 5],
+    Patrick: [5, 4, 5, 3, 5, 3, 6, 3, 4, 4, 4, 5, 5, 3, 4, 2, 5, 6],
+    Jack: [3, 4, 6, 3, 3, 4, 4, 5, 4, 2, 4, 3, 5, 5, 4, 3, 3, 4],
+    Marshall: [4, 5, 5, 3, 4, 3, 5, 4, 5, 3, 4, 4, 4, 4, 5, 3, 4, 5],
+  },
+  quicksands: {
+    "Ivan + Jack": [2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 3, 2, 2, 3],
+    "Patrick + Marshall": [3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2, 3, 3, 2],
+  },
+};
+
+// Placeholder contest winners
+const contestWinners = {
+  scarecrow: { 2: "I", 3: "P", 4: "J", 6: "M", 9: "I", 11: "P", 12: "J", 15: "M", 16: "I" },
+  gambleSands: { 3: "P", 4: "I", 6: "J", 7: "M", 10: "I", 13: "P", 16: "J", 18: "M" },
+  quicksands: {},
+};
+
+// Calculate Stableford points
+const calculateStablefordPoints = (strokes: number, par: number): number => {
+  const diff = strokes - par;
+  if (diff <= -2) return 8;
+  if (diff === -1) return 4;
+  if (diff === 0) return 2;
+  if (diff === 1) return 1;
+  return 0;
+};
+
+export default function Leaderboard() {
+  const [activeTab, setActiveTab] = useState("scorecards");
+
+  // Calculate total Stableford scores
+  const calculateTotalStableford = () => {
+    const totals: { [key: string]: number } = {};
+    
+    players.forEach(player => {
+      let total = 0;
+      
+      // Scarecrow round
+      if (placeholderScores.scarecrow[player]) {
+        placeholderScores.scarecrow[player].forEach((strokes, index) => {
+          total += calculateStablefordPoints(strokes, courseData.scarecrow.pars[index]);
+        });
+      }
+      
+      // Gamble Sands round
+      if (placeholderScores.gambleSands[player]) {
+        placeholderScores.gambleSands[player].forEach((strokes, index) => {
+          total += calculateStablefordPoints(strokes, courseData.gambleSands.pars[index]);
+        });
+      }
+      
+      // Quicksands (team scores)
+      const teamKey = player === "Ivan" || player === "Jack" ? "Ivan + Jack" : "Patrick + Marshall";
+      if (placeholderScores.quicksands[teamKey]) {
+        placeholderScores.quicksands[teamKey].forEach((strokes, index) => {
+          total += calculateStablefordPoints(strokes, courseData.quicksands.pars[index]);
+        });
+      }
+      
+      totals[player] = total;
+    });
+    
+    return totals;
+  };
+
+  // Calculate money won
+  const calculateMoneyWon = () => {
+    const money: { [key: string]: number } = {};
+    
+    players.forEach(player => {
+      let total = 0;
+      const initial = playerInitials[player];
+      
+      // Count contest wins ($10 each)
+      Object.values(contestWinners.scarecrow).forEach(winner => {
+        if (winner === initial) total += 10;
+      });
+      Object.values(contestWinners.gambleSands).forEach(winner => {
+        if (winner === initial) total += 10;
+      });
+      
+      money[player] = total;
+    });
+    
+    return money;
+  };
+
+  const stablefordTotals = calculateTotalStableford();
+  const moneyTotals = calculateMoneyWon();
+  const sortedByStableford = Object.entries(stablefordTotals).sort(([,a], [,b]) => b - a);
+
+  const renderScorecard = (courseName: string, courseInfo: any, scores: any) => {
+    const isTeamRound = courseName === "quicksands";
+    const displayPlayers = isTeamRound ? ["Ivan + Jack", "Patrick + Marshall"] : players;
+
+    return (
+      <Card className="border-golf-green/20">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Trophy className="h-5 w-5 text-golf-green" />
+            {courseInfo.name}
+          </CardTitle>
+          <CardDescription>
+            {courseInfo.holes} holes • {isTeamRound ? "Team Scramble" : "Individual Stroke Play"}
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-golf-green/20">
+                  <th className="text-left py-2 px-1 font-semibold">Hole</th>
+                  {Array.from({ length: courseInfo.holes }, (_, i) => (
+                    <th key={i + 1} className="text-center py-2 px-1 font-semibold w-8">
+                      {i + 1}
+                    </th>
+                  ))}
+                  <th className="text-center py-2 px-1 font-semibold bg-golf-green/5">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-golf-green/10">
+                  <td className="py-2 px-1 font-semibold text-golf-green-dark">Par</td>
+                  {courseInfo.pars.map((par: number, index: number) => (
+                    <td key={index} className="text-center py-2 px-1 bg-golf-green/5">
+                      {par}
+                    </td>
+                  ))}
+                  <td className="text-center py-2 px-1 bg-golf-green/10 font-semibold">
+                    {courseInfo.pars.reduce((sum: number, par: number) => sum + par, 0)}
+                  </td>
+                </tr>
+                
+                {displayPlayers.map((player) => (
+                  <tr key={player} className="border-b border-golf-green/10">
+                    <td className="py-2 px-1 font-semibold">{player}</td>
+                    {scores[player]?.map((score: number, index: number) => (
+                      <td key={index} className="text-center py-2 px-1">
+                        {score}
+                      </td>
+                    )) || Array.from({ length: courseInfo.holes }, (_, i) => (
+                      <td key={i} className="text-center py-2 px-1 text-muted-foreground">-</td>
+                    ))}
+                    <td className="text-center py-2 px-1 bg-golf-green/5 font-semibold">
+                      {scores[player]?.reduce((sum: number, score: number) => sum + score, 0) || "-"}
+                    </td>
+                  </tr>
+                ))}
+                
+                <tr className="border-b border-golf-green/10">
+                  <td className="py-2 px-1 font-semibold text-golf-green-dark">Contest</td>
+                  {Array.from({ length: courseInfo.holes }, (_, index) => {
+                    const holeNum = index + 1;
+                    const contestType = courseInfo.contestHoles[holeNum];
+                    const winner = contestWinners[courseName]?.[holeNum];
+                    
+                    return (
+                      <td key={index} className="text-center py-2 px-1 bg-yellow-50">
+                        {contestType && winner ? (
+                          <Badge 
+                            variant="secondary" 
+                            className="text-xs bg-golf-green/10 text-golf-green-dark"
+                          >
+                            {winner}
+                          </Badge>
+                        ) : contestType ? (
+                          <span className="text-xs text-muted-foreground">
+                            {contestType === "closest" ? "🎯" : "🏌️"}
+                          </span>
+                        ) : (
+                          "-"
+                        )}
+                      </td>
+                    );
+                  })}
+                  <td className="text-center py-2 px-1 bg-golf-green/5"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+      <Navigation />
+      
+      {/* Header */}
+      <section className="py-12 md:py-20 px-4">
+        <div className="container mx-auto text-center">
+          <Badge className="mb-4 bg-golf-green text-white">
+            Tournament Leaderboard
+          </Badge>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+            Live Scoring
+            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+              & Prize Tracker
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Track scorecards, Stableford points, and prize money across all three rounds
+          </p>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-8 px-4">
+        <div className="container mx-auto">
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsTrigger value="scorecards" className="flex items-center gap-2">
+                <Calculator className="h-4 w-4" />
+                <span className="hidden sm:inline">Raw Scorecards</span>
+                <span className="sm:hidden">Scores</span>
+              </TabsTrigger>
+              <TabsTrigger value="stableford" className="flex items-center gap-2">
+                <Trophy className="h-4 w-4" />
+                <span className="hidden sm:inline">Stableford Board</span>
+                <span className="sm:hidden">Points</span>
+              </TabsTrigger>
+              <TabsTrigger value="money" className="flex items-center gap-2">
+                <DollarSign className="h-4 w-4" />
+                <span className="hidden sm:inline">Money Board</span>
+                <span className="sm:hidden">Money</span>
+              </TabsTrigger>
+            </TabsList>
+
+            {/* Raw Scorecards Tab */}
+            <TabsContent value="scorecards" className="space-y-6">
+              {renderScorecard("scarecrow", courseData.scarecrow, placeholderScores.scarecrow)}
+              {renderScorecard("gambleSands", courseData.gambleSands, placeholderScores.gambleSands)}
+              {renderScorecard("quicksands", courseData.quicksands, placeholderScores.quicksands)}
+            </TabsContent>
+
+            {/* Stableford Leaderboard Tab */}
+            <TabsContent value="stableford">
+              <Card className="border-golf-green/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Trophy className="h-5 w-5 text-golf-green" />
+                    Overall Stableford Leaderboard
+                  </CardTitle>
+                  <CardDescription>
+                    Combined points from all rounds (individual + team)
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {sortedByStableford.map(([player, points], index) => (
+                      <div
+                        key={player}
+                        className={`flex items-center justify-between p-4 rounded-lg border ${
+                          index === 0
+                            ? "bg-yellow-50 border-yellow-200"
+                            : index === 1
+                            ? "bg-gray-50 border-gray-200"
+                            : "bg-white border-golf-green/20"
+                        }`}
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-golf-green/10 text-golf-green-dark font-bold">
+                            {index + 1}
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-golf-green-dark">{player}</h3>
+                            {index === 0 && (
+                              <Badge className="bg-yellow-500 text-white">Current Leader</Badge>
+                            )}
+                          </div>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-2xl font-bold text-golf-green-dark">{points}</div>
+                          <div className="text-sm text-muted-foreground">points</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-8 p-6 bg-golf-green/5 rounded-lg">
+                    <h3 className="text-lg font-semibold text-golf-green-dark mb-4 flex items-center gap-2">
+                      <Calculator className="h-5 w-5" />
+                      Prize Structure (Final)
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                      <div className="space-y-2">
+                        <div className="flex justify-between">
+                          <span>🥇 Overall Champion:</span>
+                          <span className="font-semibold">$120</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>🥈 Runner-up:</span>
+                          <span className="font-semibold">$60</span>
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="flex justify-between">
+                          <span>🏆 Team Champions:</span>
+                          <span className="font-semibold">$25 each</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground">
+                          Awarded after all rounds complete
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Money Leaderboard Tab */}
+            <TabsContent value="money">
+              <Card className="border-golf-green/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <DollarSign className="h-5 w-5 text-golf-green" />
+                    Money Earned
+                  </CardTitle>
+                  <CardDescription>
+                    Current winnings from skills contests ($10 each)
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {Object.entries(moneyTotals)
+                      .sort(([,a], [,b]) => b - a)
+                      .map(([player, money]) => (
+                        <div
+                          key={player}
+                          className="flex items-center justify-between p-4 rounded-lg border bg-white border-golf-green/20"
+                        >
+                          <div className="flex items-center gap-3">
+                            <Target className="h-6 w-6 text-golf-green" />
+                            <h3 className="font-semibold text-golf-green-dark">{player}</h3>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-2xl font-bold text-golf-green-dark">${money}</div>
+                            <div className="text-sm text-muted-foreground">
+                              {money > 0 ? `${money / 10} contests won` : "No contests won yet"}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+
+                  <div className="mt-8 grid md:grid-cols-2 gap-6">
+                    <Card className="border-golf-green/20 bg-white">
+                      <CardHeader>
+                        <CardTitle className="text-lg flex items-center gap-2">
+                          <Target className="h-5 w-5 text-golf-green" />
+                          Skills Contests
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-2 text-sm">
+                        <div className="flex justify-between">
+                          <span>🎯 Closest to Pin:</span>
+                          <span>$10 per hole</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>🏌️ Long Drive:</span>
+                          <span>$10 per hole</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-2">
+                          Must land on green (CTP) or in fairway (LD) to win
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="border-golf-green/20 bg-golf-green/5">
+                      <CardHeader>
+                        <CardTitle className="text-lg flex items-center gap-2">
+                          <Medal className="h-5 w-5 text-golf-green" />
+                          Final Prizes
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-2 text-sm">
+                        <div className="text-xs text-muted-foreground mb-2">
+                          Awarded after tournament completion:
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Overall Winner:</span>
+                          <span className="font-semibold">$120</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Overall Runner-up:</span>
+                          <span className="font-semibold">$60</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Team Champions:</span>
+                          <span className="font-semibold">$25 each</span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </section>
+    </div>
+  );
+}
