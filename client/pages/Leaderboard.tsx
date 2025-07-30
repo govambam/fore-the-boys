@@ -129,19 +129,54 @@ export default function Leaderboard() {
         setLoading(true);
         setError(null);
 
-        const [scoresData, contestsData] = await Promise.all([
-          fetchScores(),
-          fetchContests()
-        ]);
+        console.log('=== Starting Leaderboard Data Load ===');
+
+        // Test connection first
+        const connectionOk = await testConnection();
+        if (!connectionOk) {
+          throw new Error('Could not connect to Supabase. Please check your internet connection.');
+        }
+
+        // Check if tables exist and are accessible
+        const tableCheck = await checkTables();
+        if (!tableCheck.scores && !tableCheck.contests) {
+          throw new Error('Required database tables are not accessible. Please contact support.');
+        }
+
+        // Fetch data
+        console.log('Fetching tournament data...');
+        let scoresData: Score[] = [];
+        let contestsData: Contest[] = [];
+
+        if (tableCheck.scores) {
+          scoresData = await fetchScores();
+        } else {
+          console.warn('Scores table not accessible, using empty data');
+        }
+
+        if (tableCheck.contests) {
+          contestsData = await fetchContests();
+        } else {
+          console.warn('Contests table not accessible, using empty data');
+        }
+
+        console.log('Raw data received:', {
+          scores: scoresData.length,
+          contests: contestsData.length
+        });
 
         const transformedScores = transformScoresData(scoresData);
         const transformedContests = transformContestData(contestsData);
 
+        console.log('Data transformed successfully');
         setScores(transformedScores);
         setContestWinners(transformedContests);
+
+        console.log('=== Leaderboard Data Load Complete ===');
       } catch (err) {
         console.error('Error loading leaderboard data:', err);
-        setError('Failed to load leaderboard data. Please try again.');
+        const errorMessage = err instanceof Error ? err.message : 'Failed to load leaderboard data. Please try again.';
+        setError(errorMessage);
       } finally {
         setLoading(false);
       }
