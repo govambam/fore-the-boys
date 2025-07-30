@@ -148,8 +148,16 @@ export default function Leaderboard() {
           await inspectTableStructure('contests');
         }
 
-        if (!tableCheck.scores && !tableCheck.contests) {
-          throw new Error('Required database tables (scores, contests) are not accessible. Please check if they exist and have proper permissions.');
+        // Handle missing tables gracefully - show setup instructions but continue with empty data
+        if (!tableCheck.scores || !tableCheck.contests) {
+          const missingTables = [];
+          if (!tableCheck.scores) missingTables.push('scores');
+          if (!tableCheck.contests) missingTables.push('contests');
+
+          console.warn(`Missing tables: ${missingTables.join(', ')}. Using empty data.`);
+
+          // Set a user-friendly warning instead of an error
+          setError(`Database setup required: Missing ${missingTables.join(' and ')} table${missingTables.length > 1 ? 's' : ''}. Please run the setup SQL scripts to create the required tables. Currently showing empty leaderboard.`);
         }
 
         // Fetch data
