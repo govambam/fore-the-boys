@@ -296,29 +296,33 @@ export default function Leaderboard() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-golf-green/10">
-                  <td className="py-2 px-1 font-semibold text-golf-green-dark">Par</td>
+                <tr className="border-b-2 border-golf-green/20">
+                  <td className="py-3 px-2 font-semibold text-golf-green-dark">Par</td>
                   {courseInfo.pars.map((par: number, index: number) => (
-                    <td key={index} className="text-center py-2 px-1 bg-golf-green/5">
+                    <td key={index} className="text-center py-3 px-1 bg-golf-green/5 w-10 h-10">
                       {par}
                     </td>
                   ))}
-                  <td className="text-center py-2 px-1 bg-golf-green/10 font-semibold">
+                  <td className="text-center py-3 px-2 bg-golf-green/10 font-semibold">
                     {courseInfo.pars.reduce((sum: number, par: number) => sum + par, 0)}
                   </td>
                 </tr>
-                
+
                 {displayPlayers.map((player, playerIndex) => (
                   <tr key={player} className={`border-b border-golf-green/10 ${playerIndex % 2 === 0 ? "bg-gray-50/50" : "bg-white"}`}>
-                    <td className="py-2 px-1 font-semibold">{player}</td>
+                    <td className="py-3 px-2 font-semibold">{player}</td>
                     {scores[player]?.map((score: number, index: number) => (
-                      <td key={index} className={`text-center py-2 px-1 ${getScoreIndicator(score, courseInfo.pars[index])}`}>
-                        {score}
+                      <td key={index} className={`text-center py-3 px-1 w-10 h-10 ${getScoreIndicator(score, courseInfo.pars[index])}`}>
+                        <div className="flex items-center justify-center w-full h-full">
+                          {score}
+                        </div>
                       </td>
                     )) || Array.from({ length: courseInfo.holes }, (_, i) => (
-                      <td key={i} className="text-center py-2 px-1 text-muted-foreground">-</td>
+                      <td key={i} className="text-center py-3 px-1 text-muted-foreground w-10 h-10">
+                        <div className="flex items-center justify-center w-full h-full">-</div>
+                      </td>
                     ))}
-                    <td className="text-center py-2 px-1 bg-golf-green/5 font-semibold">
+                    <td className="text-center py-3 px-2 bg-golf-green/5 font-semibold">
                       {scores[player]?.reduce((sum: number, score: number) => sum + score, 0) || "-"}
                     </td>
                   </tr>
