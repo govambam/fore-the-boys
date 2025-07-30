@@ -253,6 +253,18 @@ export default function Leaderboard() {
     scores.quicksands["Patrick + Marshall"] && scores.quicksands["Patrick + Marshall"].every(score => score !== null);
   };
 
+  // Check if we have any data at all
+  const hasAnyData = () => {
+    return players.some(player =>
+      (scores.scarecrow[player] && scores.scarecrow[player].some(score => score !== null)) ||
+      (scores.gambleSands[player] && scores.gambleSands[player].some(score => score !== null))
+    ) ||
+    (scores.quicksands["Ivan + Jack"] && scores.quicksands["Ivan + Jack"].some(score => score !== null)) ||
+    (scores.quicksands["Patrick + Marshall"] && scores.quicksands["Patrick + Marshall"].some(score => score !== null)) ||
+    Object.keys(contestWinners.scarecrow).length > 0 ||
+    Object.keys(contestWinners.gambleSands).length > 0;
+  };
+
   // Calculate money won
   const calculateMoneyWon = () => {
     const money: { [key: string]: number } = {};
