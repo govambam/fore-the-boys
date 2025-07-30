@@ -5,6 +5,29 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
+// Test Supabase connection
+export async function testConnection() {
+  try {
+    console.log('Testing Supabase connection...');
+    console.log('URL:', SUPABASE_URL);
+    console.log('API Key (first 20 chars):', SUPABASE_KEY.substring(0, 20) + '...');
+
+    // Try to fetch from a system table that should always exist
+    const { data, error } = await supabase.rpc('version');
+
+    if (error) {
+      console.error('Connection test failed:', error);
+      return false;
+    }
+
+    console.log('Connection test successful');
+    return true;
+  } catch (err) {
+    console.error('Connection test error:', err);
+    return false;
+  }
+}
+
 // Types for our data
 export interface Score {
   id: number;
