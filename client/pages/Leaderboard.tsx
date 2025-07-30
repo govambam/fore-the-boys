@@ -549,6 +549,15 @@ export default function Leaderboard() {
                 </Card>
               </div>
             )}
+
+            {/* Raw Scorecards Tab */}
+            {activeTab === "scorecards" && (
+              <div className="space-y-6 mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                {renderScorecard("scarecrow", courseData.scarecrow, placeholderScores.scarecrow)}
+                {renderScorecard("gambleSands", courseData.gambleSands, placeholderScores.gambleSands)}
+                {renderScorecard("quicksands", courseData.quicksands, placeholderScores.quicksands)}
+              </div>
+            )}
           </div>
         </div>
       </section>
