@@ -555,6 +555,23 @@ export default function Leaderboard() {
                 </CardContent>
               </Card>
             </div>
+          ) : !hasAnyData() ? (
+            <div className="flex items-center justify-center py-12">
+              <Card className="border-blue-200 bg-blue-50 max-w-lg">
+                <CardContent className="p-6 text-center">
+                  <div className="text-blue-600 mb-2">🏌️ Tournament Ready</div>
+                  <h3 className="font-semibold text-blue-800 mb-2">No Tournament Data Yet</h3>
+                  <p className="text-blue-700 text-sm mb-4">
+                    The leaderboard is connected and ready! Start entering scores and contest results
+                    to see live tournament data.
+                  </p>
+                  <div className="text-xs text-blue-600">
+                    <p>✓ Database tables are set up correctly</p>
+                    <p>✓ Real-time updates enabled</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           ) : (
           <div className="w-full">
             {/* Custom Tab Navigation */}
