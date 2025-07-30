@@ -99,16 +99,16 @@ const getScoreIndicator = (score: number, par: number) => {
 
   if (diff <= -2) {
     // Eagle: two concentric circles
-    return "relative before:absolute before:inset-0 before:border-2 before:border-yellow-500 before:rounded-full after:absolute after:inset-1 after:border-2 after:border-yellow-500 after:rounded-full";
+    return "relative before:absolute before:inset-1 before:border-2 before:border-yellow-500 before:rounded-full before:aspect-square after:absolute after:inset-2 after:border-2 after:border-yellow-500 after:rounded-full after:aspect-square";
   } else if (diff === -1) {
     // Birdie: one circle
-    return "relative before:absolute before:inset-0 before:border-2 before:border-green-500 before:rounded-full";
+    return "relative before:absolute before:inset-1 before:border-2 before:border-green-500 before:rounded-full before:aspect-square";
   } else if (diff === 1) {
     // Bogey: one square
-    return "relative before:absolute before:inset-0 before:border-2 before:border-orange-500";
+    return "relative before:absolute before:inset-1 before:border-2 before:border-orange-500 before:aspect-square";
   } else if (diff >= 2) {
     // Double Bogey+: two nested squares
-    return "relative before:absolute before:inset-0 before:border-2 before:border-red-500 after:absolute after:inset-1 after:border-2 after:border-red-500";
+    return "relative before:absolute before:inset-1 before:border-2 before:border-red-500 before:aspect-square after:absolute after:inset-2 after:border-2 after:border-red-500 after:aspect-square";
   }
 
   return ""; // Par has no indicator
@@ -346,7 +346,7 @@ export default function Leaderboard() {
                           </Badge>
                         ) : contestType ? (
                           <span className="text-xs text-muted-foreground">
-                            {contestType === "closest" ? "🎯" : "🏌��"}
+                            {contestType === "closest" ? "���" : "🏌��"}
                           </span>
                         ) : (
                           "-"
