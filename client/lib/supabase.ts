@@ -126,10 +126,10 @@ export function transformContestData(contests: Contest[]) {
   };
 
   contests.forEach(contest => {
-    const course = contest.course.toLowerCase().replace(/\s+/g, '');
+    const course = contest.course.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '');
     const initial = playerInitials[contest.winner] || contest.winner.charAt(0).toUpperCase();
 
-    if (course === 'scarecrow') {
+    if (course === 'scarecrow' || course === 'thescarecrow') {
       transformed.scarecrow[contest.hole] = initial;
     } else if (course === 'gamblesands') {
       transformed.gambleSands[contest.hole] = initial;
