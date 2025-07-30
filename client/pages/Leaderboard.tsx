@@ -93,6 +93,27 @@ const calculateStablefordPoints = (strokes: number, par: number): number => {
   return 0;
 };
 
+// Get visual indicator styling for score
+const getScoreIndicator = (score: number, par: number) => {
+  const diff = score - par;
+
+  if (diff <= -2) {
+    // Eagle: two concentric circles
+    return "relative before:absolute before:inset-0 before:border-2 before:border-yellow-500 before:rounded-full after:absolute after:inset-1 after:border-2 after:border-yellow-500 after:rounded-full";
+  } else if (diff === -1) {
+    // Birdie: one circle
+    return "relative before:absolute before:inset-0 before:border-2 before:border-green-500 before:rounded-full";
+  } else if (diff === 1) {
+    // Bogey: one square
+    return "relative before:absolute before:inset-0 before:border-2 before:border-orange-500";
+  } else if (diff >= 2) {
+    // Double Bogey+: two nested squares
+    return "relative before:absolute before:inset-0 before:border-2 before:border-red-500 after:absolute after:inset-1 after:border-2 after:border-red-500";
+  }
+
+  return ""; // Par has no indicator
+};
+
 export default function Leaderboard() {
   const [activeTab, setActiveTab] = useState("stableford");
 
