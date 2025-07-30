@@ -90,9 +90,9 @@ INSERT INTO public.contests (round, hole_number, type, winner_name) VALUES
 */
 
 -- 6. Create indexes for better performance
-CREATE INDEX idx_scores_player_course ON public.scores(player_name, course);
-CREATE INDEX idx_scores_course_hole ON public.scores(course, hole);
-CREATE INDEX idx_contests_course_hole ON public.contests(course, hole);
+CREATE INDEX idx_scores_player_round ON public.scores(player_name, round);
+CREATE INDEX idx_scores_round_hole ON public.scores(round, hole_number);
+CREATE INDEX idx_contests_round_hole ON public.contests(round, hole_number);
 
 -- Success message
 SELECT 'Golf tournament tables created successfully!' AS message;
