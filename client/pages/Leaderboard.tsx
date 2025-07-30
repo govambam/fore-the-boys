@@ -493,7 +493,12 @@ export default function Leaderboard() {
                             <div className="text-right">
                               <div className="text-2xl font-bold text-golf-green-dark">${money}</div>
                               <div className="text-sm text-muted-foreground">
-                                {money > 0 ? `${money / 10} contests won` : "No contests won yet"}
+                                {isTournamentComplete()
+                                  ? "Contest wins + tournament prizes"
+                                  : money > 0
+                                    ? `${Math.floor(money / 10)} contests won`
+                                    : "No contests won yet"
+                                }
                               </div>
                             </div>
                           </div>
