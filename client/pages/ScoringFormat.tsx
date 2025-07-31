@@ -48,7 +48,22 @@ export default function ScoringFormat() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6 mb-12">
+            <Card className="text-center border-golf-green/20 bg-gradient-to-br from-emerald-600 to-emerald-700">
+              <CardHeader>
+                <div className="mx-auto mb-2 w-16 h-16 bg-emerald-800 rounded-full flex items-center justify-center">
+                  <span className="text-xl font-bold text-white">20</span>
+                </div>
+                <CardTitle className="text-emerald-100">Albatross</CardTitle>
+                <CardDescription className="text-emerald-200">3 under par</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-emerald-100">
+                  Legendary! The rarest score in golf deserves the highest reward.
+                </p>
+              </CardContent>
+            </Card>
+
             <Card className="text-center border-golf-green/20 bg-gradient-to-br from-yellow-50 to-yellow-100">
               <CardHeader>
                 <div className="mx-auto mb-2 w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center">
