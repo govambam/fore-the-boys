@@ -44,7 +44,9 @@ export default function ScoringFormat() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Each hole is worth points based on your score relative to par.
-              Collect as many points as possible! There are a couple drivable par 4s—go for the green if you need a big comeback and want to chase a rare Albatross.
+              Collect as many points as possible! There are a couple drivable
+              par 4s—go for the green if you need a big comeback and want to
+              chase a rare Albatross.
             </p>
           </div>
 
@@ -59,7 +61,8 @@ export default function ScoringFormat() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Legendary! The rarest score in golf deserves the highest reward.
+                  Legendary! The rarest score in golf deserves the highest
+                  reward.
                 </p>
               </CardContent>
             </Card>
