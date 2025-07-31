@@ -131,7 +131,10 @@ const getScoreIndicator = (score: number | null, par: number) => {
 
   const diff = score - par;
 
-  if (diff <= -2) {
+  if (diff === -3) {
+    // Albatross: three concentric circles with emerald color
+    return "relative before:absolute before:inset-0 before:border-2 before:border-emerald-600 before:rounded-full before:aspect-square after:absolute after:inset-1 after:border-2 after:border-emerald-600 after:rounded-full after:aspect-square before:bg-emerald-100/50";
+  } else if (diff === -2) {
     // Eagle: two concentric circles
     return "relative before:absolute before:inset-1 before:border-2 before:border-yellow-500 before:rounded-full before:aspect-square after:absolute after:inset-2 after:border-2 after:border-yellow-500 after:rounded-full after:aspect-square";
   } else if (diff === -1) {
@@ -820,7 +823,7 @@ export default function Leaderboard() {
                     scores and contest results to see live tournament data.
                   </p>
                   <div className="text-xs text-blue-600 mb-4">
-                    <p>✓ Database tables are set up correctly</p>
+                    <p>��� Database tables are set up correctly</p>
                     <p>✓ Real-time updates enabled</p>
                   </div>
                   <a
