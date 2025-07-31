@@ -54,44 +54,16 @@ function CountdownTimer() {
 
   if (isCountdownFinished) {
     return (
-      <div className="mb-6">
-        <div className="bg-gradient-to-r from-golf-green to-golf-green-dark text-white px-6 py-4 rounded-lg shadow-lg">
-          <div className="flex items-center justify-center gap-2">
-            <Trophy className="h-5 w-5" />
-            <span className="text-lg font-semibold">Tournament Day!</span>
-          </div>
-        </div>
-      </div>
+      <p className="text-lg md:text-xl text-golf-green font-medium mt-4">
+        🏆 Tournament Day!
+      </p>
     );
   }
 
   return (
-    <div className="mb-6">
-      <div className="bg-gradient-to-r from-golf-green to-golf-green-dark text-white px-6 py-4 rounded-lg shadow-lg">
-        <div className="flex items-center justify-center gap-2 mb-3">
-          <Clock className="h-5 w-5" />
-          <span className="text-sm font-medium">Tournament Starts In</span>
-        </div>
-        <div className="grid grid-cols-4 gap-2 text-center">
-          <div className="bg-white/20 rounded-md px-2 py-3">
-            <div className="text-2xl font-bold">{timeLeft.days}</div>
-            <div className="text-xs uppercase tracking-wide">Days</div>
-          </div>
-          <div className="bg-white/20 rounded-md px-2 py-3">
-            <div className="text-2xl font-bold">{timeLeft.hours}</div>
-            <div className="text-xs uppercase tracking-wide">Hours</div>
-          </div>
-          <div className="bg-white/20 rounded-md px-2 py-3">
-            <div className="text-2xl font-bold">{timeLeft.minutes}</div>
-            <div className="text-xs uppercase tracking-wide">Minutes</div>
-          </div>
-          <div className="bg-white/20 rounded-md px-2 py-3">
-            <div className="text-2xl font-bold">{timeLeft.seconds}</div>
-            <div className="text-xs uppercase tracking-wide">Seconds</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p className="text-lg md:text-xl text-golf-green mt-4">
+      Tournament starts in {timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes, and {timeLeft.seconds} seconds
+    </p>
   );
 }
 
