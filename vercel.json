@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/scores",
+      "destination": "https://fore-the-boys-scores.vercel.app/"
+    },
+    {
       "source": "/scores/:path*",
       "destination": "https://fore-the-boys-scores.vercel.app/:path*"
     }
