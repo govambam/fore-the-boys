@@ -114,11 +114,12 @@ const calculateStablefordPoints = (
   }
 
   const diff = strokes - par;
-  if (diff <= -2) return 8;
-  if (diff === -1) return 4;
-  if (diff === 0) return 2;
-  if (diff === 1) return 1;
-  return 0;
+  if (diff === -3) return 20; // Albatross
+  if (diff === -2) return 8;  // Eagle
+  if (diff === -1) return 4;  // Birdie
+  if (diff === 0) return 2;   // Par
+  if (diff === 1) return 1;   // Bogey
+  return 0; // Double Bogey or worse
 };
 
 // Get visual indicator styling for score
