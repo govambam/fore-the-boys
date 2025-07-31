@@ -62,7 +62,7 @@ function CountdownTimer() {
 
   return (
     <p className="text-lg md:text-xl text-golf-green mt-4">
-      Tournament starts in {timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes, and {timeLeft.seconds} seconds
+      Tournament starts in {timeLeft.days} days, {timeLeft.hours} hours, and {timeLeft.minutes} minutes
     </p>
   );
 }
