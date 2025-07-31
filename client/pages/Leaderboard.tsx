@@ -1143,6 +1143,26 @@ export default function Leaderboard() {
           )}
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-golf-green/10 bg-white/80 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-sm text-muted-foreground text-center sm:text-left">
+              <p>Live tournament data powered by Supabase</p>
+            </div>
+            <a
+              href="https://scores.foretheboy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-golf-green text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-golf-green-dark transition-colors"
+            >
+              <ExternalLink className="h-4 w-4" />
+              Update Scores
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
