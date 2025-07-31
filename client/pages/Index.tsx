@@ -24,6 +24,77 @@ import {
   Target,
 } from "lucide-react";
 
+// Countdown component
+function CountdownTimer() {
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [isCountdownFinished, setIsCountdownFinished] = useState(false);
+
+  useEffect(() => {
+    const targetDate = new Date('2024-09-06T00:00:00').getTime();
+
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setIsCountdownFinished(true);
+        clearInterval(timer);
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  if (isCountdownFinished) {
+    return (
+      <div className="mb-6">
+        <div className="bg-gradient-to-r from-golf-green to-golf-green-dark text-white px-6 py-4 rounded-lg shadow-lg">
+          <div className="flex items-center justify-center gap-2">
+            <Trophy className="h-5 w-5" />
+            <span className="text-lg font-semibold">Tournament Day!</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mb-6">
+      <div className="bg-gradient-to-r from-golf-green to-golf-green-dark text-white px-6 py-4 rounded-lg shadow-lg">
+        <div className="flex items-center justify-center gap-2 mb-3">
+          <Clock className="h-5 w-5" />
+          <span className="text-sm font-medium">Tournament Starts In</span>
+        </div>
+        <div className="grid grid-cols-4 gap-2 text-center">
+          <div className="bg-white/20 rounded-md px-2 py-3">
+            <div className="text-2xl font-bold">{timeLeft.days}</div>
+            <div className="text-xs uppercase tracking-wide">Days</div>
+          </div>
+          <div className="bg-white/20 rounded-md px-2 py-3">
+            <div className="text-2xl font-bold">{timeLeft.hours}</div>
+            <div className="text-xs uppercase tracking-wide">Hours</div>
+          </div>
+          <div className="bg-white/20 rounded-md px-2 py-3">
+            <div className="text-2xl font-bold">{timeLeft.minutes}</div>
+            <div className="text-xs uppercase tracking-wide">Minutes</div>
+          </div>
+          <div className="bg-white/20 rounded-md px-2 py-3">
+            <div className="text-2xl font-bold">{timeLeft.seconds}</div>
+            <div className="text-xs uppercase tracking-wide">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
@@ -36,6 +107,7 @@ export default function Index() {
           <Badge className="mb-4 bg-golf-green text-white text-sm md:text-base">
             September 6-8, 2024
           </Badge>
+          <CountdownTimer />
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-golf-green-dark mb-6 leading-tight">
             Fore the Boy
             <span className="block text-golf-green">Golf Getaway</span>
