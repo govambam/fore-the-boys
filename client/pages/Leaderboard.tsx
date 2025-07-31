@@ -667,7 +667,7 @@ export default function Leaderboard() {
                           </Badge>
                         ) : contestType ? (
                           <span className="text-xs text-muted-foreground">
-                            {contestType === "closest" ? "����" : "🏌"}
+                            {contestType === "closest" ? "🎯" : "🏌"}
                           </span>
                         ) : (
                           "-"
