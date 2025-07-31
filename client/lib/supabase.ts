@@ -269,9 +269,9 @@ export function transformScoresData(scores: Score[]) {
       // For quicksands, we need to map individual players to teams
       let teamName = '';
       if (playerName === 'Ivan' || playerName === 'Jack') {
-        teamName = 'Ivan + Jack';
+        teamName = 'IG + JC';
       } else if (playerName === 'Patrick' || playerName === 'Marshall') {
-        teamName = 'Patrick + Marshall';
+        teamName = 'PT + MR';
       }
 
       if (teamName && transformed.quicksands[teamName]) {
