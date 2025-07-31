@@ -870,7 +870,7 @@ export default function Leaderboard() {
                   }`}
                 >
                   <Calculator className="h-4 w-4" />
-                  <span className="hidden sm:inline">Raw Scorecards</span>
+                  <span className="hidden sm:inline">Scorecards</span>
                   <span className="sm:hidden">Scores</span>
                 </button>
               </div>
