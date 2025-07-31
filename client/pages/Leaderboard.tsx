@@ -72,8 +72,8 @@ const defaultScores = {
     Marshall: new Array(18).fill(null),
   },
   quicksands: {
-    "Ivan + Jack": new Array(14).fill(null),
-    "Patrick + Marshall": new Array(14).fill(null),
+    "IG + JC": new Array(14).fill(null),
+    "PT + MR": new Array(14).fill(null),
   },
 };
 
