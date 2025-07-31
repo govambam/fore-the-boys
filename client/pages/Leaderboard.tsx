@@ -363,9 +363,9 @@ export default function Leaderboard() {
 
       // Team champions ($25 each)
       // Determine winning team based on Quicksands scores
-      const ivanJackScore = scores.quicksands["Ivan + Jack"]?.reduce((sum: number, score: number | null, index: number) =>
+      const ivanJackScore = scores.quicksands["IG + JC"]?.reduce((sum: number, score: number | null, index: number) =>
         sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
-      const patrickMarshallScore = scores.quicksands["Patrick + Marshall"]?.reduce((sum: number, score: number | null, index: number) =>
+      const patrickMarshallScore = scores.quicksands["PT + MR"]?.reduce((sum: number, score: number | null, index: number) =>
         sum + calculateStablefordPoints(score, courseData.quicksands.pars[index]), 0) || 0;
 
       if (ivanJackScore > patrickMarshallScore) {
