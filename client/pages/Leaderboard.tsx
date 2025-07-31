@@ -817,10 +817,19 @@ export default function Leaderboard() {
                     The leaderboard is connected and ready! Start entering
                     scores and contest results to see live tournament data.
                   </p>
-                  <div className="text-xs text-blue-600">
+                  <div className="text-xs text-blue-600 mb-4">
                     <p>✓ Database tables are set up correctly</p>
                     <p>✓ Real-time updates enabled</p>
                   </div>
+                  <a
+                    href="https://scores.foretheboy.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-golf-green text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-golf-green-dark transition-colors"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Update Scores
+                  </a>
                 </CardContent>
               </Card>
             </div>
