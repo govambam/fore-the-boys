@@ -119,10 +119,11 @@ export async function inspectTableStructure(tableName: string) {
         .limit(1);
 
       if (sampleError) {
-        console.error(
-          `Error fetching sample data from ${tableName}:`,
+        console.warn(
+          `Could not fetch sample data from ${tableName}:`,
           sampleError.message,
         );
+        console.log(`This is normal if the ${tableName} table is empty or has connectivity issues.`);
       } else {
         console.log(
           `Sample ${tableName} record:`,
