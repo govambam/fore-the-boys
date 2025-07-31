@@ -48,7 +48,10 @@ export async function testConnection() {
     );
     return true;
   } catch (err) {
-    console.error("Connection test error:", err);
+    console.warn("Connection test failed:", err);
+    if (err instanceof Error && (err.message.includes("Failed to fetch") || err.name === "TypeError")) {
+      console.warn("This appears to be a network connectivity issue. The app will continue with empty data.");
+    }
     return false;
   }
 }
