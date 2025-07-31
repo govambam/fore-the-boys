@@ -666,7 +666,7 @@ export default function Leaderboard() {
                           </Badge>
                         ) : contestType ? (
                           <span className="text-xs text-muted-foreground">
-                            {contestType === "closest" ? "🎯" : "🏌"}
+                            {contestType === "closest" ? "����" : "🏌"}
                           </span>
                         ) : (
                           "-"
@@ -810,7 +810,7 @@ export default function Leaderboard() {
               <Card className="border-blue-200 bg-blue-50 max-w-lg">
                 <CardContent className="p-6 text-center">
                   <div className="text-blue-600 mb-2">
-                    🏌�� Tournament Ready
+                    ⛳ Tournament Ready
                   </div>
                   <h3 className="font-semibold text-blue-800 mb-2">
                     No Tournament Data Yet
