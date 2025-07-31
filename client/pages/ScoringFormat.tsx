@@ -48,7 +48,7 @@ export default function ScoringFormat() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
             <Card className="text-center border-golf-green/20 bg-gradient-to-br from-emerald-600 to-emerald-700">
               <CardHeader>
                 <div className="mx-auto mb-2 w-16 h-16 bg-emerald-800 rounded-full flex items-center justify-center">
