@@ -823,7 +823,7 @@ export default function Leaderboard() {
                     scores and contest results to see live tournament data.
                   </p>
                   <div className="text-xs text-blue-600 mb-4">
-                    <p>��� Database tables are set up correctly</p>
+                    <p>✓ Database tables are set up correctly</p>
                     <p>✓ Real-time updates enabled</p>
                   </div>
                   <a
