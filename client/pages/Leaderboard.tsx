@@ -434,7 +434,7 @@ export default function Leaderboard() {
 
   const renderScorecard = (courseName: string, courseInfo: any, scores: any) => {
     const isTeamRound = courseName === "quicksands";
-    const displayPlayers = isTeamRound ? ["Ivan + Jack", "Patrick + Marshall"] : players;
+    const displayPlayers = isTeamRound ? ["IG + JC", "PT + MR"] : players;
 
     return (
       <Card className="border-golf-green/20">
