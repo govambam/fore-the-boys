@@ -102,5 +102,21 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Ensure Unicode characters render correctly */
+  * {
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Force emoji to use color fonts */
+  .emoji,
+  [data-emoji="true"],
+  *:not(input):not(textarea) {
+    font-variant-emoji: emoji;
   }
 }
