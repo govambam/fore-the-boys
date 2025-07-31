@@ -49,8 +49,13 @@ export async function testConnection() {
     return true;
   } catch (err) {
     console.warn("Connection test failed:", err);
-    if (err instanceof Error && (err.message.includes("Failed to fetch") || err.name === "TypeError")) {
-      console.warn("This appears to be a network connectivity issue. The app will continue with empty data.");
+    if (
+      err instanceof Error &&
+      (err.message.includes("Failed to fetch") || err.name === "TypeError")
+    ) {
+      console.warn(
+        "This appears to be a network connectivity issue. The app will continue with empty data.",
+      );
     }
     return false;
   }
@@ -126,7 +131,9 @@ export async function inspectTableStructure(tableName: string) {
           `Could not fetch sample data from ${tableName}:`,
           sampleError.message,
         );
-        console.log(`This is normal if the ${tableName} table is empty or has connectivity issues.`);
+        console.log(
+          `This is normal if the ${tableName} table is empty or has connectivity issues.`,
+        );
       } else {
         console.log(
           `Sample ${tableName} record:`,
@@ -204,14 +211,21 @@ export async function fetchScores(): Promise<Score[]> {
       if (err.message.includes("does not exist")) {
         console.warn("Returning empty scores due to missing table/columns");
         return [];
-      } else if (err.message.includes("Failed to fetch") || err.name === "TypeError") {
-        console.warn("Network connectivity issue - returning empty scores data");
+      } else if (
+        err.message.includes("Failed to fetch") ||
+        err.name === "TypeError"
+      ) {
+        console.warn(
+          "Network connectivity issue - returning empty scores data",
+        );
         return [];
       }
     }
 
     // For unknown errors, still return empty data to prevent app crash
-    console.warn("Unknown error fetching scores - returning empty data to prevent crash");
+    console.warn(
+      "Unknown error fetching scores - returning empty data to prevent crash",
+    );
     return [];
   }
 }
@@ -252,14 +266,21 @@ export async function fetchContests(): Promise<Contest[]> {
       if (err.message.includes("does not exist")) {
         console.warn("Returning empty contests due to missing table/columns");
         return [];
-      } else if (err.message.includes("Failed to fetch") || err.name === "TypeError") {
-        console.warn("Network connectivity issue - returning empty contests data");
+      } else if (
+        err.message.includes("Failed to fetch") ||
+        err.name === "TypeError"
+      ) {
+        console.warn(
+          "Network connectivity issue - returning empty contests data",
+        );
         return [];
       }
     }
 
     // For unknown errors, still return empty data to prevent app crash
-    console.warn("Unknown error fetching contests - returning empty data to prevent crash");
+    console.warn(
+      "Unknown error fetching contests - returning empty data to prevent crash",
+    );
     return [];
   }
 }
