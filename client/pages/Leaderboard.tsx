@@ -322,8 +322,8 @@ export default function Leaderboard() {
       (scores.scarecrow[player] && scores.scarecrow[player].some(score => score !== null)) ||
       (scores.gambleSands[player] && scores.gambleSands[player].some(score => score !== null))
     ) ||
-    (scores.quicksands["Ivan + Jack"] && scores.quicksands["Ivan + Jack"].some(score => score !== null)) ||
-    (scores.quicksands["Patrick + Marshall"] && scores.quicksands["Patrick + Marshall"].some(score => score !== null)) ||
+    (scores.quicksands["IG + JC"] && scores.quicksands["IG + JC"].some(score => score !== null)) ||
+    (scores.quicksands["PT + MR"] && scores.quicksands["PT + MR"].some(score => score !== null)) ||
     Object.keys(contestWinners.scarecrow).length > 0 ||
     Object.keys(contestWinners.gambleSands).length > 0;
   };
