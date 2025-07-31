@@ -122,4 +122,18 @@
   *:not(input):not(textarea) {
     font-variant-emoji: emoji;
   }
+
+  /* Fix number spacing issues */
+  .number-spacing {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal;
+  }
+
+  /* Ensure countdown and score displays have proper digit spacing */
+  .countdown-text,
+  .score-display {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal;
+    font-feature-settings: "tnum" 1;
+  }
 }
