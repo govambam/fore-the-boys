@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/scores/:path*",
-      "destination": "https://fore-the-boy-admin.vercel.app/:path*"
+      "destination": "https://fore-the-boys-scores.vercel.app/:path*"
     }
   ]
 }
