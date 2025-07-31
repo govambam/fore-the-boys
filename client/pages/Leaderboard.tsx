@@ -809,9 +809,7 @@ export default function Leaderboard() {
             <div className="flex items-center justify-center py-12">
               <Card className="border-blue-200 bg-blue-50 max-w-lg">
                 <CardContent className="p-6 text-center">
-                  <div className="text-blue-600 mb-2">
-                    ⛳ Tournament Ready
-                  </div>
+                  <div className="text-blue-600 mb-2">⛳ Tournament Ready</div>
                   <h3 className="font-semibold text-blue-800 mb-2">
                     No Tournament Data Yet
                   </h3>
