@@ -312,8 +312,8 @@ export default function Leaderboard() {
       scores.scarecrow[player] && scores.scarecrow[player].every(score => score !== null) &&
       scores.gambleSands[player] && scores.gambleSands[player].every(score => score !== null)
     ) &&
-    scores.quicksands["Ivan + Jack"] && scores.quicksands["Ivan + Jack"].every(score => score !== null) &&
-    scores.quicksands["Patrick + Marshall"] && scores.quicksands["Patrick + Marshall"].every(score => score !== null);
+    scores.quicksands["IG + JC"] && scores.quicksands["IG + JC"].every(score => score !== null) &&
+    scores.quicksands["PT + MR"] && scores.quicksands["PT + MR"].every(score => score !== null);
   };
 
   // Check if we have any data at all
