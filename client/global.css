@@ -113,24 +113,17 @@
     text-rendering: optimizeLegibility;
   }
 
-  /* Force emoji to use color fonts */
+  /* Target only emoji characters specifically */
   .emoji,
-  [data-emoji="true"],
-  *:not(input):not(textarea) {
+  [data-emoji="true"] {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
     font-variant-emoji: emoji;
   }
 
-  /* Fix number spacing issues */
-  .number-spacing {
-    font-variant-numeric: tabular-nums;
+  /* Reset countdown to use system fonts for proper number rendering */
+  .countdown-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-variant-numeric: normal;
     letter-spacing: normal;
-  }
-
-  /* Ensure countdown and score displays have proper digit spacing */
-  .countdown-text,
-  .score-display {
-    font-variant-numeric: tabular-nums;
-    letter-spacing: normal;
-    font-feature-settings: "tnum" 1;
   }
 }
