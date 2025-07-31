@@ -196,13 +196,20 @@ export async function fetchScores(): Promise<Score[]> {
   } catch (err) {
     console.error("Network/connection error fetching scores:", err);
 
-    // For missing table errors, return empty data instead of crashing
-    if (err instanceof Error && err.message.includes("does not exist")) {
-      console.warn("Returning empty scores due to missing table/columns");
-      return [];
+    // Handle various error types gracefully
+    if (err instanceof Error) {
+      if (err.message.includes("does not exist")) {
+        console.warn("Returning empty scores due to missing table/columns");
+        return [];
+      } else if (err.message.includes("Failed to fetch") || err.name === "TypeError") {
+        console.warn("Network connectivity issue - returning empty scores data");
+        return [];
+      }
     }
 
-    throw err;
+    // For unknown errors, still return empty data to prevent app crash
+    console.warn("Unknown error fetching scores - returning empty data to prevent crash");
+    return [];
   }
 }
 
