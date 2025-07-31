@@ -1147,8 +1147,8 @@ export default function Leaderboard() {
       {/* Footer */}
       <footer className="border-t border-golf-green/10 bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-muted-foreground text-center sm:text-left">
+          <div className="flex items-center justify-center">
+            <div className="text-sm text-muted-foreground text-center">
               <p>Live tournament data powered by Supabase</p>
             </div>
           </div>
