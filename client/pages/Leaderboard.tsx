@@ -16,6 +16,7 @@ import {
   Users,
   Calculator,
   Medal,
+  ExternalLink,
 } from "lucide-react";
 import {
   fetchScores,
