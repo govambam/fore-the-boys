@@ -1154,6 +1154,14 @@ export default function Leaderboard() {
           <div className="flex items-center justify-center">
             <div className="text-sm text-muted-foreground text-center">
               <p>Live tournament data powered by Supabase</p>
+              <a
+                href="https://scores.foretheboy.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground hover:text-golf-green transition-colors underline"
+              >
+                Edit scores
+              </a>
             </div>
           </div>
         </div>
