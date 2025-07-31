@@ -293,7 +293,7 @@ export default function Leaderboard() {
       }
 
       // Quicksands (team scores)
-      const teamKey = player === "Ivan" || player === "Jack" ? "Ivan + Jack" : "Patrick + Marshall";
+      const teamKey = player === "Ivan" || player === "Jack" ? "IG + JC" : "PT + MR";
       if (scores.quicksands[teamKey]) {
         scores.quicksands[teamKey].forEach((strokes, index) => {
           total += calculateStablefordPoints(strokes, courseData.quicksands.pars[index]);
