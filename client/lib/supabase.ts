@@ -238,7 +238,7 @@ export function transformScoresData(scores: Score[]) {
 
   // Initialize player arrays
   const players = ['Ivan', 'Patrick', 'Jack', 'Marshall'];
-  const teams = ['Ivan + Jack', 'Patrick + Marshall'];
+  const teams = ['IG + JC', 'PT + MR'];
 
   players.forEach(player => {
     transformed.scarecrow[player] = new Array(18).fill(null);
