@@ -27,33 +27,24 @@ export function safeEmoji(text: string): string {
 }
 
 /**
- * Wraps emoji in a span with proper font handling
- * @param emoji - The emoji character
- * @param label - Accessibility label
- * @returns JSX element with proper emoji handling
+ * Creates emoji-safe inline styles for elements containing emoji
  */
-export function EmojiSpan({ emoji, label }: { emoji: string; label?: string }) {
-  return (
-    <span 
-      role="img" 
-      aria-label={label}
-      style={{ 
-        fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", emoji',
-        fontVariantEmoji: 'emoji' as any
-      }}
-    >
-      {safeEmoji(emoji)}
-    </span>
-  );
-}
+export const emojiStyles = {
+  fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", emoji',
+  fontVariantEmoji: 'emoji' as const,
+};
 
 /**
- * Common status indicators with consistent emoji
+ * Common emoji patterns for status indicators
  */
-export const StatusIndicators = {
-  Success: () => <EmojiSpan emoji={EMOJI.CHECKMARK} label="Success" />,
-  Target: () => <EmojiSpan emoji={EMOJI.TARGET} label="Target" />,
-  Golf: () => <EmojiSpan emoji={EMOJI.GOLF} label="Golf" />,
-  Flag: () => <EmojiSpan emoji={EMOJI.FLAG} label="Golf flag" />,
-  Trophy: () => <EmojiSpan emoji={EMOJI.TROPHY} label="Trophy" />,
-} as const;
+export const getStatusEmoji = (type: 'success' | 'target' | 'golf' | 'flag' | 'trophy') => {
+  const emojiMap = {
+    success: EMOJI.CHECKMARK,
+    target: EMOJI.TARGET, 
+    golf: EMOJI.GOLF,
+    flag: EMOJI.FLAG,
+    trophy: EMOJI.TROPHY,
+  };
+  
+  return safeEmoji(emojiMap[type]);
+};
