@@ -42,9 +42,9 @@ export default function ScoringFormat() {
             <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
               Point Values
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Each hole is worth points based on your score relative to par.
-              Collect as many points as possible!
+              Collect as many points as possible! There are a couple drivable par 4s—go for the green if you need a big comeback and want to chase a rare Albatross.
             </p>
           </div>
 
