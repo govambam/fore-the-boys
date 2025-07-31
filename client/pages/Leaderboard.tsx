@@ -826,14 +826,6 @@ export default function Leaderboard() {
                     <p>✓ Database tables are set up correctly</p>
                     <p>✓ Real-time updates enabled</p>
                   </div>
-                  <a
-                    href="https://scores.foretheboy.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-muted-foreground hover:text-blue-600 transition-colors underline"
-                  >
-                    Admin
-                  </a>
                 </CardContent>
               </Card>
             </div>
