@@ -70,7 +70,7 @@ function CountdownTimer() {
   }
 
   return (
-    <p className="text-lg md:text-xl text-golf-green mt-4" style={{ fontVariantNumeric: 'tabular-nums', letterSpacing: 'normal' }}>
+    <p className="text-lg md:text-xl text-golf-green mt-4 countdown-text">
       Tournament starts in {timeLeft.days} days, {timeLeft.hours} hours, and{" "}
       {timeLeft.minutes} minutes
     </p>
