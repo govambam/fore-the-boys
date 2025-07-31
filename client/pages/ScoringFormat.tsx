@@ -530,7 +530,7 @@ export default function ScoringFormat() {
                       </h4>
                       <ul className="space-y-1 text-sm text-muted-foreground">
                         <li>• Smart positioning beats pure distance</li>
-                        <li>��� Know the pin location</li>
+                        <li>• Know the pin location</li>
                         <li>• Risk vs. reward on tricky Par 5s</li>
                       </ul>
                     </div>
