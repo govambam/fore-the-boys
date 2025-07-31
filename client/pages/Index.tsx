@@ -79,7 +79,6 @@ export default function Index() {
           <Badge className="mb-4 bg-golf-green text-white text-sm md:text-base">
             September 6-8, 2024
           </Badge>
-          <CountdownTimer />
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-golf-green-dark mb-6 leading-tight">
             Fore the Boy
             <span className="block text-golf-green">Golf Getaway</span>
@@ -111,6 +110,7 @@ export default function Index() {
               View Courses
             </Button>
           </div>
+          <CountdownTimer />
         </div>
       </section>
 
