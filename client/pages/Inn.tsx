@@ -152,10 +152,10 @@ export default function Inn() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Coffee className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Coffee className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Bring Drinks
                   </h4>
                   <p className="text-sm text-muted-foreground">
