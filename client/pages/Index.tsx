@@ -379,16 +379,16 @@ export default function Index() {
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-muted-foreground">Bogey</span>
-                    <span className="font-semibold text-golf-green">
+                    <span className="text-sm text-masters-green/70">Bogey</span>
+                    <span className="font-semibold text-masters-gold">
                       1 point
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-sm text-masters-green/70">
                       Double Bogey+
                     </span>
-                    <span className="font-semibold text-golf-green">
+                    <span className="font-semibold text-masters-gold">
                       0 points
                     </span>
                   </div>
@@ -396,23 +396,23 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>2-Man Stableford Scramble</CardTitle>
-                <CardDescription>
+                <Users className="h-8 w-8 text-masters-gold mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">2-Man Stableford Scramble</CardTitle>
+                <CardDescription className="text-masters-green/70">
                   Quicksands Par 3 Course (14 holes)
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div>
-                    <h4 className="font-semibold text-golf-green-dark mb-2">
+                    <h4 className="font-semibold text-masters-green-deep mb-2">
                       Team Matchups
                     </h4>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-sm text-masters-green/70">
                           Team 1
                         </span>
                         <span className="font-semibold">Ivan & Jack</span>
