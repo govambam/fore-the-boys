@@ -61,40 +61,40 @@ export default function Navigation() {
 
               {coursesDropdownOpen && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-golf-green/10 py-2 z-50"
+                  className="absolute top-full left-0 mt-3 w-52 bg-white rounded-lg shadow-xl border border-masters-green/20 py-3 z-50"
                   onMouseDown={(e) => e.preventDefault()}
                 >
                   <Link
                     to="/scarecrow"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
-                    <span>Scarecrow</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">Scarecrow</span>
+                    <span className="text-xs text-masters-gold/70">
                       Round 1
                     </span>
                   </Link>
                   <Link
                     to="/gamble-sands"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
-                    <span>Gamble Sands</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">Gamble Sands</span>
+                    <span className="text-xs text-masters-gold/70">
                       Round 2
                     </span>
                   </Link>
                   <Link
                     to="/quicksands"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
-                    <span>Quicksands</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">Quicksands</span>
+                    <span className="text-xs text-masters-gold/70">
                       Round 3
                     </span>
                   </Link>
-                  <hr className="my-2 border-golf-green/10" />
+                  <hr className="my-2 border-masters-green/10" />
                   <Link
                     to="/"
                     className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
