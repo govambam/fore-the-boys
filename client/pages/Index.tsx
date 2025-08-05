@@ -311,7 +311,7 @@ export default function Index() {
                     <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
                   </div>
                   <CardDescription>
-                    Par 3 Course �� 14 Holes • Short Course Challenge
+                    Par 3 Course • 14 Holes • Short Course Challenge
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -544,33 +544,33 @@ export default function Index() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 mt-6">
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">
-                  Closest to Pin
-                </h4>
-                <p className="text-sm text-muted-foreground text-center mb-2">
-                  $10 per Par 3 on both courses
-                </p>
-                <ul className="text-xs text-muted-foreground space-y-1">
-                  <li>• Must be on the green to win</li>
-                  <li>• Ties carry over to next Par 3 ($20, $30, etc.)</li>
-                  <li>• Multiple opportunities to win</li>
-                </ul>
-              </div>
+              <Card className="masters-card">
+                <CardHeader>
+                  <CardTitle className="font-serif text-masters-green-deep text-center">Closest to Pin</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-lg font-bold text-masters-gold text-center mb-2">$30 per Par 3 on both courses</p>
+                  <ul className="text-sm text-masters-green/70 space-y-1">
+                    <li>• Must be on the green to win</li>
+                    <li>• Ties carry over to next Par 3 ($60, $90, etc.)</li>
+                    <li>• Multiple opportunities to win</li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <h4 className="font-semibold text-golf-green-dark mb-3 text-center">
-                  Long Drive
-                </h4>
-                <p className="text-sm text-muted-foreground text-center mb-2">
-                  $10 per Par 5 on both courses
-                </p>
-                <ul className="text-xs text-muted-foreground space-y-1">
-                  <li>• Must be in fairway to win</li>
-                  <li>• Winner has shortest approach to flag</li>
-                  <li>• Ties carry over to next Par 5 ($20, $30, etc.)</li>
-                </ul>
-              </div>
+              <Card className="masters-card">
+                <CardHeader>
+                  <CardTitle className="font-serif text-masters-green-deep text-center">Long Drive</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-lg font-bold text-masters-gold text-center mb-2">$30 per Par 5 on both courses</p>
+                  <ul className="text-sm text-masters-green/70 space-y-1">
+                    <li>• Must be in fairway to win</li>
+                    <li>• Winner has shortest approach to flag</li>
+                    <li>• Ties carry over to next Par 5 ($60, $90, etc.)</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
 
             <div className="mt-6 text-center">
