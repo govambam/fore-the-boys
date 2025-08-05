@@ -98,11 +98,11 @@ export default function Index() {
             golf at Gamble Sands, featuring three incredible courses in the
             beautiful Columbia River Valley.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center px-4">
             <Link to="/scoring">
               <Button
                 size="lg"
-                className="bg-golf-green hover:bg-golf-green-dark w-full sm:w-auto"
+                className="bg-masters-green hover:bg-masters-green-deep text-masters-cream w-full sm:w-auto px-8 py-4 text-base font-medium transition-all duration-300 hover:scale-105"
               >
                 View Scoring Format
               </Button>
@@ -110,7 +110,7 @@ export default function Index() {
             <Button
               size="lg"
               variant="outline"
-              className="border-golf-green text-golf-green hover:bg-golf-green/5 w-full sm:w-auto"
+              className="border-masters-gold text-masters-gold hover:bg-masters-gold/10 w-full sm:w-auto px-8 py-4 text-base font-medium transition-all duration-300 hover:scale-105"
               onClick={() =>
                 document
                   .getElementById("courses")
