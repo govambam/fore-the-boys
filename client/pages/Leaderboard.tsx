@@ -1087,7 +1087,7 @@ export default function Leaderboard() {
                         <Card className="border-golf-green/20 bg-golf-green/5">
                           <CardHeader>
                             <CardTitle className="text-lg flex items-center gap-2">
-                              <Medal className="h-5 w-5 text-golf-green" />
+                              <Medal className="h-5 w-5 text-masters-gold" />
                               Final Prizes
                             </CardTitle>
                           </CardHeader>
