@@ -290,7 +290,9 @@ export default function Index() {
                     experience in the heart of Washington.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">Sunday 10:20 AM</Badge>
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
+                      Sunday 10:20 AM
+                    </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 2
                     </span>
@@ -333,7 +335,9 @@ export default function Index() {
                     valley views.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">Sunday 5:00 PM</Badge>
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
+                      Sunday 5:00 PM
+                    </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 3
                     </span>
@@ -578,9 +582,7 @@ export default function Index() {
                   <p className="text-2xl font-bold text-masters-gold mb-1">
                     $10
                   </p>
-                  <p className="text-xs text-masters-green/70">
-                    per hole
-                  </p>
+                  <p className="text-xs text-masters-green/70">per hole</p>
                 </CardContent>
               </Card>
             </div>
