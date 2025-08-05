@@ -425,10 +425,10 @@ export default function ScoringFormat() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Team Stableford Scramble</CardTitle>
+                <Users className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">Team Stableford Scramble</CardTitle>
                 <CardDescription>
                   Round 3: Quicksands Par 3 Course (Separate Competition)
                 </CardDescription>
@@ -605,7 +605,7 @@ export default function ScoringFormat() {
 
             <div className="bg-white rounded-lg p-8 border border-golf-green/20">
               <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
-                <span>🎯</span> Gamble Sands ��� Closest to the Pin (Par 3s)
+                <span>��</span> Gamble Sands – Closest to the Pin (Par 3s)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6">
