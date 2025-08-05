@@ -559,7 +559,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-masters-gold mb-1">
-                    $35
+                    $25
                   </p>
                   <p className="text-xs text-masters-green/70">
                     per player (Quicksands Scramble)
