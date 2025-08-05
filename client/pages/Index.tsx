@@ -188,13 +188,13 @@ export default function Index() {
       </section>
 
       {/* Golf Courses Section */}
-      <section id="courses" className="py-20 px-4 bg-white/50">
+      <section id="courses" className="py-24 px-4 bg-masters-cream/30">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Gamble Sands Golf Courses
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-masters-green/80 max-w-3xl mx-auto leading-relaxed">
               Three distinctive courses at Washington's premier golf
               destination, each designed to showcase the natural beauty of the
               Columbia River Valley.
