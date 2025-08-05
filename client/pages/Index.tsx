@@ -333,12 +333,12 @@ export default function Index() {
                     valley views.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge variant="secondary">Sunday 5:00 PM</Badge>
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">Sunday 5:00 PM</Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 3
                     </span>
                   </div>
-                  <div className="mt-3 text-xs text-golf-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     Click for detailed course information →
                   </div>
                 </CardContent>
