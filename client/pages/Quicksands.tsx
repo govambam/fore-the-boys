@@ -199,10 +199,10 @@ export default function Quicksands() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Zap className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Zap className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Music & Vibe
                   </h4>
                   <p className="text-sm text-muted-foreground">
