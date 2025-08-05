@@ -186,10 +186,10 @@ export default function Scarecrow() {
             </h3>
 
             <div className="grid md:grid-cols-2 gap-8 mb-6">
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
-                  <Target className="h-8 w-8 text-golf-green mb-2" />
-                  <CardTitle className="text-lg">Closest to the Pin</CardTitle>
+                  <Target className="h-8 w-8 text-masters-gold mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">Closest to the Pin</CardTitle>
                   <CardDescription>Every Par 3 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
