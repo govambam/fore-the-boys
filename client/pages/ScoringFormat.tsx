@@ -83,16 +83,16 @@ export default function ScoringFormat() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 bg-gradient-to-br from-golf-green/10 to-golf-green/20">
+            <Card className="masters-card text-center bg-gradient-to-br from-masters-green/10 to-masters-green/20">
               <CardHeader>
-                <div className="mx-auto mb-2 w-16 h-16 bg-golf-green rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">4</span>
+                <div className="mx-auto mb-3 w-16 h-16 bg-masters-green rounded-full flex items-center justify-center">
+                  <span className="text-2xl font-bold text-masters-cream">4</span>
                 </div>
-                <CardTitle className="text-golf-green-dark">Birdie</CardTitle>
-                <CardDescription>1 under par</CardDescription>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Birdie</CardTitle>
+                <CardDescription className="text-masters-green/70">1 under par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/80">
                   Great shot! Double points for being 1 stroke under par.
                 </p>
               </CardContent>
