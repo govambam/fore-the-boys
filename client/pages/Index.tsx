@@ -22,6 +22,8 @@ import {
   ChevronDown,
   ExternalLink,
   Target,
+  User,
+  Bed,
 } from "lucide-react";
 
 // Countdown component
