@@ -215,7 +215,7 @@ export default function Index() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             <Link to="/scarecrow" className="group">
-              <Card className={'masters-card overflow-hidden cursor-pointer"'}>
+              <Card className="masters-card overflow-hidden cursor-pointer">
                 <div
                   className="h-48 relative bg-cover bg-center bg-no-repeat"
                   style={{
