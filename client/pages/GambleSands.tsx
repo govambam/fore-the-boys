@@ -168,10 +168,10 @@ export default function GambleSands() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Waves className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>David McLay Kidd Philosophy</CardTitle>
+                <Waves className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">David McLay Kidd Philosophy</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
