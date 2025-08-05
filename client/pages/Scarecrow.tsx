@@ -207,10 +207,10 @@ export default function Scarecrow() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
-                  <MapPin className="h-8 w-8 text-golf-green mb-2" />
-                  <CardTitle className="text-lg">Long Drive</CardTitle>
+                  <MapPin className="h-8 w-8 text-masters-gold mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">Long Drive</CardTitle>
                   <CardDescription>Every Par 5 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
