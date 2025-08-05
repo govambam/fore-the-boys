@@ -290,12 +290,12 @@ export default function Index() {
                     experience in the heart of Washington.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge variant="secondary">Sunday 10:20 AM</Badge>
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">Sunday 10:20 AM</Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 2
                     </span>
                   </div>
-                  <div className="mt-3 text-xs text-golf-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     Click for detailed course information →
                   </div>
                 </CardContent>
