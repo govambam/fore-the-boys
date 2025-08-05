@@ -146,8 +146,8 @@ export default function GambleSands() {
                 </p>
               </div>
               <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <h4 className="font-semibold text-masters-green-deep">
                   #31 Best Public
                 </h4>
                 <p className="text-sm text-muted-foreground">
