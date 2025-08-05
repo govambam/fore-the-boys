@@ -86,14 +86,14 @@ export default function Index() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white text-sm md:text-base">
+          <Badge className="mb-6 bg-masters-green text-masters-cream text-sm md:text-base border border-masters-gold/20">
             September 6-8, 2024
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-golf-green-dark mb-6 leading-tight">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl font-bold text-masters-green-deep mb-8 leading-tight">
             Fore the Boy
-            <span className="block text-golf-green">Golf Getaway</span>
+            <span className="block text-masters-gold mt-2">Golf Getaway</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto px-4 leading-relaxed">
             Celebrating another year with Patrick Triggs with an epic weekend of
             golf at Gamble Sands, featuring three incredible courses in the
             beautiful Columbia River Valley.
