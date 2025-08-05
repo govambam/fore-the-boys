@@ -612,7 +612,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg font-bold text-masters-gold text-center mb-2">
-                    $30 per Par 5 on both courses
+                    $10 per Par 5 on both courses
                   </p>
                   <ul className="text-sm text-masters-green/70 space-y-1">
                     <li>• Must be in fairway to win</li>
