@@ -18,16 +18,16 @@ export default function ScoringFormat() {
       {/* Header */}
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Tournament Format
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Modified Stableford
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               Scoring System
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Our tournament uses a Modified Stableford scoring system that
             rewards aggressive play and birdies. The higher your score, the
             better you're doing!
@@ -36,13 +36,13 @@ export default function ScoringFormat() {
       </section>
 
       {/* Scoring Breakdown */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Point Values
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-masters-green/80 max-w-3xl mx-auto leading-relaxed">
               Each hole is worth points based on your score relative to par.
               Collect as many points as possible! There are a couple drivable
               par 4s—go for the green if you need a big comeback and want to
