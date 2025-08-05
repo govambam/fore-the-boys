@@ -311,7 +311,7 @@ export default function Index() {
                     <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
                   </div>
                   <CardDescription>
-                    Par 3 Course • 14 Holes • Short Course Challenge
+                    Par 3 Course �� 14 Holes • Short Course Challenge
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -490,54 +490,54 @@ export default function Index() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-              <Card className="text-center border-golf-green/20 bg-white">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Overall Champion</CardTitle>
+                  <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Overall Champion</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$120</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-2xl font-bold text-masters-gold mb-1">$50</p>
+                  <p className="text-xs text-masters-green/70">
                     Highest Stableford (Scarecrow + Gamble Sands + Team Score)
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center border-golf-green/20 bg-white">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Overall Runner-up</CardTitle>
+                  <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Overall Runner-up</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$60</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-2xl font-bold text-masters-gold mb-1">$60</p>
+                  <p className="text-xs text-masters-green/70">
                     Second Place Overall Stableford
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center border-golf-green/20 bg-white">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Team Champions</CardTitle>
+                  <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Team Champions</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$25</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-2xl font-bold text-masters-gold mb-1">$35</p>
+                  <p className="text-xs text-masters-green/70">
                     per player (Quicksands Scramble)
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center border-golf-green/20 bg-white">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-sm">Skills Challenges</CardTitle>
+                  <Target className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Skills Challenges</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-xl font-bold text-golf-green mb-1">$10</p>
-                  <p className="text-xs text-muted-foreground">
-                    per contest hole
+                  <p className="text-2xl font-bold text-masters-gold mb-1">$30</p>
+                  <p className="text-xs text-masters-green/70">
+                    per contest winner
                   </p>
                 </CardContent>
               </Card>
