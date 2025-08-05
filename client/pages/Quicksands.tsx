@@ -11,12 +11,12 @@ import { MapPin, Clock, Users, Zap, Target, Flag } from "lucide-react";
 
 export default function Quicksands() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Round 3 • Sunday 5:00 PM
