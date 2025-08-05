@@ -22,13 +22,13 @@ export default function Navigation() {
   }, [coursesDropdownOpen]);
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md border-b border-golf-green/10 sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="bg-white/90 backdrop-blur-md border-b border-masters-green/20 sticky top-0 z-50 shadow-sm">
+      <div className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Trophy className="h-8 w-8 text-golf-green" />
+          <div className="flex items-center space-x-3">
+            <Trophy className="h-8 w-8 text-masters-gold" />
             <Link to="/">
-              <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark hover:text-golf-green transition-colors">
+              <h1 className="font-serif text-xl md:text-2xl font-bold text-masters-green-deep hover:text-masters-gold transition-colors duration-300">
                 Fore the Boy
               </h1>
             </Link>
