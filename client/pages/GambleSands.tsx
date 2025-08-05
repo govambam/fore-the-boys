@@ -279,10 +279,10 @@ export default function GambleSands() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <MapPin className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Course Conditions</CardTitle>
+                <MapPin className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">Course Conditions</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
