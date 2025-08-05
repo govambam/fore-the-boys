@@ -579,7 +579,7 @@ export default function Index() {
                     $10
                   </p>
                   <p className="text-xs text-masters-green/70">
-                    per contest winner
+                    per hole
                   </p>
                 </CardContent>
               </Card>
