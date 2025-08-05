@@ -1065,7 +1065,7 @@ export default function Leaderboard() {
                         <Card className="border-golf-green/20 bg-white">
                           <CardHeader>
                             <CardTitle className="text-lg flex items-center gap-2">
-                              <Target className="h-5 w-5 text-golf-green" />
+                              <Target className="h-5 w-5 text-masters-gold" />
                               Skills Contests
                             </CardTitle>
                           </CardHeader>
