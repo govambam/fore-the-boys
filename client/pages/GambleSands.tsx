@@ -338,10 +338,10 @@ export default function GambleSands() {
       {/* Tee Time Info */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
-          <Card className="border-golf-green/20 bg-golf-green/5 max-w-2xl mx-auto">
+          <Card className="masters-card max-w-2xl mx-auto">
             <CardHeader className="text-center">
-              <Clock className="h-12 w-12 text-golf-green mx-auto mb-2" />
-              <CardTitle className="text-2xl">Tee Time Details</CardTitle>
+              <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+              <CardTitle className="font-serif text-2xl text-masters-green-deep">Tee Time Details</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <div className="space-y-4">
