@@ -11,23 +11,23 @@ import { MapPin, Clock, Target, Wind, Mountain, Flag } from "lucide-react";
 
 export default function Scarecrow() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Round 1 • Saturday 3:05 PM
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Scarecrow
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               Newest Golf Course
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Scarecrow will be many things to many golfers, but there's no
             denying it is one of the most visually compelling courses anywhere
             in North America with sweeping views of the Columbia River. Opening
