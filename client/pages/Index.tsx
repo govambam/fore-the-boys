@@ -125,32 +125,32 @@ export default function Index() {
       </section>
 
       {/* Quick Info Cards */}
-      <section className="py-12 md:py-16 px-4">
+      <section className="py-16 md:py-24 px-4">
         <div className="container mx-auto">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            <Card className="text-center border-golf-green/20 hover:shadow-lg transition-shadow">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <MapPin className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle className="text-lg">Location</CardTitle>
+                <MapPin className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="text-xl font-serif text-masters-green-deep">Location</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Brewster, Washington
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70">
                   Gamble Sands Resort
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 hover:shadow-lg transition-shadow">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle className="text-lg">Players</CardTitle>
+                <Users className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="text-xl font-serif text-masters-green-deep">Players</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">4 Players</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">4 Players</p>
+                <p className="text-sm text-masters-green/70">
                   Modified Stableford
                 </p>
               </CardContent>
