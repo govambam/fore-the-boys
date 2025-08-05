@@ -450,12 +450,12 @@ export default function ScoringFormat() {
             </h3>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <Target className="h-10 w-10 text-golf-green" />
+                    <Target className="h-10 w-10 text-masters-gold" />
                     <div>
-                      <CardTitle className="text-xl">
+                      <CardTitle className="font-serif text-xl text-masters-green-deep">
                         Closest to the Pin
                       </CardTitle>
                       <CardDescription>
@@ -605,7 +605,7 @@ export default function ScoringFormat() {
 
             <div className="bg-white rounded-lg p-8 border border-golf-green/20">
               <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
-                <span>��</span> Gamble Sands – Closest to the Pin (Par 3s)
+                <span>🎯</span> Gamble Sands – Closest to the Pin (Par 3s)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6">
