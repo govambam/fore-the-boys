@@ -98,16 +98,16 @@ export default function ScoringFormat() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 bg-gradient-to-br from-blue-50 to-blue-100">
+            <Card className="masters-card text-center bg-gradient-to-br from-masters-cream to-masters-cream">
               <CardHeader>
-                <div className="mx-auto mb-2 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                <div className="mx-auto mb-3 w-16 h-16 bg-masters-bronze rounded-full flex items-center justify-center">
                   <span className="text-2xl font-bold text-white">2</span>
                 </div>
-                <CardTitle className="text-blue-700">Par</CardTitle>
-                <CardDescription>Even with par</CardDescription>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Par</CardTitle>
+                <CardDescription className="text-masters-green/70">Even with par</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/80">
                   Solid golf! Standard points for meeting par.
                 </p>
               </CardContent>
