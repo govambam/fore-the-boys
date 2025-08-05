@@ -927,7 +927,7 @@ export default function Leaderboard() {
                       {/* Team Scramble Scores Section */}
                       <div className="mt-8">
                         <h3 className="text-lg font-semibold text-golf-green-dark mb-4 flex items-center gap-2">
-                          <Users className="h-5 w-5 text-golf-green" />
+                          <Users className="h-5 w-5 text-masters-gold" />
                           Team Scramble Scores
                         </h3>
                         <div className="grid md:grid-cols-2 gap-4">
