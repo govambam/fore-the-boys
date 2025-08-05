@@ -151,8 +151,8 @@ export default function ScoringFormat() {
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <Target className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Target className="h-12 w-12 text-masters-gold mx-auto mb-4" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Go for Birdies
                 </h4>
                 <p className="text-sm text-muted-foreground">
