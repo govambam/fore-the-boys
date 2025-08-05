@@ -11,23 +11,23 @@ import { MapPin, Clock, Users, Zap, Target, Flag } from "lucide-react";
 
 export default function Quicksands() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Round 3 • Sunday 5:00 PM
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Quicksands
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               Par 3 Course
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Grab a handful of wedges, irons and a putter. Bring your friends.
             Hang on for a wild ride down into the valley of David McLay Kidd's
             creative mind. QuickSands offers a rollicking golf experience over
@@ -57,45 +57,57 @@ export default function Quicksands() {
       </section>
 
       {/* Course Stats */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="text-center border-golf-green/20">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Flag className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>14 Holes</CardTitle>
+                <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  14 Holes
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">All Par 3s</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  All Par 3s
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>60-180 Yards</CardTitle>
+                <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  60-180 Yards
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Creative Shot Variety
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Team Scramble</CardTitle>
+                <Users className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Team Scramble
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">2-Man Format</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  2-Man Format
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Zap className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Walking Only</CardTitle>
+                <Zap className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Walking Only
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -122,10 +134,10 @@ export default function Quicksands() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20 bg-golf-green/5">
+            <Card className="masters-card">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle className="text-golf-green-dark">
+                <Users className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
                   Team 1: Ivan & Jack
                 </CardTitle>
                 <CardDescription>Dynamic Duo</CardDescription>
@@ -133,10 +145,10 @@ export default function Quicksands() {
               <CardContent></CardContent>
             </Card>
 
-            <Card className="border-golf-green/20 bg-golf-green/5">
+            <Card className="masters-card">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle className="text-golf-green-dark">
+                <Users className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
                   Team 2: Patrick & Marshall
                 </CardTitle>
                 <CardDescription>Birthday Team</CardDescription>
@@ -186,10 +198,10 @@ export default function Quicksands() {
               What Awaits You
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Target className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Target className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Creative Shots
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -199,10 +211,10 @@ export default function Quicksands() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Zap className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Zap className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Music & Vibe
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -211,10 +223,10 @@ export default function Quicksands() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Users className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Users className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Group Fun
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -230,10 +242,12 @@ export default function Quicksands() {
       {/* Tee Time Info */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
-          <Card className="border-golf-green/20 bg-golf-green/5 max-w-2xl mx-auto">
+          <Card className="masters-card max-w-2xl mx-auto">
             <CardHeader className="text-center">
-              <Clock className="h-12 w-12 text-golf-green mx-auto mb-2" />
-              <CardTitle className="text-2xl">Tee Time Details</CardTitle>
+              <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+              <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                Tee Time Details
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <div className="space-y-4">

@@ -13,16 +13,32 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["Playfair Display", "Times New Roman", "Georgia", "serif"],
+        sans: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        masters: {
+          green: "hsl(var(--masters-green))",
+          "green-deep": "hsl(var(--masters-green-deep))",
+          "green-light": "hsl(var(--masters-green-light))",
+          gold: "hsl(var(--masters-gold))",
+          "gold-light": "hsl(var(--masters-gold-light))",
+          "gold-dark": "hsl(var(--masters-gold-dark))",
+          "gold-accent": "hsl(var(--masters-gold-accent))",
+          cream: "hsl(var(--masters-cream))",
+          bronze: "hsl(var(--masters-bronze))",
+        },
+        // Legacy golf colors for backward compatibility
         golf: {
-          green: "hsl(142, 76%, 36%)",
-          "green-dark": "hsl(142, 56%, 25%)",
-          "green-light": "hsl(142, 76%, 45%)",
+          green: "hsl(var(--masters-green))",
+          "green-dark": "hsl(var(--masters-green-deep))",
+          "green-light": "hsl(var(--masters-green-light))",
           fairway: "hsl(120, 25%, 45%)",
           sand: "hsl(35, 45%, 75%)",
           earth: "hsl(25, 35%, 65%)",

@@ -128,10 +128,10 @@ export default function Inn() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Moon className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Moon className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Evening Sessions
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -140,10 +140,10 @@ export default function Inn() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Flame className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Flame className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Fire Pits
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -152,10 +152,10 @@ export default function Inn() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Coffee className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Coffee className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Bring Drinks
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -396,8 +396,8 @@ export default function Inn() {
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   River Views
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -405,8 +405,8 @@ export default function Inn() {
                 </p>
               </div>
               <div>
-                <Coffee className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Coffee className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Private Patios
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -414,8 +414,8 @@ export default function Inn() {
                 </p>
               </div>
               <div>
-                <Bed className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Bed className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Upscale Comfort
                 </h4>
                 <p className="text-sm text-muted-foreground">

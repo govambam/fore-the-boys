@@ -543,7 +543,7 @@ export default function Leaderboard() {
       <Card className="border-golf-green/20">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Trophy className="h-5 w-5 text-golf-green" />
+            <Trophy className="h-5 w-5 text-masters-gold" />
             {courseInfo.name}
           </CardTitle>
           <CardDescription>
@@ -691,22 +691,22 @@ export default function Leaderboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       <Navigation />
 
       {/* Header */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Tournament Leaderboard
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Live Scoring
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               & Prize Tracker
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Track scorecards, Stableford points, and prize money across all
             three rounds
           </p>
@@ -719,8 +719,8 @@ export default function Leaderboard() {
           {loading ? (
             <div className="flex items-center justify-center py-12">
               <div className="text-center">
-                <div className="animate-spin h-8 w-8 border-b-2 border-golf-green mx-auto mb-4"></div>
-                <p className="text-muted-foreground">
+                <div className="animate-spin h-8 w-8 border-b-2 border-masters-gold mx-auto mb-4"></div>
+                <p className="text-masters-green/70">
                   Loading tournament data...
                 </p>
               </div>
@@ -877,7 +877,7 @@ export default function Leaderboard() {
                   <Card className="border-golf-green/20">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
-                        <Trophy className="h-5 w-5 text-golf-green" />
+                        <Trophy className="h-5 w-5 text-masters-gold" />
                         Overall Stableford Leaderboard
                       </CardTitle>
                       <CardDescription>
@@ -927,7 +927,7 @@ export default function Leaderboard() {
                       {/* Team Scramble Scores Section */}
                       <div className="mt-8">
                         <h3 className="text-lg font-semibold text-golf-green-dark mb-4 flex items-center gap-2">
-                          <Users className="h-5 w-5 text-golf-green" />
+                          <Users className="h-5 w-5 text-masters-gold" />
                           Team Scramble Scores
                         </h3>
                         <div className="grid md:grid-cols-2 gap-4">
@@ -956,7 +956,7 @@ export default function Leaderboard() {
                                   <CardContent className="p-4">
                                     <div className="flex items-center justify-between">
                                       <div className="flex items-center gap-3">
-                                        <Users className="h-5 w-5 text-golf-green" />
+                                        <Users className="h-5 w-5 text-masters-gold" />
                                         <h4 className="font-semibold text-golf-green-dark">
                                           {teamName}
                                         </h4>
@@ -1016,7 +1016,7 @@ export default function Leaderboard() {
                   <Card className="border-golf-green/20">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
-                        <DollarSign className="h-5 w-5 text-golf-green" />
+                        <DollarSign className="h-5 w-5 text-masters-gold" />
                         Money Earned
                       </CardTitle>
                       <CardDescription>
@@ -1035,7 +1035,7 @@ export default function Leaderboard() {
                               className="flex items-center justify-between p-4 rounded-lg border bg-white border-golf-green/20"
                             >
                               <div className="flex items-center gap-3">
-                                <Target className="h-6 w-6 text-golf-green" />
+                                <Target className="h-6 w-6 text-masters-gold" />
                                 <div>
                                   <h3 className="font-semibold text-golf-green-dark">
                                     {player}
@@ -1065,7 +1065,7 @@ export default function Leaderboard() {
                         <Card className="border-golf-green/20 bg-white">
                           <CardHeader>
                             <CardTitle className="text-lg flex items-center gap-2">
-                              <Target className="h-5 w-5 text-golf-green" />
+                              <Target className="h-5 w-5 text-masters-gold" />
                               Skills Contests
                             </CardTitle>
                           </CardHeader>
@@ -1087,7 +1087,7 @@ export default function Leaderboard() {
                         <Card className="border-golf-green/20 bg-golf-green/5">
                           <CardHeader>
                             <CardTitle className="text-lg flex items-center gap-2">
-                              <Medal className="h-5 w-5 text-golf-green" />
+                              <Medal className="h-5 w-5 text-masters-gold" />
                               Final Prizes
                             </CardTitle>
                           </CardHeader>

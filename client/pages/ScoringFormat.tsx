@@ -18,16 +18,16 @@ export default function ScoringFormat() {
       {/* Header */}
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Tournament Format
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Modified Stableford
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               Scoring System
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Our tournament uses a Modified Stableford scoring system that
             rewards aggressive play and birdies. The higher your score, the
             better you're doing!
@@ -36,13 +36,13 @@ export default function ScoringFormat() {
       </section>
 
       {/* Scoring Breakdown */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Point Values
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-masters-green/80 max-w-3xl mx-auto leading-relaxed">
               Each hole is worth points based on your score relative to par.
               Collect as many points as possible! There are a couple drivable
               par 4s—go for the green if you need a big comeback and want to
@@ -83,31 +83,41 @@ export default function ScoringFormat() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 bg-gradient-to-br from-golf-green/10 to-golf-green/20">
+            <Card className="masters-card text-center bg-gradient-to-br from-masters-green/10 to-masters-green/20">
               <CardHeader>
-                <div className="mx-auto mb-2 w-16 h-16 bg-golf-green rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">4</span>
+                <div className="mx-auto mb-3 w-16 h-16 bg-masters-green rounded-full flex items-center justify-center">
+                  <span className="text-2xl font-bold text-masters-cream">
+                    4
+                  </span>
                 </div>
-                <CardTitle className="text-golf-green-dark">Birdie</CardTitle>
-                <CardDescription>1 under par</CardDescription>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Birdie
+                </CardTitle>
+                <CardDescription className="text-masters-green/70">
+                  1 under par
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/80">
                   Great shot! Double points for being 1 stroke under par.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 bg-gradient-to-br from-blue-50 to-blue-100">
+            <Card className="masters-card text-center bg-gradient-to-br from-masters-cream to-masters-cream">
               <CardHeader>
-                <div className="mx-auto mb-2 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                <div className="mx-auto mb-3 w-16 h-16 bg-masters-bronze rounded-full flex items-center justify-center">
                   <span className="text-2xl font-bold text-white">2</span>
                 </div>
-                <CardTitle className="text-blue-700">Par</CardTitle>
-                <CardDescription>Even with par</CardDescription>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Par
+                </CardTitle>
+                <CardDescription className="text-masters-green/70">
+                  Even with par
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/80">
                   Solid golf! Standard points for meeting par.
                 </p>
               </CardContent>
@@ -151,8 +161,8 @@ export default function ScoringFormat() {
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <Target className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Target className="h-12 w-12 text-masters-gold mx-auto mb-4" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Go for Birdies
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -161,8 +171,8 @@ export default function ScoringFormat() {
                 </p>
               </div>
               <div className="text-center">
-                <Calculator className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Calculator className="h-12 w-12 text-masters-gold mx-auto mb-4" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Avoid Big Numbers
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -171,8 +181,8 @@ export default function ScoringFormat() {
                 </p>
               </div>
               <div className="text-center">
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-4" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Consistency Wins
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -357,10 +367,12 @@ export default function ScoringFormat() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Overall Champion</CardTitle>
+                  <Trophy className="h-10 w-10 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Overall Champion
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">
@@ -372,10 +384,12 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Overall Runner-Up</CardTitle>
+                  <Trophy className="h-10 w-10 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Overall Runner-Up
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$60</p>
@@ -383,10 +397,12 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Users className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Team Champions</CardTitle>
+                  <Users className="h-10 w-10 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Team Champions
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$25</p>
@@ -394,10 +410,12 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Target className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Skills Contests</CardTitle>
+                  <Target className="h-10 w-10 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Skills Contests
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$10</p>
@@ -408,10 +426,12 @@ export default function ScoringFormat() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Calculator className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Overall Stableford Competition</CardTitle>
+                <Calculator className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Overall Stableford Competition
+                </CardTitle>
                 <CardDescription>
                   Individual Scarecrow and Gamble Sands score + Team score
                 </CardDescription>
@@ -425,10 +445,12 @@ export default function ScoringFormat() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Team Stableford Scramble</CardTitle>
+                <Users className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Team Stableford Scramble
+                </CardTitle>
                 <CardDescription>
                   Round 3: Quicksands Par 3 Course (Separate Competition)
                 </CardDescription>
@@ -450,12 +472,12 @@ export default function ScoringFormat() {
             </h3>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <Target className="h-10 w-10 text-golf-green" />
+                    <Target className="h-10 w-10 text-masters-gold" />
                     <div>
-                      <CardTitle className="text-xl">
+                      <CardTitle className="font-serif text-xl text-masters-green-deep">
                         Closest to the Pin
                       </CardTitle>
                       <CardDescription>
@@ -494,12 +516,14 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <MapPin className="h-10 w-10 text-golf-green" />
+                    <MapPin className="h-10 w-10 text-masters-gold" />
                     <div>
-                      <CardTitle className="text-xl">Long Drive</CardTitle>
+                      <CardTitle className="font-serif text-xl text-masters-green-deep">
+                        Long Drive
+                      </CardTitle>
                       <CardDescription>
                         Every Par 5 on both courses • $10 per hole
                       </CardDescription>

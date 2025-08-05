@@ -4,56 +4,62 @@
 
 @layer base {
   /**
-   * Tailwind CSS theme
-   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
-   * A different format will require also updating the theme in tailwind.config.ts.
-  */
+   * Masters Tournament Inspired Design System
+   * Premium golf tournament aesthetic with sophisticated green/gold palette
+   */
   :root {
-    --background: 0 0% 98%;
-    --foreground: 155 15% 15%;
+    /* Masters Color Palette */
+    --masters-green: 140 35% 25%; /* #3B5B3F - Primary brand */
+    --masters-green-deep: 140 45% 15%; /* #1F3B23 - Headers, emphasis */
+    --masters-green-light: 142 35% 38%; /* #5C8464 - Lighter accents */
 
-    --card: 0 0% 100%;
-    --card-foreground: 155 15% 15%;
+    --masters-gold: 43 74% 49%; /* #B8860B - Primary accent */
+    --masters-gold-light: 43 84% 65%; /* #D4AF37 - Light accents */
+    --masters-gold-dark: 43 64% 35%; /* #9B7C0A - Dark accents */
+    --masters-gold-accent: 43 94% 55%; /* #F4C430 - Bright highlights */
+
+    --masters-cream: 43 25% 95%; /* #F7F5F2 - Background warmth */
+    --masters-bronze: 25 55% 45%; /* #B8824A - Tertiary accent */
+
+    /* Tailwind CSS variables mapped to Masters palette */
+    --background: 43 25% 98%; /* Warm cream background */
+    --foreground: 140 45% 15%; /* Dark green text */
+
+    --card: 0 0% 100%; /* Clean white cards */
+    --card-foreground: 140 45% 15%; /* Dark green text */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 155 15% 15%;
+    --popover-foreground: 140 45% 15%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 140 35% 25%; /* Masters Green */
+    --primary-foreground: 43 25% 95%; /* Cream text */
 
-    --secondary: 35 45% 92%;
-    --secondary-foreground: 155 15% 15%;
+    --secondary: 43 25% 95%; /* Light cream */
+    --secondary-foreground: 140 45% 15%; /* Dark green text */
 
-    --muted: 35 25% 95%;
-    --muted-foreground: 155 8% 45%;
+    --muted: 43 15% 92%; /* Muted background */
+    --muted-foreground: 140 25% 35%; /* Muted green text */
 
-    --accent: 142 56% 25%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 43 74% 49%; /* Masters Gold */
+    --accent-foreground: 140 45% 15%; /* Dark green text */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 43 25% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 140 35% 25% / 0.2; /* Subtle green border */
+    --input: 140 35% 25% / 0.2;
+    --ring: 43 74% 49%; /* Gold focus ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 43 25% 98%;
+    --sidebar-foreground: 140 45% 15%;
+    --sidebar-primary: 140 35% 25%;
+    --sidebar-primary-foreground: 43 25% 95%;
+    --sidebar-accent: 43 25% 95%;
+    --sidebar-accent-foreground: 140 45% 15%;
+    --sidebar-border: 140 35% 25% / 0.2;
+    --sidebar-ring: 43 74% 49%;
   }
 
   .dark {
@@ -101,18 +107,91 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      Arial, sans-serif;
+    @apply bg-background text-foreground font-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Ensure Unicode characters render correctly */
-  * {
-    text-rendering: optimizeLegibility;
+  /* Masters Typography System */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: hsl(var(--masters-green-deep));
+  }
+
+  /* Elegant text modifier for special content */
+  .masters-elegant {
+    font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+  }
+
+  /* Data/Numbers - System fonts for clarity */
+  .number-display,
+  .score-display {
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal;
+  }
+
+  /* Countdown timer uses serif font */
+  .countdown-text {
+    font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+  }
+
+  /* Masters Card Design Pattern */
+  .masters-card {
+    border: 1px solid hsl(var(--masters-green) / 0.2);
+    background: white;
+    border-radius: 0.5rem;
+    transition: all 300ms ease;
+  }
+
+  .masters-card:hover {
+    border-color: hsl(var(--masters-gold) / 0.4);
+    box-shadow: 0 10px 25px -3px rgb(0 0 0 / 0.1);
+    transform: scale(1.02);
+  }
+
+  /* Masters Button Hierarchy */
+  .btn-masters-primary {
+    background: hsl(var(--masters-green));
+    color: hsl(var(--masters-cream));
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms ease;
+  }
+
+  .btn-masters-primary:hover {
+    background: hsl(var(--masters-green-deep));
+    transform: scale(1.02);
+  }
+
+  .btn-masters-secondary {
+    border: 1px solid hsl(var(--masters-gold));
+    color: hsl(var(--masters-gold));
+    background: transparent;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms ease;
+  }
+
+  .btn-masters-secondary:hover {
+    background: hsl(var(--masters-gold) / 0.1);
+    transform: scale(1.02);
   }
 
   /* Target only emoji characters specifically */
@@ -124,12 +203,32 @@
     font-variant-emoji: emoji;
   }
 
-  /* Reset countdown to use system fonts for proper number rendering */
-  .countdown-text {
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      Arial, sans-serif;
-    font-variant-numeric: normal;
-    letter-spacing: normal;
+  /* Masters Color Utilities */
+  .text-masters-green {
+    color: hsl(var(--masters-green));
+  }
+  .text-masters-green-deep {
+    color: hsl(var(--masters-green-deep));
+  }
+  .text-masters-gold {
+    color: hsl(var(--masters-gold));
+  }
+  .text-masters-gold-light {
+    color: hsl(var(--masters-gold-light));
+  }
+  .border-masters-green {
+    border-color: hsl(var(--masters-green) / 0.2);
+  }
+  .border-masters-gold {
+    border-color: hsl(var(--masters-gold) / 0.4);
+  }
+  .bg-masters-cream {
+    background-color: hsl(var(--masters-cream));
+  }
+  .bg-masters-green {
+    background-color: hsl(var(--masters-green));
+  }
+  .bg-masters-gold {
+    background-color: hsl(var(--masters-gold));
   }
 }

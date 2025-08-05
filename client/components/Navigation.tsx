@@ -22,23 +22,23 @@ export default function Navigation() {
   }, [coursesDropdownOpen]);
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md border-b border-golf-green/10 sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="bg-white/90 backdrop-blur-md border-b border-masters-green/20 sticky top-0 z-50 shadow-sm">
+      <div className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Trophy className="h-8 w-8 text-golf-green" />
+          <div className="flex items-center space-x-3">
+            <Trophy className="h-8 w-8 text-masters-gold" />
             <Link to="/">
-              <h1 className="text-xl md:text-2xl font-bold text-golf-green-dark hover:text-golf-green transition-colors">
+              <h1 className="font-serif text-xl md:text-2xl font-bold text-masters-green-deep hover:text-masters-gold transition-colors duration-300">
                 Fore the Boy
               </h1>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Home
             </Link>
@@ -46,7 +46,7 @@ export default function Navigation() {
             {/* Courses Dropdown */}
             <div className="relative" data-dropdown="courses">
               <button
-                className="flex items-center space-x-1 text-foreground hover:text-golf-green transition-colors"
+                className="flex items-center space-x-1 text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
                 onClick={(e) => {
                   e.preventDefault();
                   setCoursesDropdownOpen(!coursesDropdownOpen);
@@ -55,49 +55,49 @@ export default function Navigation() {
               >
                 <span>Courses</span>
                 <ChevronDown
-                  className={`h-4 w-4 transition-transform ${coursesDropdownOpen ? "rotate-180" : ""}`}
+                  className={`h-4 w-4 transition-all duration-300 ${coursesDropdownOpen ? "rotate-180 text-masters-gold" : ""}`}
                 />
               </button>
 
               {coursesDropdownOpen && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-golf-green/10 py-2 z-50"
+                  className="absolute top-full left-0 mt-3 w-52 bg-white rounded-lg shadow-xl border border-masters-green/20 py-3 z-50"
                   onMouseDown={(e) => e.preventDefault()}
                 >
                   <Link
                     to="/scarecrow"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
-                    <span>Scarecrow</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">Scarecrow</span>
+                    <span className="text-xs text-masters-gold/70">
                       Round 1
                     </span>
                   </Link>
                   <Link
                     to="/gamble-sands"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
-                    <span>Gamble Sands</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">Gamble Sands</span>
+                    <span className="text-xs text-masters-gold/70">
                       Round 2
                     </span>
                   </Link>
                   <Link
                     to="/quicksands"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
                   >
-                    <span>Quicksands</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">Quicksands</span>
+                    <span className="text-xs text-masters-gold/70">
                       Round 3
                     </span>
                   </Link>
-                  <hr className="my-2 border-golf-green/10" />
+                  <hr className="my-2 border-masters-green/10" />
                   <Link
                     to="/"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => {
                       setCoursesDropdownOpen(false);
                       setTimeout(() => {
@@ -107,8 +107,8 @@ export default function Navigation() {
                       }, 100);
                     }}
                   >
-                    <span>View All Courses</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">View All Courses</span>
+                    <span className="text-xs text-masters-gold/70">
                       Overview
                     </span>
                   </Link>
@@ -118,19 +118,19 @@ export default function Navigation() {
 
             <Link
               to="/scoring"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Scoring & Rules
             </Link>
             <Link
               to="/leaderboard"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Leaderboard
             </Link>
             <Link
               to="/inn"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Inn
             </Link>
@@ -138,7 +138,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-golf-green-dark"
+            className="md:hidden p-2 text-masters-gold hover:text-masters-green transition-colors duration-300"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >

@@ -19,23 +19,23 @@ import {
 
 export default function GambleSands() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Round 2 • Sunday 10:20 AM
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Gamble Sands
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               Signature Course
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Winner of Golf Digest's Best New Course of 2014 award, Gamble Sands
             sits atop a sprawling, treeless plateau of sandy desert overlooking
             Washington's Columbia River Valley. The extremely playable layout is
@@ -66,50 +66,60 @@ export default function GambleSands() {
       </section>
 
       {/* Course Stats */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="text-center border-golf-green/20">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Flag className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Par 72</CardTitle>
+                <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Par 72
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Signature Championship
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>6,389 Yards</CardTitle>
+                <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  6,389 Yards
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Sands Tees</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  Sands Tees
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Waves className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Links Design</CardTitle>
+                <Waves className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Links Design
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   David McLay Kidd
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Trees className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Natural Terrain</CardTitle>
+                <Trees className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Natural Terrain
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Sandy Conditions
                 </p>
               </CardContent>
@@ -119,26 +129,26 @@ export default function GambleSands() {
       </section>
 
       {/* Course Features */}
-      <section className="py-16 px-4 bg-white/50">
+      <section className="py-20 px-4 bg-masters-cream/30">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Course Features
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-masters-green/80 max-w-3xl mx-auto leading-relaxed">
               Gamble Sands showcases the natural beauty of the Columbia River
               Valley with world-class golf design.
             </p>
           </div>
 
-          <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">
+          <div className="bg-masters-green/5 rounded-lg p-10 mb-16 border border-masters-green/20">
+            <h3 className="font-serif text-3xl font-bold text-masters-green-deep mb-6 text-center">
               Award-Winning Course
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <h4 className="font-semibold text-masters-green-deep">
                   Golf Digest 2014
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -146,8 +156,8 @@ export default function GambleSands() {
                 </p>
               </div>
               <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <h4 className="font-semibold text-masters-green-deep">
                   #31 Best Public
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -155,8 +165,8 @@ export default function GambleSands() {
                 </p>
               </div>
               <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <h4 className="font-semibold text-masters-green-deep">
                   #18 Top 100 Courses You Can Play
                 </h4>
                 <p className="text-sm text-muted-foreground">Golf Magazine</p>
@@ -168,10 +178,12 @@ export default function GambleSands() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Waves className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>David McLay Kidd Philosophy</CardTitle>
+                <Waves className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
+                  David McLay Kidd Philosophy
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -189,10 +201,12 @@ export default function GambleSands() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Trees className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Unique Course Features</CardTitle>
+                <Trees className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Unique Course Features
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -217,10 +231,12 @@ export default function GambleSands() {
             </h3>
 
             <div className="grid md:grid-cols-2 gap-8 mb-6">
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
-                  <Target className="h-8 w-8 text-golf-green mb-2" />
-                  <CardTitle className="text-lg">Closest to the Pin</CardTitle>
+                  <Target className="h-8 w-8 text-masters-gold mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Closest to the Pin
+                  </CardTitle>
                   <CardDescription>Every Par 3 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -238,10 +254,12 @@ export default function GambleSands() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
-                  <MapPin className="h-8 w-8 text-golf-green mb-2" />
-                  <CardTitle className="text-lg">Long Drive</CardTitle>
+                  <MapPin className="h-8 w-8 text-masters-gold mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Long Drive
+                  </CardTitle>
                   <CardDescription>Every Par 5 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -279,10 +297,12 @@ export default function GambleSands() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <MapPin className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Course Conditions</CardTitle>
+                <MapPin className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Course Conditions
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
@@ -306,10 +326,12 @@ export default function GambleSands() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Target className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Playing Tips</CardTitle>
+                <Target className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Playing Tips
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
@@ -338,10 +360,12 @@ export default function GambleSands() {
       {/* Tee Time Info */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
-          <Card className="border-golf-green/20 bg-golf-green/5 max-w-2xl mx-auto">
+          <Card className="masters-card max-w-2xl mx-auto">
             <CardHeader className="text-center">
-              <Clock className="h-12 w-12 text-golf-green mx-auto mb-2" />
-              <CardTitle className="text-2xl">Tee Time Details</CardTitle>
+              <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+              <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                Tee Time Details
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <div className="space-y-4">
