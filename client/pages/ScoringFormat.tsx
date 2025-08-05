@@ -394,10 +394,10 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Target className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Skills Contests</CardTitle>
+                  <Target className="h-10 w-10 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">Skills Contests</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$10</p>
@@ -549,7 +549,7 @@ export default function ScoringFormat() {
             {/* Gamble Sands */}
             <div className="bg-white rounded-lg p-8 border border-golf-green/20">
               <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
-                <span>🏌</span> Gamble Sands – Long Drive (Par 5s)
+                <span>🏌</span> Gamble Sands �� Long Drive (Par 5s)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6">
