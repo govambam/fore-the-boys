@@ -494,12 +494,12 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white">
+              <Card className="masters-card">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <MapPin className="h-10 w-10 text-golf-green" />
+                    <MapPin className="h-10 w-10 text-masters-gold" />
                     <div>
-                      <CardTitle className="text-xl">Long Drive</CardTitle>
+                      <CardTitle className="font-serif text-xl text-masters-green-deep">Long Drive</CardTitle>
                       <CardDescription>
                         Every Par 5 on both courses • $10 per hole
                       </CardDescription>
