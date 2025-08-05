@@ -108,34 +108,96 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Ensure Unicode characters render correctly */
-  * {
-    text-rendering: optimizeLegibility;
+  /* Masters Typography System */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: hsl(var(--masters-green-deep));
+  }
+
+  /* Elegant text modifier for special content */
+  .masters-elegant {
+    font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+  }
+
+  /* Data/Numbers - System fonts for clarity */
+  .countdown-text,
+  .number-display,
+  .score-display {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal;
+  }
+
+  /* Masters Card Design Pattern */
+  .masters-card {
+    border: 1px solid hsl(var(--masters-green) / 0.2);
+    background: white;
+    border-radius: 0.5rem;
+    transition: all 300ms ease;
+  }
+
+  .masters-card:hover {
+    border-color: hsl(var(--masters-gold) / 0.4);
+    box-shadow: 0 10px 25px -3px rgb(0 0 0 / 0.1);
+    transform: scale(1.02);
+  }
+
+  /* Masters Button Hierarchy */
+  .btn-masters-primary {
+    background: hsl(var(--masters-green));
+    color: hsl(var(--masters-cream));
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms ease;
+  }
+
+  .btn-masters-primary:hover {
+    background: hsl(var(--masters-green-deep));
+    transform: scale(1.02);
+  }
+
+  .btn-masters-secondary {
+    border: 1px solid hsl(var(--masters-gold));
+    color: hsl(var(--masters-gold));
+    background: transparent;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms ease;
+  }
+
+  .btn-masters-secondary:hover {
+    background: hsl(var(--masters-gold) / 0.1);
+    transform: scale(1.02);
   }
 
   /* Target only emoji characters specifically */
   .emoji,
   [data-emoji="true"] {
-    font-family:
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-      "Noto Color Emoji", emoji;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
     font-variant-emoji: emoji;
   }
 
-  /* Reset countdown to use system fonts for proper number rendering */
-  .countdown-text {
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      Arial, sans-serif;
-    font-variant-numeric: normal;
-    letter-spacing: normal;
-  }
+  /* Masters Color Utilities */
+  .text-masters-green { color: hsl(var(--masters-green)); }
+  .text-masters-green-deep { color: hsl(var(--masters-green-deep)); }
+  .text-masters-gold { color: hsl(var(--masters-gold)); }
+  .text-masters-gold-light { color: hsl(var(--masters-gold-light)); }
+  .border-masters-green { border-color: hsl(var(--masters-green) / 0.2); }
+  .border-masters-gold { border-color: hsl(var(--masters-gold) / 0.4); }
+  .bg-masters-cream { background-color: hsl(var(--masters-cream)); }
+  .bg-masters-green { background-color: hsl(var(--masters-green)); }
+  .bg-masters-gold { background-color: hsl(var(--masters-gold)); }
 }
