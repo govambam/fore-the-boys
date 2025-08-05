@@ -1035,7 +1035,7 @@ export default function Leaderboard() {
                               className="flex items-center justify-between p-4 rounded-lg border bg-white border-golf-green/20"
                             >
                               <div className="flex items-center gap-3">
-                                <Target className="h-6 w-6 text-golf-green" />
+                                <Target className="h-6 w-6 text-masters-gold" />
                                 <div>
                                   <h3 className="font-semibold text-golf-green-dark">
                                     {player}
