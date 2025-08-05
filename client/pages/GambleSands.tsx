@@ -306,10 +306,10 @@ export default function GambleSands() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Target className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Playing Tips</CardTitle>
+                <Target className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">Playing Tips</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
