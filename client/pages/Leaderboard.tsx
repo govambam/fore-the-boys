@@ -719,8 +719,8 @@ export default function Leaderboard() {
           {loading ? (
             <div className="flex items-center justify-center py-12">
               <div className="text-center">
-                <div className="animate-spin h-8 w-8 border-b-2 border-golf-green mx-auto mb-4"></div>
-                <p className="text-muted-foreground">
+                <div className="animate-spin h-8 w-8 border-b-2 border-masters-gold mx-auto mb-4"></div>
+                <p className="text-masters-green/70">
                   Loading tournament data...
                 </p>
               </div>
