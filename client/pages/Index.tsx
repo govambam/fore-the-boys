@@ -211,34 +211,34 @@ export default function Index() {
                       "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2F3bb98b36487e49c5b950fa5edb1b2688)",
                   }}
                 >
-                  <div className="absolute top-3 right-3 bg-white/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ExternalLink className="h-4 w-4 text-golf-green" />
+                  <div className="absolute top-3 right-3 bg-masters-gold/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ExternalLink className="h-4 w-4 text-white" />
                   </div>
                 </div>
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle className="text-golf-green-dark group-hover:text-golf-green transition-colors">
+                    <CardTitle className="font-serif text-2xl text-masters-green-deep group-hover:text-masters-gold transition-colors">
                       Scarecrow
                     </CardTitle>
-                    <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
+                    <ChevronDown className="h-4 w-4 text-masters-gold rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <CardDescription>
+                  <CardDescription className="text-masters-green/70 font-medium">
                     Par 71 • 6,261 yards • Links-Style Layout
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-masters-green/80 mb-4 leading-relaxed">
                     A stunning links-style course with dramatic elevation
                     changes and panoramic views of the Columbia River. Features
                     wide fairways and strategic bunkering.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge variant="secondary">Saturday 3:05 PM</Badge>
-                    <span className="text-sm font-semibold text-golf-green">
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">Saturday 3:05 PM</Badge>
+                    <span className="text-sm font-semibold text-masters-gold">
                       Round 1
                     </span>
                   </div>
-                  <div className="mt-3 text-xs text-golf-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     Click for detailed course information →
                   </div>
                 </CardContent>
