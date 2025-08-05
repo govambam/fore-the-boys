@@ -122,10 +122,10 @@ export default function Quicksands() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20 bg-golf-green/5">
+            <Card className="masters-card">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle className="text-golf-green-dark">
+                <Users className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">
                   Team 1: Ivan & Jack
                 </CardTitle>
                 <CardDescription>Dynamic Duo</CardDescription>
