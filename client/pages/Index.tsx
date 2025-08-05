@@ -574,9 +574,9 @@ export default function Index() {
             </div>
 
             <div className="mt-6 text-center">
-              <Badge className="bg-masters-gold/10 text-masters-gold border-masters-gold/30 text-base px-6 py-2">
-                $100 Buy-in per Player • Total Prize Pool: $400
-              </Badge>
+              <p className="text-lg text-masters-green-deep font-medium">
+                $400 Buy-in per Player • Total Prize Pool $400
+              </p>
             </div>
           </div>
         </div>
