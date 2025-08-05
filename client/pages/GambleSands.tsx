@@ -19,23 +19,23 @@ import {
 
 export default function GambleSands() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-4 bg-golf-green text-white">
+          <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
             Round 2 • Sunday 10:20 AM
           </Badge>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-golf-green-dark mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Gamble Sands
-            <span className="block text-golf-green text-2xl sm:text-3xl md:text-4xl mt-2">
+            <span className="block text-masters-gold text-2xl sm:text-3xl md:text-4xl mt-3">
               Signature Course
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-masters-green/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Winner of Golf Digest's Best New Course of 2014 award, Gamble Sands
             sits atop a sprawling, treeless plateau of sandy desert overlooking
             Washington's Columbia River Valley. The extremely playable layout is
