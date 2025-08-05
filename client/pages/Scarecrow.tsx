@@ -159,10 +159,10 @@ export default function Scarecrow() {
               </CardContent>
             </Card>
 
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Wind className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>McLay Kidd & Schaan Design</CardTitle>
+                <Wind className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">McLay Kidd & Schaan Design</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
