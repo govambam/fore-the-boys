@@ -348,33 +348,33 @@ export default function Index() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Trophy className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Modified Stableford Scoring</CardTitle>
-                <CardDescription>
+                <Trophy className="h-8 w-8 text-masters-gold mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Modified Stableford Scoring</CardTitle>
+                <CardDescription className="text-masters-green/70">
                   Scarecrow & Gamble Sands Rounds
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-muted-foreground">Eagle</span>
-                    <span className="font-semibold text-golf-green">
+                    <span className="text-sm text-masters-green/70">Eagle</span>
+                    <span className="font-semibold text-masters-gold">
                       8 points
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-sm text-masters-green/70">
                       Birdie
                     </span>
-                    <span className="font-semibold text-golf-green">
+                    <span className="font-semibold text-masters-gold">
                       4 points
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-muted-foreground">Par</span>
-                    <span className="font-semibold text-golf-green">
+                    <span className="text-sm text-masters-green/70">Par</span>
+                    <span className="font-semibold text-masters-gold">
                       2 points
                     </span>
                   </div>
