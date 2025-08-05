@@ -186,10 +186,10 @@ export default function Quicksands() {
               What Awaits You
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Target className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Target className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Creative Shots
                   </h4>
                   <p className="text-sm text-muted-foreground">
