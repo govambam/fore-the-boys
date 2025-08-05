@@ -291,7 +291,7 @@ export default function Index() {
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge variant="secondary">Sunday 10:20 AM</Badge>
-                    <span className="text-sm font-semibold text-golf-green">
+                    <span className="text-sm font-semibold text-masters-gold">
                       Round 2
                     </span>
                   </div>
