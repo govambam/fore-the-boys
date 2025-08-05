@@ -408,10 +408,10 @@ export default function ScoringFormat() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Calculator className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Overall Stableford Competition</CardTitle>
+                <Calculator className="h-8 w-8 text-masters-gold mb-2" />
+                <CardTitle className="font-serif text-masters-green-deep">Overall Stableford Competition</CardTitle>
                 <CardDescription>
                   Individual Scarecrow and Gamble Sands score + Team score
                 </CardDescription>
@@ -549,7 +549,7 @@ export default function ScoringFormat() {
             {/* Gamble Sands */}
             <div className="bg-white rounded-lg p-8 border border-golf-green/20">
               <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
-                <span>🏌</span> Gamble Sands �� Long Drive (Par 5s)
+                <span>🏌</span> Gamble Sands – Long Drive (Par 5s)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -605,7 +605,7 @@ export default function ScoringFormat() {
 
             <div className="bg-white rounded-lg p-8 border border-golf-green/20">
               <h4 className="text-2xl font-bold text-golf-green-dark mb-6 text-center flex items-center justify-center gap-2">
-                <span>🎯</span> Gamble Sands – Closest to the Pin (Par 3s)
+                <span>🎯</span> Gamble Sands ��� Closest to the Pin (Par 3s)
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6">
