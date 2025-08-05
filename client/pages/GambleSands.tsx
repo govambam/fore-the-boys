@@ -72,7 +72,9 @@ export default function GambleSands() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Par 72</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Par 72
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -84,17 +86,23 @@ export default function GambleSands() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">6,389 Yards</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  6,389 Yards
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-masters-green/70 font-medium">Sands Tees</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  Sands Tees
+                </p>
               </CardContent>
             </Card>
 
             <Card className="masters-card text-center">
               <CardHeader>
                 <Waves className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Links Design</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Links Design
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -106,7 +114,9 @@ export default function GambleSands() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Trees className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Natural Terrain</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Natural Terrain
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -171,7 +181,9 @@ export default function GambleSands() {
             <Card className="masters-card">
               <CardHeader>
                 <Waves className="h-8 w-8 text-masters-gold mb-2" />
-                <CardTitle className="font-serif text-masters-green-deep">David McLay Kidd Philosophy</CardTitle>
+                <CardTitle className="font-serif text-masters-green-deep">
+                  David McLay Kidd Philosophy
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -192,7 +204,9 @@ export default function GambleSands() {
             <Card className="masters-card">
               <CardHeader>
                 <Trees className="h-8 w-8 text-masters-gold mb-2" />
-                <CardTitle className="font-serif text-masters-green-deep">Unique Course Features</CardTitle>
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Unique Course Features
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -220,7 +234,9 @@ export default function GambleSands() {
               <Card className="masters-card">
                 <CardHeader>
                   <Target className="h-8 w-8 text-masters-gold mb-2" />
-                  <CardTitle className="font-serif text-lg text-masters-green-deep">Closest to the Pin</CardTitle>
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Closest to the Pin
+                  </CardTitle>
                   <CardDescription>Every Par 3 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -241,7 +257,9 @@ export default function GambleSands() {
               <Card className="masters-card">
                 <CardHeader>
                   <MapPin className="h-8 w-8 text-masters-gold mb-2" />
-                  <CardTitle className="font-serif text-lg text-masters-green-deep">Long Drive</CardTitle>
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Long Drive
+                  </CardTitle>
                   <CardDescription>Every Par 5 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -282,7 +300,9 @@ export default function GambleSands() {
             <Card className="masters-card">
               <CardHeader>
                 <MapPin className="h-8 w-8 text-masters-gold mb-2" />
-                <CardTitle className="font-serif text-masters-green-deep">Course Conditions</CardTitle>
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Course Conditions
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
@@ -309,7 +329,9 @@ export default function GambleSands() {
             <Card className="masters-card">
               <CardHeader>
                 <Target className="h-8 w-8 text-masters-gold mb-2" />
-                <CardTitle className="font-serif text-masters-green-deep">Playing Tips</CardTitle>
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Playing Tips
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
@@ -341,7 +363,9 @@ export default function GambleSands() {
           <Card className="masters-card max-w-2xl mx-auto">
             <CardHeader className="text-center">
               <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
-              <CardTitle className="font-serif text-2xl text-masters-green-deep">Tee Time Details</CardTitle>
+              <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                Tee Time Details
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <div className="space-y-4">

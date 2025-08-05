@@ -63,7 +63,9 @@ export default function Scarecrow() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Par 71</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Par 71
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -75,27 +77,37 @@ export default function Scarecrow() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">6,261 Yards</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  6,261 Yards
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-masters-green/70 font-medium">Sands Tees</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  Sands Tees
+                </p>
               </CardContent>
             </Card>
 
             <Card className="masters-card text-center">
               <CardHeader>
                 <Mountain className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Links Style</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Links Style
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-masters-green/70 font-medium">Natural Terrain</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  Natural Terrain
+                </p>
               </CardContent>
             </Card>
 
             <Card className="masters-card text-center">
               <CardHeader>
                 <Wind className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Windy Conditions</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Windy Conditions
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -141,7 +153,9 @@ export default function Scarecrow() {
             <Card className="masters-card">
               <CardHeader>
                 <Mountain className="h-8 w-8 text-masters-gold mb-2" />
-                <CardTitle className="font-serif text-masters-green-deep">Dramatic Elevation</CardTitle>
+                <CardTitle className="font-serif text-masters-green-deep">
+                  Dramatic Elevation
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -162,7 +176,9 @@ export default function Scarecrow() {
             <Card className="masters-card">
               <CardHeader>
                 <Wind className="h-8 w-8 text-masters-gold mb-2" />
-                <CardTitle className="font-serif text-masters-green-deep">McLay Kidd & Schaan Design</CardTitle>
+                <CardTitle className="font-serif text-masters-green-deep">
+                  McLay Kidd & Schaan Design
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -189,7 +205,9 @@ export default function Scarecrow() {
               <Card className="masters-card">
                 <CardHeader>
                   <Target className="h-8 w-8 text-masters-gold mb-2" />
-                  <CardTitle className="font-serif text-lg text-masters-green-deep">Closest to the Pin</CardTitle>
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Closest to the Pin
+                  </CardTitle>
                   <CardDescription>Every Par 3 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -210,7 +228,9 @@ export default function Scarecrow() {
               <Card className="masters-card">
                 <CardHeader>
                   <MapPin className="h-8 w-8 text-masters-gold mb-2" />
-                  <CardTitle className="font-serif text-lg text-masters-green-deep">Long Drive</CardTitle>
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">
+                    Long Drive
+                  </CardTitle>
                   <CardDescription>Every Par 5 • $10 per hole</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -251,7 +271,9 @@ export default function Scarecrow() {
           <Card className="masters-card max-w-2xl mx-auto">
             <CardHeader className="text-center">
               <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
-              <CardTitle className="font-serif text-2xl text-masters-green-deep">Tee Time Details</CardTitle>
+              <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                Tee Time Details
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <div className="space-y-4">

@@ -9,46 +9,46 @@
    */
   :root {
     /* Masters Color Palette */
-    --masters-green: 140 35% 25%;           /* #3B5B3F - Primary brand */
-    --masters-green-deep: 140 45% 15%;      /* #1F3B23 - Headers, emphasis */
-    --masters-green-light: 142 35% 38%;     /* #5C8464 - Lighter accents */
+    --masters-green: 140 35% 25%; /* #3B5B3F - Primary brand */
+    --masters-green-deep: 140 45% 15%; /* #1F3B23 - Headers, emphasis */
+    --masters-green-light: 142 35% 38%; /* #5C8464 - Lighter accents */
 
-    --masters-gold: 43 74% 49%;             /* #B8860B - Primary accent */
-    --masters-gold-light: 43 84% 65%;       /* #D4AF37 - Light accents */
-    --masters-gold-dark: 43 64% 35%;        /* #9B7C0A - Dark accents */
-    --masters-gold-accent: 43 94% 55%;      /* #F4C430 - Bright highlights */
+    --masters-gold: 43 74% 49%; /* #B8860B - Primary accent */
+    --masters-gold-light: 43 84% 65%; /* #D4AF37 - Light accents */
+    --masters-gold-dark: 43 64% 35%; /* #9B7C0A - Dark accents */
+    --masters-gold-accent: 43 94% 55%; /* #F4C430 - Bright highlights */
 
-    --masters-cream: 43 25% 95%;            /* #F7F5F2 - Background warmth */
-    --masters-bronze: 25 55% 45%;           /* #B8824A - Tertiary accent */
+    --masters-cream: 43 25% 95%; /* #F7F5F2 - Background warmth */
+    --masters-bronze: 25 55% 45%; /* #B8824A - Tertiary accent */
 
     /* Tailwind CSS variables mapped to Masters palette */
-    --background: 43 25% 98%;               /* Warm cream background */
-    --foreground: 140 45% 15%;              /* Dark green text */
+    --background: 43 25% 98%; /* Warm cream background */
+    --foreground: 140 45% 15%; /* Dark green text */
 
-    --card: 0 0% 100%;                      /* Clean white cards */
-    --card-foreground: 140 45% 15%;         /* Dark green text */
+    --card: 0 0% 100%; /* Clean white cards */
+    --card-foreground: 140 45% 15%; /* Dark green text */
 
     --popover: 0 0% 100%;
     --popover-foreground: 140 45% 15%;
 
-    --primary: 140 35% 25%;                 /* Masters Green */
-    --primary-foreground: 43 25% 95%;       /* Cream text */
+    --primary: 140 35% 25%; /* Masters Green */
+    --primary-foreground: 43 25% 95%; /* Cream text */
 
-    --secondary: 43 25% 95%;                /* Light cream */
-    --secondary-foreground: 140 45% 15%;    /* Dark green text */
+    --secondary: 43 25% 95%; /* Light cream */
+    --secondary-foreground: 140 45% 15%; /* Dark green text */
 
-    --muted: 43 15% 92%;                    /* Muted background */
-    --muted-foreground: 140 25% 35%;        /* Muted green text */
+    --muted: 43 15% 92%; /* Muted background */
+    --muted-foreground: 140 25% 35%; /* Muted green text */
 
-    --accent: 43 74% 49%;                   /* Masters Gold */
-    --accent-foreground: 140 45% 15%;       /* Dark green text */
+    --accent: 43 74% 49%; /* Masters Gold */
+    --accent-foreground: 140 45% 15%; /* Dark green text */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 43 25% 95%;
 
-    --border: 140 35% 25% / 0.2;            /* Subtle green border */
+    --border: 140 35% 25% / 0.2; /* Subtle green border */
     --input: 140 35% 25% / 0.2;
-    --ring: 43 74% 49%;                     /* Gold focus ring */
+    --ring: 43 74% 49%; /* Gold focus ring */
 
     --radius: 0.5rem;
 
@@ -114,7 +114,12 @@
   }
 
   /* Masters Typography System */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
     font-weight: 600;
     letter-spacing: -0.025em;
@@ -132,7 +137,8 @@
   .countdown-text,
   .number-display,
   .score-display {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-variant-numeric: tabular-nums;
     letter-spacing: normal;
   }
@@ -185,18 +191,38 @@
   /* Target only emoji characters specifically */
   .emoji,
   [data-emoji="true"] {
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+    font-family:
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji", emoji;
     font-variant-emoji: emoji;
   }
 
   /* Masters Color Utilities */
-  .text-masters-green { color: hsl(var(--masters-green)); }
-  .text-masters-green-deep { color: hsl(var(--masters-green-deep)); }
-  .text-masters-gold { color: hsl(var(--masters-gold)); }
-  .text-masters-gold-light { color: hsl(var(--masters-gold-light)); }
-  .border-masters-green { border-color: hsl(var(--masters-green) / 0.2); }
-  .border-masters-gold { border-color: hsl(var(--masters-gold) / 0.4); }
-  .bg-masters-cream { background-color: hsl(var(--masters-cream)); }
-  .bg-masters-green { background-color: hsl(var(--masters-green)); }
-  .bg-masters-gold { background-color: hsl(var(--masters-gold)); }
+  .text-masters-green {
+    color: hsl(var(--masters-green));
+  }
+  .text-masters-green-deep {
+    color: hsl(var(--masters-green-deep));
+  }
+  .text-masters-gold {
+    color: hsl(var(--masters-gold));
+  }
+  .text-masters-gold-light {
+    color: hsl(var(--masters-gold-light));
+  }
+  .border-masters-green {
+    border-color: hsl(var(--masters-green) / 0.2);
+  }
+  .border-masters-gold {
+    border-color: hsl(var(--masters-gold) / 0.4);
+  }
+  .bg-masters-cream {
+    background-color: hsl(var(--masters-cream));
+  }
+  .bg-masters-green {
+    background-color: hsl(var(--masters-green));
+  }
+  .bg-masters-gold {
+    background-color: hsl(var(--masters-gold));
+  }
 }

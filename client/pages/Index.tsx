@@ -133,7 +133,9 @@ export default function Index() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <MapPin className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="text-xl font-serif text-masters-green-deep">Location</CardTitle>
+                <CardTitle className="text-xl font-serif text-masters-green-deep">
+                  Location
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -148,10 +150,14 @@ export default function Index() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Users className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="text-xl font-serif text-masters-green-deep">Players</CardTitle>
+                <CardTitle className="text-xl font-serif text-masters-green-deep">
+                  Players
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-masters-green/70 font-medium">4 Players</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  4 Players
+                </p>
                 <p className="text-sm text-masters-green/70">
                   Modified Stableford
                 </p>
@@ -161,7 +167,9 @@ export default function Index() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="text-xl font-serif text-masters-green-deep">Format</CardTitle>
+                <CardTitle className="text-xl font-serif text-masters-green-deep">
+                  Format
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -176,7 +184,9 @@ export default function Index() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <CalendarDays className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="text-xl font-serif text-masters-green-deep">Duration</CardTitle>
+                <CardTitle className="text-xl font-serif text-masters-green-deep">
+                  Duration
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -205,7 +215,7 @@ export default function Index() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             <Link to="/scarecrow" className="group">
-              <Card className={"masters-card overflow-hidden cursor-pointer\""}>
+              <Card className={'masters-card overflow-hidden cursor-pointer"'}>
                 <div
                   className="h-48 relative bg-cover bg-center bg-no-repeat"
                   style={{
@@ -235,7 +245,9 @@ export default function Index() {
                     wide fairways and strategic bunkering.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">Saturday 3:05 PM</Badge>
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
+                      Saturday 3:05 PM
+                    </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 1
                     </span>
@@ -353,7 +365,9 @@ export default function Index() {
             <Card className="masters-card">
               <CardHeader>
                 <Trophy className="h-8 w-8 text-masters-gold mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Modified Stableford Scoring</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Modified Stableford Scoring
+                </CardTitle>
                 <CardDescription className="text-masters-green/70">
                   Scarecrow & Gamble Sands Rounds
                 </CardDescription>
@@ -401,7 +415,9 @@ export default function Index() {
             <Card className="masters-card">
               <CardHeader>
                 <Users className="h-8 w-8 text-masters-gold mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">2-Man Stableford Scramble</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  2-Man Stableford Scramble
+                </CardTitle>
                 <CardDescription className="text-masters-green/70">
                   Quicksands Par 3 Course (14 holes)
                 </CardDescription>
@@ -448,28 +464,38 @@ export default function Index() {
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Patrick Triggs</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Patrick Triggs
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-sm text-masters-green/70">Birthday Legend</p>
+                  <p className="text-sm text-masters-green/70">
+                    Birthday Legend
+                  </p>
                 </CardContent>
               </Card>
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Ivan Gomez</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Ivan Gomez
+                  </CardTitle>
                 </CardHeader>
               </Card>
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Jack Cavanaugh</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Jack Cavanaugh
+                  </CardTitle>
                 </CardHeader>
               </Card>
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Marshall Raiskin</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Marshall Raiskin
+                  </CardTitle>
                 </CardHeader>
               </Card>
             </div>
@@ -493,10 +519,14 @@ export default function Index() {
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Overall Champion</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Overall Champion
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$50</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $50
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     Highest Stableford (Scarecrow + Gamble Sands + Team Score)
                   </p>
@@ -506,10 +536,14 @@ export default function Index() {
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Overall Runner-up</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Overall Runner-up
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$60</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $60
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     Second Place Overall Stableford
                   </p>
@@ -519,10 +553,14 @@ export default function Index() {
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Team Champions</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Team Champions
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$35</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $35
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     per player (Quicksands Scramble)
                   </p>
@@ -532,10 +570,14 @@ export default function Index() {
               <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
                   <Target className="h-8 w-8 text-masters-gold mx-auto mb-2" />
-                  <CardTitle className="font-serif text-masters-green-deep">Skills Challenges</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep">
+                    Skills Challenges
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$30</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $30
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     per contest winner
                   </p>
@@ -546,10 +588,14 @@ export default function Index() {
             <div className="grid md:grid-cols-2 gap-4 mt-6">
               <Card className="masters-card">
                 <CardHeader>
-                  <CardTitle className="font-serif text-masters-green-deep text-center">Closest to Pin</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep text-center">
+                    Closest to Pin
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-bold text-masters-gold text-center mb-2">$30 per Par 3 on both courses</p>
+                  <p className="text-lg font-bold text-masters-gold text-center mb-2">
+                    $30 per Par 3 on both courses
+                  </p>
                   <ul className="text-sm text-masters-green/70 space-y-1">
                     <li>• Must be on the green to win</li>
                     <li>• Ties carry over to next Par 3 ($60, $90, etc.)</li>
@@ -560,10 +606,14 @@ export default function Index() {
 
               <Card className="masters-card">
                 <CardHeader>
-                  <CardTitle className="font-serif text-masters-green-deep text-center">Long Drive</CardTitle>
+                  <CardTitle className="font-serif text-masters-green-deep text-center">
+                    Long Drive
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-bold text-masters-gold text-center mb-2">$30 per Par 5 on both courses</p>
+                  <p className="text-lg font-bold text-masters-gold text-center mb-2">
+                    $30 per Par 5 on both courses
+                  </p>
                   <ul className="text-sm text-masters-green/70 space-y-1">
                     <li>• Must be in fairway to win</li>
                     <li>• Winner has shortest approach to flag</li>
@@ -598,7 +648,9 @@ export default function Index() {
             <Card className="masters-card">
               <CardHeader>
                 <Plane className="h-8 w-8 text-masters-gold mb-3" />
-                <CardTitle className="font-serif text-2xl text-masters-green-deep">Getting There</CardTitle>
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                  Getting There
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
@@ -620,7 +672,8 @@ export default function Index() {
                     Ivan is renting an SUV so we can all drive together
                   </p>
                   <p className="text-sm text-masters-green/70">
-                    Departing Redmond at 9:30 AM to arrive, check in, eat lunch, and warm up before our 3:05 PM tee time
+                    Departing Redmond at 9:30 AM to arrive, check in, eat lunch,
+                    and warm up before our 3:05 PM tee time
                   </p>
                 </div>
               </CardContent>
@@ -629,7 +682,9 @@ export default function Index() {
             <Card className="masters-card">
               <CardHeader>
                 <Bed className="h-8 w-8 text-masters-gold mb-3" />
-                <CardTitle className="font-serif text-2xl text-masters-green-deep">Accommodation</CardTitle>
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                  Accommodation
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <Link to="/inn">
@@ -664,7 +719,9 @@ export default function Index() {
             <Card className="masters-card">
               <CardHeader>
                 <Clock className="h-8 w-8 text-masters-gold mb-3" />
-                <CardTitle className="font-serif text-2xl text-masters-green-deep">Daily Schedule</CardTitle>
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                  Daily Schedule
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-6">

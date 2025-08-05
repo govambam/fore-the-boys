@@ -63,17 +63,23 @@ export default function Quicksands() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">14 Holes</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  14 Holes
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-masters-green/70 font-medium">All Par 3s</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  All Par 3s
+                </p>
               </CardContent>
             </Card>
 
             <Card className="masters-card text-center">
               <CardHeader>
                 <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">60-180 Yards</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  60-180 Yards
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-masters-green/70 font-medium">
@@ -85,17 +91,23 @@ export default function Quicksands() {
             <Card className="masters-card text-center">
               <CardHeader>
                 <Users className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Team Scramble</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Team Scramble
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-masters-green/70 font-medium">2-Man Format</p>
+                <p className="text-sm text-masters-green/70 font-medium">
+                  2-Man Format
+                </p>
               </CardContent>
             </Card>
 
             <Card className="masters-card text-center">
               <CardHeader>
                 <Zap className="h-8 w-8 text-masters-gold mx-auto mb-3" />
-                <CardTitle className="font-serif text-xl text-masters-green-deep">Walking Only</CardTitle>
+                <CardTitle className="font-serif text-xl text-masters-green-deep">
+                  Walking Only
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -233,7 +245,9 @@ export default function Quicksands() {
           <Card className="masters-card max-w-2xl mx-auto">
             <CardHeader className="text-center">
               <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
-              <CardTitle className="font-serif text-2xl text-masters-green-deep">Tee Time Details</CardTitle>
+              <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                Tee Time Details
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <div className="space-y-4">
