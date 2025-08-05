@@ -568,7 +568,7 @@ export default function Index() {
             </div>
 
             <div className="mt-6 text-center">
-              <Badge className="bg-golf-green/10 text-golf-green-dark border-golf-green/20">
+              <Badge className="bg-masters-gold/10 text-masters-gold border-masters-gold/30 text-base px-6 py-2">
                 $100 Buy-in per Player • Total Prize Pool: $400
               </Badge>
             </div>
@@ -577,10 +577,10 @@ export default function Index() {
       </section>
 
       {/* Travel Details Section */}
-      <section id="travel" className="py-20 px-4 bg-white/50">
+      <section id="travel" className="py-24 px-4 bg-masters-cream/30">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Travel & Accommodation
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
