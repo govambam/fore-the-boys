@@ -525,7 +525,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-masters-gold mb-1">
-                    $50
+                    $120
                   </p>
                   <p className="text-xs text-masters-green/70">
                     Highest Stableford (Scarecrow + Gamble Sands + Team Score)
