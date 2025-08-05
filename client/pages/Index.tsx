@@ -589,80 +589,75 @@ export default function Index() {
             <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Travel & Accommodation
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-masters-green/70 max-w-2xl mx-auto">
               Everything you need to know for a smooth and comfortable trip.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <Card className="border-golf-green/20">
-                <CardHeader>
-                  <Plane className="h-8 w-8 text-golf-green mb-2" />
-                  <CardTitle>Getting There</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-golf-green-dark">
-                      Flight Information
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Seattle-Tacoma International (SEA) - 2.5 hours drive
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Spokane International (GEG) - 1.5 hours drive
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-golf-green-dark">
-                      Transportation
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Ivan is renting an SUV so we can all drive together
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Departing Redmond at 9:30 AM to arrive, check in, eat
-                      lunch, and warm up before our 3:05 PM tee time
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            <Card className="masters-card">
+              <CardHeader>
+                <Plane className="h-8 w-8 text-masters-gold mb-3" />
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">Getting There</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
+                    Flight Information
+                  </h4>
+                  <p className="text-sm text-masters-green/70">
+                    Seattle-Tacoma International (SEA) - 2.5 hours drive
+                  </p>
+                  <p className="text-sm text-masters-green/70">
+                    Spokane International (GEG) - 1.5 hours drive
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
+                    Transportation
+                  </h4>
+                  <p className="text-sm text-masters-green/70">
+                    Ivan is renting an SUV so we can all drive together
+                  </p>
+                  <p className="text-sm text-masters-green/70">
+                    Departing Redmond at 9:30 AM to arrive, check in, eat lunch, and warm up before our 3:05 PM tee time
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div>
-              <Card className="border-golf-green/20">
-                <CardHeader>
-                  <Hotel className="h-8 w-8 text-golf-green mb-2" />
-                  <CardTitle>Accommodation</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <Link to="/inn">
-                    <div className="cursor-pointer">
-                      <h4 className="font-semibold text-golf-green-dark hover:text-golf-green transition-colors">
-                        Inn at Gamble Sands
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        90 Gamble Sands Drive, Brewster, WA
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        River view rooms with Cascades putting green access
-                      </p>
-                    </div>
-                  </Link>
-                  <div>
-                    <h4 className="font-semibold text-golf-green-dark">
-                      Room Details
+            <Card className="masters-card">
+              <CardHeader>
+                <Bed className="h-8 w-8 text-masters-gold mb-3" />
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">Accommodation</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <Link to="/inn">
+                  <div className="cursor-pointer">
+                    <h4 className="font-semibold text-masters-green-deep hover:text-masters-gold transition-colors mb-1">
+                      Inn at Gamble Sands
                     </h4>
-                    <p className="text-sm text-muted-foreground">
-                      River view accommodations
+                    <p className="text-sm text-masters-green/70">
+                      90 Gamble Sands Drive, Brewster, WA
                     </p>
-                    <p className="text-sm text-muted-foreground">
-                      Cascades putting green behind rooms
+                    <p className="text-sm text-masters-green/70">
+                      River view rooms with Cascades putting green access
                     </p>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                </Link>
+                <div>
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
+                    Room Details
+                  </h4>
+                  <p className="text-sm text-masters-green/70">
+                    River view accommodations
+                  </p>
+                  <p className="text-sm text-masters-green/70">
+                    Cascades putting green behind rooms
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="mt-12">
