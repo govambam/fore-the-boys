@@ -956,7 +956,7 @@ export default function Leaderboard() {
                                   <CardContent className="p-4">
                                     <div className="flex items-center justify-between">
                                       <div className="flex items-center gap-3">
-                                        <Users className="h-5 w-5 text-golf-green" />
+                                        <Users className="h-5 w-5 text-masters-gold" />
                                         <h4 className="font-semibold text-golf-green-dark">
                                           {teamName}
                                         </h4>
