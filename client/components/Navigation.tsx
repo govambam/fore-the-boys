@@ -118,19 +118,19 @@ export default function Navigation() {
 
             <Link
               to="/scoring"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Scoring & Rules
             </Link>
             <Link
               to="/leaderboard"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Leaderboard
             </Link>
             <Link
               to="/inn"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Inn
             </Link>
@@ -138,7 +138,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-golf-green-dark"
+            className="md:hidden p-2 text-masters-gold hover:text-masters-green transition-colors duration-300"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
