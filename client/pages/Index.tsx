@@ -477,16 +477,16 @@ export default function Index() {
 
           {/* Prizes Section */}
           <div className="bg-masters-cream/50 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
+            <h3 className="font-serif text-2xl font-bold text-masters-green-deep mb-6 text-center">
               High Stakes, Higher Handicaps
             </h3>
 
-            <div className="bg-white rounded-lg p-4 mb-6 border border-golf-green/20 text-center">
-              <h4 className="font-bold text-golf-green-dark mb-2">
+            <div className="bg-white rounded-lg p-6 mb-6 masters-card text-center">
+              <h4 className="font-serif font-bold text-masters-green-deep mb-2">
                 Tournament Buy-In
               </h4>
-              <p className="text-3xl font-bold text-golf-green">$100</p>
-              <p className="text-sm text-muted-foreground">per player</p>
+              <p className="text-4xl font-bold text-masters-gold mb-1">$100</p>
+              <p className="text-sm text-masters-green/70">per player</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
