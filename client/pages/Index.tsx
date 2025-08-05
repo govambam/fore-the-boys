@@ -79,12 +79,12 @@ function CountdownTimer() {
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-golf-green/5 via-background to-golf-sand/10">
+    <div className="min-h-screen bg-gradient-to-br from-masters-cream via-background to-masters-cream/50">
       {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
+      <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
           <Badge className="mb-4 bg-golf-green text-white text-sm md:text-base">
             September 6-8, 2024
