@@ -543,7 +543,7 @@ export default function Leaderboard() {
       <Card className="border-golf-green/20">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Trophy className="h-5 w-5 text-golf-green" />
+            <Trophy className="h-5 w-5 text-masters-gold" />
             {courseInfo.name}
           </CardTitle>
           <CardDescription>
