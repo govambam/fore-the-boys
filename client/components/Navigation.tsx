@@ -35,10 +35,10 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-foreground hover:text-golf-green transition-colors"
+              className="text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
             >
               Home
             </Link>
@@ -46,7 +46,7 @@ export default function Navigation() {
             {/* Courses Dropdown */}
             <div className="relative" data-dropdown="courses">
               <button
-                className="flex items-center space-x-1 text-foreground hover:text-golf-green transition-colors"
+                className="flex items-center space-x-1 text-masters-green hover:text-masters-gold transition-colors duration-300 font-medium"
                 onClick={(e) => {
                   e.preventDefault();
                   setCoursesDropdownOpen(!coursesDropdownOpen);
@@ -55,7 +55,7 @@ export default function Navigation() {
               >
                 <span>Courses</span>
                 <ChevronDown
-                  className={`h-4 w-4 transition-transform ${coursesDropdownOpen ? "rotate-180" : ""}`}
+                  className={`h-4 w-4 transition-all duration-300 ${coursesDropdownOpen ? "rotate-180 text-masters-gold" : ""}`}
                 />
               </button>
 
