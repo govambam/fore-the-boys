@@ -156,31 +156,31 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 hover:shadow-lg transition-shadow">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle className="text-lg">Format</CardTitle>
+                <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="text-xl font-serif text-masters-green-deep">Format</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Modified Stableford
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70">
                   2-Man Scramble Finale
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20 hover:shadow-lg transition-shadow">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <CalendarDays className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle className="text-lg">Duration</CardTitle>
+                <CalendarDays className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="text-xl font-serif text-masters-green-deep">Duration</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   3 Days, 2 Nights
                 </p>
-                <p className="text-sm text-muted-foreground">3 Rounds Total</p>
+                <p className="text-sm text-masters-green/70">3 Rounds Total</p>
               </CardContent>
             </Card>
           </div>
