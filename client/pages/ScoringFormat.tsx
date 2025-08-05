@@ -161,8 +161,8 @@ export default function ScoringFormat() {
                 </p>
               </div>
               <div className="text-center">
-                <Calculator className="h-12 w-12 text-golf-green mx-auto mb-4" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Calculator className="h-12 w-12 text-masters-gold mx-auto mb-4" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Avoid Big Numbers
                 </h4>
                 <p className="text-sm text-muted-foreground">
