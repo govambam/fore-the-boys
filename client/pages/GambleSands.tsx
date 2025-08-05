@@ -137,8 +137,8 @@ export default function GambleSands() {
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               <div>
-                <Trophy className="h-12 w-12 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
+                <Trophy className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <h4 className="font-semibold text-masters-green-deep">
                   Golf Digest 2014
                 </h4>
                 <p className="text-sm text-muted-foreground">
