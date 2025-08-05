@@ -57,42 +57,42 @@ export default function Scarecrow() {
       </section>
 
       {/* Course Stats */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="text-center border-golf-green/20">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Flag className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Par 71</CardTitle>
+                <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Par 71</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Championship Layout
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>6,261 Yards</CardTitle>
+                <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">6,261 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Sands Tees</p>
+                <p className="text-sm text-masters-green/70 font-medium">Sands Tees</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Mountain className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Links Style</CardTitle>
+                <Mountain className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Links Style</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">Natural Terrain</p>
+                <p className="text-sm text-masters-green/70 font-medium">Natural Terrain</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
                 <Wind className="h-8 w-8 text-golf-green mx-auto mb-2" />
                 <CardTitle>Windy Conditions</CardTitle>
