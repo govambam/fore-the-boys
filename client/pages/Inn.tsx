@@ -128,10 +128,10 @@ export default function Inn() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardContent className="p-6">
-                  <Moon className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
+                  <Moon className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                  <h4 className="font-semibold text-masters-green-deep mb-2">
                     Evening Sessions
                   </h4>
                   <p className="text-sm text-muted-foreground">
