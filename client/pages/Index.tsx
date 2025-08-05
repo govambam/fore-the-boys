@@ -439,40 +439,44 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="bg-golf-green/5 rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">
+          {/* Players Section */}
+          <div className="bg-masters-cream/50 rounded-lg p-8 mb-8">
+            <h3 className="font-serif text-2xl font-bold text-masters-green-deep mb-6 text-center">
               Players
             </h3>
-            <div className="grid md:grid-cols-4 gap-4 text-center">
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <Trophy className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
-                  Patrick Triggs
-                </h4>
-                <p className="text-xs text-muted-foreground">Birthday Legend</p>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
-                  Ivan Gomez
-                </h4>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
-                  Jack Cavanaugh
-                </h4>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <h4 className="font-semibold text-golf-green-dark">
-                  Marshall Raiskin
-                </h4>
-              </div>
+            <div className="grid md:grid-cols-4 gap-4">
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-2">
+                  <Trophy className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Patrick Triggs</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-sm text-masters-green/70">Birthday Legend</p>
+                </CardContent>
+              </Card>
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-2">
+                  <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Ivan Gomez</CardTitle>
+                </CardHeader>
+              </Card>
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-2">
+                  <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Jack Cavanaugh</CardTitle>
+                </CardHeader>
+              </Card>
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-2">
+                  <User className="h-8 w-8 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-masters-green-deep">Marshall Raiskin</CardTitle>
+                </CardHeader>
+              </Card>
             </div>
           </div>
 
-          <div className="bg-golf-green/5 rounded-lg p-8">
+          {/* Prizes Section */}
+          <div className="bg-masters-cream/50 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
               High Stakes, Higher Handicaps
             </h3>
