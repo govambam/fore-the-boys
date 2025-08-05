@@ -57,45 +57,45 @@ export default function Quicksands() {
       </section>
 
       {/* Course Stats */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="text-center border-golf-green/20">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Flag className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>14 Holes</CardTitle>
+                <Flag className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">14 Holes</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">All Par 3s</p>
+                <p className="text-sm text-masters-green/70 font-medium">All Par 3s</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Target className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>60-180 Yards</CardTitle>
+                <Target className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">60-180 Yards</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Creative Shot Variety
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Users className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Team Scramble</CardTitle>
+                <Users className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Team Scramble</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">2-Man Format</p>
+                <p className="text-sm text-masters-green/70 font-medium">2-Man Format</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Zap className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Walking Only</CardTitle>
+                <Zap className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Walking Only</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
