@@ -103,13 +103,13 @@ export default function GambleSands() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-golf-green/20">
+            <Card className="masters-card text-center">
               <CardHeader>
-                <Trees className="h-8 w-8 text-golf-green mx-auto mb-2" />
-                <CardTitle>Natural Terrain</CardTitle>
+                <Trees className="h-8 w-8 text-masters-gold mx-auto mb-3" />
+                <CardTitle className="font-serif text-xl text-masters-green-deep">Natural Terrain</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-masters-green/70 font-medium">
                   Sandy Conditions
                 </p>
               </CardContent>
@@ -119,20 +119,20 @@ export default function GambleSands() {
       </section>
 
       {/* Course Features */}
-      <section className="py-16 px-4 bg-white/50">
+      <section className="py-20 px-4 bg-masters-cream/30">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-golf-green-dark mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-5xl font-bold text-masters-green-deep mb-6">
               Course Features
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-masters-green/80 max-w-3xl mx-auto leading-relaxed">
               Gamble Sands showcases the natural beauty of the Columbia River
               Valley with world-class golf design.
             </p>
           </div>
 
-          <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
-            <h3 className="text-2xl font-bold text-golf-green-dark mb-4 text-center">
+          <div className="bg-masters-green/5 rounded-lg p-10 mb-16 border border-masters-green/20">
+            <h3 className="font-serif text-3xl font-bold text-masters-green-deep mb-6 text-center">
               Award-Winning Course
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
