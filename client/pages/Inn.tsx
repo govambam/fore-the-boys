@@ -414,8 +414,8 @@ export default function Inn() {
                 </p>
               </div>
               <div>
-                <Bed className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Bed className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Upscale Comfort
                 </h4>
                 <p className="text-sm text-muted-foreground">
