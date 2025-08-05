@@ -268,23 +268,23 @@ export default function Index() {
                       "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2Fc9e6b0760fa54dd08076aba1202a8ecf)",
                   }}
                 >
-                  <div className="absolute top-3 right-3 bg-white/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ExternalLink className="h-4 w-4 text-golf-green" />
+                  <div className="absolute top-3 right-3 bg-masters-gold/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ExternalLink className="h-4 w-4 text-white" />
                   </div>
                 </div>
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle className="text-golf-green-dark group-hover:text-golf-green transition-colors">
+                    <CardTitle className="font-serif text-2xl text-masters-green-deep group-hover:text-masters-gold transition-colors">
                       Gamble Sands
                     </CardTitle>
-                    <ChevronDown className="h-4 w-4 text-golf-green/60 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
+                    <ChevronDown className="h-4 w-4 text-masters-gold rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <CardDescription>
+                  <CardDescription className="text-masters-green/70 font-medium">
                     Par 72 • 6,389 yards • Signature Course
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-masters-green/80 mb-4 leading-relaxed">
                     The flagship course designed by David McLay Kidd, featuring
                     natural sandy terrain and spectacular views. A true links
                     experience in the heart of Washington.
