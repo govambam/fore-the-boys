@@ -598,7 +598,7 @@ export default function Index() {
                   </p>
                   <ul className="text-sm text-masters-green/70 space-y-1">
                     <li>• Must be on the green to win</li>
-                    <li>• Ties carry over to next Par 3 ($60, $90, etc.)</li>
+                    <li>• Ties carry over to next Par 3 ($20, $30, etc.)</li>
                     <li>• Multiple opportunities to win</li>
                   </ul>
                 </CardContent>
