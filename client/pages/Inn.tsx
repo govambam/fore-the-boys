@@ -273,7 +273,7 @@ export default function Inn() {
                     </h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Traditional golf staples</li>
-                      <li>�� Breakfast sandwiches and burritos</li>
+                      <li>• Breakfast sandwiches and burritos</li>
                       <li>• Rotating chef specials</li>
                       <li>• Grab-and-go setup for quick tee-off</li>
                     </ul>
@@ -405,8 +405,8 @@ export default function Inn() {
                 </p>
               </div>
               <div>
-                <Coffee className="h-12 w-12 text-golf-green mx-auto mb-3" />
-                <h4 className="font-semibold text-golf-green-dark mb-2">
+                <Coffee className="h-12 w-12 text-masters-gold mx-auto mb-3" />
+                <h4 className="font-semibold text-masters-green-deep mb-2">
                   Private Patios
                 </h4>
                 <p className="text-sm text-muted-foreground">
