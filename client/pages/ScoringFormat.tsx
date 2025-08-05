@@ -372,10 +372,10 @@ export default function ScoringFormat() {
                 </CardContent>
               </Card>
 
-              <Card className="border-golf-green/20 bg-white text-center">
+              <Card className="masters-card text-center">
                 <CardHeader className="pb-2">
-                  <Trophy className="h-10 w-10 text-golf-green mx-auto mb-2" />
-                  <CardTitle className="text-lg">Overall Runner-Up</CardTitle>
+                  <Trophy className="h-10 w-10 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-lg text-masters-green-deep">Overall Runner-Up</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-2xl font-bold text-golf-green mb-1">$60</p>
