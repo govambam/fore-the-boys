@@ -97,7 +97,7 @@ export default function Navigation() {
                   <hr className="my-2 border-masters-green/10" />
                   <Link
                     to="/"
-                    className="flex items-center justify-between px-4 py-2 text-sm text-foreground hover:bg-golf-green/5 hover:text-golf-green transition-colors"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => {
                       setCoursesDropdownOpen(false);
                       setTimeout(() => {
@@ -107,8 +107,8 @@ export default function Navigation() {
                       }, 100);
                     }}
                   >
-                    <span>View All Courses</span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-medium">View All Courses</span>
+                    <span className="text-xs text-masters-gold/70">
                       Overview
                     </span>
                   </Link>
