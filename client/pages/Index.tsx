@@ -661,35 +661,30 @@ export default function Index() {
           </div>
 
           <div className="mt-12">
-            <Card className="border-golf-green/20">
+            <Card className="masters-card">
               <CardHeader>
-                <Clock className="h-8 w-8 text-golf-green mb-2" />
-                <CardTitle>Daily Schedule</CardTitle>
+                <Clock className="h-8 w-8 text-masters-gold mb-3" />
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">Daily Schedule</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
-                    <h4 className="font-semibold text-golf-green-dark mb-2">
+                    <h4 className="font-serif font-semibold text-masters-green-deep mb-3">
                       Friday, September 6
                     </h4>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>
-                        9:30 AM - Depart
-                        <br />
-                        12:30 PM - Arrival & Check-in
-                        <br />
-                        1:00 PM - Lunch and Range
-                        <br />
-                      </li>
+                    <ul className="text-sm text-masters-green/70 space-y-2">
+                      <li>9:30 AM - Depart</li>
+                      <li>12:30 PM - Arrival & Check-in</li>
+                      <li>1:00 PM - Lunch and Range</li>
                       <li>3:05 PM - Scarecrow Golf</li>
                       <li>Evening - Dinner, drinks, and putt your butt off</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-golf-green-dark mb-2">
+                    <h4 className="font-serif font-semibold text-masters-green-deep mb-3">
                       Saturday, September 7
                     </h4>
-                    <ul className="text-sm text-muted-foreground space-y-1">
+                    <ul className="text-sm text-masters-green/70 space-y-2">
                       <li>10:20 AM - Gamble Sands Golf</li>
                       <li>Lunch Break</li>
                       <li>5:00 PM - Quicksands Par 3</li>
@@ -697,10 +692,10 @@ export default function Index() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-golf-green-dark mb-2">
+                    <h4 className="font-serif font-semibold text-masters-green-deep mb-3">
                       Sunday, September 8
                     </h4>
-                    <ul className="text-sm text-muted-foreground space-y-1">
+                    <ul className="text-sm text-masters-green/70 space-y-2">
                       <li>Morning - Check-out</li>
                       <li>Optional round at Quicksands</li>
                       <li>Departure</li>
