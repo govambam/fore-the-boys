@@ -617,7 +617,7 @@ export default function Index() {
                   <ul className="text-sm text-masters-green/70 space-y-1">
                     <li>• Must be in fairway to win</li>
                     <li>• Winner has shortest approach to flag</li>
-                    <li>• Ties carry over to next Par 5 ($60, $90, etc.)</li>
+                    <li>• Ties carry over to next Par 5 ($20, $30, etc.)</li>
                   </ul>
                 </CardContent>
               </Card>
