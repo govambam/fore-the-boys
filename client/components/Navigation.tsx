@@ -71,7 +71,7 @@ export default function Navigation() {
                   >
                     <span className="font-medium">Scarecrow</span>
                     <span className="text-xs text-masters-gold/70">
-                      Round 1
+                      Round 2
                     </span>
                   </Link>
                   <Link
@@ -81,7 +81,7 @@ export default function Navigation() {
                   >
                     <span className="font-medium">Gamble Sands</span>
                     <span className="text-xs text-masters-gold/70">
-                      Round 2
+                      Round 3
                     </span>
                   </Link>
                   <Link
@@ -91,7 +91,7 @@ export default function Navigation() {
                   >
                     <span className="font-medium">Quicksands</span>
                     <span className="text-xs text-masters-gold/70">
-                      Round 3
+                      Rounds 1 & 4
                     </span>
                   </Link>
                   <hr className="my-2 border-masters-green/10" />
@@ -171,7 +171,7 @@ export default function Navigation() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span>Scarecrow</span>
-                  <span className="text-xs text-muted-foreground">Round 1</span>
+                  <span className="text-xs text-muted-foreground">Round 2</span>
                 </Link>
                 <Link
                   to="/gamble-sands"
@@ -179,7 +179,7 @@ export default function Navigation() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span>Gamble Sands</span>
-                  <span className="text-xs text-muted-foreground">Round 2</span>
+                  <span className="text-xs text-muted-foreground">Round 3</span>
                 </Link>
                 <Link
                   to="/quicksands"
@@ -187,7 +187,7 @@ export default function Navigation() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span>Quicksands</span>
-                  <span className="text-xs text-muted-foreground">Round 3</span>
+                  <span className="text-xs text-muted-foreground">Rounds 1 & 4</span>
                 </Link>
                 <Link
                   to="/"
