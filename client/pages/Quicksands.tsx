@@ -242,39 +242,90 @@ export default function Quicksands() {
       {/* Tee Time Info */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
-          <Card className="masters-card max-w-2xl mx-auto">
-            <CardHeader className="text-center">
-              <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
-              <CardTitle className="font-serif text-2xl text-masters-green-deep">
-                Tee Time Details
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <div className="space-y-4">
-                <div>
-                  <p className="text-3xl font-bold text-golf-green-dark">
-                    Sunday, September 8th
-                  </p>
-                  <p className="text-xl text-golf-green">5:00 PM Tee Time</p>
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-4xl font-bold text-masters-green-deep mb-4">
+              Tournament Schedule
+            </h2>
+            <p className="text-lg text-masters-green/80 max-w-2xl mx-auto">
+              Quicksands plays a key role in our tournament - both as the opening team scramble and as our fun finale round.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Round 1 Card */}
+            <Card className="masters-card">
+              <CardHeader className="text-center">
+                <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                  Round 1 - Tournament Opener
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-3xl font-bold text-golf-green-dark">
+                      Saturday, September 6th
+                    </p>
+                    <p className="text-xl text-golf-green">12:10 PM Tee Time</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                    <h4 className="font-semibold text-golf-green-dark mb-2">
+                      Team Scramble Round
+                    </h4>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      <li>• Perfect warm-up for Scarecrow later</li>
+                      <li>• Team Stableford scramble format</li>
+                      <li>• Counts toward overall tournament scoring</li>
+                      <li>• 60-90 minute round duration</li>
+                      <li>• Great way to get into the groove</li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                    <p className="text-sm font-semibold text-green-800 text-center">
+                      Tournament Opener & Team Scramble
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-golf-green/20">
-                  <h4 className="font-semibold text-golf-green-dark mb-2">
-                    Perfect Finale Timing
-                  </h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Golden hour lighting for spectacular photos</li>
-                    <li>• Cooler evening temperatures</li>
-                    <li>• Team scramble creates exciting finish</li>
-                    <li>• Quick 2.5-hour round</li>
-                    <li>• Post-round celebration on the patio</li>
-                  </ul>
+              </CardContent>
+            </Card>
+
+            {/* Round 4 Card */}
+            <Card className="masters-card">
+              <CardHeader className="text-center">
+                <Clock className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                <CardTitle className="font-serif text-2xl text-masters-green-deep">
+                  Round 4 - Fun Round
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-3xl font-bold text-golf-green-dark">
+                      Sunday, September 7th
+                    </p>
+                    <p className="text-xl text-golf-green">5:00 PM Tee Time</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border border-golf-green/20">
+                    <h4 className="font-semibold text-golf-green-dark mb-2">
+                      Relaxed Fun Round
+                    </h4>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      <li>• Golden hour lighting for spectacular photos</li>
+                      <li>• Cooler evening temperatures</li>
+                      <li>• NOT part of tournament scoring</li>
+                      <li>• Quick 2.5-hour round</li>
+                      <li>• Post-round celebration on the patio</li>
+                    </ul>
+                  </div>
+                  <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                    <p className="text-sm font-semibold text-purple-800 text-center">
+                      Fun Round - Not Tournament Scoring
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  Tournament Finale
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
     </div>
