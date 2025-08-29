@@ -279,7 +279,7 @@ export default function Scarecrow() {
               <div className="space-y-4">
                 <div>
                   <p className="text-3xl font-bold text-golf-green-dark">
-                    Saturday, September 7th
+                    Saturday, September 6th
                   </p>
                   <p className="text-xl text-golf-green">3:05 PM Tee Time</p>
                 </div>
