@@ -313,7 +313,7 @@ export default function Quicksands() {
                       <li>• Golden hour lighting for spectacular photos</li>
                       <li>• Cooler evening temperatures</li>
                       <li>• NOT part of tournament scoring</li>
-                      <li>• Quick 2.5-hour round</li>
+                      <li>• Quick 60-90 minute round</li>
                       <li>• Post-round celebration on the patio</li>
                     </ul>
                   </div>
