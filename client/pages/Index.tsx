@@ -214,6 +214,51 @@ export default function Index() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
+            <Link to="/quicksands" className="group">
+              <Card className="masters-card overflow-hidden cursor-pointer">
+                <div
+                  className="h-48 relative bg-cover bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage:
+                      "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2F79bc0588e15041c086c5d85cb08d688f)",
+                  }}
+                >
+                  <div className="absolute top-3 right-3 bg-masters-gold/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ExternalLink className="h-4 w-4 text-white" />
+                  </div>
+                </div>
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="font-serif text-2xl text-masters-green-deep group-hover:text-masters-gold transition-colors">
+                      Quicksands
+                    </CardTitle>
+                    <ChevronDown className="h-4 w-4 text-masters-gold rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
+                  </div>
+                  <CardDescription className="text-masters-green/70 font-medium">
+                    Par 3 Course • 14 Holes • Short Course Challenge
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-masters-green/80 mb-4 leading-relaxed">
+                    An innovative par-3 course for our team scramble warm-up and fun finale. Each
+                    hole offers unique challenges with stunning desert and river
+                    valley views.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
+                      Saturday 12:10 PM
+                    </Badge>
+                    <span className="text-sm font-semibold text-masters-gold">
+                      Rounds 1 & 4
+                    </span>
+                  </div>
+                  <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    Click for detailed course information →
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
             <Link to="/scarecrow" className="group">
               <Card className="masters-card overflow-hidden cursor-pointer">
                 <div
@@ -295,51 +340,6 @@ export default function Index() {
                     </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 3
-                    </span>
-                  </div>
-                  <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    Click for detailed course information →
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-
-            <Link to="/quicksands" className="group">
-              <Card className="masters-card overflow-hidden cursor-pointer">
-                <div
-                  className="h-48 relative bg-cover bg-center bg-no-repeat"
-                  style={{
-                    backgroundImage:
-                      "url(https://cdn.builder.io/api/v1/image/assets%2F8c34f0d0a3de41e1a3ea5bdb8f56cf8c%2F79bc0588e15041c086c5d85cb08d688f)",
-                  }}
-                >
-                  <div className="absolute top-3 right-3 bg-masters-gold/90 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ExternalLink className="h-4 w-4 text-white" />
-                  </div>
-                </div>
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="font-serif text-2xl text-masters-green-deep group-hover:text-masters-gold transition-colors">
-                      Quicksands
-                    </CardTitle>
-                    <ChevronDown className="h-4 w-4 text-masters-gold rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
-                  </div>
-                  <CardDescription className="text-masters-green/70 font-medium">
-                    Par 3 Course • 14 Holes • Short Course Challenge
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-masters-green/80 mb-4 leading-relaxed">
-                    An innovative par-3 course for our team scramble warm-up and fun finale. Each
-                    hole offers unique challenges with stunning desert and river
-                    valley views.
-                  </p>
-                  <div className="flex justify-between items-center">
-                    <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
-                      Saturday 12:10 PM
-                    </Badge>
-                    <span className="text-sm font-semibold text-masters-gold">
-                      Rounds 1 & 4
                     </span>
                   </div>
                   <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
@@ -656,13 +656,13 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-masters-green-deep mb-2">
-                    Flight Information
+                    Drive Time
                   </h4>
                   <p className="text-sm text-masters-green/70">
-                    Seattle-Tacoma International (SEA) - 2.5 hours drive
+                    From Redmond, WA - 3 hours 45 minutes
                   </p>
                   <p className="text-sm text-masters-green/70">
-                    Spokane International (GEG) - 1.5 hours drive
+                    Scenic drive through the Columbia River Valley
                   </p>
                 </div>
                 <div>
@@ -670,11 +670,10 @@ export default function Index() {
                     Transportation
                   </h4>
                   <p className="text-sm text-masters-green/70">
-                    Ivan is renting an SUV so we can all drive together
+                    Ivan, Patrick and Jack will drive together departing at 7:00 AM
                   </p>
                   <p className="text-sm text-masters-green/70">
-                    Departing Redmond at 9:30 AM to arrive, check in, eat lunch,
-                    and warm up before our 3:05 PM tee time
+                    Marshall will drive separately
                   </p>
                 </div>
               </CardContent>
@@ -750,6 +749,7 @@ export default function Index() {
                       <li>Marshall departs after Gamble Sands round</li>
                       <li>Lunch Break</li>
                       <li>5:00 PM - Quicksands Round 4 (Fun round, not tournament)</li>
+                      <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, payouts, shenanigans</li>
                     </ul>
                   </div>
