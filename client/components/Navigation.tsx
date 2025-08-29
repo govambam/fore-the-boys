@@ -65,6 +65,16 @@ export default function Navigation() {
                   onMouseDown={(e) => e.preventDefault()}
                 >
                   <Link
+                    to="/quicksands"
+                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
+                    onClick={() => setCoursesDropdownOpen(false)}
+                  >
+                    <span className="font-medium">Quicksands</span>
+                    <span className="text-xs text-masters-gold/70">
+                      Rounds 1 & 4
+                    </span>
+                  </Link>
+                  <Link
                     to="/scarecrow"
                     className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
                     onClick={() => setCoursesDropdownOpen(false)}
@@ -82,16 +92,6 @@ export default function Navigation() {
                     <span className="font-medium">Gamble Sands</span>
                     <span className="text-xs text-masters-gold/70">
                       Round 3
-                    </span>
-                  </Link>
-                  <Link
-                    to="/quicksands"
-                    className="flex items-center justify-between px-5 py-3 text-sm text-masters-green hover:bg-masters-cream hover:text-masters-gold transition-all duration-300"
-                    onClick={() => setCoursesDropdownOpen(false)}
-                  >
-                    <span className="font-medium">Quicksands</span>
-                    <span className="text-xs text-masters-gold/70">
-                      Rounds 1 & 4
                     </span>
                   </Link>
                   <hr className="my-2 border-masters-green/10" />
@@ -166,6 +166,14 @@ export default function Navigation() {
                   Courses
                 </div>
                 <Link
+                  to="/quicksands"
+                  className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span>Quicksands</span>
+                  <span className="text-xs text-muted-foreground">Rounds 1 & 4</span>
+                </Link>
+                <Link
                   to="/scarecrow"
                   className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
                   onClick={() => setMobileMenuOpen(false)}
@@ -180,14 +188,6 @@ export default function Navigation() {
                 >
                   <span>Gamble Sands</span>
                   <span className="text-xs text-muted-foreground">Round 3</span>
-                </Link>
-                <Link
-                  to="/quicksands"
-                  className="flex items-center justify-between text-foreground hover:text-golf-green transition-colors py-2 pl-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span>Quicksands</span>
-                  <span className="text-xs text-muted-foreground">Rounds 1 & 4</span>
                 </Link>
                 <Link
                   to="/"
