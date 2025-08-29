@@ -192,7 +192,7 @@ export default function Index() {
                 <p className="text-sm text-masters-green/70 font-medium">
                   3 Days, 2 Nights
                 </p>
-                <p className="text-sm text-masters-green/70">3 Rounds Total</p>
+                <p className="text-sm text-masters-green/70">4 Rounds Total</p>
               </CardContent>
             </Card>
           </div>
@@ -249,7 +249,7 @@ export default function Index() {
                       Saturday 3:05 PM
                     </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
-                      Round 1
+                      Round 2
                     </span>
                   </div>
                   <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
@@ -294,7 +294,7 @@ export default function Index() {
                       Sunday 10:20 AM
                     </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
-                      Round 2
+                      Round 3
                     </span>
                   </div>
                   <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
@@ -330,16 +330,16 @@ export default function Index() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-masters-green/80 mb-4 leading-relaxed">
-                    An innovative par-3 course perfect for a fun finale. Each
+                    An innovative par-3 course for our team scramble warm-up and fun finale. Each
                     hole offers unique challenges with stunning desert and river
                     valley views.
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
-                      Sunday 5:00 PM
+                      Saturday 12:10 PM
                     </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
-                      Round 3
+                      Rounds 1 & 4
                     </span>
                   </div>
                   <div className="mt-3 text-xs text-masters-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
@@ -423,7 +423,7 @@ export default function Index() {
                   2-Man Stableford Scramble
                 </CardTitle>
                 <CardDescription className="text-masters-green/70">
-                  Quicksands Par 3 Course (14 holes)
+                  Quicksands Par 3 Course Round 1 (14 holes)
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -450,9 +450,8 @@ export default function Index() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-3">
-                    In addition to determining the winner of the separate team
-                    competition, your team Stableford score will be count
-                    towards overall Stableford scoring.
+                    This team scramble warm-up round serves as both team
+                    competition and contributes to overall Stableford scoring.
                   </p>
                 </div>
               </CardContent>
@@ -532,7 +531,7 @@ export default function Index() {
                     $120
                   </p>
                   <p className="text-xs text-masters-green/70">
-                    Highest Stableford (Scarecrow + Gamble Sands + Team Score)
+                    Highest Stableford (Quicksands + Scarecrow + Gamble Sands)
                   </p>
                 </CardContent>
               </Card>
@@ -566,7 +565,7 @@ export default function Index() {
                     $25
                   </p>
                   <p className="text-xs text-masters-green/70">
-                    per player (Quicksands Scramble)
+                    per player (Quicksands Round 1 Scramble)
                   </p>
                 </CardContent>
               </Card>
@@ -729,34 +728,38 @@ export default function Index() {
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
                     <h4 className="font-serif font-semibold text-masters-green-deep mb-3">
-                      Friday, September 6
+                      Saturday, September 6
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
-                      <li>9:30 AM - Depart</li>
-                      <li>12:30 PM - Arrival & Check-in</li>
-                      <li>1:00 PM - Lunch and Range</li>
-                      <li>3:05 PM - Scarecrow Golf</li>
+                      <li>7:00 AM - Depart Jack's house (Ivan & Patrick pickup)</li>
+                      <li>11:00 AM - Arrival at Gamble Sands</li>
+                      <li>11:00 AM-12:10 PM - Drop bags, lunch, practice range</li>
+                      <li>12:10 PM - Quicksands Round 1 (Team Scramble, 60-90 min)</li>
+                      <li>1:40-3:05 PM - Check-in rooms, lunch, drinks, practice</li>
+                      <li>3:05 PM - Scarecrow Round 2 (~4.5 hours)</li>
+                      <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, drinks, and putt your butt off</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-serif font-semibold text-masters-green-deep mb-3">
-                      Saturday, September 7
+                      Sunday, September 7
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
-                      <li>10:20 AM - Gamble Sands Golf</li>
+                      <li>10:20 AM - Gamble Sands Round 3</li>
+                      <li>Marshall departs after Gamble Sands round</li>
                       <li>Lunch Break</li>
-                      <li>5:00 PM - Quicksands Par 3</li>
+                      <li>5:00 PM - Quicksands Round 4 (Fun round, not tournament)</li>
                       <li>Evening - Dinner, payouts, shenanigans</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-serif font-semibold text-masters-green-deep mb-3">
-                      Sunday, September 8
+                      Monday, September 8
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
                       <li>Morning - Check-out</li>
-                      <li>Optional round at Quicksands</li>
+                      <li>Optional round if anyone is interested</li>
                       <li>Departure</li>
                     </ul>
                   </div>
