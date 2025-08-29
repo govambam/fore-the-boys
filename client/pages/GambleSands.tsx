@@ -371,7 +371,7 @@ export default function GambleSands() {
               <div className="space-y-4">
                 <div>
                   <p className="text-3xl font-bold text-golf-green-dark">
-                    Sunday, September 8th
+                    Sunday, September 7th
                   </p>
                   <p className="text-xl text-golf-green">10:20 AM Tee Time</p>
                 </div>
@@ -394,6 +394,11 @@ export default function GambleSands() {
                     <li>• $10 Closest to the Pin (Every Par 3)</li>
                     <li>• $10 Long Drive (Every Par 5)</li>
                   </ul>
+                </div>
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <p className="text-sm font-semibold text-blue-800 text-center">
+                    Tournament Finale
+                  </p>
                 </div>
               </div>
             </CardContent>
