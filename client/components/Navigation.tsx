@@ -171,7 +171,9 @@ export default function Navigation() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span>Quicksands</span>
-                  <span className="text-xs text-muted-foreground">Rounds 1 & 4</span>
+                  <span className="text-xs text-muted-foreground">
+                    Rounds 1 & 4
+                  </span>
                 </Link>
                 <Link
                   to="/scarecrow"

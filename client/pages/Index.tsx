@@ -240,9 +240,9 @@ export default function Index() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-masters-green/80 mb-4 leading-relaxed">
-                    An innovative par-3 course for our team scramble warm-up and fun finale. Each
-                    hole offers unique challenges with stunning desert and river
-                    valley views.
+                    An innovative par-3 course for our team scramble warm-up and
+                    fun finale. Each hole offers unique challenges with stunning
+                    desert and river valley views.
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
@@ -670,7 +670,8 @@ export default function Index() {
                     Transportation
                   </h4>
                   <p className="text-sm text-masters-green/70">
-                    Ivan, Patrick and Jack will drive together departing at 7:00 AM
+                    Ivan, Patrick and Jack will drive together departing at 7:00
+                    AM
                   </p>
                   <p className="text-sm text-masters-green/70">
                     Marshall will drive separately
@@ -730,11 +731,19 @@ export default function Index() {
                       Saturday, September 6
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
-                      <li>7:00 AM - Depart Jack's house (Ivan & Patrick pickup)</li>
+                      <li>
+                        7:00 AM - Depart Jack's house (Ivan & Patrick pickup)
+                      </li>
                       <li>11:00 AM - Arrival at Gamble Sands</li>
-                      <li>11:00 AM-12:10 PM - Drop bags, lunch, practice range</li>
-                      <li>12:10 PM - Quicksands Round 1 (Team Scramble, 60-90 min)</li>
-                      <li>1:40-3:05 PM - Check-in rooms, lunch, drinks, practice</li>
+                      <li>
+                        11:00 AM-12:10 PM - Drop bags, lunch, practice range
+                      </li>
+                      <li>
+                        12:10 PM - Quicksands Round 1 (Team Scramble, 60-90 min)
+                      </li>
+                      <li>
+                        1:40-3:05 PM - Check-in rooms, lunch, drinks, practice
+                      </li>
                       <li>3:05 PM - Scarecrow Round 2 (~4.5 hours)</li>
                       <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, drinks, and putt your butt off</li>
@@ -748,7 +757,9 @@ export default function Index() {
                       <li>10:20 AM - Gamble Sands Round 3</li>
                       <li>Marshall departs after Gamble Sands round</li>
                       <li>Lunch Break</li>
-                      <li>5:00 PM - Quicksands Round 4 (Fun round, not tournament)</li>
+                      <li>
+                        5:00 PM - Quicksands Round 4 (Fun round, not tournament)
+                      </li>
                       <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, payouts, shenanigans</li>
                     </ul>

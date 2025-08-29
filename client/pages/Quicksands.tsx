@@ -247,7 +247,8 @@ export default function Quicksands() {
               Tournament Schedule
             </h2>
             <p className="text-lg text-masters-green/80 max-w-2xl mx-auto">
-              Quicksands plays a key role in our tournament - both as the opening team scramble and as our fun finale round.
+              Quicksands plays a key role in our tournament - both as the
+              opening team scramble and as our fun finale round.
             </p>
           </div>
 
