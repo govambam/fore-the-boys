@@ -731,7 +731,8 @@ export default function Index() {
                     <ul className="text-sm text-masters-green/70 space-y-2">
                       <li>10:20 AM - Gamble Sands Round 3</li>
                       <li>Marshall departs after Gamble Sands round</li>
-                      <li>Lunch Break</li>
+                      <li>1:05 PM - Seahawks vs 49ers</li>
+                      <li>Lunch Break - catch second half at the Barn or Inn</li>
                       <li>5:00 PM - Quicksands Round 4 (Fun round, not tournament)</li>
                       <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, payouts, shenanigans</li>
