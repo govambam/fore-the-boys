@@ -110,9 +110,7 @@ export default function Quicksands() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Brisk & Enjoyable
-                </p>
+                <p className="text-sm text-muted-foreground">Brisk & Enjoyable</p>
               </CardContent>
             </Card>
           </div>
@@ -156,7 +154,7 @@ export default function Quicksands() {
             </Card>
           </div>
 
-          <div className="bg-golf-green/5 rounded-lg p-6">
+          <div className="bg-golf-green/5 rounded-lg p-8">
             <h3 className="text-xl font-bold text-golf-green-dark mb-4 text-center">
               Separate Team Competition
             </h3>
