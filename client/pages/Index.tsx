@@ -41,7 +41,7 @@ function CountdownTimer() {
   const [isCountdownFinished, setIsCountdownFinished] = useState(false);
 
   useEffect(() => {
-    const targetDate = new Date("2025-09-06T00:00:00").getTime();
+    const targetDate = new Date("2025-09-06T07:00:00-07:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
