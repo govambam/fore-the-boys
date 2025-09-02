@@ -772,7 +772,7 @@ export default function Index() {
               {/* Saturday Weather */}
               <Card className="masters-card text-center">
                 <CardHeader className="pb-3">
-                  <Sun className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                  <Cloud className="h-12 w-12 text-masters-gold mx-auto mb-2" />
                   <CardTitle className="font-serif text-xl text-masters-green-deep">
                     Saturday, Sep 6
                   </CardTitle>
@@ -781,13 +781,13 @@ export default function Index() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
                       <Thermometer className="h-4 w-4 text-masters-gold" />
-                      <span className="text-2xl font-bold text-masters-green-deep">78°F</span>
+                      <span className="text-2xl font-bold text-masters-green-deep">96°F</span>
                     </div>
-                    <p className="text-sm text-masters-green/70 font-medium">Sunny</p>
+                    <p className="text-sm text-masters-green/70 font-medium">Partly Cloudy</p>
                     <div className="text-xs text-masters-green/60">
-                      <p>High: 82°F • Low: 58°F</p>
-                      <p>Wind: 5 mph</p>
-                      <p>Perfect golf weather!</p>
+                      <p>High: 96°F • Low: 67°F</p>
+                      <p>Wind: SE 8 mph</p>
+                      <p>19% chance of rain</p>
                     </div>
                   </div>
                 </CardContent>
@@ -805,13 +805,13 @@ export default function Index() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
                       <Thermometer className="h-4 w-4 text-masters-gold" />
-                      <span className="text-2xl font-bold text-masters-green-deep">74°F</span>
+                      <span className="text-2xl font-bold text-masters-green-deep">91°F</span>
                     </div>
                     <p className="text-sm text-masters-green/70 font-medium">Partly Cloudy</p>
                     <div className="text-xs text-masters-green/60">
-                      <p>High: 76°F • Low: 55°F</p>
-                      <p>Wind: 8 mph</p>
-                      <p>Great for football & golf</p>
+                      <p>High: 91°F • Low: 64°F</p>
+                      <p>Wind: SSE 7 mph</p>
+                      <p>12% chance of rain</p>
                     </div>
                   </div>
                 </CardContent>
@@ -820,7 +820,7 @@ export default function Index() {
               {/* Monday Weather */}
               <Card className="masters-card text-center">
                 <CardHeader className="pb-3">
-                  <CloudRain className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                  <Cloud className="h-12 w-12 text-masters-gold mx-auto mb-2" />
                   <CardTitle className="font-serif text-xl text-masters-green-deep">
                     Monday, Sep 8
                   </CardTitle>
@@ -829,13 +829,13 @@ export default function Index() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
                       <Thermometer className="h-4 w-4 text-masters-gold" />
-                      <span className="text-2xl font-bold text-masters-green-deep">68°F</span>
+                      <span className="text-2xl font-bold text-masters-green-deep">88°F</span>
                     </div>
-                    <p className="text-sm text-masters-green/70 font-medium">Light Rain</p>
+                    <p className="text-sm text-masters-green/70 font-medium">Mostly Cloudy</p>
                     <div className="text-xs text-masters-green/60">
-                      <p>High: 71°F • Low: 52°F</p>
-                      <p>Wind: 12 mph</p>
-                      <p>Pack rain gear</p>
+                      <p>High: 88°F • Low: 62°F</p>
+                      <p>Wind: ESE 8 mph</p>
+                      <p>23% chance of rain</p>
                     </div>
                   </div>
                 </CardContent>
