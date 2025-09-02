@@ -24,6 +24,10 @@ import {
   Target,
   User,
   Bed,
+  Sun,
+  Cloud,
+  CloudRain,
+  Thermometer,
 } from "lucide-react";
 
 // Countdown component
@@ -751,6 +755,92 @@ export default function Index() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Weather Forecast Section */}
+          <div className="mt-12">
+            <div className="text-center mb-8">
+              <h3 className="font-serif text-3xl font-bold text-masters-green-deep mb-4">
+                Weather Forecast
+              </h3>
+              <p className="text-lg text-masters-green/70 max-w-xl mx-auto">
+                Brewster, WA weekend forecast
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Saturday Weather */}
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-3">
+                  <Sun className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-xl text-masters-green-deep">
+                    Saturday, Sep 6
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-center gap-2">
+                      <Thermometer className="h-4 w-4 text-masters-gold" />
+                      <span className="text-2xl font-bold text-masters-green-deep">78°F</span>
+                    </div>
+                    <p className="text-sm text-masters-green/70 font-medium">Sunny</p>
+                    <div className="text-xs text-masters-green/60">
+                      <p>High: 82°F • Low: 58°F</p>
+                      <p>Wind: 5 mph</p>
+                      <p>Perfect golf weather!</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Sunday Weather */}
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-3">
+                  <Cloud className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-xl text-masters-green-deep">
+                    Sunday, Sep 7
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-center gap-2">
+                      <Thermometer className="h-4 w-4 text-masters-gold" />
+                      <span className="text-2xl font-bold text-masters-green-deep">74°F</span>
+                    </div>
+                    <p className="text-sm text-masters-green/70 font-medium">Partly Cloudy</p>
+                    <div className="text-xs text-masters-green/60">
+                      <p>High: 76°F • Low: 55°F</p>
+                      <p>Wind: 8 mph</p>
+                      <p>Great for football & golf</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Monday Weather */}
+              <Card className="masters-card text-center">
+                <CardHeader className="pb-3">
+                  <CloudRain className="h-12 w-12 text-masters-gold mx-auto mb-2" />
+                  <CardTitle className="font-serif text-xl text-masters-green-deep">
+                    Monday, Sep 8
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-center gap-2">
+                      <Thermometer className="h-4 w-4 text-masters-gold" />
+                      <span className="text-2xl font-bold text-masters-green-deep">68°F</span>
+                    </div>
+                    <p className="text-sm text-masters-green/70 font-medium">Light Rain</p>
+                    <div className="text-xs text-masters-green/60">
+                      <p>High: 71°F • Low: 52°F</p>
+                      <p>Wind: 12 mph</p>
+                      <p>Pack rain gear</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
