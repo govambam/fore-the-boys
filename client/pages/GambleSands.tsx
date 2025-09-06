@@ -27,7 +27,7 @@ export default function GambleSands() {
       <section className="py-20 md:py-32 px-4">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 bg-masters-green text-masters-cream border border-masters-gold/20">
-            Round 2 • Sunday 10:20 AM
+            Round 2 • Sunday 9:40 AM
           </Badge>
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-masters-green-deep mb-8">
             Gamble Sands
@@ -373,7 +373,7 @@ export default function GambleSands() {
                   <p className="text-3xl font-bold text-golf-green-dark">
                     Sunday, September 7th
                   </p>
-                  <p className="text-xl text-golf-green">10:20 AM Tee Time</p>
+                  <p className="text-xl text-golf-green">9:40 AM Tee Time</p>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-golf-green/20">
                   <h4 className="font-semibold text-golf-green-dark mb-2">

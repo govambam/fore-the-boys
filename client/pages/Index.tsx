@@ -340,7 +340,7 @@ export default function Index() {
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
-                      Sunday 10:20 AM
+                      Sunday <span className="line-through opacity-70 mx-1">10:20 AM</span><span className="ml-1">9:40 AM</span>
                     </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 3
@@ -733,7 +733,7 @@ export default function Index() {
                       Sunday, September 7
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
-                      <li>10:20 AM - Gamble Sands Round 3</li>
+                      <li><span className="line-through">10:20 AM</span> <span className="ml-1">9:40 AM - Gamble Sands Round 3</span></li>
                       <li>Marshall departs after Gamble Sands round</li>
                       <li>1:05 PM - Seahawks vs 49ers</li>
                       <li>Lunch Break - catch second half at the Barn or Inn</li>
