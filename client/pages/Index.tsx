@@ -340,7 +340,11 @@ export default function Index() {
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge className="bg-masters-cream text-masters-green border-masters-green/20">
-                      Sunday <span className="line-through opacity-70 mx-1">10:20 AM</span><span className="ml-1">9:40 AM</span>
+                      Sunday{" "}
+                      <span className="line-through opacity-70 mx-1">
+                        10:20 AM
+                      </span>
+                      <span className="ml-1">9:40 AM</span>
                     </Badge>
                     <span className="text-sm font-semibold text-masters-gold">
                       Round 3
@@ -389,7 +393,9 @@ export default function Index() {
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-masters-green/70">Birdie</span>
+                    <span className="text-sm text-masters-green/70">
+                      Birdie
+                    </span>
                     <span className="font-semibold text-masters-gold">
                       4 points
                     </span>
@@ -445,7 +451,9 @@ export default function Index() {
                         <span className="text-sm text-muted-foreground">
                           Team 2
                         </span>
-                        <span className="font-semibold">Patrick & Marshall</span>
+                        <span className="font-semibold">
+                          Patrick & Marshall
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -472,7 +480,9 @@ export default function Index() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-sm text-masters-green/70">Birthday Legend</p>
+                  <p className="text-sm text-masters-green/70">
+                    Birthday Legend
+                  </p>
                 </CardContent>
               </Card>
               <Card className="masters-card text-center">
@@ -525,7 +535,9 @@ export default function Index() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$120</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $120
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     Highest Stableford (Quicksands + Scarecrow + Gamble Sands)
                   </p>
@@ -540,7 +552,9 @@ export default function Index() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$60</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $60
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     Second Place Overall Stableford
                   </p>
@@ -555,7 +569,9 @@ export default function Index() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$25</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $25
+                  </p>
                   <p className="text-xs text-masters-green/70">
                     per player (Quicksands Round 1 Scramble)
                   </p>
@@ -570,7 +586,9 @@ export default function Index() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-2xl font-bold text-masters-gold mb-1">$10</p>
+                  <p className="text-2xl font-bold text-masters-gold mb-1">
+                    $10
+                  </p>
                   <p className="text-xs text-masters-green/70">per hole</p>
                 </CardContent>
               </Card>
@@ -660,7 +678,8 @@ export default function Index() {
                     Transportation
                   </h4>
                   <p className="text-sm text-masters-green/70">
-                    Ivan, Patrick and Jack will drive together departing at 7:00 AM
+                    Ivan, Patrick and Jack will drive together departing at 7:00
+                    AM
                   </p>
                   <p className="text-sm text-masters-green/70">
                     Marshall will drive separately
@@ -694,7 +713,9 @@ export default function Index() {
                   <h4 className="font-semibold text-masters-green-deep mb-2">
                     Room Details
                   </h4>
-                  <p className="text-sm text-masters-green/70">River view accommodations</p>
+                  <p className="text-sm text-masters-green/70">
+                    River view accommodations
+                  </p>
                   <p className="text-sm text-masters-green/70">
                     Cascades putting green behind rooms
                   </p>
@@ -718,11 +739,19 @@ export default function Index() {
                       Saturday, September 6
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
-                      <li>7:00 AM - Depart Jack's house (Ivan & Patrick pickup)</li>
+                      <li>
+                        7:00 AM - Depart Jack's house (Ivan & Patrick pickup)
+                      </li>
                       <li>11:00 AM - Arrival at Gamble Sands</li>
-                      <li>11:00 AM-12:10 PM - Drop bags, lunch, practice range</li>
-                      <li>12:10 PM - Quicksands Round 1 (Team Scramble, 60-90 min)</li>
-                      <li>1:40-3:05 PM - Check-in rooms, lunch, drinks, practice</li>
+                      <li>
+                        11:00 AM-12:10 PM - Drop bags, lunch, practice range
+                      </li>
+                      <li>
+                        12:10 PM - Quicksands Round 1 (Team Scramble, 60-90 min)
+                      </li>
+                      <li>
+                        1:40-3:05 PM - Check-in rooms, lunch, drinks, practice
+                      </li>
                       <li>3:05 PM - Scarecrow Round 2 (~4.5 hours)</li>
                       <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, drinks, and putt your butt off</li>
@@ -733,11 +762,20 @@ export default function Index() {
                       Sunday, September 7
                     </h4>
                     <ul className="text-sm text-masters-green/70 space-y-2">
-                      <li><span className="line-through">10:20 AM</span> <span className="ml-1">9:40 AM - Gamble Sands Round 3</span></li>
+                      <li>
+                        <span className="line-through">10:20 AM</span>{" "}
+                        <span className="ml-1">
+                          9:40 AM - Gamble Sands Round 3
+                        </span>
+                      </li>
                       <li>Marshall departs after Gamble Sands round</li>
                       <li>1:05 PM - Seahawks vs 49ers</li>
-                      <li>Lunch Break - catch second half at the Barn or Inn</li>
-                      <li>5:00 PM - Quicksands Round 4 (Fun round, not tournament)</li>
+                      <li>
+                        Lunch Break - catch second half at the Barn or Inn
+                      </li>
+                      <li>
+                        5:00 PM - Quicksands Round 4 (Fun round, not tournament)
+                      </li>
                       <li>7:45 PM - Sunset</li>
                       <li>Evening - Dinner, payouts, shenanigans</li>
                     </ul>
@@ -781,9 +819,13 @@ export default function Index() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
                       <Thermometer className="h-4 w-4 text-masters-gold" />
-                      <span className="text-2xl font-bold text-masters-green-deep">96°F</span>
+                      <span className="text-2xl font-bold text-masters-green-deep">
+                        96°F
+                      </span>
                     </div>
-                    <p className="text-sm text-masters-green/70 font-medium">Partly Cloudy</p>
+                    <p className="text-sm text-masters-green/70 font-medium">
+                      Partly Cloudy
+                    </p>
                     <div className="text-xs text-masters-green/60">
                       <p>High: 96°F • Low: 67°F</p>
                       <p>Wind: SE 8 mph</p>
@@ -805,9 +847,13 @@ export default function Index() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
                       <Thermometer className="h-4 w-4 text-masters-gold" />
-                      <span className="text-2xl font-bold text-masters-green-deep">91°F</span>
+                      <span className="text-2xl font-bold text-masters-green-deep">
+                        91°F
+                      </span>
                     </div>
-                    <p className="text-sm text-masters-green/70 font-medium">Partly Cloudy</p>
+                    <p className="text-sm text-masters-green/70 font-medium">
+                      Partly Cloudy
+                    </p>
                     <div className="text-xs text-masters-green/60">
                       <p>High: 91°F • Low: 64°F</p>
                       <p>Wind: SSE 7 mph</p>
@@ -829,9 +875,13 @@ export default function Index() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
                       <Thermometer className="h-4 w-4 text-masters-gold" />
-                      <span className="text-2xl font-bold text-masters-green-deep">88°F</span>
+                      <span className="text-2xl font-bold text-masters-green-deep">
+                        88°F
+                      </span>
                     </div>
-                    <p className="text-sm text-masters-green/70 font-medium">Mostly Cloudy</p>
+                    <p className="text-sm text-masters-green/70 font-medium">
+                      Mostly Cloudy
+                    </p>
                     <div className="text-xs text-masters-green/60">
                       <p>High: 88°F • Low: 62°F</p>
                       <p>Wind: ESE 8 mph</p>
