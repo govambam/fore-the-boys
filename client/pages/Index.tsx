@@ -421,6 +421,10 @@ export default function Index() {
                     </span>
                   </div>
                 </div>
+                <div className="mt-4 rounded-md border border-masters-gold/30 bg-masters-cream/40 p-3">
+                  <p className="text-sm font-semibold text-masters-green-deep">Tie-break rule</p>
+                  <p className="text-sm text-masters-green/80">If the overall Modified Stableford score is tied between the top two players, they will share first place. The first- and second-place prizes are added together and split evenly between the tied players.</p>
+                </div>
               </CardContent>
             </Card>
 

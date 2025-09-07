@@ -154,6 +154,16 @@ export default function ScoringFormat() {
             </Card>
           </div>
 
+          <div className="rounded-lg border border-masters-gold/30 bg-masters-cream/40 p-6 mb-12">
+            <div className="flex items-start gap-3">
+              <Trophy className="h-6 w-6 text-masters-gold mt-0.5" />
+              <div>
+                <h3 className="text-lg font-semibold text-masters-green-deep">Tie-break rule</h3>
+                <p className="text-sm text-masters-green/80">If the overall Modified Stableford score is tied between the top two players, they will share first place. The first- and second-place prizes are added together and split evenly between the tied players.</p>
+              </div>
+            </div>
+          </div>
+
           {/* Strategy Tips */}
           <div className="bg-golf-green/5 rounded-lg p-8 mb-12">
             <h3 className="text-2xl font-bold text-golf-green-dark mb-6 text-center">
