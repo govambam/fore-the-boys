@@ -420,14 +420,33 @@ export default function Leaderboard() {
         ([, a], [, b]) => b - a,
       );
 
-      // Overall champion ($120)
-      if (sortedPlayers[0]) {
-        money[sortedPlayers[0][0]] += 120;
-      }
+      const topScore = sortedPlayers.length > 0 ? sortedPlayers[0][1] : -Infinity;
+      const topGroup = sortedPlayers
+        .filter(([, pts]) => pts === topScore)
+        .map(([name]) => name);
 
-      // Runner-up ($60)
-      if (sortedPlayers[1]) {
-        money[sortedPlayers[1][0]] += 60;
+      if (topGroup.length > 1) {
+        // Tie for first: split combined 1st + 2nd prize evenly
+        const split = 180 / topGroup.length;
+        topGroup.forEach((name) => {
+          money[name] += split;
+        });
+      } else if (topGroup.length === 1) {
+        // Clear winner
+        money[topGroup[0]] += 120;
+
+        // Determine runner-up group (could be a tie)
+        const secondCandidates = sortedPlayers.filter(([, pts]) => pts < topScore);
+        if (secondCandidates.length > 0) {
+          const secondScore = secondCandidates[0][1];
+          const secondGroup = secondCandidates
+            .filter(([, pts]) => pts === secondScore)
+            .map(([name]) => name);
+          const runnerSplit = 60 / secondGroup.length;
+          secondGroup.forEach((name) => {
+            money[name] += runnerSplit;
+          });
+        }
       }
 
       // Team champions ($25 each)
@@ -487,10 +506,32 @@ export default function Leaderboard() {
         ([, a], [, b]) => b - a,
       );
 
-      if (sortedPlayers[0] && sortedPlayers[0][0] === player) {
-        descriptions.push("Overall Stableford champion");
-      } else if (sortedPlayers[1] && sortedPlayers[1][0] === player) {
-        descriptions.push("Overall Stableford runner-up");
+      const topScore = sortedPlayers.length > 0 ? sortedPlayers[0][1] : -Infinity;
+      const topGroup = sortedPlayers
+        .filter(([, pts]) => pts === topScore)
+        .map(([name]) => name);
+
+      if (topGroup.includes(player)) {
+        descriptions.push(
+          topGroup.length > 1
+            ? "Overall Stableford co-champion"
+            : "Overall Stableford champion",
+        );
+      } else {
+        const secondCandidates = sortedPlayers.filter(([, pts]) => pts < topScore);
+        if (secondCandidates.length > 0) {
+          const secondScore = secondCandidates[0][1];
+          const secondGroup = secondCandidates
+            .filter(([, pts]) => pts === secondScore)
+            .map(([name]) => name);
+          if (secondGroup.includes(player)) {
+            descriptions.push(
+              secondGroup.length > 1
+                ? "Overall Stableford co-runner-up"
+                : "Overall Stableford runner-up",
+            );
+          }
+        }
       }
 
       // Team prizes
@@ -905,9 +946,15 @@ export default function Leaderboard() {
                                 <h3 className="font-semibold text-golf-green-dark">
                                   {player}
                                 </h3>
-                                {index === 0 && (
+                                {points === sortedByStableford[0][1] && (
                                   <Badge className="bg-yellow-500 text-white">
-                                    Current Leader
+                                    {isTournamentComplete()
+                                      ? sortedByStableford.filter(([, p]) => p === sortedByStableford[0][1]).length > 1
+                                        ? "Co-Champion"
+                                        : "Champion"
+                                      : sortedByStableford.filter(([, p]) => p === sortedByStableford[0][1]).length > 1
+                                        ? "Co-Leader"
+                                        : "Current Leader"}
                                   </Badge>
                                 )}
                               </div>
