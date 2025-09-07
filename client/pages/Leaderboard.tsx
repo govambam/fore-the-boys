@@ -420,7 +420,8 @@ export default function Leaderboard() {
         ([, a], [, b]) => b - a,
       );
 
-      const topScore = sortedPlayers.length > 0 ? sortedPlayers[0][1] : -Infinity;
+      const topScore =
+        sortedPlayers.length > 0 ? sortedPlayers[0][1] : -Infinity;
       const topGroup = sortedPlayers
         .filter(([, pts]) => pts === topScore)
         .map(([name]) => name);
@@ -436,7 +437,9 @@ export default function Leaderboard() {
         money[topGroup[0]] += 120;
 
         // Determine runner-up group (could be a tie)
-        const secondCandidates = sortedPlayers.filter(([, pts]) => pts < topScore);
+        const secondCandidates = sortedPlayers.filter(
+          ([, pts]) => pts < topScore,
+        );
         if (secondCandidates.length > 0) {
           const secondScore = secondCandidates[0][1];
           const secondGroup = secondCandidates
@@ -506,7 +509,8 @@ export default function Leaderboard() {
         ([, a], [, b]) => b - a,
       );
 
-      const topScore = sortedPlayers.length > 0 ? sortedPlayers[0][1] : -Infinity;
+      const topScore =
+        sortedPlayers.length > 0 ? sortedPlayers[0][1] : -Infinity;
       const topGroup = sortedPlayers
         .filter(([, pts]) => pts === topScore)
         .map(([name]) => name);
@@ -518,7 +522,9 @@ export default function Leaderboard() {
             : "Overall Stableford champion",
         );
       } else {
-        const secondCandidates = sortedPlayers.filter(([, pts]) => pts < topScore);
+        const secondCandidates = sortedPlayers.filter(
+          ([, pts]) => pts < topScore,
+        );
         if (secondCandidates.length > 0) {
           const secondScore = secondCandidates[0][1];
           const secondGroup = secondCandidates
@@ -949,10 +955,16 @@ export default function Leaderboard() {
                                 {points === sortedByStableford[0][1] && (
                                   <Badge className="bg-yellow-500 text-white">
                                     {isTournamentComplete()
-                                      ? sortedByStableford.filter(([, p]) => p === sortedByStableford[0][1]).length > 1
+                                      ? sortedByStableford.filter(
+                                          ([, p]) =>
+                                            p === sortedByStableford[0][1],
+                                        ).length > 1
                                         ? "Co-Champion"
                                         : "Champion"
-                                      : sortedByStableford.filter(([, p]) => p === sortedByStableford[0][1]).length > 1
+                                      : sortedByStableford.filter(
+                                            ([, p]) =>
+                                              p === sortedByStableford[0][1],
+                                          ).length > 1
                                         ? "Co-Leader"
                                         : "Current Leader"}
                                   </Badge>
